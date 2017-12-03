@@ -1,0 +1,3 @@
+= Summary
+
+. link:README.adoc[Home]

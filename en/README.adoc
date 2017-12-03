@@ -1,0 +1,7 @@
+= LibrePCB Documentation
+
+Welcome to the documentation of link:http://librepcb.org[LibrePCB]!
+
+> ==== Note::Note
+>
+> This documentation is currently under construction.
