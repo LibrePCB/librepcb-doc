@@ -1,11 +1,23 @@
 = LibrePCB Documentation
 
 Welcome to the documentation of link:http://librepcb.org[LibrePCB]!
-
-image:../img/screenshot.png[alt="screenshot"]
+LibrePCB is a free EDA software to develop printed circuit boards.
+It runs on Linux, Windows and Mac.
 
 [NOTE]
 ====
 This documentation is currently under construction. Contributions
 are welcome! Check out https://github.com/LibrePCB/librepcb-doc
 ====
+
+image:../img/screenshot.png[alt="screenshot"]
+
+== Features
+
+* Cross-platform (Unix/Linux, Mac OS X, Windows)
+* All-In-One: project management + library/schematic/board editors
+* Intuitive, modern and easy-to-use graphical user interface
+* Very powerful library design with some innovative concepts
+* Human-readable file formats for both libraries and projects
+* Multi-PCB feature (different PCB variants of the same schematic)
+* Automatic netlist synchronisation between schematic and board
