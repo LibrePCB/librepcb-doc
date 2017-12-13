@@ -4,7 +4,8 @@ Welcome to the documentation of link:http://librepcb.org[LibrePCB]!
 
 image:../img/screenshot.png[alt="screenshot"]
 
-> ==== Note::Note
->
-> This documentation is currently under construction. Contributions
-> are welcome! Check out https://github.com/LibrePCB/librepcb-doc
+[NOTE]
+====
+This documentation is currently under construction. Contributions
+are welcome! Check out https://github.com/LibrePCB/librepcb-doc
+====
