@@ -1,0 +1,41 @@
+[#gettingstarted-installation]
+=== Installation
+
+.Attention: Unstable file format!
+[IMPORTANT]
+====
+The file format of LibrePCB is still under development, and breaking changes
+can occur at any time. This means that you may (or *will*) not be able to
+open your created libraries and projects with future versions of LibrePCB!
+
+Or in other words: LibrePCB does not yet have an upgrade mechanism for the
+files created with older LibrePCB versions. We will start providing an upgrade
+mechanism as soon as we publish the first stable release of LibrePCB.
+====
+
+
+==== Download & Start LibrePCB
+:zip-filename: librepcb-nightly.zip
+:zip-url: https://ci.appveyor.com/api/projects/librepcb/librepcb/artifacts/build/librepcb-nightly.zip?branch=master
+:appimage-filename: LibrePCB-Nightly-Linux-x86_64.AppImage
+:appimage-url: https://bintray.com/librepcb/LibrePCB-Nightly/download_file?file_path=LibrePCB-Nightly-Linux-x86_64.AppImage
+
+.No stable releases
+[NOTE]
+====
+There are not yet any stable releases available, so at the moment you need to
+download the nightly builds instead.
+====
+
+For *Windows*, you can download {zip-url}[{zip-filename}] and extract its content.
+Then double-click the contained file `bin\librepcb.exe` to run the application.
+
+For *Linux*, just download {appimage-url}[{appimage-filename}], make it executable
+and start it:
+
+[source,bash,subs="attributes"]
+----
+wget -O {appimage-filename} "{appimage-url}"
+chmod +x ./{appimage-filename}
+./{appimage-filename}
+----

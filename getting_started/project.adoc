@@ -1,0 +1,44 @@
+[#gettingstarted-project]
+=== Create a New Project
+
+In LibrePCB, schematics and boards are always part of a Project, so to draw
+schematics and boards you first need to create a Project for every PCB you
+want to design. This is really easy, just follow the _New Project_ wizard:
+
+image:img/create_project.png[alt="Create Project"]
+
+Then fill in some metadata about the Project:
+
+image:img/create_project_metadata.png[alt="Create Project"]
+
+[TIP]
+====
+For Open-Hardware projects it's highly recommended to select the license
+_CC0-1.0_ as this allows everyone to use your project without restrictions.
+====
+
+[TIP]
+====
+Even if it is possible to create the Project outside the Workspace directory,
+it's recommended to store all Projects inside the Workspace because these
+Projects are listed at the left side of the Control Panel. This allows to easily
+locate and open them. Projects outside the Workspace need to be opened by
+specifying their location in an open dialog.
+====
+
+Now you can choose whether the Project should be initialized with a first
+schematic page and board, and how they are named. If you are unsure, just
+accept the default values:
+
+image:img/create_project_init.png[alt="Initialize Project"]
+
+After clicking on _Finish_, the schematic and board editors show up and you're
+ready to draw the schematics:
+
+image:img/create_project_editors.png[alt="Project Editor"]
+
+include::schematics.adoc[]
+
+include::boards.adoc[]
+
+include::production_data.adoc[]

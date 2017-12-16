@@ -1,0 +1,13 @@
+[#gettingstarted]
+== Getting Started With LibrePCB
+
+This page will give you a quick introduction into LibrePCB, starting from where
+to download it and ending with how to generate the production data for the PCB.
+
+include::installation.adoc[]
+
+include::workspace.adoc[]
+
+include::libraries.adoc[]
+
+include::project.adoc[]

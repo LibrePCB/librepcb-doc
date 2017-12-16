@@ -21,3 +21,6 @@ image:img/screenshot.png[alt="screenshot"]
 * Human-readable file formats for both libraries and projects
 * Multi-PCB feature (different PCB variants of the same schematic)
 * Automatic netlist synchronisation between schematic and board
+
+*You want to give LibrePCB a try?* +
+link:getting_started/index.adoc[*Get Started with LibrePCB!*]

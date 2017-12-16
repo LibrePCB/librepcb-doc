@@ -1,0 +1,21 @@
+[#gettingstarted-production-data]
+=== Generate Production Data
+
+Once the board is finished, you can generate the production data for the PCB
+manufacturer:
+
+image:img/create_board_production_data.png[alt="Generate Production Data"]
+
+With a simple button click the Gerber and Excellon files are created inside the
+project's _output_ subdirectory:
+
+image:img/create_board_production_data_generator.png[alt="Production Data Generator"]
+
+[WARNING]
+====
+The production data generator is currently very limited in functionality, and also
+not very mature. It's highly recommended to cross-check the generated files with
+3rd-party tools like link:http://gerbv.geda-project.org[gerbv].
+
+LibrePCB is not responsible for any implications caused by wrong production data.
+====

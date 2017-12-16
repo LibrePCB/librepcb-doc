@@ -1,3 +1,13 @@
 = Summary
 
 . link:README.adoc[Home]
+. link:getting_started/index.adoc#gettingstarted[Getting Started]
+.. link:getting_started/index.adoc#gettingstarted-installation[Installation]
+.. link:getting_started/index.adoc#gettingstarted-workspace[Create Workspace]
+.. link:getting_started/index.adoc#gettingstarted-libraries[Add Libraries]
+... link:getting_started/index.adoc#gettingstarted-libraries-remote[Download Remote Libraries]
+... link:getting_started/index.adoc#gettingstarted-libraries-local[Create Local Libraries]
+.. link:getting_started/index.adoc#gettingstarted-project[Create a New Project]
+... link:getting_started/index.adoc#gettingstarted-schematics[Create Schematics]
+... link:getting_started/index.adoc#gettingstarted-boards[Create Boards]
+... link:getting_started/index.adoc#gettingstarted-production-data[Generate Production Data]
