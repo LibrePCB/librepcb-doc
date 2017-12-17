@@ -131,6 +131,7 @@ though in practice you only need to create the elements which do not already
 exist. You can even use elements from other libraries, for example the Symbol
 from library _A_, the Component from library _B_ and the Package from library _C_.
 
+[#gettingstarted-libraries-cmpcat]
 ====== Component Category
 
 First you should create a Component Category for the {example_part_name} (if it
@@ -141,6 +142,7 @@ image:img/create_component_category.png[alt="Create Component Category"]
 
 After clicking on _Finish_, your first Component Category is ready to be used :)
 
+[#gettingstarted-libraries-sym]
 ===== Symbol
 
 Now we need to create a Symbol for the OpAmp. So this time you click on the
@@ -152,6 +154,7 @@ image:img/create_symbol.png[alt="Create Symbol"]
 
 _Yeah, the overlapping texts look ugly, but let's ignore that for the moment ;)_
 
+[#gettingstarted-libraries-cmp]
 ===== Component
 
 The next element you need to create is the Component for a single OpAmp. Because
@@ -226,6 +229,7 @@ create much more powerful library elements. We're sure you will love the
 flexibility of the library concept ;)
 ====
 
+[#gettingstarted-libraries-pkgcat]
 ===== Package Category
 
 Before creating a Package for the {example_part_name}, you should (optionally)
@@ -235,6 +239,7 @@ look like this:
 
 image:img/create_package_category.png[alt="Create Package Category"]
 
+[#gettingstarted-libraries-pkg]
 ===== Package
 
 Then you need to create the Package for the {example_part_name}, which is called
@@ -266,6 +271,7 @@ image:img/create_package_graphics.png[alt="Create Package Graphics"]
 
 That is already enough for a simple footprint.
 
+[#gettingstarted-libraries-dev]
 ===== Device
 
 The last library element you need to create is the Device which combines the
