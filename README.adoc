@@ -22,5 +22,49 @@ image:img/screenshot.png[alt="screenshot"]
 * Multi-PCB feature (different PCB variants of the same schematic)
 * Automatic netlist synchronisation between schematic and board
 
-*You want to give LibrePCB a try?* +
+
+[#projectstatus]
+== Project Status
+
+LibrePCB is still under development and many things are not yet
+working as expected. So here's an overview about the project status:
+
+=== What's working (more or less)
+
+* Downloading, creating and modifying libraries
+* Drawing simple schematics with multiple sheets
+* Creating *very* simple PCBs (incl. Gerber export)
+
+=== What's not working (or even missing)
+
+* All editors:
+** No clipboard functionality (cut/copy/paste)
+   https://github.com/LibrePCB/LibrePCB/issues/13[[#13\]]
+* Schematic editor:
+** No hierarchical sheets
+   https://github.com/LibrePCB/LibrePCB/wiki/Wishlist#schematic-editor[[wishlist\]]
+** No buses
+   https://github.com/LibrePCB/LibrePCB/wiki/Wishlist#schematic-editor[[wishlist\]]
+** No BOM export
+   https://github.com/LibrePCB/LibrePCB/wiki/Wishlist#project[[wishlist\]]
+* Board editor:
+** No airwires
+** No texts (e.g. on silkscreen)
+   https://github.com/LibrePCB/LibrePCB/issues/165[[#165\]]
+** No planes (filled copper areas) 
+   https://github.com/LibrePCB/LibrePCB/issues/196[[#196\]]
+** No DRC (design rule check)
+** No 3D board viewer
+   https://github.com/LibrePCB/LibrePCB/wiki/Wishlist#board-editor[[wishlist\]]
+** *Generally very limited functionality and many bugs because
+   it's still work in progress!*
+
+Please don't open issues for these limitations - we know them and
+are on the way to fix them ;) Especially the board editor has
+currently high priority because this is critical for bringing out
+a first official release of LibrePCB.
+
+
+== You want to give LibrePCB a try?
+
 link:getting_started/index.adoc[*Get Started with LibrePCB!*]
