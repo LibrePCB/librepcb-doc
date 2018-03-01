@@ -51,8 +51,6 @@ working as expected. So here's an overview about the project status:
 ** No airwires
 ** No texts (e.g. on silkscreen)
    https://github.com/LibrePCB/LibrePCB/issues/165[[#165\]]
-** No planes (filled copper areas) 
-   https://github.com/LibrePCB/LibrePCB/issues/196[[#196\]]
 ** No DRC (design rule check)
 ** No 3D board viewer
    https://github.com/LibrePCB/LibrePCB/wiki/Wishlist#board-editor[[wishlist\]]
