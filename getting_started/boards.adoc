@@ -21,6 +21,5 @@ Then you can start adding vias and traces to connect the pads together.
 [WARNING]
 ====
 The functionality of the board editor is still very limited. Some very
-important features (like copper planes and airwires) are currently under
-development.
+important features (like airwires) are currently under development.
 ====
