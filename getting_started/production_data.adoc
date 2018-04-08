@@ -15,7 +15,8 @@ image:img/create_board_production_data_generator.png[alt="Production Data Genera
 ====
 The production data generator is currently very limited in functionality, and also
 not very mature. It's highly recommended to cross-check the generated files with
-3rd-party tools like link:http://gerbv.geda-project.org[gerbv].
+3rd-party tools like link:http://gerbv.geda-project.org[gerbv] or
+link:https://gerber.ucamco.com/[the reference gerber viewer].
 
 LibrePCB is not responsible for any implications caused by wrong production data.
 ====
