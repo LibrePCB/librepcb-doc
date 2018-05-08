@@ -33,7 +33,7 @@ working as expected. So here's an overview about the project status:
 
 * Downloading, creating and modifying libraries
 * Drawing simple schematics with multiple sheets
-* Creating *very* simple PCBs (incl. Gerber export)
+* Creating simple PCBs (incl. Gerber export)
 
 === What's not working (or even missing)
 
@@ -48,12 +48,11 @@ working as expected. So here's an overview about the project status:
 ** No BOM export
    https://github.com/LibrePCB/LibrePCB/wiki/Wishlist#project[[wishlist\]]
 * Board editor:
-** No airwires
 ** No DRC (design rule check)
 ** No 3D board viewer
    https://github.com/LibrePCB/LibrePCB/wiki/Wishlist#board-editor[[wishlist\]]
-** *Generally very limited functionality and many bugs because
-   it's still work in progress!*
+** *Generally limited functionality and many bugs because it's still work in
+   progress!*
 
 Please don't open issues for these limitations - we know them and
 are on the way to fix them ;) Especially the board editor has
