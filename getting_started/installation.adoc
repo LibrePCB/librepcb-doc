@@ -1,6 +1,12 @@
 [#gettingstarted-installation]
 === Installation
 
+[NOTE]
+====
+There are not yet any stable releases available, so at the moment you need to
+download the nightly builds instead.
+====
+
 .Attention: Unstable file format!
 [IMPORTANT]
 ====
@@ -13,29 +19,90 @@ files created with older LibrePCB versions. We will start providing an upgrade
 mechanism as soon as we publish the first stable release of LibrePCB.
 ====
 
+==== Method 1: Installer
 
-==== Download & Start LibrePCB
-:zip-filename: librepcb-nightly.zip
-:zip-url: https://ci.appveyor.com/api/projects/librepcb/librepcb/artifacts/build/librepcb-nightly.zip?branch=master
-:appimage-filename: LibrePCB-Nightly-Linux-x86_64.AppImage
-:appimage-url: https://bintray.com/librepcb/LibrePCB-Nightly/download_file?file_path=LibrePCB-Nightly-Linux-x86_64.AppImage
+The recommended way to install LibrePCB is to use the online installer.
+It provides the following features:
 
-.No stable releases
-[NOTE]
+- Downloads the latest version from the Internet (no offline installation
+  possible).
+- Installs a maintenance tool to easily download and install updates.
+- Creates start menu entries for LibrePCB and the maintenance tool.
+- Optionally registers `*.lpp` files, so LibrePCB projects can be opened
+  with a double-click in the file manager.
+
+===== Windows
+:windows-installer-filename: librepcb-installer-nightly-windows-x86.exe
+:windows-installer-url: https://download.librepcb.org/nightly_builds/master/librepcb-installer-nightly-windows-x86.exe
+
+Download and run {windows-installer-url}[{windows-installer-filename}].
+
+===== Linux
+:linux-installer-filename: librepcb-installer-nightly-linux-x86_64.run
+:linux-installer-url: https://download.librepcb.org/nightly_builds/master/librepcb-installer-nightly-linux-x86_64.run
+
+Download {linux-installer-url}[{linux-installer-filename}], make it executable
+and run it:
+
+[source,bash,subs="attributes"]
+----
+wget "{linux-installer-url}"
+chmod +x ./{linux-installer-filename}
+./{linux-installer-filename}
+----
+
+===== Mac
+:mac-installer-filename: librepcb-installer-nightly-mac-x86_64.dmg
+:mac-installer-url: https://download.librepcb.org/nightly_builds/master/librepcb-installer-nightly-mac-x86_64.dmg
+
+Download and run {mac-installer-url}[{mac-installer-filename}].
+
+[IMPORTANT]
 ====
-There are not yet any stable releases available, so at the moment you need to
-download the nightly builds instead.
+Because Apple doesn't provide the ability to run macOS without purchasing their
+hardware, we're not able to test LibrePCB on macOS. Feel free to
+https://github.com/LibrePCB/LibrePCB/issues[open an issue] if LibrePCB doesn't
+work as expected.
 ====
 
-For *Windows*, you can download {zip-url}[{zip-filename}] and extract its content.
-Then double-click the contained file `bin\librepcb.exe` to run the application.
+==== Method 2: Portable Package
 
-For *Linux*, just download {appimage-url}[{appimage-filename}], make it executable
+Alternatively you could run LibrePCB without installing it. But then you don't
+get an update mechanism, no start menu entries are created, and `*.lpp` files
+will not be registered.
+
+===== Windows
+:windows-zip-filename: librepcb-nightly-windows-x86.zip
+:windows-zip-url: https://download.librepcb.org/nightly_builds/master/librepcb-nightly-windows-x86.zip
+
+Download and extract {windows-zip-url}[{windows-zip-filename}], then
+run the contained file `bin\librepcb.exe`.
+
+===== Linux
+:linux-appimage-filename: librepcb-nightly-linux-x86_64.AppImage
+:linux-appimage-url: https://download.librepcb.org/nightly_builds/master/librepcb-nightly-linux-x86_64.AppImage
+
+Download {linux-appimage-url}[{linux-appimage-filename}], make it executable
 and start it:
 
 [source,bash,subs="attributes"]
 ----
-wget -O {appimage-filename} "{appimage-url}"
-chmod +x ./{appimage-filename}
-./{appimage-filename}
+wget "{linux-appimage-url}"
+chmod +x ./{linux-appimage-filename}
+./{linux-appimage-filename}
 ----
+
+===== Mac
+:dmg-filename: librepcb-nightly-mac-x86_64.dmg
+:dmg-url: https://download.librepcb.org/nightly_builds/master/librepcb-nightly-mac-x86_64.dmg
+
+Download {dmg-url}[{dmg-filename}] and double-click it. Then drag and drop the
+app onto the "Applications" icon of Finder.
+
+[IMPORTANT]
+====
+Because Apple doesn't provide the ability to run macOS without purchasing their
+hardware, we're not able to test LibrePCB on macOS. Feel free to
+https://github.com/LibrePCB/LibrePCB/issues[open an issue] if LibrePCB doesn't
+work as expected.
+====
