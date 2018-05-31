@@ -57,6 +57,13 @@ chmod +x ./{linux-installer-filename}
 
 Download and run {mac-installer-url}[{mac-installer-filename}].
 
+[IMPORTANT]
+====
+Because Apple doesn't provide the ability to run macOS without purchasing their
+hardware, we're not able to test LibrePCB on macOS. Feel free to
+https://github.com/LibrePCB/LibrePCB/issues[open an issue] if LibrePCB doesn't
+work as expected.
+====
 
 ==== Method 2: Portable Package
 
@@ -91,3 +98,11 @@ chmod +x ./{linux-appimage-filename}
 
 Download {dmg-url}[{dmg-filename}] and double-click it. Then drag and drop the
 app onto the "Applications" icon of Finder.
+
+[IMPORTANT]
+====
+Because Apple doesn't provide the ability to run macOS without purchasing their
+hardware, we're not able to test LibrePCB on macOS. Feel free to
+https://github.com/LibrePCB/LibrePCB/issues[open an issue] if LibrePCB doesn't
+work as expected.
+====
