@@ -55,12 +55,12 @@ chmod +x ./{linux-installer-filename}
 :mac-installer-filename: librepcb-installer-nightly-mac-x86_64.dmg
 :mac-installer-url: https://download.librepcb.org/nightly_builds/master/librepcb-installer-nightly-mac-x86_64.dmg
 
-Download and run {mac-installer-url}[{mac-installer-filename}].
+Download and run {mac-installer-url}[{mac-installer-filename}]. "Unverified" packages may have to be opened via right-click.
 
 [IMPORTANT]
 ====
 Because Apple doesn't provide the ability to run macOS without purchasing their
-hardware, we're not able to test LibrePCB on macOS. Feel free to
+hardware, we're not able to automatically test LibrePCB for macOS. Feel free to
 https://github.com/LibrePCB/LibrePCB/issues[open an issue] if LibrePCB doesn't
 work as expected.
 ====
