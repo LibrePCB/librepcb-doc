@@ -29,12 +29,14 @@ image:img/screenshot.png[alt="screenshot"]
 LibrePCB is still under development and many things are not yet
 working as expected. So here's an overview about the project status:
 
+[discrete]
 === What's working (more or less)
 
 * Downloading, creating and modifying libraries
 * Drawing simple schematics with multiple sheets
 * Creating simple PCBs (incl. Gerber export)
 
+[discrete]
 === What's not working (or even missing)
 
 * All editors:

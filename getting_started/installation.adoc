@@ -31,12 +31,14 @@ It provides the following features:
 - Optionally registers `*.lpp` files, so LibrePCB projects can be opened
   with a double-click in the file manager.
 
+[discrete]
 ===== Windows
 :windows-installer-filename: librepcb-installer-nightly-windows-x86.exe
 :windows-installer-url: https://download.librepcb.org/nightly_builds/master/librepcb-installer-nightly-windows-x86.exe
 
 Download and run {windows-installer-url}[{windows-installer-filename}].
 
+[discrete]
 ===== Linux
 :linux-installer-filename: librepcb-installer-nightly-linux-x86_64.run
 :linux-installer-url: https://download.librepcb.org/nightly_builds/master/librepcb-installer-nightly-linux-x86_64.run
@@ -51,6 +53,7 @@ chmod +x ./{linux-installer-filename}
 ./{linux-installer-filename}
 ----
 
+[discrete]
 ===== Mac
 :mac-installer-filename: librepcb-installer-nightly-mac-x86_64.dmg
 :mac-installer-url: https://download.librepcb.org/nightly_builds/master/librepcb-installer-nightly-mac-x86_64.dmg
@@ -71,6 +74,7 @@ Alternatively you could run LibrePCB without installing it. But then you don't
 get an update mechanism, no start menu entries are created, and `*.lpp` files
 will not be registered.
 
+[discrete]
 ===== Windows
 :windows-zip-filename: librepcb-nightly-windows-x86.zip
 :windows-zip-url: https://download.librepcb.org/nightly_builds/master/librepcb-nightly-windows-x86.zip
@@ -78,6 +82,7 @@ will not be registered.
 Download and extract {windows-zip-url}[{windows-zip-filename}], then
 run the contained file `bin\librepcb.exe`.
 
+[discrete]
 ===== Linux
 :linux-appimage-filename: librepcb-nightly-linux-x86_64.AppImage
 :linux-appimage-url: https://download.librepcb.org/nightly_builds/master/librepcb-nightly-linux-x86_64.AppImage
@@ -92,6 +97,7 @@ chmod +x ./{linux-appimage-filename}
 ./{linux-appimage-filename}
 ----
 
+[discrete]
 ===== Mac
 :dmg-filename: librepcb-nightly-mac-x86_64.dmg
 :dmg-url: https://download.librepcb.org/nightly_builds/master/librepcb-nightly-mac-x86_64.dmg

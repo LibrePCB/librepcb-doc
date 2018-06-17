@@ -143,7 +143,7 @@ image:img/create_component_category.png[alt="Create Component Category"]
 After clicking on _Finish_, your first Component Category is ready to be used :)
 
 [#gettingstarted-libraries-sym]
-===== Symbol
+====== Symbol
 
 Now we need to create a Symbol for the OpAmp. So this time you click on the
 _Symbol_ button in the _New Library Element_ wizard. Then fill in some metadata
@@ -155,7 +155,7 @@ image:img/create_symbol.png[alt="Create Symbol"]
 _Yeah, the overlapping texts look ugly, but let's ignore that for the moment ;)_
 
 [#gettingstarted-libraries-cmp]
-===== Component
+====== Component
 
 The next element you need to create is the Component for a single OpAmp. Because
 it is still very generic (beside the {example_part_name} there are many other
@@ -230,7 +230,7 @@ flexibility of the library concept ;)
 ====
 
 [#gettingstarted-libraries-pkgcat]
-===== Package Category
+====== Package Category
 
 Before creating a Package for the {example_part_name}, you should (optionally)
 create a category for it. This is basically done exactly the same way as you
@@ -240,7 +240,7 @@ look like this:
 image:img/create_package_category.png[alt="Create Package Category"]
 
 [#gettingstarted-libraries-pkg]
-===== Package
+====== Package
 
 Then you need to create the Package for the {example_part_name}, which is called
 _SOT23-5_. After specifying some metadata (like you already done for other library
@@ -272,7 +272,7 @@ image:img/create_package_graphics.png[alt="Create Package Graphics"]
 That is already enough for a simple footprint.
 
 [#gettingstarted-libraries-dev]
-===== Device
+====== Device
 
 The last library element you need to create is the Device which combines the
 Component _Single OpAmp_ with the Package _SOT23-5_. Again, specify some metadata
