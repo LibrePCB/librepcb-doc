@@ -1,0 +1,12 @@
+= LibrePCB User Manual
+:toc: left
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 3
+:sectlinks:
+:icons: font
+:source-highlighter: pygments
+:pygments-style: monokai
+
+include::about/index.adoc[]
+include::getting_started/index.adoc[]

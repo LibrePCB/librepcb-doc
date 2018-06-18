@@ -1,4 +1,6 @@
-= LibrePCB Documentation
+[#about]
+== About LibrePCB
+:imagesdir: about
 
 Welcome to the documentation of link:http://librepcb.org[LibrePCB]!
 LibrePCB is a free EDA software to develop printed circuit boards.
@@ -12,7 +14,7 @@ are welcome! Check out https://github.com/LibrePCB/librepcb-doc
 
 image:img/screenshot.png[alt="screenshot"]
 
-== Features
+=== Features
 
 * Cross-platform (Unix/Linux, Mac OS X, Windows)
 * All-In-One: project management + library/schematic/board editors
@@ -24,20 +26,20 @@ image:img/screenshot.png[alt="screenshot"]
 
 
 [#projectstatus]
-== Project Status
+=== Project Status
 
 LibrePCB is still under development and many things are not yet
 working as expected. So here's an overview about the project status:
 
 [discrete]
-=== What's working (more or less)
+==== What's working (more or less)
 
 * Downloading, creating and modifying libraries
 * Drawing simple schematics with multiple sheets
 * Creating simple PCBs (incl. Gerber export)
 
 [discrete]
-=== What's not working (or even missing)
+==== What's not working (or even missing)
 
 * All editors:
 ** No clipboard functionality (cut/copy/paste)
@@ -60,8 +62,3 @@ Please don't open issues for these limitations - we know them and
 are on the way to fix them ;) Especially the board editor has
 currently high priority because this is critical for bringing out
 a first official release of LibrePCB.
-
-
-== You want to give LibrePCB a try?
-
-link:getting_started/index.adoc[*Get Started with LibrePCB!*]

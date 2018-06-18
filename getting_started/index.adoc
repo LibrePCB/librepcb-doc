@@ -1,5 +1,6 @@
 [#gettingstarted]
 == Getting Started With LibrePCB
+:imagesdir: getting_started
 
 This page will give you a quick introduction into LibrePCB, starting from where
 to download it and ending with how to generate the production data for the PCB.
