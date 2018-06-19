@@ -1,0 +1,13 @@
+language: ruby
+notifications:
+  email:
+    on_success: change
+    on_failure: change
+
+install:
+  - gem install asciidoctor pygments.rb rouge
+  - gem install asciidoctor-pdf --pre
+
+script:
+  - ./ci/build.sh                                     || travis_terminate 1
+  - ./ci/upload_artifacts.sh                          || travis_terminate 1
