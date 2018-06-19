@@ -183,17 +183,17 @@ Then you're asked to specify some properties of the Component:
   or `#CAPACITANCE`. If you are unsure, just leave it empty, you can still change
   it later.
 
-image:img/create_component_properties.png[alt="Specify Component Properties]
+image:img/create_component_properties.png[alt="Specify Component Properties"]
 
 Now you need to choose the Symbols which represent the Component in schematics.
 Most Components have only one Symbol, but you can also add more than one, for
 example an OpAmp can have separate Symbols for power and amplifier.
 
-image:img/create_component_add_symbol.png[alt="Set Component Symbols]
+image:img/create_component_add_symbol.png[alt="Set Component Symbols"]
 
 After adding the OpAmp Symbol, it should look like this:
 
-image:img/create_component_add_symbol_finished.png[alt="Component Symbols]
+image:img/create_component_add_symbol_finished.png[alt="Component Symbols"]
 
 The next step is to define all so-called Signals of a Component. Signals represent
 the "electrical interface" of a Component. For example a transistor consists of
@@ -207,7 +207,7 @@ the names or properties of these Signals. For the OpAmp, we check _Required_ for
 all Signals, so the ERC will show a warning if these Signals are not connected to
 a net when the Component was added to a schematic:
 
-image:img/create_component_signals.png[alt="Component Signals]
+image:img/create_component_signals.png[alt="Component Signals"]
 
 These Signals now need to be assigned to the corresponding Symbol Pins, but as
 they were automatically generated from the Pins, you can just click on the button
