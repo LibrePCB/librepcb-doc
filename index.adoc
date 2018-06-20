@@ -7,6 +7,7 @@
 :icons: font
 :source-highlighter: pygments
 :pygments-style: monokai
+:docinfo: shared
 
 include::about/index.adoc[]
 include::getting_started/index.adoc[]

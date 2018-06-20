@@ -4,7 +4,7 @@
 set -eufv -o pipefail
 
 # build HTML
-asciidoctor --failure-level=WARN --safe index.adoc
+asciidoctor --failure-level=WARN --safe -a stylesheet=style.css index.adoc
 
 # build PDF
 asciidoctor-pdf --failure-level=WARN --safe -a source-highlighter=rouge index.adoc
