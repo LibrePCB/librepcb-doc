@@ -1,0 +1,14 @@
+[#api]
+== LibrePCB Server API
+:imagesdir: api
+
+LibrePCB provides an API at https://api.librepcb.org[api.librepcb.org] which
+is used by the LibrePCB application, for example to fetch the latest libraries.
+
+The API uses JSON for responses.
+
+include::url.adoc[]
+
+include::pagination.adoc[]
+
+include::resources.adoc[]
