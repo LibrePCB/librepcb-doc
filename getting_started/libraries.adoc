@@ -20,13 +20,14 @@ Internet. Most of these libraries are hosted at https://github.com/LibrePCB-Libr
 
 [NOTE]
 ====
-The provided libraries currently contain only a few elements, especially because
-the file format is still not considered as stable.
+The provided libraries currently contain only a few elements. You are welcome to
+contribute more elements by opening pull requests at
+https://github.com/LibrePCB-Libraries!
 ====
 
-The most important library is the _LibrePCB Base Library_ because it contains the
+The most important library is the _LibrePCB Base_ library because it contains the
 most commonly used library elements (like resistors or diodes). It is highly
-recommend to install this library. To do so, just select the checkboxes at the
+recommended to install this library. To do so, just select the checkboxes at the
 right and click on the _Download and install/update all selected libraries_ button:
 
 image:img/library_manager_download.png[alt="Download Libraries"]
@@ -90,7 +91,7 @@ concept ;) A library consists of several different elements:
   A Component basically represents a "generic" kind of electrical part. It's
   *not* a real part which you can buy, it's just theoretical. The Component
   defines the electrical interface of a part and how it is represented in the
-  schematic (by referencing one ore more Symbols). But it does not defines how
+  schematic (by referencing one ore more Symbols). But it does not define how
   the part looks like in a board.
   Examples: _Resistor_, _Bipolar Capacitor_, _4-channel OpAmp_
 * *Package Category*:
@@ -148,11 +149,12 @@ After clicking on _Finish_, your first Component Category is ready to be used :)
 Now we need to create a Symbol for the OpAmp. So this time you click on the
 _Symbol_ button in the _New Library Element_ wizard. Then fill in some metadata
 and click on _Finish_. Now you can place the required pins (choose reasonable
-names!) and draw the outline. The result could look like this:
+and unique names!), add the texts `{{NAME}}` and `{{VALUE}}` and draw the
+outline. The result could look like this:
 
 image:img/create_symbol.png[alt="Create Symbol"]
 
-_Yeah, the overlapping texts look ugly, but let's ignore that for the moment ;)_
+_Yeah, the overlapping pin texts look ugly, but let's ignore that for the moment ;)_
 
 [#gettingstarted-libraries-cmp]
 ====== Component
@@ -179,9 +181,9 @@ Then you're asked to specify some properties of the Component:
   to it, which is typically also displayed in the schematic. For example a
   capacitor has its capacitance (e.g. _100nF_) set in its value. When adding a
   Component to a schematic, its value is initially set to the value specified here.
-  The value can also be a placeholder, for example `#PARTNUMBER`, `#RESISTANCE`
-  or `#CAPACITANCE`. If you are unsure, just leave it empty, you can still change
-  it later.
+  The value can also be a placeholder, for example `{{PARTNUMBER}}`,
+  `{{RESISTANCE}}` or `{{CAPACITANCE}}`. If you are unsure, just leave it empty,
+  you can still change it later.
 
 image:img/create_component_properties.png[alt="Specify Component Properties"]
 
@@ -243,7 +245,7 @@ image:img/create_package_category.png[alt="Create Package Category"]
 ====== Package
 
 Then you need to create the Package for the {example_part_name}, which is called
-_SOT23-5_. After specifying some metadata (like you already done for other library
+_SOT23-5_. After specifying some metadata (like you already did for other library
 elements), you are asked to specify all pads of the Package. The _SOT23-5_ has 5
 pads which we just name from _1_ to _5_:
 
@@ -275,9 +277,12 @@ That is already enough for a simple footprint.
 ====== Device
 
 The last library element you need to create is the Device which combines the
-Component _Single OpAmp_ with the Package _SOT23-5_. Again, specify some metadata
-about the Device first. Then you need to choose the Component and Package you
-want to assign:
+Component _Single OpAmp_ with the Package _SOT23-5_. This is actually the only
+library element which is specifically for {example_part_name} -- all previously
+created elements are generic!
+
+Again, specify some metadata about the Device first. Then you need to choose
+the Component and Package you want to assign:
 
 image:img/create_device_properties.png[alt="Create Device"]
 

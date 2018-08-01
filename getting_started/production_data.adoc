@@ -6,16 +6,22 @@ manufacturer:
 
 image:img/create_board_production_data.png[alt="Generate Production Data"]
 
-With a simple button click the Gerber and Excellon files are created inside the
-project's _output_ subdirectory:
+Here you can adjust some settings of the Gerber export. Generally you should
+determine what format your PCB manufacturer accepts. Many manufacturers accept
+Protel-style Gerber files, so if you're unsure, click on the _Protel naming_
+button:
 
 image:img/create_board_production_data_generator.png[alt="Production Data Generator"]
 
+Then just click on the _Generate Gerber & Excellon Files_ button and LibrePCB
+places the generated files in your project's _output_ subdirectory. Send these
+files (and some money) to your PCB manufacturer and wait for the PCBs :)
+
 [WARNING]
 ====
-The production data generator is currently very limited in functionality, and also
-not very mature. It's highly recommended to cross-check the generated files with
-3rd-party tools like link:http://gerbv.geda-project.org[gerbv] or
+The production data generator is not very mature yet. It's highly recommended
+to cross-check the generated files with 3rd-party tools like 
+link:http://gerbv.geda-project.org[gerbv] or
 link:https://gerber.ucamco.com/[the reference gerber viewer].
 
 LibrePCB is not responsible for any implications caused by wrong production data.

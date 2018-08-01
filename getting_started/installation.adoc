@@ -11,8 +11,8 @@ download the nightly builds instead.
 [IMPORTANT]
 ====
 The file format of LibrePCB is still under development, and breaking changes
-can occur at any time. This means that you may (or *will*) not be able to
-open your created libraries and projects with future versions of LibrePCB!
+can occur at any time. This means that you may not be able to open your
+created libraries and projects with future versions of LibrePCB!
 
 Or in other words: LibrePCB does not yet have an upgrade mechanism for the
 files created with older LibrePCB versions. We will start providing an upgrade
@@ -108,7 +108,7 @@ app onto the "Applications" icon of Finder.
 [IMPORTANT]
 ====
 Because Apple doesn't provide the ability to run macOS without purchasing their
-hardware, we're not able to test LibrePCB on macOS. Feel free to
+hardware, we're not able to automatically test LibrePCB for macOS. Feel free to
 https://github.com/LibrePCB/LibrePCB/issues[open an issue] if LibrePCB doesn't
 work as expected.
 ====
