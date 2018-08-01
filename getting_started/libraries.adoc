@@ -156,6 +156,25 @@ image:img/create_symbol.png[alt="Create Symbol"]
 
 _Yeah, the overlapping pin texts look ugly, but let's ignore that for the moment ;)_
 
+.Following are the most important rules to create reusable Symbols:
+[TIP]
+====
+- Create generic symbols, not specific ones. Generic symbols can be shared
+  between many components, specific symbols not.
+- Don't name pins according their location in the package. Just use incrementing
+  numbers (i.e. _1_, _2_, _3_, ...) or the electrical purpose (e.g. _Source_,
+  _Drain_, _Gate_) where applicable.
+- Don't add multiple pins with the same name. Even for a microcontroller which
+  has multiple GND pins, the symbol should have only one GND pin. A symbol
+  represents the _electrical_ interface of a part, not the _mechanical_!
+- Add the texts `{{NAME}}` and `{{VALUE}}`. Most symbols should have exactly
+  these two texts -- no more, no less.
+- The origin (coordinate 0,0) should be in the center of the symbol (here
+  the symbol can be grabbed with the mouse).
+- Place all pins on the 2.54mm grid.
+====
+
+
 [#gettingstarted-libraries-cmp]
 ====== Component
 
@@ -231,6 +250,20 @@ create much more powerful library elements. We're sure you will love the
 flexibility of the library concept ;)
 ====
 
+.Following are the most important rules to create reusable Components:
+[TIP]
+====
+- Create generic components whenever possible. Only create specific components
+  for manufacturer-specific parts (like microcontrollers).
+- Name signals according their electrical purpose (e.g. _Source_, _Drain_,
+  _Gate_).
+- Don't add multiple signals with the same name. Even for a microcontroller
+  which has multiple GND pins, the component should have only one GND signal.
+  A component represents the _electrical_ interface of a part, not the
+  _mechanical_!
+====
+
+
 [#gettingstarted-libraries-pkgcat]
 ====== Package Category
 
@@ -251,17 +284,6 @@ pads which we just name from _1_ to _5_:
 
 image:img/create_package_pads.png[alt="Create Package Pads"]
 
-[TIP]
-====
-Packages should be designed as generic as possible to make them usable also for
-other Devices. So it's very important to name their pads according to the
-specifications of the Package (e.g. as defined in IPC-7351), not according to
-their functionality for your specific Device.
-
-Typical pad names are: _1_, _2_, _3_, _THERMAL_, ... +
-Bad pad names are: _BASE_, _EMITTER_, _COLLECTOR_, _SDA_, _SCL_, ...
-====
-
 After that, you can start drawing the footprint of the Package. It's recommended
 to start with the pads:
 
@@ -272,6 +294,25 @@ And then add other graphical items like the outline, name and value:
 image:img/create_package_graphics.png[alt="Create Package Graphics"]
 
 That is already enough for a simple footprint.
+
+.Following are the most important rules to create reusable Packages:
+[TIP]
+====
+- Create generic packages, not specific ones. For example _DIP08_ is _DIP08_ --
+  no matter whether it's an OpAmp, an EEPROM or a microcontroller.
+- Don't name pins according their location in the package. Just use incrementing
+  numbers (i.e. _1_, _2_, _3_, ...) or the electrical purpose (e.g. _Source_,
+  _Drain_, _Gate_) where applicable.
+- Add *all* pads of a package, not only the one you currently need. For example
+  if the package has a thermal pad, you should add it, even if you don't need it.
+- Name pads according specifications (datasheet or IPC-7351), typically just _1_,
+  _2_, _3_ etc. Never name pads according their electrical purpose (e.g. _Gate_)!
+- Add the texts `{{NAME}}` and `{{VALUE}}`. Most footprints should have exactly
+  these two texts -- no more, no less.
+- The origin (coordinate 0,0) should be in the center of the footprint (here
+  the footprint can be grabbed with the mouse).
+====
+
 
 [#gettingstarted-libraries-dev]
 ====== Device
