@@ -1,0 +1,12 @@
+(librepcb_component_category
+ (uuid 1204bf54-dbbb-4056-a771-5b13990ddd77)
+ (version "0.1")
+ (author "me")
+ (created 2017-12-14T23:15:37Z)
+ (modified 2017-12-14T23:15:37Z)
+ (deprecated false)
+ (name "Amplifiers")
+ (description "")
+ (keywords "")
+ (parent 994219f3-f3e1-49d2-a57f-6603e8b84273)
+)

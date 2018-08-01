@@ -1,0 +1,13 @@
+(librepcb_component_category
+ (uuid 70421345-ae1d-4fed-aa60-e7619524b97f)
+ (version "0.1")
+ (author "LibrePCB")
+ (created 2015-07-05T12:43:52Z)
+ (modified 2015-07-05T18:01:33Z)
+ (deprecated false)
+ (name "LEDs")
+ (name (locale "de_DE") "LEDs")
+ (description "")
+ (keywords "led,light,opto")
+ (parent null)
+)

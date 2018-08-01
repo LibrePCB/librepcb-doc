@@ -1,0 +1,12 @@
+(librepcb_package_category
+ (uuid 9d2d1d3f-9fe2-4497-ac40-b35a141e472b)
+ (version "0.1")
+ (author "Urban Bruhin")
+ (created 2017-12-05T18:55:38Z)
+ (modified 2017-12-05T18:55:38Z)
+ (deprecated false)
+ (name "Crystals")
+ (description "")
+ (keywords "")
+ (parent null)
+)

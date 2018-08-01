@@ -1,0 +1,13 @@
+(librepcb_component_category
+ (uuid 39d4b3d6-4168-4fe2-9420-fbf7eb3ac248)
+ (version "0.1")
+ (author "LibrePCB")
+ (created 2015-07-05T12:43:52Z)
+ (modified 2015-07-05T18:01:33Z)
+ (deprecated false)
+ (name "Crystals & Oscillators & Resonators")
+ (name (locale "de_DE") "Quarze / Oszillatoren / Resonatoren")
+ (description "")
+ (keywords "crystal,resonator,oscillator,resonator,ceramicresonator,khz,mhz,ghz")
+ (parent null)
+)

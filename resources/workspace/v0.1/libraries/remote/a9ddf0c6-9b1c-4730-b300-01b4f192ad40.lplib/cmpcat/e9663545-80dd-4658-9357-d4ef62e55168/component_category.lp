@@ -1,0 +1,13 @@
+(librepcb_component_category
+ (uuid e9663545-80dd-4658-9357-d4ef62e55168)
+ (version "0.1")
+ (author "LibrePCB")
+ (created 2015-07-05T12:43:52Z)
+ (modified 2015-07-05T18:01:33Z)
+ (deprecated false)
+ (name "Transistors & Thyristors")
+ (name (locale "de_DE") "Transistoren / FETs / Diacs / Triacs")
+ (description "")
+ (keywords "transistor,fet,mosfet")
+ (parent null)
+)

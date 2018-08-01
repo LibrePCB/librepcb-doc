@@ -1,0 +1,12 @@
+(librepcb_package_category
+ (uuid 13444388-0f37-4369-99ad-cf470bcb85b5)
+ (version "0.1")
+ (author "Urban Bruhin")
+ (created 2017-12-05T19:52:31Z)
+ (modified 2017-12-05T19:52:31Z)
+ (deprecated false)
+ (name "TO")
+ (description "")
+ (keywords "")
+ (parent null)
+)

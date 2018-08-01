@@ -1,0 +1,12 @@
+(librepcb_library
+ (uuid b0e93d84-7c5f-46c5-9d76-7df5a4bfa7b4)
+ (version "0.1")
+ (author "Ubuntu")
+ (created 2017-12-14T20:23:12Z)
+ (modified 2017-12-14T20:23:12Z)
+ (deprecated false)
+ (name "My Library")
+ (description "")
+ (keywords "")
+ (url "")
+)

@@ -1,0 +1,17 @@
+G04 --- HEADER BEGIN --- *
+%TF.GenerationSoftware,LibrePCB,LibrePCB,0.1.0*%
+%TF.CreationDate,2018-08-01T23:36:33*%
+%TF.ProjectId,My first project - default,95d86095-1982-49ec-9766-8fcddb3e5e54,v1*%
+%TF.Part,Single*%
+%FSLAX66Y66*%
+%MOMM*%
+G01*
+G74*
+G04 --- HEADER END --- *
+G04 --- APERTURE LIST BEGIN --- *
+G04 --- APERTURE LIST END --- *
+G04 --- BOARD BEGIN --- *
+%LPC*%
+G04 --- BOARD END --- *
+%TF.MD5,74a748aa8e7a413bfc39ec73d32251e4*%
+M02*

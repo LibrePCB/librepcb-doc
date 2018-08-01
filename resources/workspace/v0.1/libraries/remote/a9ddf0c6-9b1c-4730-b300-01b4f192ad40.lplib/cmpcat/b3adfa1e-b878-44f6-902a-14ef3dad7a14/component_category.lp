@@ -1,0 +1,13 @@
+(librepcb_component_category
+ (uuid b3adfa1e-b878-44f6-902a-14ef3dad7a14)
+ (version "0.1")
+ (author "LibrePCB")
+ (created 2015-07-05T12:43:52Z)
+ (modified 2015-07-05T18:01:33Z)
+ (deprecated false)
+ (name "Inductors & Coils")
+ (name (locale "de_DE") "Induktivitäten / Spulen")
+ (description "")
+ (keywords "inductor,inductance")
+ (parent null)
+)

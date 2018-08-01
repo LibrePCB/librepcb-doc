@@ -1,0 +1,13 @@
+(librepcb_component_category
+ (uuid 4d1c95f4-2e60-4f50-a15b-ba9186a01b1a)
+ (version "0.1")
+ (author "LibrePCB")
+ (created 2015-07-05T12:43:52Z)
+ (modified 2015-07-05T18:01:33Z)
+ (deprecated false)
+ (name "Diodes")
+ (name (locale "de_DE") "Dioden")
+ (description "")
+ (keywords "diode")
+ (parent null)
+)

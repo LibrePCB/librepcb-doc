@@ -1,0 +1,12 @@
+(librepcb_component_category
+ (uuid 994219f3-f3e1-49d2-a57f-6603e8b84273)
+ (version "0.1")
+ (author "me")
+ (created 2017-12-14T22:50:18Z)
+ (modified 2017-12-14T22:50:18Z)
+ (deprecated false)
+ (name "Integrated Circuits")
+ (description "")
+ (keywords "")
+ (parent null)
+)

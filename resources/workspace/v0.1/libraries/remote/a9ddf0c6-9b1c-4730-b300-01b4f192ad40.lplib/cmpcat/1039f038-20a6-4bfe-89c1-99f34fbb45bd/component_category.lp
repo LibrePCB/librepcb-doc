@@ -1,0 +1,13 @@
+(librepcb_component_category
+ (uuid 1039f038-20a6-4bfe-89c1-99f34fbb45bd)
+ (version "0.1")
+ (author "LibrePCB")
+ (created 2015-07-05T12:43:52Z)
+ (modified 2015-07-05T18:01:33Z)
+ (deprecated false)
+ (name "Resistors")
+ (name (locale "de_DE") "Widerstände")
+ (description "")
+ (keywords "resistor,resistance")
+ (parent null)
+)

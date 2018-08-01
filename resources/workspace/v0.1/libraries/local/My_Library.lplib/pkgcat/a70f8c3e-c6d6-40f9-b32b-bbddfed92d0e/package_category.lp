@@ -1,0 +1,12 @@
+(librepcb_package_category
+ (uuid a70f8c3e-c6d6-40f9-b32b-bbddfed92d0e)
+ (version "0.1")
+ (author "me")
+ (created 2017-12-16T17:13:13Z)
+ (modified 2017-12-16T17:13:13Z)
+ (deprecated false)
+ (name "SOT")
+ (description "")
+ (keywords "")
+ (parent null)
+)
