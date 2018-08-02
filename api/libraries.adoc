@@ -61,13 +61,14 @@ curl 'https://api.librepcb.org/api/v1/libraries/v0.1'
   {
     "uuid": "e3ce49bf-e959-4092-8b48-aeead756f8d1",
     "name": {
+      "default": "Molex",
       "en_US": "Molex"
     },
     "description": {
-      "en_US": "Connectors, Sockets and more"
+      "default": "Connectors, Sockets and more"
     },
     "keywords": {
-      "en_US": "connector,molex"
+      "default": "connector,molex"
     },
     "author": "LibrePCB",
     "version": "0.0.1",
