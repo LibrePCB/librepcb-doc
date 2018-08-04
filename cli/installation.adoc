@@ -1,0 +1,45 @@
+[#cli-installation]
+=== Installation
+
+[discrete]
+==== Method 1: Installer
+
+If you have installed LibrePCB with the installer (as described 
+<<gettingstarted-installation,here>>), you should already have the `librepcb-cli`
+tool available in the installation directory.
+
+[discrete]
+==== Method 2: Portable Package
+
+Alternatively you could run `librepcb-cli` without installing it.
+
+[discrete]
+===== Windows
+:windows-zip-filename: librepcb-nightly-windows-x86.zip
+:windows-zip-url: https://download.librepcb.org/nightly_builds/master/librepcb-nightly-windows-x86.zip
+
+Download and extract {windows-zip-url}[{windows-zip-filename}], then
+run the contained file `bin\librepcb-cli.exe`.
+
+[discrete]
+===== Linux
+:linux-appimage-filename: librepcb-cli-nightly-linux-x86_64.AppImage
+:linux-appimage-url: https://download.librepcb.org/nightly_builds/master/librepcb-cli-nightly-linux-x86_64.AppImage
+
+Download {linux-appimage-url}[{linux-appimage-filename}], make it executable
+and start it:
+
+[source,bash,subs="attributes"]
+----
+wget "{linux-appimage-url}"
+chmod +x ./{linux-appimage-filename}
+./{linux-appimage-filename}
+----
+
+[discrete]
+===== Mac
+:dmg-filename: librepcb-cli-nightly-mac-x86_64.dmg
+:dmg-url: https://download.librepcb.org/nightly_builds/master/librepcb-cli-nightly-mac-x86_64.dmg
+
+Download {dmg-url}[{dmg-filename}] and double-click it. Then drag and drop the
+app onto the "Applications" icon of Finder.

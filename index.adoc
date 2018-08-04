@@ -11,4 +11,5 @@
 
 include::about/index.adoc[]
 include::getting_started/index.adoc[]
+include::cli/index.adoc[]
 include::api/index.adoc[]
