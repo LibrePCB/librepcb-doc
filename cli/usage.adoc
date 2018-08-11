@@ -1,0 +1,111 @@
+[#cli-usage]
+=== Usage
+
+Usage instructions and available options can be shown with `--help`:
+
+.Command
+[source,bash]
+----
+$ ./librepcb-cli --help
+----
+
+.Output
+----
+Usage: ./librepcb-cli [options] command
+LibrePCB Command Line Interface
+
+Options:
+  -h, --help     Displays this help.
+  -v, --version  Displays version information.
+  --verbose      Verbose output.
+
+Arguments:
+  command        The command to execute.
+
+Commands:
+  open-project   Open a project to execute project-related tasks.
+----
+
+==== Command `open-project`
+
+This command opens a LibrePCB project and lets you execute some tasks with it.
+
+.Command
+[source,bash]
+----
+$ ./librepcb-cli open-project --help
+----
+
+.Output
+----
+Usage: ./librepcb-cli [options] open-project [command_options] project
+LibrePCB Command Line Interface
+
+Options:
+  -h, --help                     Displays this help.
+  -v, --version                  Displays version information.
+  --verbose                      Verbose output.
+  --erc                          Run the electrical rule check, print all
+                                 non-approved warnings/errors and report failure
+                                 (exit code = 1) if there are non-approved
+                                 messages.
+  --export-schematics <file>     Export schematics to given file(s). Existing
+                                 files will be overwritten. Supported file
+                                 extensions: pdf
+  --export-pcb-fabrication-data  Export PCB fabrication data (Gerber/Excellon)
+                                 according the fabrication output settings of
+                                 boards. Existing files will be overwritten.
+  --board <name>                 The name of the board(s) to export. Can be
+                                 given multiple times. If not set, all boards
+                                 are exported.
+  --save                         Save project before closing it (useful to
+                                 upgrade file format).
+
+Arguments:
+  open-project                   Open a project to execute project-related
+                                 tasks.
+  project                        Path to project file (*.lpp).
+----
+
+[discrete]
+===== Example: Check ERC Messages and Export Schematics & Boards
+
+This command is useful for Continuous Integration of LibrePCB projects because
+it reports failure if you check in projects with non-approved ERC messages. In
+addition, it generates all production data so you don't have to do it manually.
+
+.Command
+[source,bash]
+----
+$ ./librepcb-cli open-project \
+    --erc \
+    --export-schematics="output/{{VERSION}}/{{PROJECT}}_Schematics.pdf" \
+    --export-pcb-fabrication-data \
+    MyProject.lpp
+----
+
+.Output
+----
+Open project 'MyProject.lpp'...
+Run ERC...
+  Approved messages: 7
+  Non-approved messages: 2
+    - [WARNING] Net signal connected to less than two pins: "CAN_RX"
+    - [WARNING] Net signal connected to less than two pins: "JTCK"
+Export schematics to 'output/{{VERSION}}/{{PROJECT}}_Schematics.pdf'...
+  => 'output/v1/MyProject_Schematics.pdf'
+Export PCB fabrication data...
+  Board 'default':
+    => 'output/v1/gerber/MyProject_DRILLS-PTH.drl'
+    => 'output/v1/gerber/MyProject_OUTLINES.gbr'
+    => 'output/v1/gerber/MyProject_COPPER-TOP.gbr'
+    => 'output/v1/gerber/MyProject_COPPER-BOTTOM.gbr'
+    => 'output/v1/gerber/MyProject_SOLDERMASK-TOP.gbr'
+    => 'output/v1/gerber/MyProject_SOLDERMASK-BOTTOM.gbr'
+    => 'output/v1/gerber/MyProject_SILKSCREEN-TOP.gbr'
+    => 'output/v1/gerber/MyProject_SILKSCREEN-BOTTOM.gbr'
+Finished with errors!
+----
+
+In this example, the application reported errors and exited with code 1
+because there are non-approved ERC messages.
