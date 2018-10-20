@@ -19,7 +19,16 @@ files created with older LibrePCB versions. We will start providing an upgrade
 mechanism as soon as we publish the first stable release of LibrePCB.
 ====
 
-==== Method 1: Installer
+.Note for macOS users
+[NOTE]
+====
+Because Apple doesn't provide the ability to run macOS without purchasing their
+hardware, we're not able to test LibrePCB on macOS. Don't hesitate to
+https://github.com/LibrePCB/LibrePCB/issues[open an issue] if LibrePCB doesn't
+work as expected.
+====
+
+==== Online Installer
 
 The recommended way to install LibrePCB is to use the online installer.
 It provides the following features:
@@ -60,15 +69,7 @@ chmod +x ./{linux-installer-filename}
 
 Download and run {mac-installer-url}[{mac-installer-filename}]. "Unverified" packages may have to be opened via right-click.
 
-[IMPORTANT]
-====
-Because Apple doesn't provide the ability to run macOS without purchasing their
-hardware, we're not able to automatically test LibrePCB for macOS. Feel free to
-https://github.com/LibrePCB/LibrePCB/issues[open an issue] if LibrePCB doesn't
-work as expected.
-====
-
-==== Method 2: Portable Package
+==== Portable Package
 
 Alternatively you could run LibrePCB without installing it. But then you don't
 get an update mechanism, no start menu entries are created, and `*.lpp` files
@@ -99,16 +100,8 @@ chmod +x ./{linux-appimage-filename}
 
 [discrete]
 ===== Mac
-:dmg-filename: librepcb-nightly-mac-x86_64.dmg
-:dmg-url: https://download.librepcb.org/nightly_builds/master/librepcb-nightly-mac-x86_64.dmg
+:mac-bundle-filename: librepcb-nightly-mac-x86_64.dmg
+:mac-bundle-url: https://download.librepcb.org/nightly_builds/master/librepcb-nightly-mac-x86_64.dmg
 
-Download {dmg-url}[{dmg-filename}] and double-click it. Then drag and drop the
-app onto the "Applications" icon of Finder.
-
-[IMPORTANT]
-====
-Because Apple doesn't provide the ability to run macOS without purchasing their
-hardware, we're not able to automatically test LibrePCB for macOS. Feel free to
-https://github.com/LibrePCB/LibrePCB/issues[open an issue] if LibrePCB doesn't
-work as expected.
-====
+Download {mac-bundle-url}[{mac-bundle-filename}] and double-click it.
+Then drag and drop the app onto the "Applications" icon of Finder.

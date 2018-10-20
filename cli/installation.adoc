@@ -2,14 +2,14 @@
 === Installation
 
 [discrete]
-==== Method 1: Installer
+==== Online Installer
 
 If you have installed LibrePCB with the installer (as described 
 <<gettingstarted-installation,here>>), you should already have the `librepcb-cli`
 tool available in the installation directory.
 
 [discrete]
-==== Method 2: Portable Package
+==== Portable Package
 
 Alternatively you could run `librepcb-cli` without installing it.
 
@@ -38,8 +38,8 @@ chmod +x ./{linux-appimage-filename}
 
 [discrete]
 ===== Mac
-:dmg-filename: librepcb-cli-nightly-mac-x86_64.dmg
-:dmg-url: https://download.librepcb.org/nightly_builds/master/librepcb-cli-nightly-mac-x86_64.dmg
+:mac-bundle-filename: librepcb-cli-nightly-mac-x86_64.dmg
+:mac-bundle-url: https://download.librepcb.org/nightly_builds/master/librepcb-cli-nightly-mac-x86_64.dmg
 
-Download {dmg-url}[{dmg-filename}] and double-click it. Then drag and drop the
-app onto the "Applications" icon of Finder.
+Download {mac-bundle-url}[{mac-bundle-filename}] and double-click it. Then drag
+and drop the app onto the "Applications" icon of Finder.
