@@ -17,9 +17,3 @@ capacitor just in the context menu of the Device:
 image:img/create_board_change_device.png[alt="Change Device"]
 
 Then you can start adding vias and traces to connect the pads together.
-
-[WARNING]
-====
-The functionality of the board editor is still very limited. Some very
-important features (like airwires) are currently under development.
-====

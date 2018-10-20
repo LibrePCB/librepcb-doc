@@ -19,10 +19,8 @@ files (and some money) to your PCB manufacturer and wait for the PCBs :)
 
 [WARNING]
 ====
-The production data generator is not very mature yet. It's highly recommended
-to cross-check the generated files with 3rd-party tools like 
-link:http://gerbv.geda-project.org[gerbv] or
-link:https://gerber.ucamco.com/[the reference gerber viewer].
-
-LibrePCB is not responsible for any implications caused by wrong production data.
+It's highly recommended to cross-check the generated files with 3rd-party tools
+like http://gerbv.geda-project.org[gerbv] or
+https://gerber.ucamco.com/[the reference gerber viewer]. LibrePCB is not
+responsible for any implications caused by wrong production data.
 ====
