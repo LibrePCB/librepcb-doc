@@ -9,6 +9,10 @@
 :pygments-style: monokai
 :docinfo: shared
 
+// LibrePCB Variables
+:version: nightly
+:releases_url: https://download.librepcb.org/nightly_builds/master
+
 include::about/index.adoc[]
 include::getting_started/index.adoc[]
 include::cli/index.adoc[]
