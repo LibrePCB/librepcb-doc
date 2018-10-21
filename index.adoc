@@ -10,8 +10,8 @@
 :docinfo: shared
 
 // LibrePCB Variables
-:version: nightly
-:releases_url: https://download.librepcb.org/nightly_builds/master
+:version: 0.1.0-rc1
+:releases_url: https://download.librepcb.org/releases/{version}
 
 include::about/index.adoc[]
 include::getting_started/index.adoc[]
