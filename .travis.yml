@@ -5,7 +5,7 @@ notifications:
     on_failure: change
 
 install:
-  - gem install asciidoctor pygments.rb rouge
+  - gem install asciidoctor pygments.rb rouge concurrent-ruby
   - gem install asciidoctor-pdf --pre
 
 script:
