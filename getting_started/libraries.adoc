@@ -146,15 +146,15 @@ After clicking on _Finish_, your first Component Category is ready to be used :)
 [#gettingstarted-libraries-sym]
 ====== Symbol
 
-Now we need to create a Symbol for the OpAmp. So this time you click on the
-_Symbol_ button in the _New Library Element_ wizard. Then fill in some metadata
+Now we need to create a Symbol for the OpAmp. Click on the
+_Symbol_ button in the _New Library Element_ wizard, fill in some metadata
 and click on _Finish_. Now you can place the required pins (choose reasonable
-and unique names!), add the texts `{{NAME}}` and `{{VALUE}}` and draw the
-outline. The result could look like this:
+and unique names!), add the `{{NAME}}` and `{{VALUE}}` variables and draw the
+outline. The result should look like this:
 
 image:img/create_symbol.png[alt="Create Symbol"]
 
-_Yeah, the overlapping pin texts look ugly, but let's ignore that for the moment ;)_
+_Yes, the overlapping pin texts look ugly, but let's ignore that for the moment ;)_
 
 .Following are the most important rules to create reusable Symbols:
 [TIP]
@@ -167,8 +167,8 @@ _Yeah, the overlapping pin texts look ugly, but let's ignore that for the moment
 - Don't add multiple pins with the same name. Even for a microcontroller which
   has multiple GND pins, the symbol should have only one GND pin. A symbol
   represents the _electrical_ interface of a part, not the _mechanical_!
-- Add the texts `{{NAME}}` and `{{VALUE}}`. Most symbols should have exactly
-  these two texts -- no more, no less.
+- Add the `{{NAME}}` and `{{VALUE}}` variables. Most symbols should have exactly
+  these two placeholders -- no more, no less.
 - The origin (coordinate 0,0) should be in the center of the symbol (here
   the symbol can be grabbed with the mouse).
 - Place all pins on the 2.54mm grid.
@@ -242,10 +242,10 @@ image:img/create_component.png[alt="Component Editor"]
 
 [NOTE]
 ====
-For this simple example, this procedure may feel a little bit complicated. This
-is basically caused by the high flexibility of the library concept. The Component
-which we created now actually uses only the very basic library features, but
-as soon as you understand the whole library concept, you will be able to easily
+For this simple example, this procedure may feel complicated. This
+is due to the broad flexibility of the librepcb library approach. The Component
+which we created actually only uses basic library features, but
+as soon as you understand the our library concepts, you will be able to easily
 create much more powerful library elements. We're sure you will love the
 flexibility of the library concept ;)
 ====
