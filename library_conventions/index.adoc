@@ -1,0 +1,7 @@
+[#libraryconventions]
+== Library Conventions
+:imagesdir: library_conventions
+
+Here we collect conventions / guidelines to be used when designing libraries.
+
+include::symbols.adoc[]
