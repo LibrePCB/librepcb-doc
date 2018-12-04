@@ -24,6 +24,31 @@ instead. This way you can choose a reasonable
 <<libraryconventions-symbols-pinplacement,pin placement>>.
 
 
+[#libraryconventions-symbols-naming]
+==== Naming
+
+Following conventions apply to symbol names:
+
+- Language must be American English (en_US)
+- Title case (e.g. "Capacitor Bipolar" instead of "Capacitor bipolar")
+- Singular names, not plural (e.g. "Diode" instead of "Diodes")
+- If reasonable, start with the generic term (e.g. "Supply GND" instead
+  of "GND Supply") to improve navigation in sorted lists (all supply
+  symbols are listed next to each other)
+
+
+// Image spans across multiple sections
+image::img/symbol_stm32.png[alt="Example Symbol",role="right"]
+
+
+[#libraryconventions-symbols-origin]
+==== Origin
+
+The origin _(0, 0)_ must be in the center of the symbol (not inclusing
+text elements). For non-symmetrical symbols it must be as close as
+possible to the center, but still on the 2.54mm grid.
+
+
 [#libraryconventions-symbols-pinplacement]
 ==== Pin Placement
 
