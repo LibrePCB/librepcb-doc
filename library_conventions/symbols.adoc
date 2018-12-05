@@ -44,8 +44,8 @@ image::img/symbol_stm32.png[alt="Example Symbol",role="right"]
 [#libraryconventions-symbols-origin]
 ==== Origin
 
-The origin _(0, 0)_ must be in the center of the symbol (not inclusing
-text elements). For non-symmetrical symbols it must be as close as
+The origin _(0, 0)_ must be at the center of the symbol (not including
+text elements). For non-symmetrical symbols it should be as close as
 possible to the center, but still on the 2.54mm grid.
 
 
@@ -72,7 +72,7 @@ If the function of a pin is absolutely clear (e.g. anode/cathode of a diode),
 choose its abbreviated functionality as name (e.g. "A" for anode and "C" for
 cathode). If the functionality is not clear in the symbol (because it's
 defined by the component using that symbol), just use numbers starting with
-"1" at top left and incrementing counterclockwise.
+"1" at top left and increment them counterclockwise.
 
 
 [#libraryconventions-symbols-textelements]
@@ -90,7 +90,7 @@ outlines.
 
 image::img/symbol_text_anchor_crystal.png[alt="Crystal Symbol Text Anchor",role="left"]
 
-Other shaped symbols may have text elements placed differently, see for
+Irregularly shaped symbols may have text elements placed differently, see for
 example this crystal. Keep in mind that the value of a component can consist
 of several lines, so there should always be enough space available for it.
 
