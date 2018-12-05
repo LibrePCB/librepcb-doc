@@ -91,8 +91,9 @@ outlines.
 image::img/symbol_text_anchor_crystal.png[alt="Crystal Symbol Text Anchor",role="left"]
 
 Irregularly shaped symbols may have text elements placed differently, see for
-example this crystal. Keep in mind that the value of a component can consist
-of several lines, so there should always be enough space available for it.
+example the crystal at the left. Keep in mind that the value of a component can
+consist of several lines, so there should always be enough space available for
+it.
 
 
 [#libraryconventions-symbols-grabarea]
