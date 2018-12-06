@@ -156,22 +156,24 @@ image:img/create_symbol.png[alt="Create Symbol"]
 
 _Yes, the overlapping pin texts look ugly, but let's ignore that for the moment ;)_
 
-.Following are the most important rules to create reusable Symbols:
-[TIP]
+.Symbol Conventions
+[NOTE]
 ====
-- Create generic symbols, not specific ones. Generic symbols can be shared
-  between many components, specific symbols not.
-- Don't name pins according their location in the package. Just use incrementing
-  numbers (i.e. _1_, _2_, _3_, ...) or the electrical purpose (e.g. _Source_,
-  _Drain_, _Gate_) where applicable.
-- Don't add multiple pins with the same name. Even for a microcontroller which
-  has multiple GND pins, the symbol should have only one GND pin. A symbol
-  represents the _electrical_ interface of a part, not the _mechanical_!
-- Add the `{{NAME}}` and `{{VALUE}}` text elements. Most symbols should have
-  exactly these two placeholders -- no more, no less.
-- The origin (coordinate 0,0) should be in the center of the symbol (here
-  the symbol can be grabbed with the mouse).
-- Place all pins on the 2.54mm grid.
+For details about how symbols should be designed, please take a look at our
+<<libraryconventions-symbols,Symbol Conventions>>. The most important rules are:
+
+- For generic components, create generic symbols (e.g. _Diode_ instead of
+  _1N4007_).
+- The origin (coordinate _0,0_) should be in (or close to) the center of the
+  symbol.
+- Pins must represent the _electrical_ interface of a part, not the
+  _mechanical_. So don't add multiple pins with the same function (e.g. _GND_)
+  and don't name pins according their location in the package. Name them
+  according their electrical purpose (e.g. _IN+_, _IN-_, _OUT_) instead, or
+  just use incrementing numbers (i.e. _1_, _2_, _3_, ...).
+- Pins should be grouped by functionality and must be placed on the 2.54mm
+  grid.
+- There should be text elements for `{{NAME}}` and `{{VALUE}}`.
 ====
 
 
