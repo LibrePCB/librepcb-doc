@@ -22,7 +22,7 @@ Internet. Most of these libraries are hosted at https://github.com/LibrePCB-Libr
 ====
 The provided libraries currently contain only a few elements. You are welcome to
 contribute more elements by opening pull requests at
-https://github.com/LibrePCB-Libraries!
+https://github.com/LibrePCB-Libraries[https://github.com/LibrePCB-Libraries]!
 ====
 
 The most important library is the _LibrePCB Base_ library because it contains the
