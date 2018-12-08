@@ -14,5 +14,9 @@
 :releases_url: https://download.librepcb.org/releases/{version}
 
 include::about/index.adoc[]
+
 include::getting_started/index.adoc[]
+
+include::library_conventions/index.adoc[]
+
 include::cli/index.adoc[]
