@@ -300,9 +300,6 @@ That is already enough for a simple footprint.
 ====
 - Create generic packages, not specific ones. For example _DIP08_ is _DIP08_ --
   no matter whether it's an OpAmp, an EEPROM or a microcontroller.
-- Don't name pins according their location in the package. Just use incrementing
-  numbers (i.e. _1_, _2_, _3_, ...) or the electrical purpose (e.g. _Source_,
-  _Drain_, _Gate_) where applicable.
 - Pads are always oriented from the top-view. When a footprint needs to appear
   on the bottom of a board, for example with through-hole components, LibrePCB
   handles this at design time by mirroring the pad layout.
