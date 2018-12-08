@@ -2,8 +2,8 @@
 == Getting Started With LibrePCB
 :imagesdir: getting_started
 
-This chapter will give you a quick introduction into LibrePCB, starting from where
-to download it and ending with how to generate the production data for the PCB.
+This chapter provides a quick introduction into LibrePCB, starting from where
+to download it and ending with how to generate PCB production data.
 
 include::installation.adoc[]
 

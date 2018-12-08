@@ -4,9 +4,9 @@
 .Disclaimer
 [WARNING]
 ====
-Please note that LibrePCB is a very young software and thus (probably)
-isn't as mature as other EDA tools are. Use LibrePCB at your own risk,
-accepting that we don't take responsibility for any implications caused
+Please note that LibrePCB is still in early development and thus
+isn't as mature as other EDA tools. Use LibrePCB at your own risk,
+accepting that we don't take responsibility for any issues caused
 by software bugs or other reasons. For details, please read the full
 https://github.com/LibrePCB/LibrePCB/blob/master/LICENSE.txt[license text].
 ====

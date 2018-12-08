@@ -14,8 +14,8 @@ button:
 image:img/create_board_production_data_generator.png[alt="Production Data Generator"]
 
 Then just click on the _Generate Gerber & Excellon Files_ button and LibrePCB
-places the generated files in your project's _output_ subdirectory. Send these
-files (and some money) to your PCB manufacturer and wait for the PCBs :)
+places the generated files in your project's _output_ subdirectory. These
+files are then sent your PCB manufacturer for production.
 
 [WARNING]
 ====
