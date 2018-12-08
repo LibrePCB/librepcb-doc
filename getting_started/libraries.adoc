@@ -149,8 +149,8 @@ After clicking on _Finish_, your first Component Category is ready to be used :)
 Now we need to create a Symbol for the OpAmp. Click on the
 _Symbol_ button in the _New Library Element_ wizard, fill in some metadata
 and click on _Finish_. Now you can place the required pins (choose reasonable
-and unique names!), add the `{{NAME}}` and `{{VALUE}}` variables and draw the
-outline. The result should look like this:
+and unique names!), add the `{{NAME}}` and `{{VALUE}}` text elements and draw
+the outline. The result should look like this:
 
 image:img/create_symbol.png[alt="Create Symbol"]
 
@@ -167,8 +167,8 @@ _Yes, the overlapping pin texts look ugly, but let's ignore that for the moment 
 - Don't add multiple pins with the same name. Even for a microcontroller which
   has multiple GND pins, the symbol should have only one GND pin. A symbol
   represents the _electrical_ interface of a part, not the _mechanical_!
-- Add the `{{NAME}}` and `{{VALUE}}` variables. Most symbols should have exactly
-  these two placeholders -- no more, no less.
+- Add the `{{NAME}}` and `{{VALUE}}` text elements. Most symbols should have
+  exactly these two placeholders -- no more, no less.
 - The origin (coordinate 0,0) should be in the center of the symbol (here
   the symbol can be grabbed with the mouse).
 - Place all pins on the 2.54mm grid.

@@ -21,7 +21,7 @@ _CC0-1.0_ as this allows everyone to use your project without restrictions.
 ====
 While it is possible to create the Project outside the Workspace directory,
 it's recommended to store all Projects within the Workspace because these
-are then included in the Control Panel by default making them easy to
+are then shown in the Control Panel by default making them easy to
 locate and use. Projects outside the Workspace need to be opened by
 specifying their location in an open dialog.
 ====
