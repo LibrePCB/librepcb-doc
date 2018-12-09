@@ -297,22 +297,25 @@ image:img/create_package_graphics.png[alt="Create Package Graphics"]
 
 That is already enough for a simple footprint.
 
-.Following are the most important rules to create reusable Packages:
-[TIP]
+.Package Conventions
+[NOTE]
 ====
+For details about how Packages should be designed, please take a look at our
+<<libraryconventions-packages,Package Conventions>>. The most important rules are:
+
 - Create generic packages, not specific ones. For example _DIP08_ is _DIP08_ --
   no matter whether it's an OpAmp, an EEPROM or a microcontroller.
-- Pads are always oriented from the top-view. When a footprint needs to appear
-  on the bottom of a board, for example with through-hole components, LibrePCB
-  handles this at design time by mirroring the pad layout.
+- The origin (coordinate _0,0_) should be in the center of the Package body.
+- Footprints must be drawn from the top-view. When a footprint needs to appear
+  on the bottom of a board, this can be done in the board by mirroring it.
 - Add *all* pads of a package, not only the one you currently need. For example
-  if the package has a thermal pad, you should add it, even if you don't need it.
-- Name pads according specifications (datasheet or IPC-7351), typically just _1_,
-  _2_, _3_ etc. Never name pads according their electrical purpose (e.g. _Gate_)!
-- Add the texts `{{NAME}}` and `{{VALUE}}`. Most footprints should have exactly
-  these two texts -- no more, no less.
-- The origin (coordinate 0,0) should be in the center of the footprint (here
-  the footprint can be grabbed with the mouse).
+  if the package has a thermal pad, you should add it, even if you currently
+  don't need it.
+- Name pads according IPC-7351 (if applicable), typically just _1_, _2_, _3_
+  etc. Only name pads according their electrical purpose (e.g. _Gate_) if the
+  Package is very specific for a particular purpose.
+- Pin 1 should always be at the top left.
+- There should be text elements for `{{NAME}}` and `{{VALUE}}`.
 ====
 
 
