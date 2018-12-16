@@ -28,7 +28,7 @@ Packages must be created.
 *Don't think about the land pattern (i.e. footprint) of the part* -- it's not
 relevant for this decision. Even if a package can be mounted differently on
 a PCB (e.g. a THT resistor can be mount horizontally or vertically) and thus
-require different footprints, only one Package is needed.
+require different footprints, only one Package is needed. Similarly, two different-looking parts that have the same land pattern (e.g. a SMD resistor and a SMD LED) should still be two separate Packages.
 ====
 
 .Color (e.g. 0805 LED)
