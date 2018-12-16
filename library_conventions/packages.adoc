@@ -69,7 +69,7 @@ The following conventions apply to Package names:
 * *If {ipc7351-naming-pdf}[IPC-7351] specifies a name for a given package, use
   that name* (e.g. "SOT95P280X145-5" instead of "SOT23-5"). Alternative names
   (like "SOT23-5") should be added to the comma-separated keywords list and maybe to the description.
-* *Size information must be given in millimeters*, not inches or mils. For
+* *Size information must use metric units*, not imperial units. For
   packages which are well known by their size in imperial units (e.g. "0805" which is
   "2012" in metric), it's recommended to write the well known name in
   parentheses. For example, a chip resistor could be named "RESC2012X70 (0805)".
