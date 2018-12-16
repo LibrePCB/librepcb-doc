@@ -15,7 +15,7 @@ https://github.com/LibrePCB/librepcb-doc/issues?q=is%3Aissue+label%3A%22Conventi
 ==== Scope
 
 The most important thing to consider when creating a Package is the scope
-of it. Since LibrePCB handles footprints different than other EDA tools,
+of it. Since LibrePCB handles footprints differently than other EDA tools,
 special attention is required here.
 
 Actually it's quite simple: Just imagine how the part looks exactly (the
@@ -26,7 +26,7 @@ Packages must be created.
 [TIP]
 ====
 *Don't think about the land pattern (i.e. footprint) of the part* -- it's not
-relevant for this decision. Even if a package can be mount differently on
+relevant for this decision. Even if a package can be mounted differently on
 a PCB (e.g. a THT resistor can be mount horizontally or vertically) and thus
 require different footprints, only one Package is needed.
 ====
@@ -41,7 +41,7 @@ with the proper color in the 3D PCB preview (once LibrePCB supports 3D models).
 
 .Height (e.g. SO-8)
 ====
-Some packages are available with different heights, e.g. SO-8 is available with
+Some packages are available in different heights. For instance, SO-8 is available with
 heights of 1.2mm and 1.4mm. *As the 3D models would be different, separate
 Packages are needed*.
 
@@ -51,28 +51,28 @@ a device with a height of 1.3mm you can use the Package with a height of 1.4mm._
 
 .Mounting variants (e.g. TO220)
 ====
-Many packages can be mount either vertically or horizontally, for example the
+Many packages can be mounted either vertically or horizontally, for example the
 TO220. If mounted horizontally, there might be a hole in the PCB to screw the
 metal tab down to the PCB, or you may want to solder the tab to the PCB without
 a hole in it. For all these cases *only one Package is needed* -- the different
-mounting variants should be handled by different footprints inside the Package.
+mounting variants should be handled by different footprint variants inside the Package.
 ====
 
 
 [#libraryconventions-packages-naming]
 ==== Naming
 
-Following conventions apply to Package names:
+The following conventions apply to Package names:
 
 * *Language must be American English* (en_US), if applicable (many Packages
   have language-neutral names anyway).
 * *If {ipc7351-naming-pdf}[IPC-7351] specifies a name for a given package, use
   that name* (e.g. "SOT95P280X145-5" instead of "SOT23-5"). Alternative names
-  (like "SOT23-5") should be added to the comma-separated keywords list.
+  (like "SOT23-5") should be added to the comma-separated keywords list and maybe to the description.
 * *Size information must be given in millimeters*, not inches or mils. For
-  packages which are well known by their size in inches (e.g. "0805" which is
+  packages which are well known by their size in imperial units (e.g. "0805" which is
   "2012" in metric), it's recommended to write the well known name in
-  parentheses. For example a resistor could be called "RESC2012X70 (0805)".
+  parentheses. For example, a chip resistor could be named "RESC2012X70 (0805)".
 * For packages which are available with different pin counts, *append the pin
   count with a hyphen as separator and omit leading zeros* (e.g. "DIP-8" instead
   of "DIP08").
@@ -83,8 +83,8 @@ Following conventions apply to Package names:
 [#libraryconventions-packages-pads]
 ==== Pads
 
-* *Always add all pads of Packages*, even those which are not connected in
-  some parts! For example the package "TO220" has a metal tab, so you should
+* *Always add all pads of Packages*, even those which are not always connected.
+For example, the package "TO220" has a metal tab, so you should
   define it as a pad, no matter if it's often not connected (and even not
   connectable when mounted vertically).
 * *Use pad names according {ipc7351-pdf}[IPC-7351]* (if applicable). For
@@ -99,10 +99,10 @@ Following conventions apply to Package names:
 ==== Footprint Variants
 
 Within a Package there can be multiple footprint variants. They are intended
-to support following use-cases:
+to support the following use-cases:
 
-* *Mounting variants*: For example a THT resistor can be mount either
-  vertically or horizontally with various pad distance. Every mounting
+* *Mounting variants*: For example, a THT resistor can be mounted either
+  vertically or horizontally with various pad distances. Every common mounting
   variant should be available as footprint variants.
 * *Soldering techniques*: Many packages can be soldered either by reflow-,
   wave- or hand-soldering, which usually require different land patterns. For
@@ -124,7 +124,7 @@ variants.
 ====
 As a given Package might support multiple of the use-cases above, all suitable
 combinations of them should be added. For example a Package which should have
-all three density levels as defined in IPC-7351 and can be mount either
+all three density levels as defined in IPC-7351 and can be mounted either
 vertically or horizontally would need six footprint variants to support all
 possible use-cases.
 ====
@@ -171,7 +171,7 @@ the datasheet.
 ==== Orientation
 
 *Footprints must be drawn from the top-view*. When a footprint needs to appear
-on the bottom of a board, this can be done in the board by mirroring it.
+on the bottom of a board, this can be done in the board editor by mirroring it.
 
 *Pin 1 should always be at the top left*, as defined in
 {ipc7351c-slides}[IPC-7351C "Level A"] (slide 22).
@@ -197,6 +197,8 @@ bottom center, slightly below the package body and aligned at the top center.
 placement layer*. Otherwise the text might be unreadable on silkscreen. In
 addition, text elements should usually be placed outside the Package body to
 still see them on silkscreen of an assembled PCB.
+
+Keep in mind that the bottom-aligned anchor is placed on the text baseline. This means that some letters like "g" or "y" might extend slightly below the anchor.
 
 // Image floats at the right of the table
 .Typical footprint name properties
