@@ -77,7 +77,9 @@ The following conventions apply to Package names:
   count with a hyphen as separator and omit leading zeros* (e.g. "DIP-8" instead
   of "DIP08").
 * For manufacturer-specific packages, start with the manufacturers name
-  (e.g. "Molex 53261-06").
+  (e.g. "Molex 53261-06"). _Note: Libraries do not act as namespaces for Package
+  names, so you should start the Package name with the manufacturers name even
+  if the Package is located in a manufacturer-specific library._
 
 
 [#libraryconventions-packages-pads]
