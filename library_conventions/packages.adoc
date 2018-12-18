@@ -33,10 +33,11 @@ require different footprints, only one Package is needed. Similarly, two differe
 
 .Color (e.g. 0805 LED)
 ====
-Even if a red 0805 LED has exactly the same footprint as a blue 0805 LED,
-they should have *separate Packages because of the different color*. This way
-a Device can link to the Package with the proper color, and thus it will appear
-with the proper color in the 3D PCB preview (once LibrePCB supports 3D models).
+Even if a 0805 LED with a transparent lens has exactly the same footprint as a 
+0805 LED with a red lens, they should have *separate Packages because of the
+different color*. This way a Device can link to the Package with the proper
+color, and thus it will appear with the proper color in the 3D PCB preview
+(once LibrePCB supports 3D models).
 ====
 
 .Height (e.g. SO-8)
