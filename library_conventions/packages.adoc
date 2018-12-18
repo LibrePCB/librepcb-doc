@@ -18,17 +18,18 @@ The most important thing to consider when creating a Package is the scope
 of it. Since LibrePCB handles footprints differently than other EDA tools,
 special attention is required here.
 
-Think about the appearance of the part (the
-mechanical shape, dimension and color). If two parts look exactly (or _almost_)
-equal, they can use the same Package. If they look different, two separate
-Packages must be created.
+Think about the appearance of the part (the mechanical shape, dimension and
+color). If two parts look exactly (or _almost_) equal, they can use the same
+Package. If they look different, two separate Packages must be created.
 
 [TIP]
 ====
 *Don't think about the land pattern (i.e. footprint) of the part* -- it's not
 relevant for this decision. Even if a package can be mounted differently on
 a PCB (e.g. a THT resistor can be mount horizontally or vertically) and thus
-require different footprints, only one Package is needed. Similarly, two different-looking parts that have the same land pattern (e.g. a SMD resistor and a SMD LED) should still be two separate Packages.
+require different footprints, only one Package is needed. Similarly, two
+different-looking parts that have the same land pattern (e.g. a SMD resistor
+and a SMD LED) should still be two separate Packages.
 ====
 
 .Color (e.g. 0805 LED)
@@ -42,12 +43,13 @@ color, and thus it will appear with the proper color in the 3D PCB preview
 
 .Height (e.g. SO-8)
 ====
-Some packages are available in different heights. For instance, SO-8 is available with
-heights of 1.2mm and 1.4mm. *As the 3D models would be different, separate
-Packages are needed*.
+Some packages are available in different heights. For instance, SO-8 is
+available with heights of 1.2mm and 1.4mm. *As the 3D models would be different,
+separate Packages are needed*.
 
 _Note: To avoid creating too many Packages, a small tolerance is allowed. So for
-a device with a height of 1.3mm you might want to use the Package with a height of 1.4mm._
+a device with a height of 1.3mm you might want to use the Package with a height
+of 1.4mm._
 ====
 
 .Mounting variants (e.g. TO220)
@@ -56,7 +58,8 @@ Many packages can be mounted either vertically or horizontally, for example the
 TO220. If mounted horizontally, there might be a hole in the PCB to screw the
 metal tab down to the PCB, or you may want to solder the tab to the PCB without
 a hole in it. For all these cases *only one Package is needed* -- the different
-mounting variants should be handled by different footprint variants inside the Package.
+mounting variants should be handled by different footprint variants inside the
+Package.
 ====
 
 
@@ -69,16 +72,17 @@ The following conventions apply to Package names:
   have language-neutral names anyway).
 * *If {ipc7351-naming-pdf}[IPC-7351] specifies a name for a given package, use
   that name* (e.g. "SOT95P280X145-5" instead of "SOT23-5"). Alternative names
-  (like "SOT23-5") should be added to the comma-separated keywords list and maybe to the description.
-* *Size information must use metric units*, not imperial units. For
-  packages which are well known by their size in imperial units (e.g. "0805" which is
+  (like "SOT23-5") should be added to the comma-separated keywords list and
+  maybe to the description.
+* *Size information must use metric units*, not imperial units. For packages
+  which are well known by their size in imperial units (e.g. "0805" which is
   "2012" in metric), it's recommended to write the well known name in
   parentheses. For example, a chip resistor could be named "RESC2012X70 (0805)".
 * For packages which are available with different pin counts, *append the pin
   count with a hyphen as separator and omit leading zeros* (e.g. "DIP-8" instead
   of "DIP08").
-* For manufacturer-specific packages, start with the manufacturers name
-  (e.g. "Molex 53261-06"). _Note: Libraries do not act as namespaces for Package
+* For manufacturer-specific packages, start with the manufacturers name (e.g.
+  "Molex 53261-06"). _Note: Libraries do not act as namespaces for Package
   names, so you should start the Package name with the manufacturers name even
   if the Package is located in a manufacturer-specific library._
 
@@ -87,9 +91,9 @@ The following conventions apply to Package names:
 ==== Pads
 
 * *Always add all pads of Packages*, even those which are not always connected.
-For example, the package "TO220" has a metal tab, so you should
-  define it as a pad, no matter if it's often not connected (and even not
-  connectable when mounted vertically).
+  For example, the package "TO220" has a metal tab, so you should define it as
+  a pad, no matter if it's often not connected (and even not connectable when
+  mounted vertically).
 * *Use pad names according {ipc7351-pdf}[IPC-7351]* (if applicable). For
   Packages which are not covered by IPC-7351:
 ** If the function of a pad is absolutely clear, choose its abbreviated
@@ -201,7 +205,9 @@ placement layer*. Otherwise the text might be unreadable on silkscreen. In
 addition, text elements should usually be placed outside the Package body to
 still see them on silkscreen of an assembled PCB.
 
-Keep in mind that the bottom-aligned anchor is placed on the text baseline. This means that some letters like "g" or "y" might extend slightly below the anchor.
+Keep in mind that the bottom-aligned anchor is placed on the text baseline.
+This means that some letters like "g" or "y" might extend slightly below the
+anchor.
 
 // Image floats at the right of the table
 .Typical footprint name properties
