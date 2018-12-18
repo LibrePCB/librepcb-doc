@@ -47,7 +47,7 @@ heights of 1.2mm and 1.4mm. *As the 3D models would be different, separate
 Packages are needed*.
 
 _Note: To avoid creating too many Packages, a small tolerance is allowed. So for
-a device with a height of 1.3mm you can use the Package with a height of 1.4mm._
+a device with a height of 1.3mm you might want to use the Package with a height of 1.4mm._
 ====
 
 .Mounting variants (e.g. TO220)
