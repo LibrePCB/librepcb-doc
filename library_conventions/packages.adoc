@@ -18,7 +18,7 @@ The most important thing to consider when creating a Package is the scope
 of it. Since LibrePCB handles footprints differently than other EDA tools,
 special attention is required here.
 
-Actually it's quite simple: Just imagine how the part looks exactly (the
+Think about the appearance of the part (the
 mechanical shape, dimension and color). If two parts look exactly (or _almost_)
 equal, they can use the same Package. If they look different, two separate
 Packages must be created.
