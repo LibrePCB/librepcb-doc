@@ -109,7 +109,7 @@ to support the following use-cases:
   variant should be available as footprint variants.
 * *Soldering techniques*: Many packages can be soldered either by reflow-,
   wave- or hand-soldering, which usually require different land patterns. For
-  every suitable soldering technique there should be a corresponding footprint
+  every suitable soldering technique there could be a corresponding footprint
   variant.
 * *Density levels*: {ipc7351-pdf}[IPC-7351] specifies three different density
   levels for footprints:
