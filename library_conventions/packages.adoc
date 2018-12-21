@@ -145,8 +145,8 @@ possible use-cases.
 the most reasonable footprint to the top of the footprint list! The default
 footprint should fulfill these rules:
 
-* Generic packages: Designed according IPC density level B (if applicable)
-* Manufacturer-specific packages: Designed according datasheet
+* Generic packages: Designed according to IPC density level B (if applicable)
+* Manufacturer-specific packages: Designed according to datasheet
 * Suitable for reflow soldering (if applicable)
 * Most natural mounting variant (e.g. horizontal for THT resistors, or
   vertical for Transistor Outline packages)
