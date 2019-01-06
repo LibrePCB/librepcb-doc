@@ -193,6 +193,66 @@ image:img/footprint_pin1_sot669.png[]
 ====
 
 
+[#libraryconventions-packages-placement]
+==== Placement Layer
+
+The _Top Placement_ layer is intended to be printed on silkscreen and thus
+should contain information required for assembling the PCB. But don't put too
+many things on that layer as it would waste space on the PCB!
+
+Typically this layer should only contain some lines and dots to indicate where
+and in which orientation the device gets assembled, for example an outline and
+a dot next to pin 1.
+
+*The placement should be drawn according {ipc7351c-slides}[IPC-7351C]*. The
+most important rules are the following:
+
+* *It should stay visible after assembling the package* to allow reviewing
+  positioning and orientation of assembled devices. In other words, the
+  placement layer should primarily contain drawings _around_ the package's
+  body, but not _under_ it.
+* *Line width:* 0.15mm typical, 0.1mm minimum
+* *Clearance to copper layers:* Equal or greater than the line width
+
+.Placement layer examples (only placement and copper layers shown)
+====
+image:img/footprint_placement_sot23.png[]
+image:img/footprint_placement_r0603.png[]
+====
+
+
+[#libraryconventions-packages-documentation]
+==== Documentation Layer
+
+The layer _Top Documentation_ should be used to draw the most important
+details of the package's appearance. It could be considered as an alternative
+to the 3D model of a package. But in contrast to the 3D model, the
+documentation layer is visible in the board editor while layouting the PCB.
+
+Following things should be placed on the documentation layer:
+
+* *The package's exact outline.* _Attention: The *outer* edges of the lines
+  should correspond to the package's edges, *not* the middle of the lines!
+  So, for example if the body is 5x5mm and the line width 0.2mm, you have to
+  draw a 4.8x4.8mm rectangle._
+* *The top view of the leads/legs:* The leads or legs of both THT and SMT
+  pads should be drawn from the top view, i.e. the vertical projection of
+  them. This is needed to make packages look realistic on the documentation
+  layer, as leads and legs are an important part of the appearance of
+  packages.
+* *The contact area of SMT leads:* The area where SMT leads touch the copper
+  land pattern should be drawn as *filled polygons with a line width of 0mm*.
+  This helps the PCB designer to see the expansion of the land pattern, i.e.
+  how much copper is around the actual lead.
+
+.Documentation layer examples (only documentation and copper layers shown)
+====
+image:img/footprint_documentation_soic6.png[]
+image:img/footprint_documentation_r0603.png[]
+image:img/footprint_documentation_to220.png[]
+====
+
+
 [#libraryconventions-packages-textelements]
 ==== Text Elements
 
