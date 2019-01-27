@@ -211,7 +211,7 @@ most important rules are the following:
   positioning and orientation of assembled devices. In other words, the
   placement layer should primarily contain drawings _around_ the package's
   body, but not _under_ it.
-* *Line width:* 0.15mm typical, 0.1mm minimum
+* *Line width:* 0.2mm typical, 0.1mm minimum
 * *Clearance to copper layers:* Equal or greater than the line width, but at
   least 0.15mm
 
