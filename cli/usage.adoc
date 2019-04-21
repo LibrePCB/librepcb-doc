@@ -23,7 +23,67 @@ Arguments:
   command        The command to execute.
 
 Commands:
+  open-library   Open a library to execute library-related tasks.
   open-project   Open a project to execute project-related tasks.
+----
+
+==== Command `open-library`
+
+This command opens a LibrePCB library and lets you execute some tasks with it.
+
+.Command
+[source,bash]
+----
+$ ./librepcb-cli open-library --help
+----
+
+.Output
+----
+Usage: ./librepcb-cli [options] open-library [command_options] library
+LibrePCB Command Line Interface
+
+Options:
+  -h, --help     Displays this help.
+  -v, --version  Displays version information.
+  --verbose      Verbose output.
+  --all          Perform the selected action(s) on all elements contained in
+                 the opened library.
+  --save         Save library (and contained elements if '--all' is given)
+                 before closing them (useful to upgrade file format).
+
+Arguments:
+  open-library   Open a library to execute library-related tasks.
+  library        Path to library directory (*.lplib).
+----
+
+[discrete]
+===== Example: Check and Upgrade File Format of Library Elements
+
+This command is useful for Continuous Integration of LibrePCB libraries because
+it reports failure if you check in libraries with invalid S-Expression files.
+In addition, it overwrites all S-Expression files so you can use
+`git diff --exit-code` to report failure if some files were not canonical.
+
+.Command
+[source,bash]
+----
+$ ./librepcb-cli open-library \
+    --all \
+    --save \
+    MyLibrary.lplib
+----
+
+.Output
+----
+Open library 'MyLibrary.lplib'...
+Process 86 component categories...
+Process 44 package categories...
+Process 37 symbols...
+Process 492 packages...
+Process 34 components...
+Process 37 devices...
+Save library 'MyLibrary.lplib'...
+SUCCESS
 ----
 
 ==== Command `open-project`
@@ -42,29 +102,34 @@ Usage: ./librepcb-cli [options] open-project [command_options] project
 LibrePCB Command Line Interface
 
 Options:
-  -h, --help                     Displays this help.
-  -v, --version                  Displays version information.
-  --verbose                      Verbose output.
-  --erc                          Run the electrical rule check, print all
-                                 non-approved warnings/errors and report failure
-                                 (exit code = 1) if there are non-approved
-                                 messages.
-  --export-schematics <file>     Export schematics to given file(s). Existing
-                                 files will be overwritten. Supported file
-                                 extensions: pdf
-  --export-pcb-fabrication-data  Export PCB fabrication data (Gerber/Excellon)
-                                 according the fabrication output settings of
-                                 boards. Existing files will be overwritten.
-  --board <name>                 The name of the board(s) to export. Can be
-                                 given multiple times. If not set, all boards
-                                 are exported.
-  --save                         Save project before closing it (useful to
-                                 upgrade file format).
+  -h, --help                         Displays this help.
+  -v, --version                      Displays version information.
+  --verbose                          Verbose output.
+  --erc                              Run the electrical rule check, print all
+                                     non-approved warnings/errors and report
+                                     failure (exit code = 1) if there are
+                                     non-approved messages.
+  --export-schematics <file>         Export schematics to given file(s).
+                                     Existing files will be overwritten.
+                                     Supported file extensions: pdf
+  --export-pcb-fabrication-data      Export PCB fabrication data
+                                     (Gerber/Excellon) according the fabrication
+                                     output settings of boards. Existing files
+                                     will be overwritten.
+  --pcb-fabrication-settings <file>  Override PCB fabrication output settings
+                                     by providing a *.lp file containing custom
+                                     settings. If not set, the settings from the
+                                     boards will be used instead.
+  --board <name>                     The name of the board(s) to export. Can be
+                                     given multiple times. If not set, all
+                                     boards are exported.
+  --save                             Save project before closing it (useful to
+                                     upgrade file format).
 
 Arguments:
-  open-project                   Open a project to execute project-related
-                                 tasks.
-  project                        Path to project file (*.lpp).
+  open-project                       Open a project to execute project-related
+                                     tasks.
+  project                            Path to project file (*.lpp[z]).
 ----
 
 [discrete]
