@@ -20,12 +20,12 @@ container needs a workaround because FUSE is missing. See details here:
 https://github.com/AppImage/AppImageKit/wiki/FUSE#docker
 
 .Example Dockerfile
-[source,docker]
+[source,docker,subs="attributes"]
 ----
 FROM ubuntu:18.04
 RUN apt-get update && apt-get -yy install wget ca-certificates libglu1-mesa qt5-default xvfb
-RUN wget https://download.librepcb.org/nightly_builds/master/librepcb-cli-nightly-linux-x86_64.AppImage
-RUN chmod a+x ./librepcb-cli-nightly-linux-x86_64.AppImage
-RUN ./librepcb-cli-nightly-linux-x86_64.AppImage --appimage-extract
+RUN wget "{releases_url}/librepcb-cli-{version}-linux-x86_64.AppImage"
+RUN chmod a+x ./librepcb-cli-{version}-linux-x86_64.AppImage
+RUN ./librepcb-cli-{version}-linux-x86_64.AppImage --appimage-extract
 ENTRYPOINT ["sh", "-c", "xvfb-run -a ./squashfs-root/AppRun"]
 ----
