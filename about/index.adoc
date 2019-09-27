@@ -53,8 +53,7 @@ implemented yet. So here's an overview about the project status:
 * No clipboard functionality (cut/copy/paste)
   https://github.com/LibrePCB/LibrePCB/issues/13[[#13\]]
 
-Of course all these features will be implemented in future. Please consider to 
+Of course all these features will be implemented in future. Please consider to
 https://github.com/LibrePCB/LibrePCB/blob/master/CONTRIBUTING.md[contribute]
 or https://www.patreon.com/librepcb[donate] to support the development of
 LibrePCB!
-

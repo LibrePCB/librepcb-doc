@@ -59,7 +59,8 @@ chmod +x ./{linux-installer-filename}
 :mac-installer-filename: librepcb-installer-{version}-mac-x86_64.dmg
 :mac-installer-url: {releases_url}/{mac-installer-filename}
 
-Download and run {mac-installer-url}[{mac-installer-filename}]. "Unverified" packages may have to be opened via right-click.
+Download and run {mac-installer-url}[{mac-installer-filename}]. "Unverified"
+packages may have to be opened via right-click.
 
 ==== Portable Package
 
