@@ -79,6 +79,8 @@ cases it's allowed to use different properties to draw the symbol geometry.
   height of 5.08mm). Or place _D+_ and _D-_ of a USB device right on top of
   each other (with the default distance of 2.54mm) as they are always used
   as a pair.
+- *Use a pin length of 2.54mm* if possible. Other pin lengths should be used
+  only in special cases.
 
 
 [#libraryconventions-symbols-pinnaming]
