@@ -113,6 +113,17 @@ example the crystal at the left. Keep in mind that the value of a component can
 consist of several lines, so there should always be enough space available for
 it.
 
+.Typical text element properties
+[cols="s,e,e",options="header,autowidth"]
+|===
+| Property          | Name text element     | Value text element
+| Layer             | Names                 | Values
+| Text              | {{NAME}}              | {{VALUE}}
+| Alignment         | Bottom Left           | Top Left
+| Height            | 2.5mm                 | 2.5mm
+| Rotation          | 0°                    | 0°
+|===
+
 
 [#libraryconventions-symbols-grabarea]
 ==== Grab Area
