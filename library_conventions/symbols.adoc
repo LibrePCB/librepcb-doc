@@ -49,6 +49,22 @@ text elements). For non-symmetrical symbols it should be as close as
 possible to the center, but still on the 2.54mm grid.
 
 
+[#libraryconventions-symbols-outline]
+==== Outline
+
+The outline of a regular symbol should be drawn with a rectangle or a polygon.
+All vertices should be located on the 2.54mm grid and following properties
+should be used:
+
+- *Layer*: _Outlines_
+- *Line Width*: _0.2 mm_
+- *Filled*: _no_
+- *Grab Area*: _yes_
+
+Special symbols (like a capacitor) might not have a regular outline, in such
+cases it's allowed to use different properties to draw the symbol geometry.
+
+
 [#libraryconventions-symbols-pinplacement]
 ==== Pin Placement
 
