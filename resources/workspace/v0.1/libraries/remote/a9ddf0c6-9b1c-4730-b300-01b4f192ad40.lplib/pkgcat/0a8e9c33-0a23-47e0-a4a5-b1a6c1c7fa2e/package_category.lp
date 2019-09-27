@@ -1,0 +1,10 @@
+(librepcb_package_category 0a8e9c33-0a23-47e0-a4a5-b1a6c1c7fa2e
+ (name "Diode")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T23:11:20Z)
+ (deprecated false)
+ (parent none)
+)

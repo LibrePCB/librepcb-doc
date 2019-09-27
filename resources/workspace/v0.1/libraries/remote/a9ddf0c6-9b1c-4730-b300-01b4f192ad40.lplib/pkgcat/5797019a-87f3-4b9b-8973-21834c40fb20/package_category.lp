@@ -1,0 +1,10 @@
+(librepcb_package_category 5797019a-87f3-4b9b-8973-21834c40fb20
+ (name "Capacitor")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T23:21:19Z)
+ (deprecated false)
+ (parent none)
+)

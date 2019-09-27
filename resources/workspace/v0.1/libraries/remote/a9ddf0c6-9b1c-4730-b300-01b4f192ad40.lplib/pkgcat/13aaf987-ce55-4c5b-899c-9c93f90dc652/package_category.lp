@@ -1,0 +1,10 @@
+(librepcb_package_category 13aaf987-ce55-4c5b-899c-9c93f90dc652
+ (name "Flip-Chip")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:51:21Z)
+ (deprecated false)
+ (parent 5eea18fe-0322-4b6e-a1f8-2bd6d5b7c4bc)
+)

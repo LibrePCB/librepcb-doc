@@ -21,7 +21,7 @@
   (description "")
   (gate 6ca391c0-1c6d-4176-9607-31bf40d1b406
    (symbol f00ab942-6980-442b-86a8-51b92de5704d)
-   (pos 0.0 0.0) (rot 0.0) (required true) (suffix "")
+   (position 0.0 0.0) (rotation 0.0) (required true) (suffix "")
   )
  )
 )

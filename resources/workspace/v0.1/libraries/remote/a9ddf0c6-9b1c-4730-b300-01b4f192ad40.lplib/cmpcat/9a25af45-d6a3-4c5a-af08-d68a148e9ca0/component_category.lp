@@ -1,0 +1,10 @@
+(librepcb_component_category 9a25af45-d6a3-4c5a-af08-d68a148e9ca0
+ (name "Passive")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:13:38Z)
+ (deprecated false)
+ (parent none)
+)

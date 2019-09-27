@@ -1,0 +1,10 @@
+(librepcb_component_category a4c3b94b-5321-4adb-8a77-d3b53f178cee
+ (name "Translators, Level Shifters")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:31:53Z)
+ (deprecated false)
+ (parent 9212a13b-d12d-4d13-b2c3-07a6c86e5e5c)
+)

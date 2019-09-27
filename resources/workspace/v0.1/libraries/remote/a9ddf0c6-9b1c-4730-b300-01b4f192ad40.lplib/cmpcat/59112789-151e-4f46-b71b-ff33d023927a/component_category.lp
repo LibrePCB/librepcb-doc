@@ -1,0 +1,10 @@
+(librepcb_component_category 59112789-151e-4f46-b71b-ff33d023927a
+ (name "Discrete Semiconductors")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:21:47Z)
+ (deprecated false)
+ (parent none)
+)

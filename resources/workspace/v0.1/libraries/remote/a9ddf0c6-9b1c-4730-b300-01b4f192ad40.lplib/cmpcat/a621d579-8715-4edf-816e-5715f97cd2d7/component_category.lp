@@ -1,0 +1,10 @@
+(librepcb_component_category a621d579-8715-4edf-816e-5715f97cd2d7
+ (name "Analog to Digital Converters (ADC)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:27:53Z)
+ (deprecated false)
+ (parent b9fc7966-d5d2-4379-a029-5b65b69a4fbb)
+)

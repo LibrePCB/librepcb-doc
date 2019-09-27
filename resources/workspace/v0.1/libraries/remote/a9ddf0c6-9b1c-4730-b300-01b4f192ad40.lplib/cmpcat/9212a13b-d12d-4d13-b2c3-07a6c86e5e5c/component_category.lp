@@ -1,0 +1,10 @@
+(librepcb_component_category 9212a13b-d12d-4d13-b2c3-07a6c86e5e5c
+ (name "Logic")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:30:47Z)
+ (deprecated false)
+ (parent 8226f987-124b-4776-9084-3821dd51c272)
+)

@@ -1,0 +1,10 @@
+(librepcb_component_category 71b1d6fa-cc7c-44ea-82c3-4396dfd3d7cc
+ (name "Shift Registers")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:31:32Z)
+ (deprecated false)
+ (parent 9212a13b-d12d-4d13-b2c3-07a6c86e5e5c)
+)

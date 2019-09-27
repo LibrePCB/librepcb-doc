@@ -1,0 +1,10 @@
+(librepcb_package_category 91c062f0-ae3f-43db-a925-93d7ea6b6a80
+ (name "Single In-Line (SIP / SIL)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T23:08:36Z)
+ (deprecated false)
+ (parent e7892b0e-a037-4090-bc75-e350e9f0ab2e)
+)

@@ -1,0 +1,10 @@
+(librepcb_component_category 8f9cbf8f-eada-4981-86a3-b789955a789a
+ (name "Clock, Timing")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:26:51Z)
+ (deprecated false)
+ (parent 8226f987-124b-4776-9084-3821dd51c272)
+)

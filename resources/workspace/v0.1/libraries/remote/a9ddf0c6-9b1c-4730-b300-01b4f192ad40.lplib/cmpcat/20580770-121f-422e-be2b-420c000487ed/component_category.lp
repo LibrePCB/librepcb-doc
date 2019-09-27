@@ -1,0 +1,10 @@
+(librepcb_component_category 20580770-121f-422e-be2b-420c000487ed
+ (name "Counters, Dividers")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:31:07Z)
+ (deprecated false)
+ (parent 9212a13b-d12d-4d13-b2c3-07a6c86e5e5c)
+)

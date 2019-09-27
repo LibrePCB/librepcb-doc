@@ -1,0 +1,10 @@
+(librepcb_component_category 651dca6f-67a5-4ee3-a07f-ed028243a6e2
+ (name "Signal Switches, Multiplexers, Decoders")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:31:43Z)
+ (deprecated false)
+ (parent 9212a13b-d12d-4d13-b2c3-07a6c86e5e5c)
+)

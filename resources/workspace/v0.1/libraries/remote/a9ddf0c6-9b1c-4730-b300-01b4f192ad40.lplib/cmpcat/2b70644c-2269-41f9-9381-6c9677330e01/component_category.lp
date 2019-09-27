@@ -1,0 +1,10 @@
+(librepcb_component_category 2b70644c-2269-41f9-9381-6c9677330e01
+ (name "Programmable Logic Devices (PLD)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:29:18Z)
+ (deprecated false)
+ (parent b1a06201-8efe-418d-ad1b-1e000cc12e63)
+)

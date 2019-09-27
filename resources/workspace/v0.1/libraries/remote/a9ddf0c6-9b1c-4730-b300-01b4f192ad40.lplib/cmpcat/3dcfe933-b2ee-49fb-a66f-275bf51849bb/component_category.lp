@@ -1,0 +1,10 @@
+(librepcb_component_category 3dcfe933-b2ee-49fb-a66f-275bf51849bb
+ (name "D-Sub Connectors")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:17:09Z)
+ (deprecated false)
+ (parent d0618c29-0436-42da-a388-fdadf7b23892)
+)

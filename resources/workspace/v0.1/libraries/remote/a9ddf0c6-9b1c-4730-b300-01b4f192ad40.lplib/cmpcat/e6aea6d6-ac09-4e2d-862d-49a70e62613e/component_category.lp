@@ -1,0 +1,10 @@
+(librepcb_component_category e6aea6d6-ac09-4e2d-862d-49a70e62613e
+ (name "Clock Generators, PLLs, Frequency Synthesizers")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:27:05Z)
+ (deprecated false)
+ (parent 8f9cbf8f-eada-4981-86a3-b789955a789a)
+)

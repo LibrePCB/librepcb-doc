@@ -1,0 +1,10 @@
+(librepcb_component_category 22151601-c2d9-419a-87bc-266f9c7c3459
+ (name "Microcontrollers, Microprocessors")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:29:09Z)
+ (deprecated false)
+ (parent b1a06201-8efe-418d-ad1b-1e000cc12e63)
+)

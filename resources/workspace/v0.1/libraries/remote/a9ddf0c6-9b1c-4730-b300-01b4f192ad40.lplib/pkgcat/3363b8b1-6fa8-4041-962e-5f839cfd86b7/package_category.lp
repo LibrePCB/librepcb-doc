@@ -1,0 +1,10 @@
+(librepcb_package_category 3363b8b1-6fa8-4041-962e-5f839cfd86b7
+ (name "Quad Flat Package (QFP)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:56:12Z)
+ (deprecated false)
+ (parent 2e16635c-5069-4105-b875-852547a6d027)
+)

@@ -1,0 +1,10 @@
+(librepcb_component_category f7f9bc34-7966-4af4-8cd4-4b8101e0823a
+ (name "Drivers, Receivers, Transmitters")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:29:53Z)
+ (deprecated false)
+ (parent 38665d59-1fed-4cd0-8bcd-57af52fefb29)
+)

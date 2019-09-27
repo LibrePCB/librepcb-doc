@@ -1,0 +1,10 @@
+(librepcb_component_category 267ee59f-c903-4391-bb98-6d7527dc7dd1
+ (name "Voltage References")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:33:35Z)
+ (deprecated false)
+ (parent c6be465e-4086-4785-9437-8ec0a76689b3)
+)

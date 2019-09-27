@@ -1,0 +1,10 @@
+(librepcb_component_category c4ddfbc6-6543-499d-9e95-3091e049b07f
+ (name "Current Transducers")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:35:59Z)
+ (deprecated false)
+ (parent 5347fa0a-108b-4fa0-b97d-947d35c218be)
+)

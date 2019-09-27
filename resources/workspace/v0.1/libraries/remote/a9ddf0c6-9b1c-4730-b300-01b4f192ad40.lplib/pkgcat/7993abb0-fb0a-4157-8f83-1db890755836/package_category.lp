@@ -1,0 +1,10 @@
+(librepcb_package_category 7993abb0-fb0a-4157-8f83-1db890755836
+ (name "Thin Small-Outline Package (TSOP)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T23:02:50Z)
+ (deprecated false)
+ (parent 51a8dc64-d5b5-4bc4-b920-c914707c8341)
+)

@@ -1,0 +1,10 @@
+(librepcb_component_category 9109b7fd-e834-437f-b98d-114febc103e9
+ (name "Battery Management")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:32:46Z)
+ (deprecated false)
+ (parent c6be465e-4086-4785-9437-8ec0a76689b3)
+)

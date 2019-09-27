@@ -1,0 +1,10 @@
+(librepcb_component_category 3ae7605e-f9e6-499f-bfa4-f72f62abd6f8
+ (name "Digital Potentiometers")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:28:03Z)
+ (deprecated false)
+ (parent b9fc7966-d5d2-4379-a029-5b65b69a4fbb)
+)

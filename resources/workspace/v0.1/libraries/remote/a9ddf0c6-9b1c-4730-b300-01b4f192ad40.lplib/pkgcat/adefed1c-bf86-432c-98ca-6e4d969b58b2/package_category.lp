@@ -1,0 +1,10 @@
+(librepcb_package_category adefed1c-bf86-432c-98ca-6e4d969b58b2
+ (name "Plastic Leaded Chip Carrier (PLCC)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:55:16Z)
+ (deprecated false)
+ (parent 2e16635c-5069-4105-b875-852547a6d027)
+)

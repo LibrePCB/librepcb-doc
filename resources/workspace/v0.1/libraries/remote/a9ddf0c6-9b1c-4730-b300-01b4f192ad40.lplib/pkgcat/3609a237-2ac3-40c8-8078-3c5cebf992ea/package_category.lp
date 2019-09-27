@@ -1,0 +1,10 @@
+(librepcb_package_category 3609a237-2ac3-40c8-8078-3c5cebf992ea
+ (name "Leaded Chip Carrier (LCC)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:54:42Z)
+ (deprecated false)
+ (parent 2e16635c-5069-4105-b875-852547a6d027)
+)

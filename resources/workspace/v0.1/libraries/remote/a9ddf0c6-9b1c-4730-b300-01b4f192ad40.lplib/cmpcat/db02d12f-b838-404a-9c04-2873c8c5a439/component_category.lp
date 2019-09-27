@@ -1,0 +1,10 @@
+(librepcb_component_category db02d12f-b838-404a-9c04-2873c8c5a439
+ (name "Real Time Clocks (RTC)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:27:16Z)
+ (deprecated false)
+ (parent 8f9cbf8f-eada-4981-86a3-b789955a789a)
+)

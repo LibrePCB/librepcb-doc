@@ -1,0 +1,10 @@
+(librepcb_component_category 66367c6f-741a-4b3e-a7c6-af32a04b5b9b
+ (name "Analog Switches, Multiplexers, Demultiplexers")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:29:44Z)
+ (deprecated false)
+ (parent 38665d59-1fed-4cd0-8bcd-57af52fefb29)
+)

@@ -1,0 +1,10 @@
+(librepcb_package_category 6a35dc4f-550d-4807-80d8-edb68ed36d9f
+ (name "Grid Array")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:51:42Z)
+ (deprecated false)
+ (parent none)
+)

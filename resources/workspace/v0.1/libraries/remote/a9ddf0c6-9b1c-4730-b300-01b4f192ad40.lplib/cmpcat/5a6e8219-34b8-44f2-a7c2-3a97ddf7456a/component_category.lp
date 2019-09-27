@@ -1,0 +1,10 @@
+(librepcb_component_category 5a6e8219-34b8-44f2-a7c2-3a97ddf7456a
+ (name "Gate Drivers")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:33:05Z)
+ (deprecated false)
+ (parent c6be465e-4086-4785-9437-8ec0a76689b3)
+)

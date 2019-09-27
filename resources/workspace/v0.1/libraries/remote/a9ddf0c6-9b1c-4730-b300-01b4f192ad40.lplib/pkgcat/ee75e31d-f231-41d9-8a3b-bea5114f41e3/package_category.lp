@@ -1,0 +1,10 @@
+(librepcb_package_category ee75e31d-f231-41d9-8a3b-bea5114f41e3
+ (name "Through-Hole Capacitor")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T23:22:47Z)
+ (deprecated false)
+ (parent 5797019a-87f3-4b9b-8973-21834c40fb20)
+)

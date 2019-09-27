@@ -1,0 +1,10 @@
+(librepcb_package_category 2b8ac154-bab7-407f-a208-50cfb8d5be46
+ (name "Thin Small-Outline Transistor (TSOT)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T23:10:37Z)
+ (deprecated false)
+ (parent e8388369-7f8d-45e8-98e6-a655bc498559)
+)

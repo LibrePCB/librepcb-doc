@@ -1,0 +1,10 @@
+(librepcb_package_category 5bc3a6c4-2f77-4a9e-85ca-e261f4757312
+ (name "Pin Grid Array (PGA)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:53:27Z)
+ (deprecated false)
+ (parent 6a35dc4f-550d-4807-80d8-edb68ed36d9f)
+)

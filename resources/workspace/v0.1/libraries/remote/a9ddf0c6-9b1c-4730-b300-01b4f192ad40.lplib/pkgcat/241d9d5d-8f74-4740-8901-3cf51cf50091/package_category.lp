@@ -1,0 +1,10 @@
+(librepcb_package_category 241d9d5d-8f74-4740-8901-3cf51cf50091
+ (name "Thin-Shrink Small-Outline Package (TSSOP)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T23:03:19Z)
+ (deprecated false)
+ (parent 51a8dc64-d5b5-4bc4-b920-c914707c8341)
+)

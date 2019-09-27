@@ -1,0 +1,10 @@
+(librepcb_component_category 907a87d1-1050-46b0-95bd-f7c9e9068b77
+ (name "Timers, Oscillators")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:27:27Z)
+ (deprecated false)
+ (parent 8f9cbf8f-eada-4981-86a3-b789955a789a)
+)

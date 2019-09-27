@@ -1,0 +1,10 @@
+(librepcb_component_category 7c698c64-e0f4-4885-bc29-566c4828071e
+ (name "Systems On Chip (SoC)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:29:27Z)
+ (deprecated false)
+ (parent b1a06201-8efe-418d-ad1b-1e000cc12e63)
+)

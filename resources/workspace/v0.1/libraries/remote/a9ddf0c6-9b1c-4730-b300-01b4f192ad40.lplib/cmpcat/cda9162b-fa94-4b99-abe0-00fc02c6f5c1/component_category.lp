@@ -1,0 +1,10 @@
+(librepcb_component_category cda9162b-fa94-4b99-abe0-00fc02c6f5c1
+ (name "LED Drivers")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:33:14Z)
+ (deprecated false)
+ (parent c6be465e-4086-4785-9437-8ec0a76689b3)
+)

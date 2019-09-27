@@ -1,0 +1,10 @@
+(librepcb_component_category c3dfb625-e6e4-46c1-a1df-d14eeecfc965
+ (name "Field Programmable Gate Arrays (FPGA)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:28:57Z)
+ (deprecated false)
+ (parent b1a06201-8efe-418d-ad1b-1e000cc12e63)
+)

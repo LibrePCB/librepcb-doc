@@ -1,0 +1,10 @@
+(librepcb_package_category 9069e789-352d-452a-8a49-67548d263c56
+ (name "Chip-Scale (CSP)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:49:59Z)
+ (deprecated false)
+ (parent 5eea18fe-0322-4b6e-a1f8-2bd6d5b7c4bc)
+)

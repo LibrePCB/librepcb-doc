@@ -1,0 +1,10 @@
+(librepcb_package_category 1d2630f1-c375-49f0-a0dc-2446735d82f4
+ (name "Miscellaneous")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.2")
+ (created 2018-10-11T15:03:19Z)
+ (deprecated false)
+ (parent none)
+)

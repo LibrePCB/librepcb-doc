@@ -1,0 +1,10 @@
+(librepcb_package_category 9b31c9b4-04b6-4f97-ad12-f095d196bd38
+ (name "Small-Outline Diode (SOD)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T23:13:30Z)
+ (deprecated false)
+ (parent 0a8e9c33-0a23-47e0-a4a5-b1a6c1c7fa2e)
+)

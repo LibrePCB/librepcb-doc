@@ -1,0 +1,10 @@
+(librepcb_component_category e4c9b084-7ee2-4310-9b5c-dc66c736a6e0
+ (name "Direct Wire to Board Connectors")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:17:29Z)
+ (deprecated false)
+ (parent d0618c29-0436-42da-a388-fdadf7b23892)
+)

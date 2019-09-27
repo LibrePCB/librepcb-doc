@@ -1,0 +1,10 @@
+(librepcb_component_category 6b8cb737-30d9-49e2-831c-34aa909ef85e
+ (name "Comparators")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:30:35Z)
+ (deprecated false)
+ (parent 9ce1e2fa-696e-405e-8c6a-c8fb0269fb5a)
+)

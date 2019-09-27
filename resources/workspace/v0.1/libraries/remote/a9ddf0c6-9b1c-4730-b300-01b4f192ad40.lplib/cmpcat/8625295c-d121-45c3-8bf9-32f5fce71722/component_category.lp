@@ -1,0 +1,10 @@
+(librepcb_component_category 8625295c-d121-45c3-8bf9-32f5fce71722
+ (name "Full/Half Bridge Drivers")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:32:57Z)
+ (deprecated false)
+ (parent c6be465e-4086-4785-9437-8ec0a76689b3)
+)

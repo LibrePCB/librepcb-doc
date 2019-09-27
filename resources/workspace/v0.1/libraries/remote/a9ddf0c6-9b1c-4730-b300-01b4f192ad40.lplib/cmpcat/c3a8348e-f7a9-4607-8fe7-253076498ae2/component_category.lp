@@ -1,0 +1,10 @@
+(librepcb_component_category c3a8348e-f7a9-4607-8fe7-253076498ae2
+ (name "Fuse Holders")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:24:43Z)
+ (deprecated false)
+ (parent 8ca4f9fb-3dd3-4c1e-a097-6601b437bbc6)
+)

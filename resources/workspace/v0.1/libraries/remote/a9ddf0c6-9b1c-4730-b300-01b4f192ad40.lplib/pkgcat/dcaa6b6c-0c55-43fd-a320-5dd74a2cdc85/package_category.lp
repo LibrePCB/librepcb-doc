@@ -1,0 +1,10 @@
+(librepcb_package_category dcaa6b6c-0c55-43fd-a320-5dd74a2cdc85
+ (name "Diode Outline (DO)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T23:13:01Z)
+ (deprecated false)
+ (parent 0a8e9c33-0a23-47e0-a4a5-b1a6c1c7fa2e)
+)

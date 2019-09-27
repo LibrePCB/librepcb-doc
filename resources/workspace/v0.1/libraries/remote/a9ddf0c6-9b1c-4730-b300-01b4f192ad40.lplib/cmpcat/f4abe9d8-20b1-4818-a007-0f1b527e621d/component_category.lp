@@ -1,0 +1,10 @@
+(librepcb_component_category f4abe9d8-20b1-4818-a007-0f1b527e621d
+ (name "Flip Flops, Latches")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:31:15Z)
+ (deprecated false)
+ (parent 9212a13b-d12d-4d13-b2c3-07a6c86e5e5c)
+)

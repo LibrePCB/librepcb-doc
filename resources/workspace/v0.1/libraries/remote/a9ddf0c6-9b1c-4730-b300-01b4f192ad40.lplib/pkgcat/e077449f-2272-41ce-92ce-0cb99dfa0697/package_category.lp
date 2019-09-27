@@ -1,0 +1,10 @@
+(librepcb_package_category e077449f-2272-41ce-92ce-0cb99dfa0697
+ (name "Quad-Flat No-Leads (QFN)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:55:58Z)
+ (deprecated false)
+ (parent 2e16635c-5069-4105-b875-852547a6d027)
+)

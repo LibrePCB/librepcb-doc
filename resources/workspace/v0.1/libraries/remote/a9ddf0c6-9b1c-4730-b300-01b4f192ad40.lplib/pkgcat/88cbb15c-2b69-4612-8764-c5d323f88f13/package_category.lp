@@ -1,0 +1,10 @@
+(librepcb_package_category 88cbb15c-2b69-4612-8764-c5d323f88f13
+ (name "Dual-Flat No-Leads (DFN)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:57:50Z)
+ (deprecated false)
+ (parent 51a8dc64-d5b5-4bc4-b920-c914707c8341)
+)

@@ -1,0 +1,10 @@
+(librepcb_package_category e4d3a6bf-af32-48a2-b427-5e794bed949a
+ (name "Pin Header (Male)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.2")
+ (created 2018-10-11T15:04:06Z)
+ (deprecated false)
+ (parent 56a5773f-eeb4-4b39-8cb9-274f3da26f4f)
+)

@@ -1,0 +1,10 @@
+(librepcb_component_category f87a2a14-4dd2-49f0-b93d-0c78ac50cf53
+ (name "Digital to Analog Converters (DAC)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:28:11Z)
+ (deprecated false)
+ (parent b9fc7966-d5d2-4379-a029-5b65b69a4fbb)
+)

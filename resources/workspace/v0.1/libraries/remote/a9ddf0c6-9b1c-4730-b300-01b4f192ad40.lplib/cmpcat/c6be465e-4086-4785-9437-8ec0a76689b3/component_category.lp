@@ -1,0 +1,10 @@
+(librepcb_component_category c6be465e-4086-4785-9437-8ec0a76689b3
+ (name "Power Management (PMIC)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:32:10Z)
+ (deprecated false)
+ (parent 8226f987-124b-4776-9084-3821dd51c272)
+)

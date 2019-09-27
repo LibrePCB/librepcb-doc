@@ -1,0 +1,10 @@
+(librepcb_package_category e7892b0e-a037-4090-bc75-e350e9f0ab2e
+ (name "Single Row")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:45:04Z)
+ (deprecated false)
+ (parent none)
+)

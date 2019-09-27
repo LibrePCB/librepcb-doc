@@ -1,0 +1,10 @@
+(librepcb_component_category f81c3abf-dfbe-4464-b4d9-cc9824959f56
+ (name "Memory")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:32:03Z)
+ (deprecated false)
+ (parent 8226f987-124b-4776-9084-3821dd51c272)
+)

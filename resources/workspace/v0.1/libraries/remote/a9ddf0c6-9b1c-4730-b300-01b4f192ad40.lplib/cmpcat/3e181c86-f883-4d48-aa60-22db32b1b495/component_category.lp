@@ -1,0 +1,10 @@
+(librepcb_component_category 3e181c86-f883-4d48-aa60-22db32b1b495
+ (name "Humidity Sensors")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:36:06Z)
+ (deprecated false)
+ (parent 5347fa0a-108b-4fa0-b97d-947d35c218be)
+)

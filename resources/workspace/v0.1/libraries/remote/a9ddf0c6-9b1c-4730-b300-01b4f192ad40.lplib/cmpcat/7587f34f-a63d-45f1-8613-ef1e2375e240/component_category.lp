@@ -1,0 +1,10 @@
+(librepcb_component_category 7587f34f-a63d-45f1-8613-ef1e2375e240
+ (name "Coaxial Connectors")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:16:51Z)
+ (deprecated false)
+ (parent d0618c29-0436-42da-a388-fdadf7b23892)
+)

@@ -1,0 +1,10 @@
+(librepcb_component_category 688c7dcd-2fcf-4655-90b6-777a42963cbe
+ (name "Motor Drivers/Controllers")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:33:25Z)
+ (deprecated false)
+ (parent c6be465e-4086-4785-9437-8ec0a76689b3)
+)

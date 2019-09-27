@@ -1,0 +1,10 @@
+(librepcb_component_category ffe32a67-4ee5-4494-9936-c9e4c0b147bc
+ (name "Battery Chargers")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:32:36Z)
+ (deprecated false)
+ (parent c6be465e-4086-4785-9437-8ec0a76689b3)
+)

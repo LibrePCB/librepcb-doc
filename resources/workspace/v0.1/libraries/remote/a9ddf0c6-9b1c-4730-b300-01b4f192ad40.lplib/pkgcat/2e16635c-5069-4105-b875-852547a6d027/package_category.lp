@@ -1,0 +1,10 @@
+(librepcb_package_category 2e16635c-5069-4105-b875-852547a6d027
+ (name "Quad Row")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:54:00Z)
+ (deprecated false)
+ (parent none)
+)

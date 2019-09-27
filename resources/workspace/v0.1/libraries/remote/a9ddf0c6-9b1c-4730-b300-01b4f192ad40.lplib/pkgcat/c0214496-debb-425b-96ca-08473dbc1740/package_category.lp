@@ -1,0 +1,10 @@
+(librepcb_package_category c0214496-debb-425b-96ca-08473dbc1740
+ (name "Land Grid Array (LGA)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:53:09Z)
+ (deprecated false)
+ (parent 6a35dc4f-550d-4807-80d8-edb68ed36d9f)
+)

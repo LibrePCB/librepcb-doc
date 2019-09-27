@@ -1,0 +1,10 @@
+(librepcb_component_category 4b931698-8e30-4d59-98c8-6fcf452f4be2
+ (name "IC Sockets")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:25:19Z)
+ (deprecated false)
+ (parent 8ca4f9fb-3dd3-4c1e-a097-6601b437bbc6)
+)

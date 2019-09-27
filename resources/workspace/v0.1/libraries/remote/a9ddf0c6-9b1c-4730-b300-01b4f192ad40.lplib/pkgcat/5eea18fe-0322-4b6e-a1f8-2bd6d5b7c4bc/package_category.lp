@@ -1,0 +1,10 @@
+(librepcb_package_category 5eea18fe-0322-4b6e-a1f8-2bd6d5b7c4bc
+ (name "Wafer")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:48:34Z)
+ (deprecated false)
+ (parent none)
+)

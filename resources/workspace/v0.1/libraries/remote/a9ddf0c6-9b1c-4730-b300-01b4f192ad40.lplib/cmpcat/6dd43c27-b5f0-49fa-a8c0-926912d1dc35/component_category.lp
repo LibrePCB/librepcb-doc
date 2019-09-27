@@ -1,0 +1,10 @@
+(librepcb_component_category 6dd43c27-b5f0-49fa-a8c0-926912d1dc35
+ (name "Digital Signal Processors (DSP)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:28:47Z)
+ (deprecated false)
+ (parent b1a06201-8efe-418d-ad1b-1e000cc12e63)
+)

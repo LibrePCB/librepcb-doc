@@ -1,0 +1,10 @@
+(librepcb_package_category 6183d171-e810-475a-a568-2a270aff8f5e
+ (name "Pin Socket (Female)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.2")
+ (created 2018-10-11T15:04:24Z)
+ (deprecated false)
+ (parent 56a5773f-eeb4-4b39-8cb9-274f3da26f4f)
+)

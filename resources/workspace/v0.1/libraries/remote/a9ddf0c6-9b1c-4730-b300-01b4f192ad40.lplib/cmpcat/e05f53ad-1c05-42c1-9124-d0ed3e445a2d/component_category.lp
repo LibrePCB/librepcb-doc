@@ -1,0 +1,10 @@
+(librepcb_component_category e05f53ad-1c05-42c1-9124-d0ed3e445a2d
+ (name "Amplifiers")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:30:27Z)
+ (deprecated false)
+ (parent 9ce1e2fa-696e-405e-8c6a-c8fb0269fb5a)
+)

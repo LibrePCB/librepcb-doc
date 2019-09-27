@@ -1,0 +1,10 @@
+(librepcb_component_category c4c12c6e-abcd-4856-8445-e96c2737423e
+ (name "Computer Connectors (USB, HDMI, Ethernet, ...)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:18:04Z)
+ (deprecated false)
+ (parent d0618c29-0436-42da-a388-fdadf7b23892)
+)

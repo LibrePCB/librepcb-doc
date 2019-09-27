@@ -1,0 +1,10 @@
+(librepcb_component_category cd70ec84-a440-496f-b5c9-ece75e81de64
+ (name "Flex Connectors")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:17:41Z)
+ (deprecated false)
+ (parent d0618c29-0436-42da-a388-fdadf7b23892)
+)

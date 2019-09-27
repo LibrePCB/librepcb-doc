@@ -1,0 +1,10 @@
+(librepcb_component_category 798db79a-f83e-49c5-bc4c-33e77c8501d6
+ (name "Optoelectronics")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-02-01T21:25:35Z)
+ (deprecated false)
+ (parent none)
+)

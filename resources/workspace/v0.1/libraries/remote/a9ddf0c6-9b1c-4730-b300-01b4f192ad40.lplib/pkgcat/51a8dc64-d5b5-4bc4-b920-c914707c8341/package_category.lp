@@ -1,0 +1,10 @@
+(librepcb_package_category 51a8dc64-d5b5-4bc4-b920-c914707c8341
+ (name "Dual Row")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:57:13Z)
+ (deprecated false)
+ (parent none)
+)

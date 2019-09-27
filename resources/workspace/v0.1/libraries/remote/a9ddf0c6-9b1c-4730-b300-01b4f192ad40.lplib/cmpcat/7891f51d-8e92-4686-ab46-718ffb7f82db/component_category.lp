@@ -1,0 +1,10 @@
+(librepcb_component_category 7891f51d-8e92-4686-ab46-718ffb7f82db
+ (name "Card Edge Connectors")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:16:29Z)
+ (deprecated false)
+ (parent d0618c29-0436-42da-a388-fdadf7b23892)
+)

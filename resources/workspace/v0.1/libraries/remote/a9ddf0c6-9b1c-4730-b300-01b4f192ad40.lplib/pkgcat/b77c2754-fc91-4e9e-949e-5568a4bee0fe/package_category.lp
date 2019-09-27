@@ -1,0 +1,10 @@
+(librepcb_package_category b77c2754-fc91-4e9e-949e-5568a4bee0fe
+ (name "Small-Outline Transistor (SOT)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T23:10:12Z)
+ (deprecated false)
+ (parent e8388369-7f8d-45e8-98e6-a655bc498559)
+)

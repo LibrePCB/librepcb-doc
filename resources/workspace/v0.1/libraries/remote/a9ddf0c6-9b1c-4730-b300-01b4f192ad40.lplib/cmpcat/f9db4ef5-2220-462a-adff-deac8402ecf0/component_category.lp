@@ -1,0 +1,10 @@
+(librepcb_component_category f9db4ef5-2220-462a-adff-deac8402ecf0
+ (name "Terminal Blocks")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:18:49Z)
+ (deprecated false)
+ (parent d0618c29-0436-42da-a388-fdadf7b23892)
+)

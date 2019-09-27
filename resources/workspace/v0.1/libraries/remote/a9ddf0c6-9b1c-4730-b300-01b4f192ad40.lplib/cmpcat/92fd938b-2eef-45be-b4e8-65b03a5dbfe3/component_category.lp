@@ -1,0 +1,10 @@
+(librepcb_component_category 92fd938b-2eef-45be-b4e8-65b03a5dbfe3
+ (name "Motion Sensors")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:36:13Z)
+ (deprecated false)
+ (parent 5347fa0a-108b-4fa0-b97d-947d35c218be)
+)

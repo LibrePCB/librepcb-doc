@@ -1,0 +1,10 @@
+(librepcb_package_category e29f81f9-e1ce-4301-8875-f95f9972f739
+ (name "Wafer-Level (WL-CSP / WLP)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:49:18Z)
+ (deprecated false)
+ (parent 5eea18fe-0322-4b6e-a1f8-2bd6d5b7c4bc)
+)

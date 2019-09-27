@@ -1,0 +1,10 @@
+(librepcb_package_category 56a5773f-eeb4-4b39-8cb9-274f3da26f4f
+ (name "Connector")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.2")
+ (created 2018-10-11T15:03:47Z)
+ (deprecated false)
+ (parent none)
+)

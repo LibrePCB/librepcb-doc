@@ -1,0 +1,10 @@
+(librepcb_component_category d1b6d2ca-061d-4c5c-81b2-cc7ee26942cb
+ (name "Temperature Sensors")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:36:21Z)
+ (deprecated false)
+ (parent 5347fa0a-108b-4fa0-b97d-947d35c218be)
+)

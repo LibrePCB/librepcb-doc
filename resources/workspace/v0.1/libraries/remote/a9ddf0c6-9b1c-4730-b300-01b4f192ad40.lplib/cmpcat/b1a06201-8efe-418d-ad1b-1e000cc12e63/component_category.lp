@@ -1,0 +1,10 @@
+(librepcb_component_category b1a06201-8efe-418d-ad1b-1e000cc12e63
+ (name "Data Processing")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:28:19Z)
+ (deprecated false)
+ (parent 8226f987-124b-4776-9084-3821dd51c272)
+)

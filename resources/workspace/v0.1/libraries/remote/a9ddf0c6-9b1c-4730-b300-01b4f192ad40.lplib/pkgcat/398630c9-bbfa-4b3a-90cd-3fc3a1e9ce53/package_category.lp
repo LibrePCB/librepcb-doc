@@ -1,0 +1,10 @@
+(librepcb_package_category 398630c9-bbfa-4b3a-90cd-3fc3a1e9ce53
+ (name "Resistor")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T23:17:02Z)
+ (deprecated false)
+ (parent none)
+)

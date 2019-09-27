@@ -1,0 +1,10 @@
+(librepcb_component_category e1f123ad-a959-474c-8b61-b5cdc92e817f
+ (name "AC/DC Converters")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:32:24Z)
+ (deprecated false)
+ (parent c6be465e-4086-4785-9437-8ec0a76689b3)
+)

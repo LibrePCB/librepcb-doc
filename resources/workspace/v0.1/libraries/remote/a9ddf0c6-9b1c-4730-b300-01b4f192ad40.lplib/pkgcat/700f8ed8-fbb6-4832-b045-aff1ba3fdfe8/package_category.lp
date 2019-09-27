@@ -1,0 +1,10 @@
+(librepcb_package_category 700f8ed8-fbb6-4832-b045-aff1ba3fdfe8
+ (name "Embedded Wafer-Level Ball Grid Array (eWLB)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:52:51Z)
+ (deprecated false)
+ (parent 6a35dc4f-550d-4807-80d8-edb68ed36d9f)
+)

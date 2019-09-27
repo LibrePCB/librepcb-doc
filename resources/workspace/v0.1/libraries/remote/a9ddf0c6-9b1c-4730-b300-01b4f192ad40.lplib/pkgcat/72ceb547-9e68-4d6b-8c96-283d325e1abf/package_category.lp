@@ -1,0 +1,10 @@
+(librepcb_package_category 72ceb547-9e68-4d6b-8c96-283d325e1abf
+ (name "Through-Hole Resistor")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T23:18:09Z)
+ (deprecated false)
+ (parent 398630c9-bbfa-4b3a-90cd-3fc3a1e9ce53)
+)

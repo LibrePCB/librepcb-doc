@@ -1,0 +1,10 @@
+(librepcb_component_category e29f0cb3-ef6d-4203-b854-d75150cbae0b
+ (name "Switches")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:25:41Z)
+ (deprecated false)
+ (parent 8ca4f9fb-3dd3-4c1e-a097-6601b437bbc6)
+)

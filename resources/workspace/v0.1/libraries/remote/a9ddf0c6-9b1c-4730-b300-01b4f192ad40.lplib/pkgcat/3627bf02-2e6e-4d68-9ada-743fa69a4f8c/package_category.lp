@@ -1,0 +1,10 @@
+(librepcb_package_category 3627bf02-2e6e-4d68-9ada-743fa69a4f8c
+ (name "Shrink Small-Outline Package (SSOP)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T23:02:33Z)
+ (deprecated false)
+ (parent 51a8dc64-d5b5-4bc4-b920-c914707c8341)
+)

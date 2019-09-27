@@ -1,0 +1,10 @@
+(librepcb_package_category e8388369-7f8d-45e8-98e6-a655bc498559
+ (name "Transistor")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T23:09:07Z)
+ (deprecated false)
+ (parent none)
+)

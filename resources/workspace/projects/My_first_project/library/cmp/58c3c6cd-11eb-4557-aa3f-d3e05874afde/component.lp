@@ -18,8 +18,8 @@
   (description "")
   (gate 09b6d6c4-2d37-432f-9471-a317aad9a499
    (symbol b95d0aca-7344-41ec-90ed-022f365ad765)
-   (pos 0.0 0.0) (rot 0.0) (required true) (suffix "")
-   (pin 771c2d8b-e4ad-487b-bcb1-fe2bc10c8a03 (sig 1d893320-f811-4a79-b64e-cc23d749d394) (disp none))
+   (position 0.0 0.0) (rotation 0.0) (required true) (suffix "")
+   (pin 771c2d8b-e4ad-487b-bcb1-fe2bc10c8a03 (signal 1d893320-f811-4a79-b64e-cc23d749d394) (text none))
   )
  )
 )

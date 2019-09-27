@@ -1,0 +1,10 @@
+(librepcb_package_category a074fabf-4912-4c29-bc6b-451bf43c2193
+ (name "Small-Outline IC (SO / SOIC)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:59:43Z)
+ (deprecated false)
+ (parent 51a8dc64-d5b5-4bc4-b920-c914707c8341)
+)

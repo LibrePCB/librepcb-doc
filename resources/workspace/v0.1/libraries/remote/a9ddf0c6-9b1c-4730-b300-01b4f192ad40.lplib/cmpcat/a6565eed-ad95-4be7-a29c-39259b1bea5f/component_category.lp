@@ -1,0 +1,10 @@
+(librepcb_component_category a6565eed-ad95-4be7-a29c-39259b1bea5f
+ (name "Displays")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:34:40Z)
+ (deprecated false)
+ (parent 798db79a-f83e-49c5-bc4c-33e77c8501d6)
+)

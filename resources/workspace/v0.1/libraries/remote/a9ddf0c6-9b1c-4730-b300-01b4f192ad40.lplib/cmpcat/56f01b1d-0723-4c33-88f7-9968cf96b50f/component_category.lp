@@ -1,0 +1,10 @@
+(librepcb_component_category 56f01b1d-0723-4c33-88f7-9968cf96b50f
+ (name "Buffers, Drivers")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:30:56Z)
+ (deprecated false)
+ (parent 9212a13b-d12d-4d13-b2c3-07a6c86e5e5c)
+)

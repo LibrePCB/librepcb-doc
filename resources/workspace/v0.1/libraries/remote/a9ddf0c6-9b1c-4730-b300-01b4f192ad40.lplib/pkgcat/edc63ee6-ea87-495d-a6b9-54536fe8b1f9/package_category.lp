@@ -1,0 +1,10 @@
+(librepcb_package_category edc63ee6-ea87-495d-a6b9-54536fe8b1f9
+ (name "Dual In-Line (DIP / DIL)")
+ (description "")
+ (keywords "")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-10-09T22:58:10Z)
+ (deprecated false)
+ (parent 51a8dc64-d5b5-4bc4-b920-c914707c8341)
+)
