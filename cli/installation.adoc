@@ -4,9 +4,9 @@
 [discrete]
 ==== Online Installer
 
-If you have installed LibrePCB with the installer (as described 
-<<gettingstarted-installation,here>>), you should already have the `librepcb-cli`
-tool available in the installation directory.
+If you have installed LibrePCB with the installer (as described
+<<gettingstarted-installation,here>>), you should already have the
+`librepcb-cli` tool available in the installation directory.
 
 [discrete]
 ==== Portable Package

@@ -27,7 +27,8 @@ On Linux the required tools can be installed with following commands:
 
 ## Contributing
 
-Contributions are very welcome! We're looking forward for pull requests :)
+Contributions are very welcome! See our [Contributing Guide](CONTRIBUTING.md)
+for details. We're looking forward for pull requests :)
 
 ## Links
 

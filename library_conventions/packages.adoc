@@ -34,7 +34,7 @@ and a SMD LED) should still be two separate Packages.
 
 .Color (e.g. 0805 LED)
 ====
-Even if a 0805 LED with a transparent lens has exactly the same footprint as a 
+Even if a 0805 LED with a transparent lens has exactly the same footprint as a
 0805 LED with a red lens, they should have *separate Packages because of the
 different color*. This way a Device can link to the Package with the proper
 color, and thus it will appear with the proper color in the 3D PCB preview
@@ -85,8 +85,8 @@ The following conventions apply to Package names:
   parentheses. For example, a chip resistor could be named "RESC2012X70 (0805)".
 * The name of manufacturer-specific packages should start with the manufacturers
   name (e.g. "Molex 53261-06"). _Note: Libraries do not act as namespaces for
-  Package names, so you should start the Package name with the manufacturers name
-  even if the Package is located in a manufacturer-specific library._
+  Package names, so you should start the Package name with the manufacturers
+  name even if the Package is located in a manufacturer-specific library._
 
 
 [#libraryconventions-packages-pads]
