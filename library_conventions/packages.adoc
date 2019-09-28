@@ -1,5 +1,5 @@
 [#libraryconventions-packages]
-=== Package Conventions
+= Package Conventions
 :ipc7351-pdf: http://pcbget.ru/Files/Standarts/IPC_7351.pdf
 :ipc7351-naming-pdf: http://ohm.bu.edu/~pbohn/__Engineering_Reference/pcb_layout/pcbmatrix/IPC-7x51%20&%20PCBM%20Land%20Pattern%20Naming%20Convention.pdf
 :ipc7351c-slides: https://ocipcdc.org/archive/What_is_New_in_IPC-7351C_03_11_2015.pdf
@@ -12,7 +12,7 @@ https://github.com/LibrePCB/librepcb-doc/issues?q=is%3Aissue+label%3A%22Conventi
 
 
 [#libraryconventions-packages-scope]
-==== Scope
+== Scope
 
 The most important thing to consider when creating a Package is the scope
 of it. Since LibrePCB handles footprints differently than other EDA tools,
@@ -64,7 +64,7 @@ Package.
 
 
 [#libraryconventions-packages-naming]
-==== Naming
+== Naming
 
 The following conventions apply to Package names:
 
@@ -90,7 +90,7 @@ The following conventions apply to Package names:
 
 
 [#libraryconventions-packages-pads]
-==== Pads
+== Pads
 
 * *Always add all pads of Packages*, even those which are not always connected.
   For example, the package "TO220" has a metal tab, so you should define it as
@@ -105,7 +105,7 @@ The following conventions apply to Package names:
 
 
 [#libraryconventions-packages-footprints]
-==== Footprint Variants
+== Footprint Variants
 
 Within a Package there can be multiple footprint variants. They are intended
 to support the following use-cases:
@@ -167,7 +167,7 @@ image:img/footprint_r0207_vertical_5p08.png[]
 
 
 [#libraryconventions-packages-origin]
-==== Origin
+== Origin
 
 *The origin _(0, 0)_ should be exactly at the center of the package body*. It
 is used by pick and place machines.
@@ -178,7 +178,7 @@ the datasheet.
 
 
 [#libraryconventions-packages-orientation]
-==== Orientation
+== Orientation
 
 *Footprints must be drawn from the top-view*. When a footprint needs to appear
 on the bottom of a board, this can be done in the board editor by mirroring it.
@@ -194,7 +194,7 @@ image:img/footprint_pin1_sot669.png[]
 
 
 [#libraryconventions-packages-placement]
-==== Placement Layer
+== Placement Layer
 
 The _Top Placement_ layer is intended to be printed on silkscreen and thus
 should contain information required for assembling the PCB. But don't put too
@@ -223,7 +223,7 @@ image:img/footprint_placement_r0603.png[]
 
 
 [#libraryconventions-packages-documentation]
-==== Documentation Layer
+== Documentation Layer
 
 The layer _Top Documentation_ should be used to draw the most important
 details of the package's appearance. It could be considered as an alternative
@@ -255,7 +255,7 @@ image:img/footprint_documentation_to220.png[]
 
 
 [#libraryconventions-packages-textelements]
-==== Text Elements
+== Text Elements
 
 Typical footprints should have exactly two text elements: `{{NAME}}` and
 `{{VALUE}}`.

@@ -1,20 +1,20 @@
 [#cli-installation]
-=== Installation
+= Installation
 
 [discrete]
-==== Online Installer
+== Online Installer
 
 If you have installed LibrePCB with the installer (as described
 <<gettingstarted-installation,here>>), you should already have the
 `librepcb-cli` tool available in the installation directory.
 
 [discrete]
-==== Portable Package
+== Portable Package
 
 Alternatively you could run `librepcb-cli` without installing it.
 
 [discrete]
-===== Windows
+=== Windows
 :windows-zip-filename: librepcb-{version}-windows-x86.zip
 :windows-zip-url: {releases_url}/{windows-zip-filename}
 
@@ -22,7 +22,7 @@ Download and extract {windows-zip-url}[{windows-zip-filename}], then
 run the contained file `bin\librepcb-cli.exe`.
 
 [discrete]
-===== Linux
+=== Linux
 :linux-appimage-filename: librepcb-cli-{version}-linux-x86_64.AppImage
 :linux-appimage-url: {releases_url}/{linux-appimage-filename}
 
@@ -37,7 +37,7 @@ chmod +x ./{linux-appimage-filename}
 ----
 
 [discrete]
-===== Mac
+=== Mac
 :mac-bundle-filename: librepcb-cli-{version}-mac-x86_64.dmg
 :mac-bundle-url: {releases_url}/{mac-bundle-filename}
 

@@ -1,5 +1,5 @@
 [#about]
-== About LibrePCB
+= About LibrePCB
 :imagesdir: about
 
 Welcome to the documentation of link:http://librepcb.org[LibrePCB]!
@@ -14,7 +14,7 @@ are welcome! Check out https://github.com/LibrePCB/librepcb-doc
 
 image:img/screenshot.png[alt="screenshot"]
 
-=== Features
+== Features
 
 * Cross-platform (Unix/Linux, Mac OS X, Windows)
 * All-In-One: project management + library/schematic/board editors
@@ -26,20 +26,20 @@ image:img/screenshot.png[alt="screenshot"]
 
 
 [#projectstatus]
-=== Project Status
+== Project Status
 
 LibrePCB is still under development and many features are not
 implemented yet. So here's an overview about the project status:
 
 [discrete]
-==== What's working
+=== What's working
 
 * Downloading, creating and modifying libraries
 * Drawing simple schematics with multiple sheets (incl. print or PDF export)
 * Creating simple multilayer PCBs (incl. Gerber/Excellon export)
 
 [discrete]
-==== What's missing
+=== What's missing
 
 * **No bill of materials (BOM) export**
   https://github.com/LibrePCB/LibrePCB/wiki/Wishlist#project[[wishlist\]]
