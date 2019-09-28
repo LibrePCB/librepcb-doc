@@ -49,6 +49,22 @@ text elements). For non-symmetrical symbols it should be as close as
 possible to the center, but still on the 2.54mm grid.
 
 
+[#libraryconventions-symbols-outline]
+==== Outline
+
+The outline of a regular symbol should be drawn with a rectangle or a polygon.
+All vertices should be located on the 2.54mm grid and following properties
+should be used:
+
+- *Layer*: _Outlines_
+- *Line Width*: _0.2 mm_
+- *Filled*: _no_
+- *Grab Area*: _yes_
+
+Special symbols (like a capacitor) might not have a regular outline, in such
+cases it's allowed to use different properties to draw the symbol geometry.
+
+
 [#libraryconventions-symbols-pinplacement]
 ==== Pin Placement
 
@@ -63,6 +79,8 @@ possible to the center, but still on the 2.54mm grid.
   height of 5.08mm). Or place _D+_ and _D-_ of a USB device right on top of
   each other (with the default distance of 2.54mm) as they are always used
   as a pair.
+- *Use a pin length of 2.54mm* if possible. Other pin lengths should be used
+  only in special cases.
 
 
 [#libraryconventions-symbols-pinnaming]
@@ -94,6 +112,17 @@ Irregularly shaped symbols may have text elements placed differently, see for
 example the crystal at the left. Keep in mind that the value of a component can
 consist of several lines, so there should always be enough space available for
 it.
+
+.Typical text element properties
+[cols="s,e,e",options="header,autowidth"]
+|===
+| Property          | Name text element     | Value text element
+| Layer             | Names                 | Values
+| Text              | {{NAME}}              | {{VALUE}}
+| Alignment         | Bottom Left           | Top Left
+| Height            | 2.5mm                 | 2.5mm
+| Rotation          | 0°                    | 0°
+|===
 
 
 [#libraryconventions-symbols-grabarea]
