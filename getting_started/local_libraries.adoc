@@ -1,71 +1,5 @@
-[#gettingstarted-libraries]
-= Add Libraries
-
-Before you can start with creating new projects, you need to add some libraries
-to your Workspace. Libraries contain various kinds of elements which can be
-added to schematics and boards (e.g. symbols and footprints).
-
-To open the Library Manager, click on the corresponding button in the Control
-Panel (or on the link in the shown warning, but the warning will disappear after
-you add a library):
-
-image:img/control_panel_library_manager.png[alt="Library Manager"]
-
-
-[#gettingstarted-libraries-remote]
-== Download Remote Libraries
-
-The Library Manager directly fetches the list of available libraries from the
-Internet. Most of these libraries are hosted at
-https://github.com/LibrePCB-Libraries.
-
-[NOTE]
-====
-The provided libraries currently contain only a few elements. You are welcome to
-contribute more elements by opening pull requests at
-https://github.com/LibrePCB-Libraries[https://github.com/LibrePCB-Libraries]!
-====
-
-The most important library is the _LibrePCB Base_ library because it contains
-the most commonly used library elements (like resistors or diodes). It is highly
-recommended to install this library. To do so, just select the checkboxes at the
-right and click on the _Download and install/update all selected libraries_
-button:
-
-image:img/library_manager_download.png[alt="Download Libraries"]
-
-By the way, the same way you can also update already installed libraries to the
-latest version. You should regularly update all libraries to get more elements
-and bugfixes/improvements of existing elements.
-
-[NOTE]
-====
-Dependencies between different libraries are automatically taken into account
-when changing the selection. So for example if you select _LibrePCB Connectors_,
-the _LibrePCB Base Library_ will automatically be selected too because the
-Connectors library depends on it.
-====
-
-[WARNING]
-====
-Downloaded (so-called _remote_-) libraries are always read-only because
-otherwise local modifications could cause conflicts when updating the library
-the next time. But this should not be an issue, just follow the guide below to
-create your own local library. In a local library you can extend, or even
-overwrite existing library elements (by using a higher version number to
-enforce higher priority).
-====
-
-[TIP]
-====
-If you are familiar with Version Control Systems (e.g. _Git_) and want to use
-them to manage your libraries (instead of the Library Manager), just clone the
-libraries into the subdirectory `v0.1/libraries/local/` in your Workspace.
-====
-
-
 [#gettingstarted-libraries-local]
-== Create Local Libraries
+= Create Local Libraries
 
 Of course you can also create your own libraries. To do so, enter some metadata
 in the tab _Create local library_ and click on _Create Library_:
@@ -128,7 +62,7 @@ choose which of the six library element type you want to create:
 image:img/library_editor_new_element.png[alt="New Library Element"]
 
 :example_part_name: LMV321LILT
-=== Example: {example_part_name}
+== Example: {example_part_name}
 
 Let's say you want to create the part {example_part_name} from A to Z. We will
 create now all the necessary library elements for the {example_part_name},
@@ -138,7 +72,7 @@ from library _A_, the Component from library _B_ and the Package from library
 _C_.
 
 [#gettingstarted-libraries-cmpcat]
-==== Component Category
+=== Component Category
 
 First you should create a Component Category for the {example_part_name} (if it
 doesn't already exists). Choose a suitable (generic!) name and select a parent
@@ -149,7 +83,7 @@ image:img/create_component_category.png[alt="Create Component Category"]
 After clicking on _Finish_, your first Component Category is ready to be used :)
 
 [#gettingstarted-libraries-sym]
-==== Symbol
+=== Symbol
 
 Now we need to create a Symbol for the OpAmp. Click on the
 _Symbol_ button in the _New Library Element_ wizard, fill in some metadata
@@ -184,7 +118,7 @@ For details about how symbols should be designed, please take a look at our
 
 
 [#gettingstarted-libraries-cmp]
-==== Component
+=== Component
 
 The next element you need to create is the Component for a single OpAmp. Because
 it is still very generic (beside the {example_part_name} there are many other
@@ -274,7 +208,7 @@ flexibility of the library concept ;)
 
 
 [#gettingstarted-libraries-pkgcat]
-==== Package Category
+=== Package Category
 
 Before creating a Package for the {example_part_name}, you should (optionally)
 create a category for it. This is basically done exactly the same way as you
@@ -284,7 +218,7 @@ look like this:
 image:img/create_package_category.png[alt="Create Package Category"]
 
 [#gettingstarted-libraries-pkg]
-==== Package
+=== Package
 
 Then you need to create the Package for the {example_part_name}, which is called
 _SOT23-5_. After specifying some metadata (like you already did for other
@@ -328,7 +262,7 @@ are:
 
 
 [#gettingstarted-libraries-dev]
-==== Device
+=== Device
 
 The last library element you need to create is the Device which combines the
 Component _Single OpAmp_ with the Package _SOT23-5_. This is actually the only

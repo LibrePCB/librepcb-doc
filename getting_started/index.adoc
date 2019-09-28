@@ -9,6 +9,8 @@ include::installation.adoc[leveloffset=+1]
 
 include::workspace.adoc[leveloffset=+1]
 
-include::libraries.adoc[leveloffset=+1]
+include::remote_libraries.adoc[leveloffset=+1]
+
+include::local_libraries.adoc[leveloffset=+1]
 
 include::project.adoc[leveloffset=+1]
