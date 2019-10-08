@@ -1,9 +1,9 @@
 [#libraryconventions]
-== Library Conventions
+= Library Conventions
 :imagesdir: library_conventions
 
 Here we collect conventions / guidelines to be used when designing libraries.
 
-include::symbols.adoc[]
+include::symbols.adoc[leveloffset=+1]
 
-include::packages.adoc[]
+include::packages.adoc[leveloffset=+1]

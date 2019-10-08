@@ -1,5 +1,5 @@
 [#gettingstarted-project]
-=== Create a New Project
+= Create a New Project
 
 In LibrePCB, schematics and boards are always part of a Project, so before
 creating schematics and boards you first need to create a Project for every

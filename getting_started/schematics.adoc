@@ -1,5 +1,5 @@
 [#gettingstarted-schematics]
-=== Create Schematics
+= Create Schematics
 
 First, you may want to add a frame to the schematic. This is done by choosing a
 schematic frame in the Component Chooser:

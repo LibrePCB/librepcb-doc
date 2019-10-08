@@ -1,5 +1,5 @@
 [#gettingstarted-installation]
-=== Installation
+= Installation
 
 .Disclaimer
 [WARNING]
@@ -20,7 +20,7 @@ https://github.com/LibrePCB/LibrePCB/issues[open an issue] if LibrePCB doesn't
 work as expected.
 ====
 
-==== Online Installer
+== Online Installer
 
 The recommended way to install LibrePCB is to use the online installer.
 It provides the following features:
@@ -33,14 +33,14 @@ It provides the following features:
   with a double-click in the file manager.
 
 [discrete]
-===== Windows
+=== Windows
 :windows-installer-filename: librepcb-installer-{version}-windows-x86.exe
 :windows-installer-url: {releases_url}/{windows-installer-filename}
 
 Download and run {windows-installer-url}[{windows-installer-filename}].
 
 [discrete]
-===== Linux
+=== Linux
 :linux-installer-filename: librepcb-installer-{version}-linux-x86_64.run
 :linux-installer-url: {releases_url}/{linux-installer-filename}
 
@@ -55,21 +55,21 @@ chmod +x ./{linux-installer-filename}
 ----
 
 [discrete]
-===== Mac
+=== Mac
 :mac-installer-filename: librepcb-installer-{version}-mac-x86_64.dmg
 :mac-installer-url: {releases_url}/{mac-installer-filename}
 
 Download and run {mac-installer-url}[{mac-installer-filename}]. "Unverified"
 packages may have to be opened via right-click.
 
-==== Portable Package
+== Portable Package
 
 Alternatively you could run LibrePCB without installing it. But then you don't
 get an update mechanism, no start menu entries are created, and `*.lpp` files
 will not be registered.
 
 [discrete]
-===== Windows
+=== Windows
 :windows-zip-filename: librepcb-{version}-windows-x86.zip
 :windows-zip-url: {releases_url}/{windows-zip-filename}
 
@@ -77,7 +77,7 @@ Download and extract {windows-zip-url}[{windows-zip-filename}], then
 run the contained file `bin\librepcb.exe`.
 
 [discrete]
-===== Linux
+=== Linux
 :linux-appimage-filename: librepcb-{version}-linux-x86_64.AppImage
 :linux-appimage-url: {releases_url}/{linux-appimage-filename}
 
@@ -92,7 +92,7 @@ chmod +x ./{linux-appimage-filename}
 ----
 
 [discrete]
-===== Mac
+=== Mac
 :mac-bundle-filename: librepcb-{version}-mac-x86_64.dmg
 :mac-bundle-url: {releases_url}/{mac-bundle-filename}
 

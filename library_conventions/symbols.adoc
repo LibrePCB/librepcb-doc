@@ -1,5 +1,5 @@
 [#libraryconventions-symbols]
-=== Symbol Conventions
+= Symbol Conventions
 
 [NOTE]
 ====
@@ -9,7 +9,7 @@ https://github.com/LibrePCB/librepcb-doc/issues?q=is%3Aissue+label%3A%22Conventi
 
 
 [#libraryconventions-symbols-genericspecific]
-==== Generic vs. Specific
+== Generic vs. Specific
 
 Generic components should have generic symbols. For example a diode (let's
 say _1N4007_) doesn't need its own symbol, a generic diode symbol is fine.
@@ -25,7 +25,7 @@ instead. This way you can choose a reasonable
 
 
 [#libraryconventions-symbols-naming]
-==== Naming
+== Naming
 
 Following conventions apply to symbol names:
 
@@ -42,7 +42,7 @@ image::img/symbol_stm32.png[alt="Example Symbol",role="right"]
 
 
 [#libraryconventions-symbols-origin]
-==== Origin
+== Origin
 
 The origin _(0, 0)_ must be at the center of the symbol (not including
 text elements). For non-symmetrical symbols it should be as close as
@@ -50,7 +50,7 @@ possible to the center, but still on the 2.54mm grid.
 
 
 [#libraryconventions-symbols-outline]
-==== Outline
+== Outline
 
 The outline of a regular symbol should be drawn with a rectangle or a polygon.
 All vertices should be located on the 2.54mm grid and following properties
@@ -66,7 +66,7 @@ cases it's allowed to use different properties to draw the symbol geometry.
 
 
 [#libraryconventions-symbols-pinplacement]
-==== Pin Placement
+== Pin Placement
 
 - For integrated circuit symbols (i.e. rectangular outline), generally
   *don't place pins at the top and bottom edges*, but only on the left and
@@ -84,7 +84,7 @@ cases it's allowed to use different properties to draw the symbol geometry.
 
 
 [#libraryconventions-symbols-pinnaming]
-==== Pin Naming
+== Pin Naming
 
 If the function of a pin is absolutely clear (e.g. anode/cathode of a diode),
 choose its abbreviated functionality as name (e.g. "A" for anode and "C" for
@@ -94,7 +94,7 @@ defined by the component using that symbol), just use numbers starting with
 
 
 [#libraryconventions-symbols-textelements]
-==== Text Elements
+== Text Elements
 
 Typical symbols should have exactly two text elements: `{{NAME}}` and
 `{{VALUE}}`.
@@ -126,7 +126,7 @@ it.
 
 
 [#libraryconventions-symbols-grabarea]
-==== Grab Area
+== Grab Area
 
 The grab area is the region of a symbol where it can be grabbed with the
 mouse (to move it, or to open the context menu). Symbols which have a

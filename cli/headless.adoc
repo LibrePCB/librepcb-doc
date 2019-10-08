@@ -1,5 +1,5 @@
 [#cli-headless]
-=== Running on Headless Linux
+= Running on Headless Linux
 
 Please note that (at this time) `librepcb-cli` requires a running X-server
 even if it doesn't open any windows. If your system doesn't have an X-server
@@ -13,7 +13,7 @@ $ xvfb-run -a librepcb-cli [args]
 You may also need to install the OpenGL library (e.g. `libglu1-mesa`).
 
 [discrete]
-==== Running in Docker Container
+== Running in Docker Container
 
 In addition to `xvfb`, running the LibrePCB CLI AppImage in a Docker
 container needs a workaround because FUSE is missing. See details here:

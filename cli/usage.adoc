@@ -1,5 +1,5 @@
 [#cli-usage]
-=== Usage
+= Usage
 
 Usage instructions and available options can be shown with `--help`:
 
@@ -27,7 +27,7 @@ Commands:
   open-project   Open a project to execute project-related tasks.
 ----
 
-==== Command `open-library`
+== Command `open-library`
 
 This command opens a LibrePCB library and lets you execute some tasks with it.
 
@@ -57,7 +57,7 @@ Arguments:
 ----
 
 [discrete]
-===== Example: Check and Upgrade File Format of Library Elements
+=== Example: Check and Upgrade File Format of Library Elements
 
 This command is useful for Continuous Integration of LibrePCB libraries because
 it reports failure if you check in libraries with invalid S-Expression files.
@@ -86,7 +86,7 @@ Save library 'MyLibrary.lplib'...
 SUCCESS
 ----
 
-==== Command `open-project`
+== Command `open-project`
 
 This command opens a LibrePCB project and lets you execute some tasks with it.
 
@@ -133,7 +133,7 @@ Arguments:
 ----
 
 [discrete]
-===== Example: Check ERC Messages and Export Schematics & Boards
+=== Example: Check ERC Messages and Export Schematics & Boards
 
 This command is useful for Continuous Integration of LibrePCB projects because
 it reports failure if you check in projects with non-approved ERC messages. In

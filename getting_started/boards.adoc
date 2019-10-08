@@ -1,5 +1,5 @@
 [#gettingstarted-boards]
-=== Create Boards
+= Create Boards
 
 Once the schematic is (more or less) complete, you can start adding Devices
 to the board. For every Component in the schematic, you need to place a Device
