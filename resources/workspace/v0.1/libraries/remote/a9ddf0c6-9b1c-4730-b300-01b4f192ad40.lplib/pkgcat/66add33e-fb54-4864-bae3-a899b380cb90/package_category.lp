@@ -1,0 +1,10 @@
+(librepcb_package_category 66add33e-fb54-4864-bae3-a899b380cb90
+ (name "Card Edge Connector")
+ (description "")
+ (keywords "")
+ (author "LibrePCB")
+ (version "0.1")
+ (created 2019-06-15T11:14:10Z)
+ (deprecated false)
+ (parent 56a5773f-eeb4-4b39-8cb9-274f3da26f4f)
+)

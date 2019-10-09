@@ -7,11 +7,11 @@
  (created 2015-12-20T22:10:35Z)
  (deprecated false)
  (category b77c2754-fc91-4e9e-949e-5568a4bee0fe)
- (pad 08057c6a-86af-474d-955d-7a966c7f73de (name "4"))
  (pad 58eea0cf-9ed7-441d-8e14-6a7ef016edc9 (name "1"))
- (pad 66ac93f7-4af4-40a8-9e53-4dbbf128bbc9 (name "PAD"))
  (pad 6f055e75-0d6f-454b-9122-bea141fd0501 (name "2"))
  (pad f3e6c95b-1c48-46a6-82bf-f640de0114e3 (name "3"))
+ (pad 08057c6a-86af-474d-955d-7a966c7f73de (name "4"))
+ (pad 66ac93f7-4af4-40a8-9e53-4dbbf128bbc9 (name "PAD"))
  (footprint 3ef861e5-cad6-4321-87af-620dd88a5f13
   (name "default")
   (description "")

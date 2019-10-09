@@ -1,0 +1,10 @@
+(librepcb_package_category b2fef347-8caf-4a6f-a889-ed91a3b357ab
+ (name "Flex Connector")
+ (description "")
+ (keywords "")
+ (author "LibrePCB")
+ (version "0.1")
+ (created 2019-06-15T11:16:15Z)
+ (deprecated false)
+ (parent 56a5773f-eeb4-4b39-8cb9-274f3da26f4f)
+)

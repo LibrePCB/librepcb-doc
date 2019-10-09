@@ -1,0 +1,10 @@
+(librepcb_package_category b724b55e-0f80-4cf3-aa9f-e2a87e02bd19
+ (name "Terminal Block")
+ (description "")
+ (keywords "")
+ (author "LibrePCB")
+ (version "0.1")
+ (created 2019-06-15T11:16:36Z)
+ (deprecated false)
+ (parent 56a5773f-eeb4-4b39-8cb9-274f3da26f4f)
+)

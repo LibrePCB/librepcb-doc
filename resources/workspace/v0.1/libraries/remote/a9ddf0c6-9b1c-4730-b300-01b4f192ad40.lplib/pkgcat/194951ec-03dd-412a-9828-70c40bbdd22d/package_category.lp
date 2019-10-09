@@ -1,0 +1,10 @@
+(librepcb_package_category 194951ec-03dd-412a-9828-70c40bbdd22d
+ (name "Manufacturer-Specific")
+ (description "Packages only used by a single manufacturer.")
+ (keywords "manufacturer,custom")
+ (author "Danilo B.")
+ (version "0.1")
+ (created 2018-11-08T20:09:43Z)
+ (deprecated false)
+ (parent none)
+)

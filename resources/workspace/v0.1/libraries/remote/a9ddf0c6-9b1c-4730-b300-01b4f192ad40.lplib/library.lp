@@ -3,7 +3,7 @@
  (description "Official LibrePCB Base Library")
  (keywords "")
  (author "LibrePCB")
- (version "0.0.4")
+ (version "0.0.16")
  (created 2016-09-28T21:48:03Z)
  (deprecated false)
  (url "https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib")

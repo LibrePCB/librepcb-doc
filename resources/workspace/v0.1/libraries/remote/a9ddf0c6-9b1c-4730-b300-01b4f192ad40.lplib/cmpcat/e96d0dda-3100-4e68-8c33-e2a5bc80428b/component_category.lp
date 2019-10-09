@@ -1,0 +1,10 @@
+(librepcb_component_category e96d0dda-3100-4e68-8c33-e2a5bc80428b
+ (name "Single Board Computers, Dev/Eval Boards")
+ (description "PCB Modules like Single Board Computers (SBC), Development or Evaluation Boards.")
+ (keywords "module,sbc,development,dev,evaluation,eval")
+ (author "U. Bruhin")
+ (version "0.1")
+ (created 2018-11-17T13:46:18Z)
+ (deprecated false)
+ (parent none)
+)

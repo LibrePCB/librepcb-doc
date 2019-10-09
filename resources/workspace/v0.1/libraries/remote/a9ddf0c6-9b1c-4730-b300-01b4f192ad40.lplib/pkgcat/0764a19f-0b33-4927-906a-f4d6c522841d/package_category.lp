@@ -1,0 +1,10 @@
+(librepcb_package_category 0764a19f-0b33-4927-906a-f4d6c522841d
+ (name "Chip LED")
+ (description "")
+ (keywords "led,chipled")
+ (author "LibrePCB")
+ (version "0.1")
+ (created 2019-01-22T21:15:38Z)
+ (deprecated false)
+ (parent 0a8e9c33-0a23-47e0-a4a5-b1a6c1c7fa2e)
+)

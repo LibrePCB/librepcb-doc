@@ -1,0 +1,10 @@
+(librepcb_component_category 8c508cce-7904-44b9-a300-d9cc6eb44a6d
+ (name "Gas Sensors")
+ (description "")
+ (keywords "")
+ (author "Danilo B.")
+ (version "0.1")
+ (created 2018-12-02T16:15:08Z)
+ (deprecated false)
+ (parent 5347fa0a-108b-4fa0-b97d-947d35c218be)
+)

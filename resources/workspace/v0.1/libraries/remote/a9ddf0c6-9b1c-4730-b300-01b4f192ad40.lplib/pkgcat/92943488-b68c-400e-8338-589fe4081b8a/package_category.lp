@@ -1,0 +1,10 @@
+(librepcb_package_category 92943488-b68c-400e-8338-589fe4081b8a
+ (name "Computer Connector (USB, HDMI, Ethernet, ...)")
+ (description "")
+ (keywords "")
+ (author "LibrePCB")
+ (version "0.1")
+ (created 2019-06-15T11:14:55Z)
+ (deprecated false)
+ (parent 56a5773f-eeb4-4b39-8cb9-274f3da26f4f)
+)

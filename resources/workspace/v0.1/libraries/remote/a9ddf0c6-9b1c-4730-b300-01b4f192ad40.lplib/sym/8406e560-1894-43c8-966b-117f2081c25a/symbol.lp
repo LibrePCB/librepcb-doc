@@ -1,5 +1,5 @@
 (librepcb_symbol 8406e560-1894-43c8-966b-117f2081c25a
- (name "2x Schottky Diodes CC")
+ (name "Schottky Diodes Dual CC")
  (description "Common Cathode Schottky Diodes")
  (keywords "")
  (author "U. Bruhin")

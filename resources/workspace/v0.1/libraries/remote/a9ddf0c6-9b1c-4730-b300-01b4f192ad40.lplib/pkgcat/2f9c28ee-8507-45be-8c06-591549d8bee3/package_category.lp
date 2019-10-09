@@ -1,0 +1,10 @@
+(librepcb_package_category 2f9c28ee-8507-45be-8c06-591549d8bee3
+ (name "Direct Wire to Board Connector")
+ (description "")
+ (keywords "")
+ (author "LibrePCB")
+ (version "0.1")
+ (created 2019-06-15T11:15:36Z)
+ (deprecated false)
+ (parent 56a5773f-eeb4-4b39-8cb9-274f3da26f4f)
+)

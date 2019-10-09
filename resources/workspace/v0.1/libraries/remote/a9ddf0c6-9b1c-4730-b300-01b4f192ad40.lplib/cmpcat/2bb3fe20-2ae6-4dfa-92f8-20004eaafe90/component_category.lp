@@ -1,0 +1,10 @@
+(librepcb_component_category 2bb3fe20-2ae6-4dfa-92f8-20004eaafe90
+ (name "Optocouplers")
+ (description "")
+ (keywords "")
+ (author "pinoaffe")
+ (version "0.1")
+ (created 2019-04-05T12:29:55Z)
+ (deprecated false)
+ (parent 798db79a-f83e-49c5-bc4c-33e77c8501d6)
+)

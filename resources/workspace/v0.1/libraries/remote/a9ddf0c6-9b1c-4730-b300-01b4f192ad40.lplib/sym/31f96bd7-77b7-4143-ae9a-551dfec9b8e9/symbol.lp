@@ -1,5 +1,5 @@
 (librepcb_symbol 31f96bd7-77b7-4143-ae9a-551dfec9b8e9
- (name "2x Schottky Diodes in Series")
+ (name "Schottky Diodes Dual in Series")
  (description "")
  (keywords "")
  (author "U. Bruhin")

@@ -1,5 +1,5 @@
 (librepcb_symbol 2e2cfefb-7e83-4f7b-adbb-0185d6c2188e
- (name "2x Schottky Diodes CA")
+ (name "Schottky Diodes Dual CA")
  (description "Common Anode Schottky Diodes")
  (keywords "")
  (author "U. Bruhin")

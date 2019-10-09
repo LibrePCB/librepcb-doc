@@ -114,6 +114,8 @@ For details about how symbols should be designed, please take a look at our
 - Pins should be grouped by functionality and must be placed on the 2.54mm
   grid.
 - There should be text elements for `{{NAME}}` and `{{VALUE}}`.
+- Gates offered in multiunit packages should also include a symbol without
+  power pins.
 ====
 
 
@@ -192,6 +194,12 @@ as soon as you understand the our library concepts, you will be able to easily
 create much more powerful library elements. We're sure you will love the
 flexibility of the library concept ;)
 ====
+Because this component comes in packages with 1,2 or 4 OpAmps you should also
+create a symbol with no power pins. You can then create a symbol variant using
+that symbol with a generic power block.
+
+image:img/create_component_variant.png[alt="Component Variant"]
+
 
 .Following are the most important rules to create reusable Components:
 [TIP]

@@ -3,10 +3,10 @@
  (description "")
  (keywords "")
  (author "U. Bruhin")
- (version "0.2")
+ (version "0.2.1")
  (created 2015-06-21T12:37:34Z)
  (deprecated false)
- (category a20f0330-06d3-4bc2-a1fa-f8577deb6770)
+ (category 414f873f-4099-47fd-8526-bdd8419de581)
  (pad 4f6ec20b-c2e7-47d9-ba0e-8cde302966c5 (name "1"))
  (pad 9902d57d-5b64-4bc3-9a5b-a21052667c9d (name "2"))
  (footprint 328e4ae0-a0f1-4d92-87b5-1695afbe98e1

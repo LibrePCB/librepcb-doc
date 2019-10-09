@@ -1,0 +1,10 @@
+(librepcb_package_category c0f16db0-f0db-4121-ab12-b4570ff79738
+ (name "Switch")
+ (description "Category for all kinds of switches and buttons")
+ (keywords "switch,button")
+ (author "HBadertscher")
+ (version "0.1")
+ (created 2019-07-01T10:15:59Z)
+ (deprecated false)
+ (parent none)
+)
