@@ -1,0 +1,3 @@
+[submodule "resources/workspace/v0.1/libraries/remote/a9ddf0c6-9b1c-4730-b300-01b4f192ad40.lplib"]
+  path = resources/workspace/v0.1/libraries/remote/a9ddf0c6-9b1c-4730-b300-01b4f192ad40.lplib
+  url = https://github.com/LibrePCB-Libraries/LibrePCB_Base.lplib.git
