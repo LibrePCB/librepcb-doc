@@ -36,21 +36,19 @@ implemented yet. So here's an overview about the project status:
 
 * Downloading, creating and modifying libraries
 * Drawing simple schematics with multiple sheets (incl. print or PDF export)
-* Creating simple multilayer PCBs (incl. Gerber/Excellon export)
+* Creating simple multilayer PCBs (incl. DRC and Gerber/Excellon/PDF export)
+* Exporting bill of materials (BOM)
 
 [discrete]
 === What's missing
 
-* **No bill of materials (BOM) export**
-  https://github.com/LibrePCB/LibrePCB/wiki/Wishlist#project[[wishlist\]]
-* **No design rule check**
 * No hierarchical schematics
   https://github.com/LibrePCB/LibrePCB/wiki/Wishlist#schematic-editor[[wishlist\]]
 * No buses in schematics
   https://github.com/LibrePCB/LibrePCB/wiki/Wishlist#schematic-editor[[wishlist\]]
 * No 3D board viewer
   https://github.com/LibrePCB/LibrePCB/wiki/Wishlist#board-editor[[wishlist\]]
-* No clipboard functionality (cut/copy/paste)
+* No clipboard functionality (cut/copy/paste) in board/schematic editors
   https://github.com/LibrePCB/LibrePCB/issues/13[[#13\]]
 
 Of course all these features will be implemented in future. Please consider to
