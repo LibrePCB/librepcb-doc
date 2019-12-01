@@ -25,6 +25,15 @@ run the contained file `bin\librepcb-cli.exe`.
 === Linux
 :linux-appimage-filename: librepcb-cli-{version}-linux-x86_64.AppImage
 :linux-appimage-url: {releases_url}/{linux-appimage-filename}
+:linux-targz-foldername: librepcb-{version}-linux-x86_64
+:linux-targz-filename: librepcb-{version}-linux-x86_64.tar.gz
+:linux-targz-url: {releases_url}/{linux-targz-filename}
+:linux-docker-name: librepcb/librepcb-cli
+:linux-docker-tag: {linux-docker-name}:{version}
+:linux-docker-url: https://hub.docker.com/r/{linux-docker-name}
+
+[discrete]
+==== AppImage
 
 Download {linux-appimage-url}[{linux-appimage-filename}], make it executable
 and start it:
@@ -34,6 +43,31 @@ and start it:
 wget "{linux-appimage-url}"
 chmod +x ./{linux-appimage-filename}
 ./{linux-appimage-filename}
+----
+
+[discrete]
+==== Binaries
+
+Alternatively, you can download and extract
+{linux-targz-url}[{linux-targz-filename}] which contains the `librepcb-cli`
+executable:
+
+[source,bash,subs="attributes"]
+----
+wget "{linux-targz-url}"
+tar -xvzf ./{linux-targz-filename}
+./{linux-targz-foldername}/bin/librepcb-cli
+----
+
+[discrete]
+==== Docker
+
+Or if you have https://www.docker.com/[Docker] installed, you can use our
+official image {linux-docker-url}[`{linux-docker-name}`]:
+
+[source,bash,subs="attributes"]
+----
+docker run -it --rm -u $(id -u):$(id -g) -v `pwd`:/work {linux-docker-tag}
 ----
 
 [discrete]
