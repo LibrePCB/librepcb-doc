@@ -10,22 +10,11 @@ running, you can use link:https://en.wikipedia.org/wiki/Xvfb[xvfb] instead:
 $ xvfb-run -a librepcb-cli [args]
 ----
 
-You may also need to install the OpenGL library (e.g. `libglu1-mesa`).
 
-[discrete]
-== Running in Docker Container
+If the `librepcb-cli` executable still dosn't work, you may need to install
+some dependencies. On Debian/Ubuntu, following packages need to be installed:
 
-In addition to `xvfb`, running the LibrePCB CLI AppImage in a Docker
-container needs a workaround because FUSE is missing. See details here:
-https://github.com/AppImage/AppImageKit/wiki/FUSE#docker
-
-.Example Dockerfile
-[source,docker,subs="attributes"]
+[source,bash]
 ----
-FROM ubuntu:18.04
-RUN apt-get update && apt-get -yy install wget ca-certificates libglu1-mesa qt5-default xvfb
-RUN wget "{releases_url}/librepcb-cli-{version}-linux-x86_64.AppImage"
-RUN chmod a+x ./librepcb-cli-{version}-linux-x86_64.AppImage
-RUN ./librepcb-cli-{version}-linux-x86_64.AppImage --appimage-extract
-ENTRYPOINT ["sh", "-c", "xvfb-run -a ./squashfs-root/AppRun"]
+$ apt-get install libfontconfig1 libglib2.0-0 libglu1-mesa
 ----
