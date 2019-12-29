@@ -1,7 +1,7 @@
 [#libraryconventions-packages]
 = Package Conventions
 :ipc7351-pdf: http://pcbget.ru/Files/Standarts/IPC_7351.pdf
-:ipc7351-naming-pdf: http://ohm.bu.edu/~pbohn/__Engineering_Reference/pcb_layout/pcbmatrix/IPC-7x51%20&%20PCBM%20Land%20Pattern%20Naming%20Convention.pdf
+:ipc7351-naming-pdf: http://www.pcblibraries.com/downloads/temp/Library-Expert-Land-Pattern-Naming-Convention_.pdf
 :ipc7351c-slides: https://ocipcdc.org/archive/What_is_New_in_IPC-7351C_03_11_2015.pdf
 
 [NOTE]
@@ -68,11 +68,11 @@ Package.
 
 The following conventions apply to Package names:
 
-* *If {ipc7351-naming-pdf}[IPC-7351] specifies a name for a given package, use
-  that name* (e.g. "SOT95P280X145-5" instead of "SOT23-5"). Alternative names
-  (like "SOT23-5") should be added to the comma-separated keywords list and
-  maybe to the description.
-* For packages not covered by {ipc7351-naming-pdf}[IPC-7351], use following
+* We generally follow {ipc7351-naming-pdf}[IPC-7351C] when naming packages
+  (e.g. "SOT23-5P95_280X145L60" instead of "SOT23-5"). Alternative names (like
+  "SOT23-5") should be added to the comma-separated keywords list and maybe to
+  the description.
+* For packages not covered by {ipc7351-naming-pdf}[IPC-7351C], use following
   naming conventions:
 ** *Language must be American English* (en_US), if applicable (many Packages
    have language-neutral names anyway).
