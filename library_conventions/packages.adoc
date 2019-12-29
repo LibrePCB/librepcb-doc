@@ -68,7 +68,7 @@ Package.
 
 The following conventions apply to Package names:
 
-* We generally follow {ipc7351-naming-pdf}[IPC-7351C] when naming packages
+* We generally *follow {ipc7351-naming-pdf}[IPC-7351C] when naming packages*
   (e.g. "SOT23-5P95_280X145L60" instead of "SOT23-5"). Alternative names (like
   "SOT23-5") should be added to the comma-separated keywords list and maybe to
   the description.
