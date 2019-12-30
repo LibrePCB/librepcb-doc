@@ -1,7 +1,7 @@
 [#libraryconventions-packages]
 = Package Conventions
 :ipc7351-pdf: http://pcbget.ru/Files/Standarts/IPC_7351.pdf
-:ipc7351-naming-pdf: http://www.pcblibraries.com/downloads/temp/Library-Expert-Land-Pattern-Naming-Convention_.pdf
+:ipc7351-naming-pdf: https://www.pcblibraries.com/downloads/Guidelines!Library-Expert-Land-Pattern-Naming-Convention.asp
 :ipc7351c-slides: https://ocipcdc.org/archive/What_is_New_in_IPC-7351C_03_11_2015.pdf
 
 [NOTE]
