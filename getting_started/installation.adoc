@@ -98,3 +98,19 @@ chmod +x ./{linux-appimage-filename}
 
 Download {mac-bundle-url}[{mac-bundle-filename}] and double-click it.
 Then drag and drop the app onto the "Applications" icon of Finder.
+
+== Other
+
+[discrete]
+=== FlatPak
+
+LibrePCB is also available as a https://flatpak.org[FlatPak] package from
+https://flathub.org/apps/details/org.librepcb.LibrePCB[FlatHub]. Assuming you
+have followed https://flatpak.org/setup/[FlatPak setup], you can configure
+FlatHub and install LibrePCB as follows:
+
+[source,bash,subs="attributes"]
+----
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub org.librepcb.LibrePCB
+----
