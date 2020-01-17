@@ -20,6 +20,14 @@ On Linux the required tools can be installed with following commands:
     gem install asciidoctor pygments.rb rouge
     gem install asciidoctor-pdf --pre
 
+On Mac you can use [homebrew](https://brew.sh/) and install gems in your user
+folder:
+
+    brew install asciidoctor
+    gem install --user-install pygments.rb rouge
+
+This will keep your installation more resilient to OS X upgrades.
+
 ## Building
 
     asciidoctor index.adoc          # build index.html
