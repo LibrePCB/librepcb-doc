@@ -8,12 +8,12 @@ the _Place Devices_ dock on the right side of the board editor you can see all
 unplaced Components. For every Component you can choose its corresponding Device
 and add them to the board:
 
-image:img/create_board_add_devices.png[alt="Add Devices to Board"]
+image:create_board_add_devices.png[alt="Add Devices to Board"]
 
 By the way, it's even possible to replace Devices after adding them to
 the board. For example you can replace a _C-1210_ capacitor with a _C-0805_
 capacitor using the Device context menu:
 
-image:img/create_board_change_device.png[alt="Change Device"]
+image:create_board_change_device.png[alt="Change Device"]
 
 Then you can start adding vias and traces to connect the pads together.

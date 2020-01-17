@@ -1,0 +1,3 @@
+* xref:index.adoc[Library Conventions]
+** xref:symbols.adoc[Symbol Conventions]
+** xref:packages.adoc[Package Conventions]

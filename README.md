@@ -15,15 +15,21 @@ documentation hosted at [docs.librepcb.org](https://docs.librepcb.org).
 The documentation is written in [Asciidoc](https://asciidoctor.org/docs/what-is-asciidoc/)
 and built with [Asciidoctor](https://asciidoctor.org/).
 
-On Linux the required tools can be installed with following commands:
-
-    gem install asciidoctor pygments.rb rouge
-    gem install asciidoctor-pdf --pre
+You need [Node.js](https://nodejs.org) to build this package. In Linux, it
+should be available in your package manager. Windows and Mac users can install
+it using the package from their website (default installation options will
+suffice).
 
 ## Building
 
-    asciidoctor index.adoc          # build index.html
-    asciidoctor-pdf index.adoc      # build index.pdf
+Using a terminal (or `cmd` for Windows), after cloning and changing to the
+project folder, you can run these commands:
+
+    npm ci            # Downloads required dependencies inside the project dir
+    npm run build     # Builds the bundle
+
+Then, you can check the result by opening `artifacts/librepcb-doc/index.html`
+in your browser.
 
 ## Contributing
 

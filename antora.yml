@@ -1,0 +1,8 @@
+name: librepcb
+title: LibrePCB
+version: master
+nav:
+  - modules/about/nav.adoc
+  - modules/getting_started/nav.adoc
+  - modules/library_conventions/nav.adoc
+  - modules/cli/nav.adoc

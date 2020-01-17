@@ -10,7 +10,7 @@ To open the Library Manager, click on the corresponding button in the Control
 Panel (or on the link in the shown warning, but the warning will disappear after
 you add a library):
 
-image:img/control_panel_library_manager.png[alt="Library Manager"]
+image:control_panel_library_manager.png[alt="Library Manager"]
 
 The Library Manager directly fetches the list of available libraries from the
 Internet. Most of these libraries are hosted at
@@ -29,7 +29,7 @@ recommended to install this library. To do so, just select the checkboxes at the
 right and click on the _Download and install/update all selected libraries_
 button:
 
-image:img/library_manager_download.png[alt="Download Libraries"]
+image:library_manager_download.png[alt="Download Libraries"]
 
 By the way, the same way you can also update already installed libraries to the
 latest version. You should regularly update all libraries to get more elements

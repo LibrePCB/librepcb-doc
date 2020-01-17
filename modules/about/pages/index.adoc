@@ -12,7 +12,7 @@ This documentation is currently under construction. Contributions
 are welcome! Check out https://github.com/LibrePCB/librepcb-doc
 ====
 
-image:img/screenshot.png[alt="screenshot"]
+image:screenshot.png[alt="screenshot"]
 
 == Features
 

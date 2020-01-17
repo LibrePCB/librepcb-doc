@@ -38,7 +38,7 @@ Following conventions apply to symbol names:
 
 
 // Image spans across multiple sections
-image::img/symbol_stm32.png[alt="Example Symbol",role="right"]
+image::symbol_stm32.png[alt="Example Symbol",role="right"]
 
 
 [#libraryconventions-symbols-origin]
@@ -96,17 +96,17 @@ defined by the component using that symbol), just use numbers starting with
 [#libraryconventions-symbols-textelements]
 == Text Elements
 
-Typical symbols should have exactly two text elements: `{{NAME}}` and
-`{{VALUE}}`.
+Typical symbols should have exactly two text elements: `+{{NAME}}+` and
+`+{{VALUE}}+`.
 
-image::img/symbol_text_anchor_ic.png[alt="IC Symbol Text Anchor",role="right"]
+image::symbol_text_anchor_ic.png[alt="IC Symbol Text Anchor",role="right"]
 
 For rectangular symbols, the name should be placed at top left, aligned at
 bottom left to the corner of the symbol outlines. And the value should be
 placed at bottom left, aligned at the top left to the corner of the symbol
 outlines.
 
-image::img/symbol_text_anchor_crystal.png[alt="Crystal Symbol Text Anchor",role="left"]
+image::symbol_text_anchor_crystal.png[alt="Crystal Symbol Text Anchor",role="left"]
 
 Irregularly shaped symbols may have text elements placed differently, see for
 example the crystal at the left. Keep in mind that the value of a component can
@@ -118,7 +118,7 @@ it.
 |===
 | Property          | Name text element     | Value text element
 | Layer             | Names                 | Values
-| Text              | {{NAME}}              | {{VALUE}}
+| Text              | +{{NAME}}+            | +{{VALUE}}+
 | Alignment         | Bottom Left           | Top Left
 | Height            | 2.5mm                 | 2.5mm
 | Rotation          | 0°                    | 0°
@@ -133,7 +133,7 @@ mouse (to move it, or to open the context menu). Symbols which have a
 single outline (like an IC) should typically have the "Grab Area" property
 set on the outline polygon (which makes the area filled with yellow color).
 
-image::img/symbol_grabarea_pushbutton.png[alt="Explicit Grab Area",role="right"]
+image::symbol_grabarea_pushbutton.png[alt="Explicit Grab Area",role="right"]
 
 For symbols which have a more complex outline or which do not look nice
 with the yellow fill you should add an extra polygon to explicitly define

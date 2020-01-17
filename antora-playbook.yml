@@ -1,0 +1,28 @@
+site:
+  title: LibrePCB User Manual
+  url: https://docs.librepcb.com
+  start_page: librepcb:about:index.adoc
+
+content:
+  sources:
+    - url: .
+      branches: HEAD
+
+asciidoc:
+  attributes:
+    version: 0.1.3
+    releases_url: https://download.librepcb.org/releases/0.1.3
+
+    icons: font
+
+ui:
+  bundle:
+    url: https://github.com/m4c0/librepcb-doc-ui/releases/download/poc/ui-bundle.zip
+    snapshot: true
+
+runtime:
+  cache_dir: ./.cache/antora
+
+output:
+  clean: true
+  dir: ./artifacts/librepcb-doc

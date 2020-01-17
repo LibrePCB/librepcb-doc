@@ -1,0 +1,20 @@
+name: Build a testable ZIP
+on:
+  - pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: npm install and build
+        run: |
+          npm ci
+          npm run build
+          cd artifacts && zip bundle.zip *
+        env:
+          CI: true
+      - uses: actions/upload-artifact@v1
+        with:
+          name: bundle
+          path: artifacts/bundle.zip

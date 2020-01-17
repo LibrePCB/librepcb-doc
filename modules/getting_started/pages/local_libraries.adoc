@@ -4,13 +4,13 @@
 Of course you can also create your own libraries. To do so, enter some metadata
 in the tab _Create local library_ and click on _Create Library_:
 
-image:img/library_manager_create.png[alt="Create Library"]
+image:library_manager_create.png[alt="Create Library"]
 
 Now you can open the library editor to create some symbols and footprints in
 your new library. Select your library on the left and then click on the
 _Open Library Editor_ button:
 
-image:img/library_manager_open_editor.png[alt="Open Library Editor"]
+image:library_manager_open_editor.png[alt="Open Library Editor"]
 
 Now we need a crash course to understand the basics of LibrePCB's library
 concept ;) A library consists of several different elements:
@@ -59,7 +59,7 @@ Ready to create your first library elements? At the top left of the library
 editor there is the entry point for every new library element. There you can
 choose which of the six library element type you want to create:
 
-image:img/library_editor_new_element.png[alt="New Library Element"]
+image:library_editor_new_element.png[alt="New Library Element"]
 
 :example_part_name: LMV321LILT
 *Example: {example_part_name}*
@@ -78,7 +78,7 @@ First you should create a Component Category for the {example_part_name} (if it
 doesn't already exists). Choose a suitable (generic!) name and select a parent
 category. You may first need to create the required parent categories.
 
-image:img/create_component_category.png[alt="Create Component Category"]
+image:create_component_category.png[alt="Create Component Category"]
 
 After clicking on _Finish_, your first Component Category is ready to be used :)
 
@@ -88,10 +88,10 @@ After clicking on _Finish_, your first Component Category is ready to be used :)
 Now we need to create a Symbol for the OpAmp. Click on the
 _Symbol_ button in the _New Library Element_ wizard, fill in some metadata
 and click on _Finish_. Now you can place the required pins (choose reasonable
-and unique names!), add the `{{NAME}}` and `{{VALUE}}` text elements and draw
+and unique names!), add the `+{{NAME}}+` and `+{{VALUE}}+` text elements and draw
 the outline. The result should look like this:
 
-image:img/create_symbol.png[alt="Create Symbol"]
+image:create_symbol.png[alt="Create Symbol"]
 
 _Yes, the overlapping pin texts look ugly, but let's ignore that for the
 moment ;)_
@@ -113,7 +113,7 @@ For details about how symbols should be designed, please take a look at our
   just use incrementing numbers (i.e. _1_, _2_, _3_, ...).
 - Pins should be grouped by functionality and must be placed on the 2.54mm
   grid.
-- There should be text elements for `{{NAME}}` and `{{VALUE}}`.
+- There should be text elements for `+{{NAME}}+` and `+{{VALUE}}+`.
 ====
 
 
@@ -127,7 +127,7 @@ like _Single OpAmp_. In addition, it's really important to choose a Category for
 the new Component, otherwise it's hard to find it in the library when you want
 to add it to a schematic.
 
-image:img/create_component_metadata.png[alt="Create Component"]
+image:create_component_metadata.png[alt="Create Component"]
 
 Then you're asked to specify some properties of the Component:
 
@@ -143,20 +143,20 @@ Then you're asked to specify some properties of the Component:
   example a capacitor has its capacitance (e.g. _100nF_) set in its value.
   When adding a Component to a schematic, its value is initially set to the
   value specified here. The value can also be a placeholder, for example
-  `{{PARTNUMBER}}`, `{{RESISTANCE}}` or `{{CAPACITANCE}}`. If you are unsure,
-  just leave it empty, you can still change it later.
+  `+{{PARTNUMBER}}+`, `+{{RESISTANCE}}+` or `+{{CAPACITANCE}}+`. If you are
+  unsure, just leave it empty, you can still change it later.
 
-image:img/create_component_properties.png[alt="Specify Component Properties"]
+image:create_component_properties.png[alt="Specify Component Properties"]
 
 Now you need to choose the Symbols which represent the Component in schematics.
 Most Components have only one Symbol, but you can also add more than one, for
 example an OpAmp can have separate Symbols for power and amplifier.
 
-image:img/create_component_add_symbol.png[alt="Set Component Symbols"]
+image:create_component_add_symbol.png[alt="Set Component Symbols"]
 
 After adding the OpAmp Symbol, it should look like this:
 
-image:img/create_component_add_symbol_finished.png[alt="Component Symbols"]
+image:create_component_add_symbol_finished.png[alt="Component Symbols"]
 
 The next step is to define all so-called Signals of a Component. Signals
 represent the "electrical interface" of a Component. For example a transistor
@@ -171,17 +171,17 @@ should adjust the names or properties of these Signals. For the OpAmp, we
 check _Required_ for all Signals, so the ERC will show a warning if these
 Signals are not connected to a net when the Component was added to a schematic:
 
-image:img/create_component_signals.png[alt="Component Signals"]
+image:create_component_signals.png[alt="Component Signals"]
 
 These Signals now need to be assigned to the corresponding Symbol Pins, but as
 they were automatically generated from the Pins, you can just click on the
 button below to automatically assign all Pins to their Signals:
 
-image:img/create_component_pin_map.png[alt="Component Pin-Signal-Map"]
+image:create_component_pin_map.png[alt="Component Pin-Signal-Map"]
 
 That's it, the Component is now ready to be used:
 
-image:img/create_component.png[alt="Component Editor"]
+image:create_component.png[alt="Component Editor"]
 
 [NOTE]
 ====
@@ -215,7 +215,7 @@ create a category for it. This is basically done exactly the same way as you
 already created the Component Category, so we won't explain it again. It could
 look like this:
 
-image:img/create_package_category.png[alt="Create Package Category"]
+image:create_package_category.png[alt="Create Package Category"]
 
 [#gettingstarted-libraries-pkg]
 == Package
@@ -225,16 +225,16 @@ _SOT23-5_. After specifying some metadata (like you already did for other
 library elements), you are asked to specify all pads of the Package. The
 _SOT23-5_ has 5 pads which we just name from _1_ to _5_:
 
-image:img/create_package_pads.png[alt="Create Package Pads"]
+image:create_package_pads.png[alt="Create Package Pads"]
 
 After that, you can start drawing the footprint of the Package. It's recommended
 to start with the pads:
 
-image:img/create_package.png[alt="Create Package"]
+image:create_package.png[alt="Create Package"]
 
 And then add other graphical items like the outline, name and value:
 
-image:img/create_package_graphics.png[alt="Create Package Graphics"]
+image:create_package_graphics.png[alt="Create Package Graphics"]
 
 That is already enough for a simple footprint.
 
@@ -257,7 +257,7 @@ are:
   etc. Only name pads according their electrical purpose (e.g. _Gate_) if the
   Package is very specific for a particular purpose.
 - Pin 1 should always be at the top left.
-- There should be text elements for `{{NAME}}` and `{{VALUE}}`.
+- There should be text elements for `+{{NAME}}+` and `+{{VALUE}}+`.
 ====
 
 
@@ -272,17 +272,17 @@ created elements are generic!
 Again, specify some metadata about the Device first. Then you need to choose
 the Component and Package you want to assign:
 
-image:img/create_device_properties.png[alt="Create Device"]
+image:create_device_properties.png[alt="Create Device"]
 
 Then you have to assign the Package pads to Component signals according to
 the datasheet of the {example_part_name}:
 
-image:img/create_package_pad_map.png[alt="Device Pad-Signal-Map"]
+image:create_package_pad_map.png[alt="Device Pad-Signal-Map"]
 
 And that's it! In the library overview (the first tab in the Library Editor)
 you can see all the elements you have created:
 
-image:img/create_library_overview.png[alt="Library Overview"]
+image:create_library_overview.png[alt="Library Overview"]
 
 The {example_part_name} is now ready to be added to schematics and boards.
 And because the Categories, Symbol, Component and Package are quite generic,
