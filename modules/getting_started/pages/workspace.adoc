@@ -10,7 +10,7 @@ it will also be usable with different LibrePCB versions.
 You can just accept the default Workspace location (you could still move it
 to another location afterwards, if desired):
 
-image:img/choose_workspace.png[alt="choose workspace"]
+image:choose_workspace.png[alt="choose workspace"]
 
 After clicking _Finish_, the Control Panel shows up and you're ready to start
 using LibrePCB!

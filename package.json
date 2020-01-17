@@ -1,0 +1,21 @@
+{
+  "name": "librepcb-doc",
+  "version": "0.0.1",
+  "description": "Official documentation of LibrePCB",
+  "dependencies": {
+    "@antora/cli": "2.2.0",
+    "@antora/site-generator-default": "2.2.0"
+  },
+  "scripts": {
+    "build": "antora --cache-dir=./.cache/antora ./antora-playbook.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LibrePCB/librepcb-doc.git"
+  },
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/LibrePCB/librepcb-doc/issues"
+  },
+  "homepage": "https://github.com/LibrePCB/librepcb-doc#librepcb-documentation"
+}

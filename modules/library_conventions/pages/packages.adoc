@@ -154,15 +154,15 @@ footprint should fulfill these rules:
 
 .THT resistor 0207 footprint variants
 ====
-image:img/footprint_variants_r0207.png[]
+image:footprint_variants_r0207.png[]
 
-image:img/footprint_r0207_horizontal_7p62.png[]
-image:img/footprint_r0207_horizontal_10p16.png[]
-image:img/footprint_r0207_horizontal_12p7.png[]
-image:img/footprint_r0207_horizontal_15p24.png[]
+image:footprint_r0207_horizontal_7p62.png[]
+image:footprint_r0207_horizontal_10p16.png[]
+image:footprint_r0207_horizontal_12p7.png[]
+image:footprint_r0207_horizontal_15p24.png[]
 
-image:img/footprint_r0207_vertical_2p54.png[]
-image:img/footprint_r0207_vertical_5p08.png[]
+image:footprint_r0207_vertical_2p54.png[]
+image:footprint_r0207_vertical_5p08.png[]
 ====
 
 
@@ -188,8 +188,8 @@ on the bottom of a board, this can be done in the board editor by mirroring it.
 
 .Footprint orientation examples
 ====
-image:img/footprint_pin1_dip8.png[]
-image:img/footprint_pin1_sot669.png[]
+image:footprint_pin1_dip8.png[]
+image:footprint_pin1_sot669.png[]
 ====
 
 
@@ -217,8 +217,8 @@ most important rules are the following:
 
 .Placement layer examples (only placement and copper layers shown)
 ====
-image:img/footprint_placement_sot23.png[]
-image:img/footprint_placement_r0603.png[]
+image:footprint_placement_sot23.png[]
+image:footprint_placement_r0603.png[]
 ====
 
 
@@ -248,17 +248,17 @@ Following things should be placed on the documentation layer:
 
 .Documentation layer examples (only documentation and copper layers shown)
 ====
-image:img/footprint_documentation_soic6.png[]
-image:img/footprint_documentation_r0603.png[]
-image:img/footprint_documentation_to220.png[]
+image:footprint_documentation_soic6.png[]
+image:footprint_documentation_r0603.png[]
+image:footprint_documentation_to220.png[]
 ====
 
 
 [#libraryconventions-packages-textelements]
 == Text Elements
 
-Typical footprints should have exactly two text elements: `{{NAME}}` and
-`{{VALUE}}`.
+Typical footprints should have exactly two text elements: `+{{NAME}}+` and
+`+{{VALUE}}+`.
 
 The name should normally be placed at top of the package body, slightly above
 the outline and aligned at bottom center. The value should be placed at the
@@ -275,14 +275,14 @@ anchor.
 
 // Image floats at the right of the table
 .Typical footprint name properties
-image::img/footprint_text_properties.png[role="right"]
+image::footprint_text_properties.png[role="right"]
 
 .Typical text element properties
 [cols="s,e,e",options="header,autowidth"]
 |===
 | Property          | Name text element     | Value text element
 | Layer             | Top Names             | Top Values
-| Text              | {{NAME}}              | {{VALUE}}
+| Text              | +{{NAME}}+            | +{{VALUE}}+
 | Alignment         | Bottom Center         | Top Center
 | Height            | 1.0mm (or larger)     | 1.0mm (or larger)
 | Stroke Width      | 0.2mm (or thicker)    | 0.2mm (or thicker)
@@ -302,6 +302,6 @@ if they are more suitable.
 
 .Footprint text element examples
 ====
-image:img/footprint_text_anchor_dip8.png[]
-image:img/footprint_text_anchor_sot23.png[]
+image:footprint_text_anchor_dip8.png[]
+image:footprint_text_anchor_sot23.png[]
 ====

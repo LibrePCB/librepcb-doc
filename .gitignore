@@ -1,8 +1,10 @@
 artifacts/
+node_modules/
 index.html
 index.pdf
 Thumbs.db
 .DS_Store
+.cache
 *.autosave
 *.swp
 *~

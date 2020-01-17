@@ -5,33 +5,26 @@
 This repository contains the source for the [LibrePCB](http://librepcb.org)
 documentation hosted at [docs.librepcb.org](https://docs.librepcb.org).
 
-- HTML output of `master`: https://docs.librepcb.org
-- PDF output of `master`: [librepcb-user-manual-nightly.pdf](https://download.librepcb.org/nightly_builds/master/librepcb-user-manual-nightly.pdf)
-- HTML output of other branches: https://docs.librepcb.org/_branches/
-- PDF output of other branches: https://download.librepcb.org/nightly_builds/
-
 ## Requirements
 
 The documentation is written in [Asciidoc](https://asciidoctor.org/docs/what-is-asciidoc/)
-and built with [Asciidoctor](https://asciidoctor.org/).
+and built with [Antora](https://antora.org/).
 
-On Linux the required tools can be installed with following commands:
-
-    gem install asciidoctor pygments.rb rouge
-    gem install asciidoctor-pdf --pre
-
-On Mac you can use [homebrew](https://brew.sh/) and install gems in your user
-folder:
-
-    brew install asciidoctor
-    gem install --user-install pygments.rb rouge
-
-This will keep your installation more resilient to OS X upgrades.
+You need [Node.js](https://nodejs.org) to build this package. In Linux, it
+should be available in your package manager. Windows and Mac users can install
+it using the package from their website (default installation options will
+suffice).
 
 ## Building
 
-    asciidoctor index.adoc          # build index.html
-    asciidoctor-pdf index.adoc      # build index.pdf
+Using a terminal (or `cmd` for Windows), after cloning and changing to the
+project folder, you can run these commands:
+
+    npm ci            # Downloads required dependencies inside the project dir
+    npm run build     # Builds the bundle
+
+Then, you can check the result by opening `artifacts/librepcb-doc/index.html`
+in your browser.
 
 ## Contributing
 
@@ -44,6 +37,8 @@ for details. We're looking forward for pull requests :)
 - [Asciidoc Writer's Guide](https://asciidoctor.org/docs/asciidoc-writers-guide/)
 - [Asciidoctor User Manual](https://asciidoctor.org/docs/user-manual/)
 - [AsciidocFX](https://www.asciidocfx.com/) (Asciidoc editor with live preview)
+- [Antora User Manual](https://docs.antora.org) (Documentation for the static
+site builder)
 
 ## License
 
