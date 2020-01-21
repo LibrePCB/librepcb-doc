@@ -1,6 +1,7 @@
-[#about]
-= About LibrePCB
-:imagesdir: about
+---
+title: About LibrePCB
+weight: 10
+---
 
 Welcome to the documentation of link:http://librepcb.org[LibrePCB]!
 LibrePCB is a free EDA software to develop printed circuit boards.

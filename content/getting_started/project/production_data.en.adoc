@@ -1,5 +1,7 @@
-[#gettingstarted-production-data]
-= Generate Production Data
+---
+title: Generate Production Data
+weight: 30
+---
 
 Once the board is finished, you can generate the production data for the PCB
 manufacturer:

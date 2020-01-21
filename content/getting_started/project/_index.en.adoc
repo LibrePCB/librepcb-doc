@@ -1,5 +1,7 @@
-[#gettingstarted-project]
-= Create a New Project
+---
+title: Create a New Project
+weight: 50
+---
 
 In LibrePCB, schematics and boards are always part of a Project, so before
 creating schematics and boards you first need to create a Project for every
@@ -36,9 +38,3 @@ After clicking on _Finish_, the schematic and board editors show up and you're
 ready to draw the schematics:
 
 image:img/create_project_editors.png[alt="Project Editor"]
-
-include:schematics.adoc[]
-
-include:boards.adoc[]
-
-include:production_data.adoc[]

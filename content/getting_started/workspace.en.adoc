@@ -1,5 +1,7 @@
-[#gettingstarted-workspace]
-= Create a Workspace
+---
+title: Create a Workspace
+weight: 20
+---
 
 When starting LibrePCB the first time, a wizard asks you to open or create a
 Workspace. The Workspace is just a directory where settings, libraries and

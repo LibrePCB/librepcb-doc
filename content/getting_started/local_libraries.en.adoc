@@ -1,5 +1,7 @@
-[#gettingstarted-libraries-local]
-= Create Local Libraries
+---
+title: Create Local Libraries
+weight: 40
+---
 
 Of course you can also create your own libraries. To do so, enter some metadata
 in the tab _Create local library_ and click on _Create Library_:

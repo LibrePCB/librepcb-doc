@@ -1,6 +1,7 @@
-[#gettingstarted-libraries]
-[#gettingstarted-libraries-remote]
-= Download Remote Libraries
+---
+title: Download Remote Libraries
+weight: 30
+---
 
 Before you can start with creating new projects, you need to add some libraries
 to your Workspace. Libraries contain various kinds of elements which can be

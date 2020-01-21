@@ -1,5 +1,7 @@
-[#cli-usage]
-= Usage
+---
+title: Usage
+weight: 20
+---
 
 Usage instructions and available options can be shown with `--help`:
 

@@ -1,5 +1,7 @@
-[#libraryconventions-symbols]
-= Symbol Conventions
+---
+title: Symbol Conventions
+weight: 10
+---
 
 [NOTE]
 ====

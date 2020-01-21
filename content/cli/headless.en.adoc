@@ -1,5 +1,7 @@
-[#cli-headless]
-= Running on Headless Linux
+---
+title: Running on Headless Linux
+weight: 20
+---
 
 Please note that (at this time) `librepcb-cli` requires a running X-server
 even if it doesn't open any windows. If your system doesn't have an X-server

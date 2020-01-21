@@ -1,5 +1,7 @@
-[#gettingstarted-installation]
-= Installation
+---
+title: Installation
+weight: 10
+---
 
 .Disclaimer
 [WARNING]
