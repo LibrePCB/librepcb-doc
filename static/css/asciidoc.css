@@ -1,0 +1,108 @@
+.admonitionblock {
+    margin: 2rem 0;
+    position: relative;
+}
+.admonitionblock td.icon {
+    display: none;
+}
+.admonitionblock td.content {
+    padding: 0 15px;
+}
+.admonitionblock:before {
+    padding: 0 10px;
+    color: #fff;
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    line-height: 30px;
+}
+.admonitionblock td.content:before,
+.admonitionblock td.content>div.title {
+    color: #ffffff;
+    left: 2rem;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+.admonitionblock.note {
+    background-color: #E7F2FA;
+}
+.admonitionblock.note td.content>div.title:before {
+    content: "Note: ";
+}
+.admonitionblock.note td.content:before {
+    content: "Note";
+}
+.admonitionblock.note td.content>div.title,
+.admonitionblock.note:before {
+    background-color: #6AB0DE;
+}
+.admonitionblock.note:before {
+    content: "\f05a";
+}
+
+.admonitionblock.tip {
+    background-color: #E6F9E6;
+}
+.admonitionblock.tip td.content>div.title:before {
+    content: "Tip: ";
+}
+.admonitionblock.tip td.content:before {
+    content: "Tip";
+}
+.admonitionblock.tip td.content>div.title,
+.admonitionblock.tip:before {
+    background-color: rgb(92, 184, 92);
+}
+.admonitionblock.tip:before {
+    content: "\f0eb";
+}
+
+.admonitionblock.warning {
+    background-color: #FAE2E2;
+}
+.admonitionblock.warning td.content>div.title:before {
+    content: "Warning: ";
+}
+.admonitionblock.warning td.content:before {
+    content: "Warning";
+}
+.admonitionblock.warning td.content>div.title,
+.admonitionblock.warning:before {
+    background-color: rgb(217, 83, 79);
+}
+.admonitionblock.warning:before {
+    content: "\f071";
+}
+
+.admonitionblock.caution {
+    background-color: #FFF2DB;
+}
+.admonitionblock.caution td.content>div.title:before {
+    content: "Caution: ";
+}
+.admonitionblock.caution td.content:before {
+    content: "Caution";
+}
+.admonitionblock.caution td.content>div.title,
+.admonitionblock.caution:before {
+    background-color: #F0B37E;
+}
+.admonitionblock.caution:before {
+    content: "\f06d";
+}
+
+.admonitionblock.important td.content>div.title:before {
+    content: "Important: ";
+}
+.admonitionblock.important td.content:before {
+    content: "Important";
+}
+.admonitionblock.important td.content>div.title,
+.admonitionblock.important:before {
+    background-color: rgb(217, 83, 79);
+}
+.admonitionblock.important:before {
+    content: "\f06a";
+}
