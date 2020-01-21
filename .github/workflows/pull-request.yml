@@ -1,0 +1,26 @@
+name: Build a testable ZIP
+on:
+  - pull_request
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Asciidoctor
+        run: sudo apt-get install -y asciidoctor
+      - name: Download and install Hugo
+        run: |
+          curl -L -o hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.62.2/hugo_0.62.2_Linux-64bit.deb
+          sudo dpkg -i hugo.deb
+      - uses: actions/checkout@v1
+      - name: Checkout submodules
+        run: git submodule update --init --recursive
+      - name: Run Hugo
+        run: hugo -d artifacts/librepcb-doc
+      - name: Bundle site in a ZIP file
+        run: cd artifacts && zip -r bundle.zip *
+      - uses: actions/upload-artifact@v1
+        with:
+          name: bundle
+          path: artifacts/bundle.zip

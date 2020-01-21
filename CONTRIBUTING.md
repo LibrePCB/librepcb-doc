@@ -19,6 +19,23 @@
 - Fork the repository on GitHub.
 
 
+## Development Server
+
+Working on LibrePCB docs is a simple command:
+
+    hugo server
+
+It takes a couple of seconds. When it finishes, you will see a message like
+this:
+
+    Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+    Press Ctrl+C to stop
+
+After that, you can open the [generated output](http://localhost:1313 ) in your
+browser. Hugo keeps monitoring your files, re-compiling them after you save a
+change, and automatically reloading your browser window.
+
+
 ## Making Changes
 
 - Create a topic branch from where you want to base your work.
