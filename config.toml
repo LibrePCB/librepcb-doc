@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "LibrePCB User Guide"
 theme = "learn"
 
+[params]
+  themeVariant = "green"
+
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
