@@ -7,3 +7,5 @@ weight: 20
 
 This chapter provides a quick introduction into LibrePCB, starting from where
 to download it and ending with how to generate PCB production data.
+
+{{% children %}}

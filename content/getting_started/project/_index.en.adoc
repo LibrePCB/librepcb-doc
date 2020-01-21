@@ -38,3 +38,8 @@ After clicking on _Finish_, the schematic and board editors show up and you're
 ready to draw the schematics:
 
 image:img/create_project_editors.png[alt="Project Editor"]
+
+You can now follow these instructions for the various stages of your project
+development:
+
+{{% children %}}
