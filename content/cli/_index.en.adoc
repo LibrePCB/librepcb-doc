@@ -5,8 +5,8 @@
 LibrePCB also provides a command line interface (CLI). With that tool, you
 can automate some tasks, for example on Continuous Integration (CI) systems.
 
-include::installation.adoc[leveloffset=+1]
+include:installation.adoc[leveloffset=+1]
 
-include::headless.adoc[leveloffset=+1]
+include:headless.adoc[leveloffset=+1]
 
-include::usage.adoc[leveloffset=+1]
+include:usage.adoc[leveloffset=+1]

@@ -37,8 +37,8 @@ ready to draw the schematics:
 
 image:img/create_project_editors.png[alt="Project Editor"]
 
-include::schematics.adoc[]
+include:schematics.adoc[]
 
-include::boards.adoc[]
+include:boards.adoc[]
 
-include::production_data.adoc[]
+include:production_data.adoc[]
