@@ -35,10 +35,11 @@ This will keep your installation more resilient to OS X upgrades.
 
 Inside the root of your Git repository, you can run this:
 
-    hugo
+    hugo --environment offline
 
 When the process finishes, the result will be available inside the `public`
-folder inside your Git workspace. Then, you can open the `index.html` file in your browser.
+folder inside your Git workspace. Then, you can open the `index.html` file in
+your browser.
 
 ## Contributing
 
