@@ -1,3 +1,14 @@
+#body .exampleblock span.image>a>img,
+#body .imageblock img {
+    display: inline-block;
+    margin: 0;
+}
+
+table.fit-content {
+    margin: 0 auto;
+    width: auto;
+}
+
 .admonitionblock {
     margin: 2rem 0;
     position: relative;
@@ -105,4 +116,35 @@
 }
 .admonitionblock.important:before {
     content: "\f06a";
+}
+
+.exampleblock>.content,
+.imageblock>.content {
+    border: 1px solid #eaeaea;
+    margin: 0;
+}
+.exampleblock>.title,
+.imageblock>.title {
+    font-style: italic;
+}
+
+.exampleblock>.content {
+    background-color: #faf8f5;
+    padding: 0 15px;
+}
+.imageblock>.content {
+    padding: 15px;
+}
+.imageblock.left {
+    margin: .25em .625em 1.25em 0;
+}
+.imageblock.right {
+    margin: .25em 0 1.25em .625em;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
 }
