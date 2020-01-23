@@ -31,9 +31,10 @@ table.fit-content {
 .admonitionblock td.content>div.title {
     color: #ffffff;
     left: 2rem;
+    line-height: 30px;
     position: absolute;
     right: 2px;
-    top: 2px;
+    top: 0;
 }
 
 .admonitionblock.note {
