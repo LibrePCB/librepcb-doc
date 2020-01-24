@@ -1,0 +1,11 @@
+---
+title: Command Line Interface
+weight: 40
+---
+
+:imagesdir: cli
+
+LibrePCB also provides a command line interface (CLI). With that tool, you
+can automate some tasks, for example on Continuous Integration (CI) systems.
+
+{{% children %}}

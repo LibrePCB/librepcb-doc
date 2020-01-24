@@ -13,25 +13,31 @@ documentation hosted at [docs.librepcb.org](https://docs.librepcb.org).
 ## Requirements
 
 The documentation is written in [Asciidoc](https://asciidoctor.org/docs/what-is-asciidoc/)
-and built with [Asciidoctor](https://asciidoctor.org/).
+and built with [Asciidoctor](https://asciidoctor.org/) and [Hugo](https://gohugo.io/).
 
-On Linux the required tools can be installed with following commands:
+On Linux the required Ruby gems can be installed with following commands:
 
     gem install asciidoctor pygments.rb rouge
     gem install asciidoctor-pdf --pre
 
+Installation of Hugo varies based on the Linux distribution. You can check for
+specific instructions in [Hugo's installation docs](https://gohugo.io/getting-started/installing/#linux).
+
 On Mac you can use [homebrew](https://brew.sh/) and install gems in your user
 folder:
 
-    brew install asciidoctor
+    brew install asciidoctor hugo
     gem install --user-install pygments.rb rouge
 
 This will keep your installation more resilient to OS X upgrades.
 
 ## Building
 
-    asciidoctor index.adoc          # build index.html
-    asciidoctor-pdf index.adoc      # build index.pdf
+Inside the root of your Git repository, you can run this:
+
+    hugo server
+
+When the process finishes, the result will be available at http://localhost:1313/
 
 ## Contributing
 

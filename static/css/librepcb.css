@@ -1,0 +1,46 @@
+body {
+    font-size: 14px !important;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+pre {
+    margin: 0;
+    padding: 1rem;
+}
+pre code {
+    font-size: 100%;
+}
+pre > code.hljs {
+    padding: 0;
+}
+
+#sidebar {
+    font-size: 100%;
+    line-height: 1.3em;
+}
+#sidebar ul.topics li a {
+    font-size: 120%;
+    line-height: 1.3em;
+}
+#sidebar #header-wrapper {
+    background-image: url('https://librepcb.org/img/background.jpg');
+    background-position: center;
+}
+#sidebar .searchbox > * {
+    height: 1.5rem;
+}
+
+.copy-to-clipboard {
+    display: none;
+}
+pre > .copy-to-clipboard {
+    display: inline-block;
+}
