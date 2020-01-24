@@ -16,11 +16,9 @@ jobs:
       - uses: actions/checkout@v1
       - name: Checkout submodules
         run: git submodule update --init --recursive
-      - name: Run Hugo for offline distribution
-        run: hugo -d artifacts/librepcb-doc -e offline
-      - name: Bundle site in a ZIP file
-        run: cd artifacts && zip -r bundle.zip *
+      - name: Run Hugo and generate offline ZIP
+        run: ci/build-offline.sh
       - uses: actions/upload-artifact@v1
         with:
           name: bundle
-          path: artifacts/bundle.zip
+          path: bundle.zip
