@@ -1,3 +1,49 @@
 <div id="footer-github">
     Edit these docs <a href="https://github.com/LibrePCB/librepcb-doc/">on GitHub</a>!
 </div>
+<script type="text/javascript">
+  function tocLinkCloseAll() {
+    Array.from(document.querySelectorAll(".toc-visible")).forEach(function(item) {
+      item.classList.remove("toc-visible");
+      item.classList.add("toc-invisible");
+    });
+  }
+  function tocLinkOpen(ul) {
+    ul.classList.remove("toc-invisible");
+    ul.classList.add("toc-visible");
+  }
+  function tocLinkOpenAncestors(ul) {
+    var ancestor = ul.parentNode.closest("ul");
+    if (ancestor) {
+      tocLinkOpen(ancestor);
+      tocLinkOpenAncestors(ancestor);
+    }
+  }
+  function tocLinkOpenSibling(self) {
+    var sib = self.parentNode.querySelector("ul");
+    if (sib) tocLinkOpen(sib);
+  }
+  function tocLinkOpenAt(self) {
+    tocLinkOpenSibling(self);
+    tocLinkOpenAncestors(self);
+  }
+  function tocLinkToggle() {
+    tocLinkCloseAll();
+    tocLinkOpenAt(this);
+  }
+  (function() {
+    Array.from(document.querySelectorAll("#toc ul > li > ul")).forEach(function(a) {
+      a.classList.add("toc-invisible");
+    });
+    Array.from(document.querySelectorAll("#toc ul > li > a")).forEach(function(a) {
+      a.onclick = tocLinkToggle;
+    });
+    var hash = document.location.hash;
+    if (hash) {
+      var hash_a = document.querySelector("a[href='" + hash + "']");
+      if (hash_a) {
+        tocLinkOpenAt(hash_a);
+      }
+    }
+  })();
+</script>
