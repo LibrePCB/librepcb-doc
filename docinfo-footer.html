@@ -2,47 +2,51 @@
     Edit these docs <a href="https://github.com/LibrePCB/librepcb-doc/">on GitHub</a>!
 </div>
 <script type="text/javascript">
+  const tocVisibleCssClass = "toc-visible";
+  const tocHiddenCssClass = "toc-invisible";
+
   function tocLinkCloseAll() {
-    Array.from(document.querySelectorAll(".toc-visible")).forEach(function(item) {
-      item.classList.remove("toc-visible");
-      item.classList.add("toc-invisible");
-    });
+    for (const item of document.querySelectorAll(".toc-visible")) {
+      item.classList.remove(tocVisibleCssClass);
+      item.classList.add(tocHiddenCssClass);
+    }
   }
   function tocLinkOpen(ul) {
-    ul.classList.remove("toc-invisible");
-    ul.classList.add("toc-visible");
+    ul.classList.remove(tocHiddenCssClass);
+    ul.classList.add(tocVisibleCssClass);
   }
   function tocLinkOpenAncestors(ul) {
-    var ancestor = ul.parentNode.closest("ul");
+    const ancestor = ul.parentNode.closest("ul");
     if (ancestor) {
       tocLinkOpen(ancestor);
       tocLinkOpenAncestors(ancestor);
     }
   }
   function tocLinkOpenSibling(self) {
-    var sib = self.parentNode.querySelector("ul");
+    const sib = self.parentNode.querySelector("ul");
     if (sib) tocLinkOpen(sib);
   }
   function tocLinkOpenAt(self) {
     tocLinkOpenSibling(self);
     tocLinkOpenAncestors(self);
   }
-  function tocLinkToggle() {
+  function tocLinkToggle(event) {
     tocLinkCloseAll();
-    tocLinkOpenAt(this);
+    tocLinkOpenAt(event.target);
   }
   (function() {
-    Array.from(document.querySelectorAll("#toc ul > li > ul")).forEach(function(a) {
-      a.classList.add("toc-invisible");
-    });
-    Array.from(document.querySelectorAll("#toc ul > li > a")).forEach(function(a) {
+    for (const ul of document.querySelectorAll("#toc ul > li > ul")) {
+      ul.classList.add(tocHiddenCssClass);
+    }
+    for (const a of document.querySelectorAll("#toc ul > li > a")) {
       a.onclick = tocLinkToggle;
-    });
-    var hash = document.location.hash;
+    }
+
+    const hash = document.location.hash;
     if (hash) {
-      var hash_a = document.querySelector("a[href='" + hash + "']");
-      if (hash_a) {
-        tocLinkOpenAt(hash_a);
+      const hashA = document.querySelector(`a[href='${hash}']`);
+      if (hashA) {
+        tocLinkOpenAt(hashA);
       }
     }
   })();
