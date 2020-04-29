@@ -11,7 +11,7 @@ $ xvfb-run -a librepcb-cli [args]
 ----
 
 
-If the `librepcb-cli` executable still dosn't work, you may need to install
+If the `librepcb-cli` executable still doesn't work, you may need to install
 some dependencies. On Debian/Ubuntu, following packages need to be installed:
 
 [source,bash]
