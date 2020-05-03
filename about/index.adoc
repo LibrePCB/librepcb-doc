@@ -36,7 +36,8 @@ implemented yet. So here's an overview about the project status:
 
 * Downloading, creating and modifying libraries
 * Drawing simple schematics with multiple sheets (incl. print or PDF export)
-* Creating simple multilayer PCBs (incl. DRC and Gerber/Excellon/PDF export)
+* Creating simple multilayer PCBs (incl. DRC and
+  Gerber/Excellon/Pick&Place/PDF export)
 * Exporting bill of materials (BOM)
 
 [discrete]
