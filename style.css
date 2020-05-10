@@ -441,3 +441,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-github a {
     color: #89aee5;
 }
+
+#toc .toc-invisible {
+    display: none;
+}
+#toc .toc-visible {
+    display: block;
+}
