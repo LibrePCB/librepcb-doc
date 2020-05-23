@@ -2,7 +2,7 @@
 = Package Conventions
 :ipc7351-pdf: http://pcbget.ru/Files/Standarts/IPC_7351.pdf
 :ipc7351-naming-pdf: https://www.pcblibraries.com/downloads/Guidelines!Library-Expert-Land-Pattern-Naming-Convention.asp
-:ipc7351c-slides: https://ocipcdc.org/archive/What_is_New_in_IPC-7351C_03_11_2015.pdf
+:ipc7351c-slides-pdf: https://web.archive.org/web/20190712122301/http://www.ocipcdc.org/archive/What_is_New_in_IPC-7351C_03_11_2015.pdf
 
 [NOTE]
 ====
@@ -184,7 +184,7 @@ the datasheet.
 on the bottom of a board, this can be done in the board editor by mirroring it.
 
 *Pin 1 should always be at the top left*, as defined in
-{ipc7351c-slides}[IPC-7351C "Level A"] (slide 22).
+{ipc7351c-slides-pdf}[IPC-7351C "Level A", slide 22].
 
 .Footprint orientation examples
 ====
@@ -204,8 +204,8 @@ Typically this layer should only contain some lines and dots to indicate where
 and in which orientation the device gets assembled, for example an outline and
 a dot next to pin 1.
 
-*The placement should be drawn according {ipc7351c-slides}[IPC-7351C]*. The
-most important rules are the following:
+*The placement should be drawn according to {ipc7351c-slides-pdf}[IPC-7351C]*.
+The most important rules are the following:
 
 * *It should stay visible after assembling the package* to allow reviewing
   positioning and orientation of assembled devices. In other words, the

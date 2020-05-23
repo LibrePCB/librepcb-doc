@@ -253,9 +253,10 @@ are:
 - Add *all* pads of a package, not only the one you currently need. For example
   if the package has a thermal pad, you should add it, even if you currently
   don't need it.
-- Name pads according IPC-7351 (if applicable), typically just _1_, _2_, _3_
-  etc. Only name pads according their electrical purpose (e.g. _Gate_) if the
-  Package is very specific for a particular purpose.
+- Name pads according IPC-7351 (if applicable; see section Library
+  Conventions for more information), typically just _1_, _2_, _3_ etc. Only
+  name pads according their electrical purpose (e.g. _Gate_) if the Package is
+  very specific for a particular purpose.
 - Pin 1 should always be at the top left.
 - There should be text elements for `{{NAME}}` and `{{VALUE}}`.
 ====
