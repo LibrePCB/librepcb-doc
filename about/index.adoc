@@ -49,8 +49,6 @@ implemented yet. So here's an overview about the project status:
   https://github.com/LibrePCB/LibrePCB/wiki/Wishlist#schematic-editor[[wishlist\]]
 * No 3D board viewer
   https://github.com/LibrePCB/LibrePCB/wiki/Wishlist#board-editor[[wishlist\]]
-* No clipboard functionality (cut/copy/paste) in board/schematic editors
-  https://github.com/LibrePCB/LibrePCB/issues/13[[#13\]]
 
 Of course all these features will be implemented in future. Please consider to
 https://github.com/LibrePCB/LibrePCB/blob/master/CONTRIBUTING.md[contribute]
