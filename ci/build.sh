@@ -11,12 +11,12 @@ asciidoctor-pdf --failure-level=WARN --safe -a source-highlighter=rouge index.ad
 
 # clear artifacts
 rm -rf ./artifacts
+mkdir -p ./artifacts
 
 # copy HTML to artifacts directory
-mkdir -p ./artifacts/librepcb-doc
+mkdir -p ./artifacts/html
 FILES=`find . -type f -name '*\.html' -o -name '*\.png'`
-cp --parents $FILES ./artifacts/librepcb-doc
+cp --parents $FILES ./artifacts/html
 
 # copy PDF to artifacts directory
-mkdir -p ./artifacts/nightly_builds
-cp index.pdf ./artifacts/nightly_builds/librepcb-user-manual-nightly.pdf
+cp index.pdf ./artifacts/librepcb-user-manual-nightly.pdf
