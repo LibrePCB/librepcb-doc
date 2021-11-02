@@ -1,7 +1,5 @@
 # LibrePCB Documentation
 
-[![Travis Build Status](https://travis-ci.org/LibrePCB/librepcb-doc.svg?branch=master)](https://travis-ci.org/LibrePCB/librepcb-doc)
-
 This repository contains the source for the [LibrePCB](http://librepcb.org)
 documentation hosted at [docs.librepcb.org](https://docs.librepcb.org).
 

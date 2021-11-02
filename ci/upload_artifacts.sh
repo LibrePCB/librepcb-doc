@@ -3,11 +3,11 @@
 # set shell settings (see https://sipb.mit.edu/doc/safe-shell/)
 set -euv -o pipefail
 
-IS_PULL_REQUEST="$TRAVIS_PULL_REQUEST"
-BRANCH_NAME="$TRAVIS_BRANCH"
+# get branch name from CI
+BRANCH_NAME="${GITHUB_REF#refs/heads/}"
 
 # upload build artifacts for all branches of the upstream repository
-if [ "${IS_PULL_REQUEST}" = "false" -a -n "${UPLOAD_URL-}" ]
+if [ -n "${UPLOAD_URL-}" ]
 then
   # create tarball of all artifacts
   cd ./artifacts
