@@ -10,7 +10,7 @@
 :docinfo: shared
 
 // LibrePCB Variables
-:version: 0.1.5
+:version: 0.1.6
 :releases_url: https://download.librepcb.org/releases/{version}
 
 include::about/index.adoc[leveloffset=+1]
