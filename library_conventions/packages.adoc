@@ -1,7 +1,5 @@
 [#libraryconventions-packages]
 = Package Conventions
-:ipc7351-pdf: http://pcbget.ru/Files/Standarts/IPC_7351.pdf
-:ipc7351-naming-pdf: https://www.pcblibraries.com/downloads/Guidelines!Library-Expert-Land-Pattern-Naming-Convention.asp
 :ipc7351c-slides-pdf: https://web.archive.org/web/20190712122301/http://www.ocipcdc.org/archive/What_is_New_in_IPC-7351C_03_11_2015.pdf
 
 [NOTE]
@@ -68,11 +66,11 @@ Package.
 
 The following conventions apply to Package names:
 
-* We generally *follow {ipc7351-naming-pdf}[IPC-7351C] when naming packages*
+* We generally *follow IPC-7351 when naming packages*
   (e.g. "SOT23-5P95_280X145L60" instead of "SOT23-5"). Alternative names (like
   "SOT23-5") should be added to the comma-separated keywords list and maybe to
   the description.
-* For packages not covered by {ipc7351-naming-pdf}[IPC-7351C], use following
+* For packages not covered by IPC-7351, use following
   naming conventions:
 ** *Language must be American English* (en_US), if applicable (many Packages
    have language-neutral names anyway).
@@ -96,7 +94,7 @@ The following conventions apply to Package names:
   For example, the package "TO220" has a metal tab, so you should define it as
   a pad, no matter if it's often not connected (and even not connectable when
   mounted vertically).
-* *Use pad names according {ipc7351-pdf}[IPC-7351]* (if applicable). For
+* *Use pad names according IPC-7351* (if applicable). For
   Packages which are not covered by IPC-7351:
 ** If the function of a pad is absolutely clear, choose its abbreviated
    functionality as name (e.g. "A" for anode and "C" for cathode).
@@ -117,7 +115,7 @@ to support the following use-cases:
   wave- or hand-soldering, which usually require different land patterns. For
   every suitable soldering technique there could be a corresponding footprint
   variant.
-* *Density levels*: {ipc7351-pdf}[IPC-7351] specifies three different density
+* *Density levels*: IPC-7351 specifies three different density
   levels for footprints:
 +
 --
