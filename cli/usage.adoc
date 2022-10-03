@@ -15,16 +15,19 @@ Usage: ./librepcb-cli [options] command
 LibrePCB Command Line Interface
 
 Options:
-  -h, --help     Displays this help.
+  -h, --help     Print this message.
   -v, --version  Displays version information.
   --verbose      Verbose output.
 
 Arguments:
-  command        The command to execute.
+  command        The command to execute (see list below).
 
 Commands:
   open-library   Open a library to execute library-related tasks.
   open-project   Open a project to execute project-related tasks.
+
+List command-specific options:
+  ./librepcb-cli <command> --help
 ----
 
 == Command `open-library`
@@ -43,7 +46,7 @@ Usage: ./librepcb-cli [options] open-library [command_options] library
 LibrePCB Command Line Interface
 
 Options:
-  -h, --help     Displays this help.
+  -h, --help     Print this message.
   -v, --version  Displays version information.
   --verbose      Verbose output.
   --all          Perform the selected action(s) on all elements contained in
@@ -102,7 +105,7 @@ Usage: ./librepcb-cli [options] open-project [command_options] project
 LibrePCB Command Line Interface
 
 Options:
-  -h, --help                         Displays this help.
+  -h, --help                         Print this message.
   -v, --version                      Displays version information.
   --verbose                          Verbose output.
   --erc                              Run the electrical rule check, print all
@@ -111,7 +114,7 @@ Options:
                                      non-approved messages.
   --export-schematics <file>         Export schematics to given file(s).
                                      Existing files will be overwritten.
-                                     Supported file extensions: pdf
+                                     Supported file extensions: pdf, svg, png
   --export-bom <file>                Export generic BOM to given file(s).
                                      Existing files will be overwritten.
                                      Supported file extensions: csv
@@ -129,9 +132,25 @@ Options:
                                      by providing a *.lp file containing custom
                                      settings. If not set, the settings from the
                                      boards will be used instead.
+  --export-pnp-top <file>            Export pick&place file for automated
+                                     assembly of the top board side. Existing
+                                     files will be overwritten. Supported file
+                                     extensions: csv, gbr
+  --export-pnp-bottom <file>         Export pick&place file for automated
+                                     assembly of the bottom board side. Existing
+                                     files will be overwritten. Supported file
+                                     extensions: csv, gbr
   --board <name>                     The name of the board(s) to export. Can be
                                      given multiple times. If not set, all
                                      boards are exported.
+  --board-index <index>              Same as '--board', but allows to specify
+                                     boards by index instead of by name.
+  --remove-other-boards              Remove all boards not specified with
+                                     '--board[-index]' from the project before
+                                     executing all the other actions. If
+                                     '--board[-index]' is not passed, all boards
+                                     will be removed. Pass '--save' to save the
+                                     modified project to disk.
   --save                             Save project before closing it (useful to
                                      upgrade file format).
   --strict                           Fail if the project files are not strictly
