@@ -23,6 +23,27 @@ having the toolchain available locally is not mandatory. A decent text editor
 (ideally with AsciiDoc syntax highligting and live preview) should be enough
 to write some documentation.
 
+## Virtual Machine For Screenshots
+
+To ensure a consistent look&feel across all screenshots, please use a
+virtual machine (e.g. VirtualBox) and run LibrePCB within it. Set up
+the VM as following:
+
+- Operating system: Ubuntu 22.04 (Choose "Minimal installation")
+- Locale: English (`en_US`)
+- Computer name: librepcb
+- Full user name: Me
+- Username: user
+
+After the installation:
+
+- Set the VM screen resolution to 1024x768 to ensure no screenshot is larger
+  than this.
+- On the bottom right of the login screen, switch from Wayland to X11 since
+  most screenshot capture tools do not work properly on Wayland.
+- Run `sudo apt install shutter` to install Shutter for capturing screenshots.
+- In the Shutter settings, enable rounded corners.
+
 ## Contributing
 
 Contributions are very welcome! See our [Contributing Guide](CONTRIBUTING.md)
