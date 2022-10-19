@@ -1,0 +1,112 @@
+= Component
+
+The next element you need to create is the component for a single OpAmp.
+Because it is still very generic (beside the {example-part-name} there
+are many other OpAmps with exactly the same functionality), you should
+enter a generic name like _Single OpAmp_.
+
+Open menu:New Library Element[Component], enter the name and assign the
+component category we created previously:
+
+image::create-component-metadata.png[alt="Create component"]
+
+== Set Properties
+
+After clicking on btn:[Next] you're asked to specify some properties of
+the component:
+
+Schematic-Only::
+  Check this if the component must not appear on a board, but only in
+  the schematics. This is typically used for schematic frames.
+
+Prefix::
+  When adding the component to a schematic, its name (designator) is
+  automatically set to this value, followed by an incrementing number. So
+  if you choose the prefix _R_, components added to a schematic will have
+  the names _R1_, _R2_, _R3_ and so on. The prefix should be very short
+  and uppercase.
+
+Default Value::
+  In addition to the name, components also have a value assigned to it,
+  which is typically also displayed in the schematic. For example a
+  capacitor has its capacitance (e.g. _100nF_) set as its value. When
+  adding a component to a schematic, its value is initially set to the
+  value specified here. The value can also be a placeholder, for example
+  `+{{PARTNUMBER}}+`, `+{{DEVICE}}+` or `+{{CAPACITANCE}}+`. If you are
+  unsure, just leave it empty, the component editor will help you to
+  assign a value later.
+
+image::create-component-properties.png[alt="Set component properties"]
+
+[#add-symbols]
+== Add Symbols (aka _Gates_)
+
+Now you need to choose the symbols which represent the component in
+schematics (also called _gates_). Most components have only one symbol,
+but you can also add more than one, for example an OpAmp could have
+separate symbols for power and amplifier. In our case, select the
+_Single OpAmp_ symbol we created previously:
+
+image::create-component-add-symbol.png[alt="Add component symbol"]
+
+Don't forget to click on the btn:[*+*] button after closing the symbol
+chooser dialog. Then click on btn:[Next].
+
+== Add Signals
+
+The next step is to define all so-called signals of a component. Signals
+represent the "electrical interface" of a component. For example a
+transistor consists of the signals _Base_, _Collector_ and _Emitter_.
+For a component it's irrelevant whether the "real" transistor has
+multiple emitter pads, or an additional thermal pad and so on -- the
+component only specifies the three electrical signals.
+
+LibrePCB automatically extracts the signals from the pins of the specified
+symbols, so often you don't have to do this by hand. But sometimes you still
+should adjust the names or properties of these signals. For our OpAmp, we
+check the _Required_ checkbox of all signals to ensure the ERC will raise
+a warning if these signals are not connected to a net in the schematics:
+
+image::create-component-signals.png[alt="Component signals"]
+
+== Connect Pins To Signals
+
+These signals now need to be assigned to the corresponding symbol pins
+to create the connections. But since they were automatically generated
+from the pins, you can just click on
+btn:[Automatically assign all signals by name]:
+
+image::create-component-pin-map.png[alt="Component pin-signal-map"]
+
+== Component Editor
+
+After clicking on btn:[Finish], the component is complete:
+
+image::component-editor.png[alt="Component editor"]
+
+[NOTE]
+====
+For our simple example this procedure might feel a bit complicated. This
+is due to the broad flexibility of the LibrePCB library approach which
+will safe time in the long term due to high reusability of library elements.
+
+The component which we created uses only very basic library features, but
+as soon as you understand the library concept in more detail, you will be
+able to easily create much more complicated library elements. We're sure
+you will learn to love the flexibility of the library concept step by step.
+====
+
+== Recommendations
+
+====
+Following are the most important rules to create reusable components:
+
+* Create generic components whenever possible. Only create specific
+  components for manufacturer-specific parts (like microcontrollers).
+* Generally name signals according their electrical purpose
+  (e.g. _Source_, _Drain_, _Gate_).
+* Don't add multiple signals which are considered as connected. Even for a
+  microcontroller which has multiple _GND_ pins, the component should
+  have only one _GND_ signal. Keep in mind that a component represents
+  the _electrical_ interface of a part, not the _mechanical_!
+====

@@ -1,0 +1,111 @@
+= Package
+
+Then you need to create the package for the {example-part-name}, which is
+called _SOT23-5_. As usual, open menu:New Library Element[Package] and
+specify the name and category:
+
+image::create-package-metadata.png[alt="Create package"]
+
+== Add Pads
+
+Now you need to specify all pads of the package. The _SOT23-5_ has 5
+pads named from _1_ to _5_, so you can just enter the term _1..5_ and
+click on the btn:[+] button:
+
+image::create-package-pads.png[alt="Add package pads"]
+
+[NOTE]
+====
+When adding the pads, don't consider their electrical functions or
+internal connections. For example if a transistor with three electrical
+signals has three pads plus a thermal pad connected to one of the
+other signals, the package has *four* pads in total. It's not relevant
+whether some of them are connected to each other _within_ the package.
+
+General rule of thumb: If in doubt, better specify too many pads than too
+few ;-)
+====
+
+== Place Pads
+
+After clicking on btn:[Finish], you can draw the footprint. It's recommended
+to start with placing the pads:
+
+. Set a reasonable grid interval with the btn:[Grid Properties] toolbutton.
+. Start either the btn:[Add THT Pad] or btn:[Add SMT Pad] tool.
+. Choose the package pad to place and specify its properties, most notably
+  the shape and size.
+. Place the pad with a click. Press kbd:[R] to rotate it while moving.
+
+image::package-place-pad.png[alt="Place pad"]
+
+[NOTE]
+====
+The tool only allows to place pads on the grid. To specify exact
+coordinates, just place the pads rougly and open btn:[Properties] from
+the pad's context menu (right-click) afterwards to enter exact values.
+====
+
+== Draw Polygons
+
+Then add graphical object just
+xref:create-library-elements/symbol.adoc#draw-polygons[as done in the symbol editor]:
+
+image::package-draw-polygon.png[alt="Draw polygon"]
+
+[NOTE]
+====
+It's recommended to add at least two polygons:
+
+* One *on the _Top Documentation_ layer* to represent the body outline of
+  the package. This layer will appear on assembly drawings, but not on the
+  PCB silkscreen.
+* One *on the _Top Placement_ layer* to include a placement help which will
+  be visible on the PCB silkscreen -- *most notably pad-1 markings*.
+
+To create highly functional, beautiful looking footprints, check out
+our xref:library-conventions:packages.adoc[package conventions].
+====
+
+== Add Texts
+
+Just xref:create-library-elements/symbol.adoc#add-texts[like in the symbol],
+you should add `+{{NAME}}+` and a `+{{VALUE}}+` text objects:
+
+image::package-add-text.png[alt="Add text"]
+
+== Add Non-Plated Holes
+
+In case your package requires to drill non-plated holes into the PCB
+(for example to insert a screw), use the btn:[Add Hole] tool and
+specify its diameter. However, for our _SOT23-5_ package we don't need
+a hole.
+
+That's all you need for a simple package! Now *save the package* to ensure
+the background library scan picks up the new package.
+
+== Recommendations
+
+====
+For details about how packages should be designed, please take a look at our
+xref:library-conventions:packages.adoc[package conventions]. The most important
+rules are:
+
+- Create generic packages, not specific ones. For example _DIP08_ is
+  _DIP08_ -- no matter whether it's an OpAmp, an EEPROM or a microcontroller.
+- The origin (coordinate _0,0_) should be in (or near to) the center of
+  the package body.
+- Footprints must always be drawn from the top-view. When a footprint needs
+  to appear on the bottom of a board, this can be done in the board by
+  flipping it.
+- Add *all* pads of a package, not only the one you currently need. For
+  example if the package has a thermal pad, you should add it, even if
+  you currently don't need it.
+- Name pads according IPC-7351 (if applicable; see
+  xref:library-conventions:packages.adoc[package conventions] for more
+  information), typically just _1_, _2_, _3_ etc. Only name pads according
+  their electrical purpose (e.g. _Anode_) if the package is very specific
+  for a particular purpose (like an LED).
+- Pad 1 should always be at the top left.
+- There should be text elements for `+{{NAME}}+` and `+{{VALUE}}+`.
+====

@@ -1,0 +1,42 @@
+= Component Category
+
+First you should create a component category for the {example-part-name}
+(if it doesn't exist already). Open
+menu:New Library Element[Component Category], choose a suitable (generic!)
+name and select a parent category. *You may first need to create the
+required parent categories.*
+
+[NOTE]
+====
+Creating component categories is optional. Everything works even without
+creating such categories so if you're in a hurry, just skip this step.
+However, categories help to keep your libraries organized and to quickly
+find components in the schematic editor.
+====
+
+In our example, we choose the following properties (any other metadata is
+optional):
+
+* *Name*: _Amplifiers_ (since the {example-part-name} is an amplifier)
+* *Parent*: _Integrated Circuits › Linear_ (let's assume these categories
+  exist already)
+
+[TIP]
+====
+If you're unsure about the category name, take a look at the navigation
+trees of https://digikey.com or https://mouser.com for inspiration. But
+don't use a nesting level higher than 3 levels (usually 2 levels are
+enough).
+====
+
+image::create-component-category.png[alt="Create component category"]
+
+After clicking on btn:[Finish], your first component category is already
+complete! It may just take a moment for the background library scan until
+the new component category appears in the category trees.
+
+.Component categories available in the _LibrePCB Base_ library
+[%collapsible]
+====
+image::component-categories.png[alt="Component categories"]
+====

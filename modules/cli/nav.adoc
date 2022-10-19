@@ -1,4 +1,5 @@
 * xref:index.adoc[]
+** xref:installation.adoc[]
 ** xref:help.adoc[]
 ** xref:open-library.adoc[]
 ** xref:open-project.adoc[]

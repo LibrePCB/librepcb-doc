@@ -1,9 +1,9 @@
 = Library Conventions
 
+Here we collect conventions / guidelines to be used when designing libraries.
+
 [NOTE]
 ====
 These guidelines are not yet complete. Help us create sensible conventions
 https://github.com/LibrePCB/librepcb-doc[on GitHub]!
 ====
-
-Here we collect conventions / guidelines to be used when designing libraries.

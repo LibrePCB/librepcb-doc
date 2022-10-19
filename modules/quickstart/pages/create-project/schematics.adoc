@@ -1,0 +1,133 @@
+= Create Schematics
+
+Before starting with the board layout, a schematic will be needed. So
+let's see how to draw a schematic.
+
+== Add Frame
+
+First, you may want to add a frame to the schematic. Click on
+btn:[Add Component] in the toolbar and select a schematic frame:
+
+image::schematic-add-frame.png[alt="Add schematic frame"]
+
+After clicking on btn:[OK], the selected component is attached to the
+cursor. Click on the origin of your schematics to place the frame at
+coordinate (0, 0).
+
+Press kbd:[Esc] to finish the placement. The _Add Component_ dialog pops
+up again to choose the next component. Press kbd:[Esc] again to leave the
+tool.
+
+[#add-devices]
+== Add Components/Devices
+
+Now add all the resistors, capacitors, ICs etc. the same way to your
+schematic. However, for real parts (in contrast to the schematic frame)
+the dialog lets you select a concrete device. Here an explanation about
+the displayed information:
+
+image::schematic-add-device.png[alt="Add device"]
+
+You can choose between adding a *component* or a *device*:
+
+* *Component*: Defines the schematic symbol and netlist signals. It's all
+  you need in a schematic, but it does not represent a concrete part and
+  does not specify the package to be placed on the board.
+* *Device*: Represents a real, orderable part (with
+  MPNfootnote:[Manufacturer part number]). Basically it's the combination
+  of a component and a package with a particular pinout.
+
+To add a part to a board, you need to choose a *device*. However, it's
+your choice whether to select it _now_ or _later_ when starting with the
+board layout. This allows to draw the complete schematics even if various
+packages and devices do not exist yet in your libraries.
+
+[TIP]
+====
+While placing components, press kbd:[R] to rotate or kbd:[M] to mirror. With
+kbd:[Tab] the focus is moved into the toolbar to allow specifying a value.
+====
+
+Supply symbols like VCC or GND are added exactly the same way since these
+are ordinary library elements as well. However, they are also provided in
+a dedicated toolbar for a quick access to the most commonly used elements.
+
+[NOTE]
+====
+The _Add Component_ dialog lists all the components and devices available
+in the libraries you have installed in your workspace. *If you are missing
+something, you either need to
+xref:install-remote-libraries.adoc[install more libraries] or
+xref:create-library-elements/index.adoc[create your own library elements].*
+
+To create your own library elements, follow the linked tutorial. You can
+keep the project open while working in the library editor. Afterwards,
+*wait for the background library scan to complete* (indicated as a progress
+bar at the bottom right of the window). Then the new library elements
+will appear in the _Add Component_ dialog and are ready to be used.
+====
+
+== Draw Wires
+
+Once your schematic contains some components, the pins can be connected with
+the btn:[Draw Wire] tool. Just click on a pin to start a new wire:
+
+image::schematic-draw-wire.png[alt="Draw wire"]
+
+[IMPORTANT]
+====
+Pay attention to the circles around the pins. If a wire appears to be
+starting at a pin, but the circle is visible, it is *not* connected.
+
+The color of the pin circles even provide some more context:
+
+* *Red*: Mandatory pin, i.e. needs to be connected to a wire (if not, an
+  ERCfootnote:[Electrical rule check] warning is raised).
+* *Green*: Optional pin, i.e. may or may not be connected, depending on
+  the use-case. No ERC error will be raised if left unconnected.
+====
+
+== Add Net Labels
+
+To keep schematics clean and readable, net labels may be added. They allow
+to explicitly specify net names, and to create hidden connections between
+wires of the same net name.
+
+. Start the btn:[Add Net Label] tool.
+. click on the wire where to attach the label.
+. Click to specify the label position.
+
+[TIP]
+====
+While placing labels, press kbd:[R] to rotate.
+====
+
+image::schematic-netlabels.png[alt="Add net labels"]
+
+[NOTE]
+====
+All wires in the whole project which have the same name assigned will
+automatically be connected, even accross schematic pages.
+====
+
+== Add More Sheets
+
+For larger projects, you may want to split the schematics into multiple
+sheets for better readability. Just add more sheets with
+menu:Schematic[New Sheet], then add a frame and devices the same way.
+Use supply symbols and net labels to connect nets across pages.
+
+== Electrical Rule Check
+
+At latest when you're finished with the schematics, you should check if
+there are no critical ERC messages. The ERC does not need to be triggered
+since it is automatically updated.
+
+Open the ERC dock with menu:View[Go to Dock > Electrical Rule Check (ERC)]:
+
+image::erc-messages.png[alt="ERC messages"]
+
+Note that the _Board Errors_ can be ignored for now since we didn't create
+the board yet. Just fix the _Schematic Errors_, then _Schematic Warnings_.
+Usually the _Circuit Errors_ and _Circuit Warnings_ will then disappear
+automatically.

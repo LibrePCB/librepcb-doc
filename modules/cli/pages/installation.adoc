@@ -1,0 +1,40 @@
+= Installation
+:appimage-filename: librepcb-cli-{version}-linux-x86_64.AppImage
+:appimage-url: {releases-url}/{appimage-filename}
+:bundle-filename: librepcb-cli-{version}-mac-x86_64.dmg
+:bundle-url: {releases-url}/{bundle-filename}
+
+== Binary Releases
+
+Our official LibrePCB xref:installation:index.adoc[binary releases] contain
+the `librepcb-cli` executable next to the GUI application, so usually no
+separate installation is needed. But there are two exceptions: The AppImage
+and the macOS bundle.
+
+=== Linux AppImage
+
+*Download {appimage-url}[{appimage-filename}], make it executable and run it:*
+
+[source,bash,subs="attributes"]
+----
+wget "{appimage-url}"
+chmod +x ./{appimage-filename}
+./{appimage-filename}
+----
+
+=== macOS Bundle
+
+*Download {bundle-url}[{bundle-filename}] and double-click it in Finder.
+Then drag and drop the app onto the "Applications" folder in Finder.*
+
+== Docker Image
+
+The easiest way to get the LibrePCB CLI on Linux (especially for usage on CI)
+is to pull our official Docker image
+https://hub.docker.com/r/librepcb/librepcb-cli[librepcb/librepcb-cli]:
+
+[source,bash,subs="attributes"]
+----
+docker run -it --rm -v `pwd`:/work -u `id -u`:`id -g` \
+    librepcb/librepcb-cli:{version} --help
+----

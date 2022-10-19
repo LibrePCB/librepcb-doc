@@ -1,0 +1,39 @@
+= Create a PCB Project
+
+In LibrePCB, schematics and boards are always part of a project, so before
+creating schematics and boards you first need to create a project for every
+PCB. Click on btn:[New Project] in the control panel:
+
+image::control-panel-new-project.png[alt="New project button"]
+
+Then specify some project metadata:
+
+image::create-project-metadata.png[alt="New project metadata"]
+
+[TIP]
+====
+It's recommended to store projects within the workspace subdirectory
+named `projects` (the default location suggested by the wizard) because
+these projects are then shown in the control panel file explorer, making
+them easy to locate and use. But of course projects can be created at
+any other location as well.
+====
+
+[NOTE]
+====
+A LibrePCB project consists of a whole directory on the file system. While
+it is possible to manually add/modify files in that directory, generally
+you should avoid adding large files (e.g. datasheets) since this _could_
+slow down some operations. It's better to store unrelated files outside of
+the project directory.
+====
+
+Now you can choose whether the project should be initialized with a first
+schematic page and board, and how they are named. If you are unsure, just
+accept the default values:
+
+image::create-project-init.png[alt="New project initialization"]
+
+After clicking on btn:[Finish], the schematic- and board editors show up:
+
+image::create-project-editors.png[alt="Project editor"]

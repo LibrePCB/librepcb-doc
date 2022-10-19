@@ -1,0 +1,31 @@
+= Create a Workspace
+
+When starting LibrePCB the first time, a wizard asks you to open or create a
+workspace. The workspace is just a directory where settings, libraries and
+(optionally) projects will be stored. Once created, it can be used from all
+supported operating systems (i.e. it is platform independent) and in future
+it will also be usable with different LibrePCB versions.
+
+You can just accept the default workspace location (you could still move it
+to another location afterwards, if desired):
+
+image::workspace-wizard-path.png[alt="Choose workspace"]
+
+If the selected path does not contain a workspace yet, clicking on btn:[Next]
+will show a page to choose the most important settings:
+
+image::workspace-wizard-settings.png[alt="Workspace settings"]
+
+It is recommended to select at least your *preferred norm* and *length unit*
+since these usually depend on where you're living.
+
+[NOTE]
+====
+You can change these settings at any time later in the control panel under
+menu:Extras[Workspace Settings].
+====
+
+After clicking btn:[Finish], the control panel shows up and you're ready to
+start using LibrePCB!
+
+image::control-panel-empty.png[alt="Control panel"]

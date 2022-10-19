@@ -1,0 +1,37 @@
+= Device
+
+The last library element you need to create is the device which combines
+the component _Single OpAmp_ with the package _SOT23-5_. This is actually
+the only library element which is specifically for {example-part-name} --
+all previously created elements are generic and reusable for other OpAmps!
+
+Again, open menu:New Library Element[Device] and specify the name and
+category for the new device:
+
+image::create-device.png[alt="Create device"]
+
+== Choose Component & Package
+
+After clicking btn:[Next], you need to choose the component and package
+we created for this device:
+
+image::create-device-properties.png[alt="Device properties"]
+
+Then click on btn:[Finish].
+
+== Connect Pads To Signals
+
+Now you have to connect the package pads to component signals according
+to the pinout in the datasheet of {example-part-name}:
+
+image::device-pad-signal-map.png[alt="Device pad-signal-map"]
+
+Then *save the device* to finish it and quickly wait until the background
+library scan completes before adding the new device to a project.
+
+And that's it! The {example-part-name} is now ready to be added to
+schematics and boards. And because the categories, symbol, component
+and package are very generic, you created not only one single device,
+but the basement for many more devices in the future! For any additional
+single-channel OpAmp (with an already available package), you need to
+create only a device which is now a matter of a minute.

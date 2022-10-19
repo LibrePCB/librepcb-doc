@@ -5,7 +5,7 @@ Usage instructions and available options can be shown with `--help`:
 .Command
 [source,bash]
 ----
-$ ./librepcb-cli --help
+./librepcb-cli --help
 ----
 
 .Output

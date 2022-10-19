@@ -1,0 +1,23 @@
+= Package Category
+
+Before creating a package for the {example-part-name}, you should
+(optionally) create a category for it. This is done exactly the same
+way as you already created the
+xref:create-library-elements/component-category.adoc[component category].
+
+Since we need to create a _SOT23-5_ package, let's choose the following
+properties for its category:
+
+* *Name*: _Small-Outline Transistor (SOT)_
+* *Parent*: _Transistor_ (let's assume this category exists already)
+
+image::create-package-category.png[alt="Create package category"]
+
+With a click on btn:[Finish] the package category is complete and
+after a moment the new category is ready to use.
+
+.Package categories available in the _LibrePCB Base_ library
+[%collapsible]
+====
+image::package-categories.png[alt="Package categories"]
+====

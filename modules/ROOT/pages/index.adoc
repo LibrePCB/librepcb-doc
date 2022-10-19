@@ -1,6 +1,6 @@
 = LibrePCB Documentation
 
-Welcome to the documentation for LibrePCB {version}!
+Welcome to the documentation of LibrePCB {version}!
 
 [NOTE]
 ====

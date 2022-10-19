@@ -1,8 +1,0 @@
-= Package Category
-
-Before creating a Package for the {example-part-name}, you should (optionally)
-create a category for it. This is basically done exactly the same way as you
-already created the Component Category, so we won't explain it again. It could
-look like this:
-
-image::create-package-category.png[alt="Create Package Category"]

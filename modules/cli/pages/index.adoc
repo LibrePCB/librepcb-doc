@@ -12,7 +12,7 @@ running, you can use link:https://en.wikipedia.org/wiki/Xvfb[xvfb] instead:
 
 [source,bash]
 ----
-$ xvfb-run -a librepcb-cli [args]
+xvfb-run -a librepcb-cli [args]
 ----
 
 If the `librepcb-cli` executable still doesn't work, you may need to install
@@ -20,6 +20,6 @@ some dependencies. On Debian/Ubuntu, following packages need to be installed:
 
 [source,bash]
 ----
-$ apt-get install libfontconfig1 libglib2.0-0 libglu1-mesa
+apt-get install libfontconfig1 libglib2.0-0 libglu1-mesa
 ----
 ====
