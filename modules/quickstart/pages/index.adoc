@@ -1,0 +1,4 @@
+= Quickstart Tutorial
+
+This chapter provides a quick introduction into LibrePCB, starting from
+workspace initialization and ending with how to order the designed PCB.

@@ -1,0 +1,60 @@
+= Command "open-library"
+
+This command opens a LibrePCB library and lets you execute some tasks with it.
+
+.Command
+[source,bash]
+----
+$ ./librepcb-cli open-library --help
+----
+
+.Output
+----
+Usage: ./librepcb-cli [options] open-library [command_options] library
+LibrePCB Command Line Interface
+
+Options:
+  -h, --help     Print this message.
+  -v, --version  Displays version information.
+  --verbose      Verbose output.
+  --all          Perform the selected action(s) on all elements contained in
+                 the opened library.
+  --save         Save library (and contained elements if '--all' is given)
+                 before closing them (useful to upgrade file format).
+  --strict       Fail if the opened files are not strictly canonical, i.e.
+                 there would be changes when saving the library elements.
+
+Arguments:
+  open-library   Open a library to execute library-related tasks.
+  library        Path to library directory (*.lplib).
+----
+
+== Examples
+
+[discrete]
+=== Check and Upgrade File Format of Library Elements
+
+This command is useful for Continuous Integration of LibrePCB libraries because
+it reports failure if you check in libraries with invalid or non-canonical
+S-Expression files.
+
+.Command
+[source,bash]
+----
+$ ./librepcb-cli open-library \
+    --all \
+    --strict \
+    MyLibrary.lplib
+----
+
+.Output
+----
+Open library 'MyLibrary.lplib'...
+Process 86 component categories...
+Process 44 package categories...
+Process 37 symbols...
+Process 492 packages...
+Process 34 components...
+Process 37 devices...
+SUCCESS
+----

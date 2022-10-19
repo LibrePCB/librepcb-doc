@@ -1,0 +1,119 @@
+= Command "open-project"
+
+This command opens a LibrePCB project and lets you execute some tasks with it.
+
+.Command
+[source,bash]
+----
+$ ./librepcb-cli open-project --help
+----
+
+.Output
+----
+Usage: ./librepcb-cli [options] open-project [command_options] project
+LibrePCB Command Line Interface
+
+Options:
+  -h, --help                         Print this message.
+  -v, --version                      Displays version information.
+  --verbose                          Verbose output.
+  --erc                              Run the electrical rule check, print all
+                                     non-approved warnings/errors and report
+                                     failure (exit code = 1) if there are
+                                     non-approved messages.
+  --export-schematics <file>         Export schematics to given file(s).
+                                     Existing files will be overwritten.
+                                     Supported file extensions: pdf, svg, png
+  --export-bom <file>                Export generic BOM to given file(s).
+                                     Existing files will be overwritten.
+                                     Supported file extensions: csv
+  --export-board-bom <file>          Export board-specific BOM to given
+                                     file(s). Existing files will be
+                                     overwritten. Supported file extensions: csv
+  --bom-attributes <attributes>      Comma-separated list of additional
+                                     attributes to be exported to the BOM.
+                                     Example: "MANUFACTURER, MPN"
+  --export-pcb-fabrication-data      Export PCB fabrication data
+                                     (Gerber/Excellon) according the fabrication
+                                     output settings of boards. Existing files
+                                     will be overwritten.
+  --pcb-fabrication-settings <file>  Override PCB fabrication output settings
+                                     by providing a *.lp file containing custom
+                                     settings. If not set, the settings from the
+                                     boards will be used instead.
+  --export-pnp-top <file>            Export pick&place file for automated
+                                     assembly of the top board side. Existing
+                                     files will be overwritten. Supported file
+                                     extensions: csv, gbr
+  --export-pnp-bottom <file>         Export pick&place file for automated
+                                     assembly of the bottom board side. Existing
+                                     files will be overwritten. Supported file
+                                     extensions: csv, gbr
+  --board <name>                     The name of the board(s) to export. Can be
+                                     given multiple times. If not set, all
+                                     boards are exported.
+  --board-index <index>              Same as '--board', but allows to specify
+                                     boards by index instead of by name.
+  --remove-other-boards              Remove all boards not specified with
+                                     '--board[-index]' from the project before
+                                     executing all the other actions. If
+                                     '--board[-index]' is not passed, all boards
+                                     will be removed. Pass '--save' to save the
+                                     modified project to disk.
+  --save                             Save project before closing it (useful to
+                                     upgrade file format).
+  --strict                           Fail if the project files are not strictly
+                                     canonical, i.e. there would be changes when
+                                     saving the project. Note that this option
+                                     is not available for *.lppz files.
+
+Arguments:
+  open-project                       Open a project to execute project-related
+                                     tasks.
+  project                            Path to project file (*.lpp[z]).
+----
+
+== Examples
+
+[discrete]
+=== Check ERC Messages and Export Schematics & Boards
+
+This command is useful for Continuous Integration of LibrePCB projects because
+it reports failure if you check in projects with non-approved ERC messages. In
+addition, it generates all production data so you don't have to do it manually.
+
+.Command
+[source,bash]
+----
+$ ./librepcb-cli open-project \
+    --erc \
+    --export-schematics="output/{{VERSION}}/{{PROJECT}}_Schematics.pdf" \
+    --export-pcb-fabrication-data \
+    MyProject.lpp
+----
+
+.Output
+----
+Open project 'MyProject.lpp'...
+Run ERC...
+  Approved messages: 7
+  Non-approved messages: 2
+    - [WARNING] Net signal connected to less than two pins: "CAN_RX"
+    - [WARNING] Net signal connected to less than two pins: "JTCK"
+Export schematics to 'output/{{VERSION}}/{{PROJECT}}_Schematics.pdf'...
+  => 'output/v1/MyProject_Schematics.pdf'
+Export PCB fabrication data...
+  Board 'default':
+    => 'output/v1/gerber/MyProject_DRILLS-PTH.drl'
+    => 'output/v1/gerber/MyProject_OUTLINES.gbr'
+    => 'output/v1/gerber/MyProject_COPPER-TOP.gbr'
+    => 'output/v1/gerber/MyProject_COPPER-BOTTOM.gbr'
+    => 'output/v1/gerber/MyProject_SOLDERMASK-TOP.gbr'
+    => 'output/v1/gerber/MyProject_SOLDERMASK-BOTTOM.gbr'
+    => 'output/v1/gerber/MyProject_SILKSCREEN-TOP.gbr'
+    => 'output/v1/gerber/MyProject_SILKSCREEN-BOTTOM.gbr'
+Finished with errors!
+----
+
+In this example, the application reported errors and exited with code 1
+because there are non-approved ERC messages.

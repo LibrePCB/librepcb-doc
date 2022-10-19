@@ -10,7 +10,7 @@ BRANCH_NAME="${GITHUB_REF#refs/heads/}"
 if [ -n "${UPLOAD_URL-}" ]
 then
   # create tarball of all artifacts
-  cd ./artifacts
+  cd ./build/site
   tar -cf artifacts.tar *
   # create digital signature of artifacts tarball
   openssl dgst -sha256 -sign <(echo -e "$UPLOAD_SIGN_KEY") -out ./artifacts.tar.sha256 ./artifacts.tar

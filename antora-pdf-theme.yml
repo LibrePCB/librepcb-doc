@@ -1,0 +1,5 @@
+extends: default
+title-page:
+  text-align: center
+  logo:
+    image: image:librepcb.svg[pdfwidth=2.5in,align=center]

@@ -1,0 +1,40 @@
+= Installation
+
+== Official Binaries
+
+We provide official binary releases for the following operating systems:
+
+* xref:windows.adoc[Windows]
+* xref:linux.adoc[Linux]
+* xref:macos.adoc[macOS]
+
+== Distribution Packages
+
+In addition, we are officially maintaining the following packages:
+
+* link:https://snapcraft.io/librepcb[Snap on Snapcraft]
+* link:https://flathub.org/apps/details/org.librepcb.LibrePCB[Flatpak on Flathub]
+
+For other systems, a LibrePCB package might be provided by a package
+maintainer, either partially related or unrelated to the LibrePCB developers.
+We know from the following packages:
+
+* link:https://aur.archlinux.org/packages/librepcb[Arch Linux AUR Package]
+  (builds from source)
+* link:https://search.nixos.org/packages?channel=unstable&show=librepcb&from=0&size=50&type=packages&query=librepcb[NixOS Package]
+* link:https://packages.gentoo.org/packages/sci-electronics/librepcb[Gentoo Package]
+* link:https://formulae.brew.sh/cask/librepcb[Homebrew Cask Package]
+* link:https://repo.openpandora.org/?page=detail&app=librepcb[OpenPandora Package]
+
+[TIP]
+====
+You're a LibrePCB package maintainer?
+link:https://librepcb.org/discuss/[Ask us] to list your package here!
+====
+
+== Build From Sources
+
+Since LibrePCB is a free & open-source application, you can compile it by
+yourself if you like. This allows to run LibrePCB even on systems where no
+pre-built binaries are available. See instructions at
+xref:build-from-sources.adoc[].

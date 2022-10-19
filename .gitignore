@@ -1,6 +1,5 @@
-artifacts/
-index.html
-index.pdf
+/.cache/
+/build/
 Thumbs.db
 .DS_Store
 *.autosave

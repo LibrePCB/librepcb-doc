@@ -1,0 +1,25 @@
+= Command-Line Interface
+
+LibrePCB also provides a command line interface (CLI). With that tool, you
+can automate some tasks, for example on Continuous Integration (CI) systems.
+
+.Running On Headless Linux
+[NOTE]
+====
+Please note that (at this time) `librepcb-cli` requires a running X-server
+even if it doesn't open any windows. If your system doesn't have an X-server
+running, you can use link:https://en.wikipedia.org/wiki/Xvfb[xvfb] instead:
+
+[source,bash]
+----
+$ xvfb-run -a librepcb-cli [args]
+----
+
+If the `librepcb-cli` executable still doesn't work, you may need to install
+some dependencies. On Debian/Ubuntu, following packages need to be installed:
+
+[source,bash]
+----
+$ apt-get install libfontconfig1 libglib2.0-0 libglu1-mesa
+----
+====

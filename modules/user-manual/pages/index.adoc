@@ -1,0 +1,5 @@
+= User Manual
+
+*Sorry, the user manual is not available yet :-(*
+
+Help us creating it https://github.com/LibrePCB/librepcb-doc[on GitHub]!

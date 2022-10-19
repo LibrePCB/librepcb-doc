@@ -1,0 +1,25 @@
+= Installation on macOS
+:installer-filename: librepcb-installer-{version}-mac-x86_64.dmg
+:installer-url: {releases-url}/{installer-filename}
+:bundle-filename: librepcb-{version}-mac-x86_64.dmg
+:bundle-url: {releases-url}/{bundle-filename}
+
+== Portable Package
+
+The recommended way to install LibrePCB is to download the portable `*.dmg`
+file:
+
+*Download {bundle-url}[{bundle-filename}] and double-click it in Finder.
+Then drag and drop the app onto the "Applications" folder in Finder.*
+Afterwards you'll find LibrePCB in the Launchpad.
+
+== Online Installer
+
+Alternatively you could install LibrePCB with the online installer. This
+also installs a maintenance tool which allows to update LibrePCB once
+a new release is available.
+
+Download {installer-url}[{installer-filename}]. Right-click on the downloaded
+file and choose btn:[Open] from the context menu (because the application is
+considered as _unverified_). Then double-click on the contained file to run
+the installer.

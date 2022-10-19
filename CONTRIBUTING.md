@@ -2,15 +2,13 @@
 
 ## Notes
 
-- **Before spending lots of time on something, ask for feedback on your idea first!**
+- **Before spending lots of time on something, ask for feedback on your idea
+  first!**
 - Please search issues and pull requests before adding something new to avoid
   duplicating efforts and conversations.
 - To contact us use one of the following options:
-  - GitHub issues
-  - Our [discussion platform](https://librepcb.discourse.group/)
-  - [IRC](https://webchat.freenode.net/?channels=#librepcb) or
-    [Telegram](https://telegram.me/LibrePCB_dev) chat (they are automatically
-    synchronized)
+  - [GitHub issues](https://github.com/LibrePCB/librepcb-doc/issues)
+  - [Forum, chat and more](https://librepcb.org/discuss/)
 
 
 ## Getting Started
@@ -24,7 +22,7 @@
 - Create a topic branch from where you want to base your work.
   - This is usually the `master` branch.
   - To quickly create a topic branch based on `master`:
-    `git checkout -b my_contribution master`
+    `git checkout -b my-contribution master`
   - Please avoid working directly on the `master` branch.
 - Write documentation which follows our styleguide (explained below).
 - Make commits of logical units.
@@ -52,12 +50,15 @@ and rendered output), please follow these rules:
 - Unix line endings (LF)
 - Line length max. 80 characters (except long URLs etc.)
 - No trailing whitespaces
-- 2 empty lines to separate chapters
-- 1 empty line within chapters, e.g. to separate text blocks
+- No more than 1 empty line in succession (always separate sections and
+  paragraphs with only 1 empty line)
+- When adding new AsciiDoc files, don't forget to reference it from the
+  corresponding `nav.adoc` file.
 
 ### Screenshots
 
 - Use PNG as image format.
+- Use lowercase filenames with dashes as separator (e.g. `my-screenshot.png`).
 - Screenshots must be captured on a standard Ubuntu distribution (you can
   use a virtual machine if you don't have an Ubuntu system).
 - Make sure the image background (everything outside the captured window, e.g.

@@ -1,0 +1,27 @@
+= LibrePCB Documentation
+
+Welcome to the documentation for LibrePCB {version}!
+
+[NOTE]
+====
+The documentation is still work in progress. Help us writing beautiful
+documentation https://github.com/LibrePCB/librepcb-doc[on GitHub]!
+====
+
+.Offline Documentation
+[TIP]
+====
+For offline- or printable documentation, use the PDF download link at the
+bottom left of the page.
+====
+
+.Chapters:
+* xref:installation:index.adoc[Installation]
+* xref:quickstart:index.adoc[Quickstart Tutorial]
+* xref:user-manual:index.adoc[User Manual]
+* xref:cli:index.adoc[CLI Reference]
+* xref:library-conventions:index.adoc[Library Conventions]
+* xref:development:index.adoc[Development]
+
+Didn't find what you're looking for?
+link:https://librepcb.org/discuss/[Contact us]!

@@ -1,0 +1,30 @@
+= Show Help Text
+
+Usage instructions and available options can be shown with `--help`:
+
+.Command
+[source,bash]
+----
+$ ./librepcb-cli --help
+----
+
+.Output
+----
+Usage: ./librepcb-cli [options] command
+LibrePCB Command Line Interface
+
+Options:
+  -h, --help     Print this message.
+  -v, --version  Displays version information.
+  --verbose      Verbose output.
+
+Arguments:
+  command        The command to execute (see list below).
+
+Commands:
+  open-library   Open a library to execute library-related tasks.
+  open-project   Open a project to execute project-related tasks.
+
+List command-specific options:
+  ./librepcb-cli <command> --help
+----

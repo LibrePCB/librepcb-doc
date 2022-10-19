@@ -1,0 +1,5 @@
+= Development
+
+For developers of LibrePCB, or of you're interested in technical
+details of LibrePCB, check out the developers documentation at
+link:https://developers.librepcb.org[developers.librepcb.org].

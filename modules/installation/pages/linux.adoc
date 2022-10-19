@@ -1,0 +1,109 @@
+= Installation on Linux
+:installer-filename: librepcb-installer-{version}-linux-x86_64.run
+:installer-url: {releases-url}/{installer-filename}
+:appimage-filename: librepcb-{version}-linux-x86_64.AppImage
+:appimage-url: {releases-url}/{appimage-filename}
+
+Due to the diversity of the Linux ecosystem, there are many different ways
+to install LibrePCB. The order of the options provided below do not reflect
+any recommendation.
+
+[TIP]
+====
+If you're unsure, here our recommendations:
+
+* On Ubuntu: <<snap>>
+* On a Raspberry Pi: <<flatpak>>
+* Everywhere else: <<appimage>> (or <<installer>>)
+====
+
+[#installer,reftext=Online Installer]
+== Online Installer (x86_64)
+
+Although an installer is a rather unusual way to install applications on Linux,
+it provides the advantage that `*.lpp` project files can (optionally) be
+registered with the LibrePCB application, so you can open LibrePCB projects
+with a double-click in the file manager.
+
+*Download {installer-url}[{installer-filename}], make it executable and run it:*
+
+[source,bash,subs="attributes"]
+----
+wget "{installer-url}"
+chmod +x ./{installer-filename}
+./{installer-filename}
+----
+
+If you're not familiar with the terminal: Right-click on the downloaded file
+and then check something like _Allow executing file as program_ or
+_Run as executable_. Afterwards double-click the file to run it.
+
+[#appimage,reftext=Portable AppImage]
+== Portable AppImage (x86_64)
+
+The AppImage is a single-file portable package which runs on most Linux
+distributions. It does not install anything on your system and `*.lpp` project
+files will not be registered with the LibrePCB application.
+
+*Download {appimage-url}[{appimage-filename}], make it executable and run it:*
+
+[source,bash,subs="attributes"]
+----
+wget "{appimage-url}"
+chmod +x ./{appimage-filename}
+./{appimage-filename}
+----
+
+If you're not familiar with the terminal: Right-click on the downloaded file
+and then check something like _Allow executing file as program_ or
+_Run as executable_. Afterwards double-click the file to run it.
+
+[#snap,reftext=Snap Package]
+== Snap Package (multi-arch)
+
+For distrubutions like Ubuntu which use the https://snapcraft.io/[Snap]
+package manager, probably the easiest way is to install the
+https://snapcraft.io/librepcb[LibrePCB Snap package].
+
+On Ubuntu, just open the _Ubuntu Software_ application (app store),
+search for LibrePCB and install it. Alternatively, run this command from
+in the terminal:
+
+[source,bash]
+----
+sudo snap install librepcb
+----
+
+[IMPORTANT]
+====
+By default, Snap applications do not have access to the file system outside
+your home folder. Depending on where you want to store LibrePCB files, you
+might need to grant this permission manually after installing LibrePCB.
+
+Within _Ubuntu Software_, this is as simple as clicking on btn:[Permissions]
+and enabling _Read/write files on removable storage devices_.
+
+From the terminal, run this command:
+
+[source,bash]
+----
+sudo snap connect librepcb:removable-media :removable-media
+----
+====
+
+For more information about Snap, check out
+https://snapcraft.io/docs[its documentation].
+
+[#flatpak,reftext=Flatpak]
+== FlatPak (multi-arch)
+
+LibrePCB is also available as a https://flatpak.org[FlatPak] package from
+https://flathub.org/apps/details/org.librepcb.LibrePCB[FlatHub]. Assuming you
+have followed https://flatpak.org/setup/[FlatPak setup], you can configure
+FlatHub and install LibrePCB as follows:
+
+[source,bash,subs="attributes"]
+----
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub org.librepcb.LibrePCB
+----
