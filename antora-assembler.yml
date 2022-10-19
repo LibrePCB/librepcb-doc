@@ -1,0 +1,11 @@
+root_level: 0
+component_versions: '*'
+section_merge_strategy: fuse
+asciidoc:
+  attributes:
+    title: 'LibrePCB Documentation'
+    pdf-theme: ./antora-pdf-theme.yml
+    source-highlighter: pygments
+    pygments-style: default
+    toc: ''
+    toclevels: 3

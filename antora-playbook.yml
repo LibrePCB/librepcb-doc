@@ -1,0 +1,35 @@
+site:
+  title: LibrePCB Documentation
+  start_page: librepcb::index.adoc
+content:
+  sources:
+    - url: .
+      branches: HEAD
+      edit_url: 'https://github.com/LibrePCB/librepcb-doc/edit/{refname}/{path}'
+asciidoc:
+  attributes:
+    experimental: ''
+    hide-uri-scheme: '@'
+    idprefix: ''
+    idseparator: '-'
+    page-pagination: ''
+    table-frame: 'none@'
+    table-grid: 'rows@'
+    version: '0.1.7'  # <-- Latest LibrePCB version.
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    # snapshot: true  # Avoid downloading each time.
+  supplemental_files: ./supplemental-ui
+urls:
+  html_extension_style: indexify
+antora:
+  extensions:
+    - '@antora/pdf-extension'
+output:
+  clean: true
+runtime:
+  cache_dir: ./.cache
+  log:
+    level: info
+    failure_level: warn

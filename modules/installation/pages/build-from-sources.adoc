@@ -1,0 +1,61 @@
+= Build From Sources
+:source-filename: librepcb-{version}-source.zip
+:source-url: {releases-url}/{source-filename}
+
+== Requirements
+
+To compile LibrePCB, you need to install the following tools first:
+
+* pass:[g++] >= 4.8, MinGW >= 4.8, or Clang >= 3.3
+  (pass:[C++11] support is required)
+* http://www.qt.io/download-open-source/[Qt] >= 5.5
+* http://www.zlib.net/[zlib]
+* https://www.openssl.org/[OpenSSL]
+* https://cmake.org/[CMake] 3.5 or newer
+
+== Get the Sources
+
+[IMPORTANT]
+====
+It is very important to use the correct sources:
+
+* *Do NOT clone any branch (e.g. `master`) from our repository on GitHub!*
+  These sources are not compatible with the stable file format of LibrePCB.
+* Do NOT use the archives provided at the GitHub Releases page. These do not
+  include the submodules and thus can't be compiled.
+* It's fine to clone the official release *tag* (current: `{version}`) from
+  our repository on GitHub, just keep in mind to pass `--recursive` to also
+  get all the submodules.
+====
+
+For convenience, we provide an official source archive which contains all the
+required files (including submodules) and has stripped any unnecessary files:
+{source-url}[{source-filename}]
+
+[source,bash,subs="attributes"]
+----
+wget "{source-url}"
+unzip ./{source-filename}
+cd ./librepcb-{version}
+----
+
+== Build LibrePCB
+
+Within the downloaded source directory, execute the following commands:
+
+[source,bash,subs="attributes"]
+----
+mkdir build && cd build
+cmake ..
+make -j8
+----
+
+== Additional Resources
+
+These are just the most important commands. For more details (e.g. the
+available configuration flags), check out the following resources:
+
+* https://github.com/LibrePCB/LibrePCB/blob/master/README.md[`README.md`]
+  within the source archive
+* https://developers.librepcb.org/d5/d96/doc_building.html[Build instructions]
+  on our developers documentation

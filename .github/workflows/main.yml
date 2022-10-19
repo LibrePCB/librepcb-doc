@@ -2,17 +2,13 @@ name: CI
 on: [push, pull_request]
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: |
-          sudo gem install asciidoctor pygments.rb rouge concurrent-ruby
-          sudo gem install asciidoctor-pdf --pre
       - name: Stylecheck
         run: ./ci/stylecheck.sh
       - name: Build
-        run: ./ci/build.sh
+        run: ./build.sh
       - name: Upload Artifacts
         run: ./ci/upload_artifacts.sh
         env:

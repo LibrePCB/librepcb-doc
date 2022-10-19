@@ -1,0 +1,33 @@
+= Symbol
+
+Now we need to create a Symbol for the OpAmp. Click on the
+_Symbol_ button in the _New Library Element_ wizard, fill in some metadata
+and click on _Finish_. Now you can place the required pins (choose reasonable
+and unique names!), add the `+{{NAME}}+` and `+{{VALUE}}+` text elements and
+draw the outline. The result should look like this:
+
+image::create-symbol.png[alt="Create Symbol"]
+
+_Yes, the overlapping pin texts look ugly, but let's ignore that for the
+moment ;)_
+
+.Symbol Conventions
+[NOTE]
+====
+For details about how symbols should be designed, please take a look at our
+xref:library-conventions:symbols.adoc[symbol conventions]. The most important
+rules are:
+
+- For generic components, create generic symbols (e.g. _Diode_ instead of
+  _1N4007_).
+- The origin (coordinate _0,0_) should be in (or close to) the center of the
+  symbol.
+- Pins must represent the _electrical_ interface of a part, not the
+  _mechanical_. So don't add multiple pins with the same function (e.g. _GND_)
+  and don't name pins according their location in the package. Name them
+  according their electrical purpose (e.g. _IN+_, _IN-_, _OUT_) instead, or
+  just use incrementing numbers (i.e. _1_, _2_, _3_, ...).
+- Pins should be grouped by functionality and must be placed on the 2.54mm
+  grid.
+- There should be text elements for `+{{NAME}}+` and `+{{VALUE}}+`.
+====

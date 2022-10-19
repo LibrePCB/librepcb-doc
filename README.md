@@ -3,33 +3,25 @@
 This repository contains the source for the [LibrePCB](http://librepcb.org)
 documentation hosted at [docs.librepcb.org](https://docs.librepcb.org).
 
-- HTML output of `master`: https://docs.librepcb.org
-- PDF output of `master`: [librepcb-user-manual-nightly.pdf](https://download.librepcb.org/nightly_builds/master/librepcb-user-manual-nightly.pdf)
-- HTML output of other branches: https://docs.librepcb.org/_branches/
-- PDF output of other branches: https://download.librepcb.org/nightly_builds/
+## Toolchain
 
-## Requirements
+The documentation is written in
+[Asciidoc](https://asciidoctor.org/docs/what-is-asciidoc/)
+and built with [Antora](https://antora.org/).
 
-The documentation is written in [Asciidoc](https://asciidoctor.org/docs/what-is-asciidoc/)
-and built with [Asciidoctor](https://asciidoctor.org/).
+Unfortunately the build setup is not trivial since it is integrated into
+[librepcb-website](https://github.com/LibrePCB/librepcb-website).
 
-On Linux the required tools can be installed with following commands:
+Therefore we created a Docker image containing the whole toolchain. On Linux,
+just make sure Docker is installed. Then building the documentation is as
+simple as calling this script:
 
-    gem install asciidoctor pygments.rb rouge
-    gem install asciidoctor-pdf --pre
+    ./build.sh
 
-On Mac you can use [homebrew](https://brew.sh/) and install gems in your user
-folder:
-
-    brew install asciidoctor
-    gem install --user-install pygments.rb rouge
-
-This will keep your installation more resilient to OS X upgrades.
-
-## Building
-
-    asciidoctor index.adoc          # build index.html
-    asciidoctor-pdf index.adoc      # build index.pdf
+Unfortunately on other operating systems it is much more complicated. However,
+having the toolchain available locally is not mandatory. A decent text editor
+(ideally with AsciiDoc syntax highligting and live preview) should be enough
+to write some documentation.
 
 ## Contributing
 
@@ -40,6 +32,7 @@ for details. We're looking forward for pull requests :)
 
 - [AsciiDoc Syntax Quick Reference](https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/)
 - [Asciidoc Writer's Guide](https://asciidoctor.org/docs/asciidoc-writers-guide/)
+- [Antora Documentation](https://docs.antora.org/antora/latest/)
 - [Asciidoctor User Manual](https://asciidoctor.org/docs/user-manual/)
 - [AsciidocFX](https://www.asciidocfx.com/) (Asciidoc editor with live preview)
 

@@ -1,0 +1,17 @@
+name: librepcb
+title: LibrePCB
+version: ~
+asciidoc:
+  attributes:
+    # Configuration attributes.
+    table-caption: false
+    # Custom attributes.
+    example-part-name: LMV321LILT
+    releases-url: "https://download.librepcb.org/releases/{version}"
+nav:
+  - modules/installation/nav.adoc
+  - modules/quickstart/nav.adoc
+  - modules/user-manual/nav.adoc
+  - modules/cli/nav.adoc
+  - modules/library-conventions/nav.adoc
+  - modules/development/nav.adoc

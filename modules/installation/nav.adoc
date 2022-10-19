@@ -1,0 +1,5 @@
+* xref:index.adoc[]
+** xref:windows.adoc[On Windows]
+** xref:linux.adoc[On Linux]
+** xref:macos.adoc[On macOS]
+** xref:build-from-sources.adoc[]

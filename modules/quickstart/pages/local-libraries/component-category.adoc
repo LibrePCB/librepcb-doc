@@ -1,0 +1,9 @@
+= Component Category
+
+First you should create a Component Category for the {example-part-name} (if it
+doesn't already exists). Choose a suitable (generic!) name and select a parent
+category. You may first need to create the required parent categories.
+
+image::create-component-category.png[alt="Create Component Category"]
+
+After clicking on _Finish_, your first Component Category is ready to be used :)

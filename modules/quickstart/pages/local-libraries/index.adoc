@@ -1,0 +1,70 @@
+= Create Local Libraries
+
+Of course you can also create your own libraries. To do so, enter some metadata
+in the tab _Create local library_ and click on _Create Library_:
+
+image::library-manager-create.png[alt="Create Library"]
+
+Now you can open the library editor to create some symbols and footprints in
+your new library. Select your library on the left and then click on the
+_Open Library Editor_ button:
+
+image::library-manager-open-editor.png[alt="Open Library Editor"]
+
+Now we need a crash course to understand the basics of LibrePCB's library
+concept ;) A library consists of several different elements:
+
+* *Component Category*:
+  These are basically "metadata-only" elements used to categorize the "real"
+  library elements in a category tree. Every Symbol, Component and Device can be
+  assigned to one or more categories so they will appear in the category tree.
+  Examples: _Resistors_. _LEDs_, _Microcontrollers_
+* *Symbol*:
+  A symbol is the graphical representation of a Component (or parts of it) in a
+  schematic. It consists of electrical pins and graphical objects like lines.
+  Examples: _European Resistor_, _LED_, _1x10 Connector_
+* *Component*:
+  A Component basically represents a "generic" kind of electrical part. It's
+  *not* a real part which you can buy, it's just theoretical. The Component
+  defines the electrical interface of a part and how it is represented in the
+  schematic (by referencing one ore more Symbols). But it does not define how
+  the part looks like in a board.
+  Examples: _Resistor_, _Bipolar Capacitor_, _4-channel OpAmp_
+* *Package Category*:
+  Exactly the same as Component Categories, but for Packages instead of
+  Components.
+  Examples: _Chip Resistors_, _Axial Capacitors_, _DIP_
+* *Package*:
+  As the name suggests, packages represent the mechanical part of a "real"
+  electronic part. It contains the footprint with their electrical pads and
+  graphical objects which is then added to boards. Later a package may also
+  contain a 3D model for the 3D board viewer.
+  Examples: _TO220_, _DIP20_, _LQFP32_
+* *Device*:
+  The Device now represents a real electronic part which you can buy. It
+  basically combines a Component with a Package to specify how a Component
+  looks like on the board.
+  Examples: _0805 Resistor_, _LM358D_, _STM32F103C_
+
+[NOTE]
+====
+The order of this list is actually also the order to follow when creating new
+library elements. For example a Device always needs to be created *after* the
+corresponding Component. The other direction is not possible because of the
+dependencies.
+====
+
+Ready to create your first library elements? At the top left of the library
+editor there is the entry point for every new library element. There you can
+choose which of the six library element type you want to create:
+
+image::library-editor-new-element.png[alt="New Library Element"]
+
+*Example: {example-part-name}*
+
+Let's say you want to create the part {example-part-name} from A to Z. We will
+create now all the necessary library elements for the {example-part-name},
+though in practice you only need to create the elements which do not already
+exist. You can even use elements from other libraries, for example the Symbol
+from library _A_, the Component from library _B_ and the Package from library
+_C_.
