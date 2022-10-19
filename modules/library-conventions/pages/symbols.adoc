@@ -30,7 +30,7 @@ Following conventions apply to symbol names:
   of "GND Supply") to improve navigation in sorted lists (all supply
   symbols are listed next to each other)
 
-image::symbol-stm32.png[alt="Example Symbol",float="right"]
+image::symbol-stm32.png[alt="Example symbol",float="right"]
 
 == Origin
 
@@ -81,14 +81,14 @@ defined by the component using that symbol), just use numbers starting with
 Typical symbols should have exactly two text elements: `+{{NAME}}+` and
 `+{{VALUE}}+`.
 
-image::symbol-text-anchor-ic.png[alt="IC Symbol Text Anchor",float="right"]
+image::symbol-text-anchor-ic.png[alt="IC symbol text anchor",float="right"]
 
 For rectangular symbols, the name should be placed at top left, aligned at
 bottom left to the corner of the symbol outlines. And the value should be
 placed at bottom left, aligned at the top left to the corner of the symbol
 outlines.
 
-image::symbol-text-anchor-crystal.png[alt="Crystal Symbol Text Anchor",float="left"]
+image::symbol-text-anchor-crystal.png[alt="Crystal symbol text anchor",float="left"]
 
 Irregularly shaped symbols may have text elements placed differently, see for
 example the crystal at the left. Keep in mind that the value of a component can

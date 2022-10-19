@@ -1,0 +1,59 @@
+= Install Remote Libraries
+
+Before you can start creating new projects, you need to add some libraries
+to your workspace. Libraries contain various kinds of elements which can be
+added to schematics and boards (e.g. symbols, footprints and devices).
+
+Click on btn:[Library Manager] in the control panel:
+
+image::control-panel-library-manager.png[alt="Library manager button"]
+
+The library manager immediately fetches the list of available libraries from
+the Internet. Most of these libraries are hosted at
+https://github.com/LibrePCB-Libraries.
+
+The most important library is _LibrePCB Base_ because it contains commonly
+used library elements like resistors or diodes. It is highly recommended to
+install at least this library. However, you can even simply install all the
+available libraries at once:
+
+image::library-manager-download.png[alt="Download Libraries"]
+
+Later you can keep the installed libraries up to date exactly the same way.
+Just open the library manager from time to time to see which libraries can
+be updated to a new version.
+
+[NOTE]
+====
+Dependencies between different libraries are automatically taken into account
+when changing the selection. So for example if you select _LibrePCB Connectors_,
+the _LibrePCB Base Library_ will automatically be selected too because the
+connectors library depends on it.
+====
+
+[WARNING]
+====
+Downloaded (so-called _remote_-) libraries are always read-only because
+otherwise local modifications could cause conflicts when updating the library
+the next time. But this is no problem, just follow this tutorial to create your
+own local library later. In a local library you can use or even override
+library elements from remote libraries by specifying a higher version number.
+====
+
+[TIP]
+====
+If you are familiar with version control systems (e.g. _Git_) and want to use
+them to manage your libraries (instead of the library manager), just clone the
+libraries into the subdirectory `v0.1/libraries/local/` in your workspace.
+====
+
+After the selected libraries have been downloaded, they will appear in the
+list of installed libraries on the left side of the library manager:
+
+image::library-manager-installed.png[alt="Installed Libraries"]
+
+Note that after the libraries were installed, it takes a moment to create an
+index of all the contained elements. This process automatically runs in
+background and is indicated with a progress bar at the bottom right of all
+main windows. The installed libraries are ready to use once the progress bar
+disappears.

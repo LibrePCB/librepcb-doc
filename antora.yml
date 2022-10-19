@@ -7,6 +7,7 @@ asciidoc:
     table-caption: false
     # Custom attributes.
     example-part-name: LMV321LILT
+    example-datasheet-url: "https://eu.mouser.com/datasheet/2/389/dm00052423-1797584.pdf"
     releases-url: "https://download.librepcb.org/releases/{version}"
 nav:
   - modules/installation/nav.adoc

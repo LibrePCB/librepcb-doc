@@ -1,0 +1,110 @@
+= Create Library Elements
+
+Sooner or later you'll need to create your own library elements in your
+local library you have created xref:create-local-library.adoc[previously].
+Open that library in the library manager:
+
+image::library-manager-open-editor.png[alt="Open library editor"]
+
+The btn:[New Library Element] toolbutton (or kbd:[Ctrl+N]) in the
+library editor is the entry point for every new library element. There
+you can choose what kind of library element you want to create:
+
+image::library-editor-new-element.png[alt="New library element"]
+
+== Concept Overview
+
+But first we need a crash course to understand the basics of LibrePCB's
+library concept. A library consists of several different elements:
+
+Component Category::
+  These are basically "metadata-only" elements used to categorize the
+  "real" library elements in a category tree. Every symbol, component
+  and device can be assigned to one or more categories to make them
+  browsable in the category tree you used in the schematic editor for
+  xref:create-project/schematics.adoc#add-devices[adding components/devices].
+  Examples: _Resistors_. _LEDs_, _Microcontrollers_
+
+Symbol::
+  A symbol is the graphical representation of a component (or parts of it)
+  in a schematic. It consists of electrical pins and graphical objects
+  like lines.
+  Examples: _European Resistor_, _LED_, _1x10 Connector_
+
+Component::
+  A component basically represents a "generic" kind of electrical part.
+  It's *not* a real part which you can buy, it's just theoretical. The
+  component defines the electrical interface of a part and how it is
+  represented in the schematic (by referencing one ore more symbols). But
+  it does not define how the part looks physically on a board.
+  Examples: _Resistor_, _Bipolar Capacitor_, _4-channel OpAmp_
+
+Package Category::
+  Exactly the same as the component category, but for packages instead of
+  components. This allows to browse packages in a category tree.
+  Examples: _Chip Resistors_, _Axial Capacitors_, _DIP_
+
+Package::
+  As the name suggests, packages represent the mechanical part of a
+  "real" electronic part. It contains the footprint with their electrical
+  pads and graphical objects which is then added to boards. Later a
+  package may also contain a 3D model for the 3D board viewer.
+  Examples: _TO220_, _DIP20_, _LQFP32_
+
+Device::
+  The device now represents a real electronic part which you can buy. It
+  basically combines a component with a package and defines the pinout
+  to connect component signals with package pads.
+  Examples: _0805 Resistor_, _LM358D_, _STM32F103C_
+
+[IMPORTANT]
+====
+The order of this list is also the order to follow when creating new
+library elements. For example a device always needs to be created *after*
+the corresponding component. The other direction is not possible because
+of the dependencies.
+====
+
+No worries if this is a bit too much theory for now. The rest of the
+tutorial is more practical, which will help you to understand the concept
+step by step.
+
+[#example]
+== Our Example: {example-part-name}
+
+Let's say you want to create the part *{example-part-name}* (OpAmp, see
+link:{example-datasheet-url}[datasheet]) from A to Z. We will now create
+all the necessary library elements for the {example-part-name}, though
+in practice you only need to create the elements which do not exist
+already. You can even use elements from other libraries, for example
+the symbol from library _X_, the component from library _Y_ and the
+package from library _Z_.
+
+[IMPORTANT]
+====
+It's really important to understand how to re-use already existing
+components and packages. In many cases, your desired component
+(e.g. _Single OpAmp_) and package (e.g. _SOT23-5_) already exist in our
+libraries. *Then the only element you have to create is the device,
+which just takes a minute.*
+
+If you want to learn the whole concept, follow the tutorial (recommended).
+If you only want to create a device, skip the basics and go directly to
+the xref:create-library-elements/device.adoc[device tutorial].
+====
+
+Here an overview which library elements we'll create for the
+{example-part-name}:
+
+* xref:create-library-elements/component-category.adoc[*Component category*]:
+  _Integrated Circuits › Linear › Amplifiers_
+* xref:create-library-elements/symbol.adoc[*Symbol*]:
+  _Single OpAmp_
+* xref:create-library-elements/component.adoc[*Component*]:
+  _Single OpAmp_
+* xref:create-library-elements/package-category.adoc[*Package category*]:
+  _SOT_
+* xref:create-library-elements/package.adoc[*Package*]:
+  _SOT23-5_
+* xref:create-library-elements/device.adoc[*Device*]:
+  _{example-part-name}_

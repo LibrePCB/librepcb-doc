@@ -1,0 +1,88 @@
+= Symbol
+
+Now we need to create a symbol for the OpAmp. Open
+menu:New Library Element[Symbol], choose a name and the component
+category we just created and click btn:[Finish]:
+
+image::create-symbol.png[alt="Create symbol"]
+
+== Draw Polygons
+
+Now let's draw the graphical objects of the symbol:
+
+. Choose a tool. There are several similar tools available, but often you
+  need only the btn:[Draw Rectangle] or the btn:[Draw Polygon] tool.
+. Specify the polygon properties. *For the symbol's "body", choose the
+  _Outlines_ layer.* When checking _Grab Area_, you'll be able to drag
+  the symbol in the schematic editor by clicking on the polygon's area.
+. Draw the polygon with the cursor.
+
+image::symbol-draw-polygon.png[alt="Draw polygon"]
+
+== Add Texts
+
+Then you should *add at least two text objects*:
+
+* *Name*: Using the placeholder `+{{NAME}}+` which will be substituted by
+  the component's designator (e.g. "R5") in the schematics.
+* *Value*: Using the placeholder `+{{VALUE}}+` which will be substituted
+  by the component's value (e.g. "100nF") in the schematics.
+
+For convenience, there are dedicated tools for these two text objects.
+Use them as follows:
+
+. Start one of the text tools.
+. If needed, adjust the text properties in the toolbar.
+. Place the text object with a mouse click. Press kbd:[R] or
+  kbd:[Right Click] to rotate or kbd:[M] to mirror the alignment while
+  moving.
+
+image::symbol-add-text.png[alt="Add text"]
+
+== Add Pins
+
+Then, the most important thing is to add pins since these are required later
+in the schematics to attach wires to the symbol.
+
+. Start the btn:[Add Pin] tool.
+. Choose a reasonable (unique!) pin name and length. Press kbd:[Tab] to
+  move the focus into the name input field.
+. Place the pin with a mouse click. Press kbd:[R] or
+  kbd:[Right Click] to rotate while moving.
+
+image::symbol-add-pin.png[alt="Add pin"]
+
+The overlapping pin texts look a bit ugly, but let's ignore that for
+the moment.
+
+[IMPORTANT]
+====
+It's not possible to add multiple pins with the same name. If your device
+for example has multiple _GND_ pads which are all connected together (i.e.
+you don't need to distinguish between them), add *only one* _GND_ pin to the
+symbol. If you need to distinguish between the different pins, assign
+unique names (e.g. _GND_1_, _GND_2_ etc.).
+====
+
+Now *save the symbol* to let the background scan picking up the new
+symbol (this takes a moment) before you can use this symbol in a component.
+
+== Recommendations
+
+====
+For details about how symbols should be designed, please take a look at our
+xref:library-conventions:symbols.adoc[symbol conventions]. The most important
+rules are:
+
+- For generic components, create generic symbols (e.g. _Diode_ instead of
+  _1N4007_).
+- The origin (coordinate _0,0_) should be in (or close to) the center of the
+  symbol.
+- Pins must represent the _electrical_ interface of a part, not the
+  _mechanical_. So don't add multiple pins with the same function (e.g. _GND_)
+  and don't name pins according their location in the package. Name them
+  according their electrical purpose (e.g. _IN+_, _IN-_, _OUT_) instead, or
+  just use incrementing numbers (i.e. _1_, _2_, _3_, ...).
+- Pins should be grouped by functionality and placed on the 2.54mm grid.
+- There should be text elements for `+{{NAME}}+` and `+{{VALUE}}+`.
+====

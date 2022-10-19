@@ -59,10 +59,12 @@ and rendered output), please follow these rules:
 
 - Use PNG as image format.
 - Use lowercase filenames with dashes as separator (e.g. `my-screenshot.png`).
-- Screenshots must be captured on a standard Ubuntu distribution (you can
-  use a virtual machine if you don't have an Ubuntu system).
+- Screenshots must be captured on a standard Ubuntu distribution (see
+  [`README.md`](README.md) for instructions to set up a VM).
 - Make sure the image background (everything outside the captured window, e.g.
   around the rounded corners) is transparent.
+- Make sure there's no spacing (transparent borders) around the actual content.
+- For full window screenshots, preferred sizes are 800x480 or 800x600.
 - Always use the workspace [`./resources/workspace`](resources/workspace/) when
   taking screenshots.
 - If the library elements or projects to be captured are not yet available
@@ -74,6 +76,9 @@ and rendered output), please follow these rules:
   not be exceeded.
 - If reasonable, highlight the relevant information in screenshots with red
   boxes/circles/arrows.
+- After taking screenshots, make a temporary commit (for backup reasons) and
+  then run the script `./process_screenshots.sh` to automatically post-process
+  the committed images. Then squash these commits if the result looks good.
 
 
 ## Additional Resources

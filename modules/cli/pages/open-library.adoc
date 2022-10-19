@@ -5,7 +5,7 @@ This command opens a LibrePCB library and lets you execute some tasks with it.
 .Command
 [source,bash]
 ----
-$ ./librepcb-cli open-library --help
+./librepcb-cli open-library --help
 ----
 
 .Output
@@ -41,7 +41,7 @@ S-Expression files.
 .Command
 [source,bash]
 ----
-$ ./librepcb-cli open-library \
+./librepcb-cli open-library \
     --all \
     --strict \
     MyLibrary.lplib

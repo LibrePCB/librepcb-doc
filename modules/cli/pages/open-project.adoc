@@ -5,7 +5,7 @@ This command opens a LibrePCB project and lets you execute some tasks with it.
 .Command
 [source,bash]
 ----
-$ ./librepcb-cli open-project --help
+./librepcb-cli open-project --help
 ----
 
 .Output
@@ -85,7 +85,7 @@ addition, it generates all production data so you don't have to do it manually.
 .Command
 [source,bash]
 ----
-$ ./librepcb-cli open-project \
+./librepcb-cli open-project \
     --erc \
     --export-schematics="output/{{VERSION}}/{{PROJECT}}_Schematics.pdf" \
     --export-pcb-fabrication-data \
