@@ -31,6 +31,15 @@ outer polygon.
 
 [IMPORTANT]
 ====
+*A simple board outline polygon is automatically added by LibrePCB when
+creating a new project or board!* So usually the only thing you need to do
+is to *resize it to the desired size*. The instructions here are intended
+only to explain more complicated scenarios and in case you want to re-draw
+the outline from scratch.
+====
+
+[WARNING]
+====
 All polygons on the _Board Outlines_ layer shall represent the actual board
 outlines (i.e. the edges), **NOT** the paths for the milling cutter! The PCB
 manufacturer will automatically offset the outline polygons to calculate the
