@@ -1,0 +1,158 @@
+{{#if (eq page.url @root.page.componentVersion.url)}}
+<script>
+    /* Redirects of legacy anchors from docs.librepcb.org */
+    if (location.hash === "#about") {
+        window.location.href = "https://librepcb.org/";  /* obsolete */
+    }
+    if (location.hash === "#_features") {
+        window.location.href = "https://librepcb.org/";  /* obsolete */
+    }
+    if (location.hash === "#projectstatus") {
+        window.location.href = "https://librepcb.org/";  /* obsolete */
+    }
+    if (location.hash === "#gettingstarted") {
+        window.location.href = "./quickstart/";
+    }
+    if (location.hash === "#gettingstarted-installation") {
+        window.location.href = "./installation/";
+    }
+    if (location.hash === "#_online_installer") {
+        window.location.href = "./installation/";
+    }
+    if (location.hash === "#_portable_package") {
+        window.location.href = "./installation/";
+    }
+    if (location.hash === "#_other") {
+        window.location.href = "./installation/";
+    }
+    if (location.hash === "#gettingstarted-workspace") {
+        window.location.href = "./quickstart/create-workspace/";
+    }
+    if (location.hash === "#gettingstarted-libraries-remote") {
+        window.location.href = "./quickstart/install-remote-libraries/";
+    }
+    if (location.hash === "#gettingstarted-libraries-local") {
+        window.location.href = "./quickstart/create-local-library/";
+    }
+    if (location.hash === "#gettingstarted-libraries-cmpcat") {
+        window.location.href = "./quickstart/create-library-elements/component-category/";
+    }
+    if (location.hash === "#gettingstarted-libraries-sym") {
+        window.location.href = "./quickstart/create-library-elements/symbol/";
+    }
+    if (location.hash === "#gettingstarted-libraries-cmp") {
+        window.location.href = "./quickstart/create-library-elements/component/";
+    }
+    if (location.hash === "#gettingstarted-libraries-pkgcat") {
+        window.location.href = "./quickstart/create-library-elements/package-category/";
+    }
+    if (location.hash === "#gettingstarted-libraries-pkg") {
+        window.location.href = "./quickstart/create-library-elements/package/";
+    }
+    if (location.hash === "#gettingstarted-libraries-dev") {
+        window.location.href = "./quickstart/create-library-elements/device/";
+    }
+    if (location.hash === "#gettingstarted-project") {
+        window.location.href = "./quickstart/create-project/";
+    }
+    if (location.hash === "#gettingstarted-schematics") {
+        window.location.href = "./quickstart/create-project/schematics/";
+    }
+    if (location.hash === "#gettingstarted-boards") {
+        window.location.href = "./quickstart/create-project/board/";
+    }
+    if (location.hash === "#gettingstarted-boards-outlines") {
+        window.location.href = "./quickstart/create-project/board/#draw-outlines";
+    }
+    if (location.hash === "#gettingstarted-boards-devices") {
+        window.location.href = "./quickstart/create-project/board/#place-devices";
+    }
+    if (location.hash === "#gettingstarted-order") {
+        window.location.href = "./quickstart/create-project/order/";
+    }
+    if (location.hash === "#gettingstarted-order-fab") {
+        window.location.href = "./quickstart/create-project/order/#librepcb-fab";
+    }
+    if (location.hash === "#gettingstarted-production-data") {
+        window.location.href = "./quickstart/create-project/order/#generate-production-data";
+    }
+    if (location.hash === "#libraryconventions") {
+        window.location.href = "./library-conventions/";
+    }
+    if (location.hash === "#libraryconventions-symbols") {
+        window.location.href = "./library-conventions/symbols/";
+    }
+    if (location.hash === "#libraryconventions-symbols-genericspecific") {
+        window.location.href = "./library-conventions/symbols/#generic-vs-specific";
+    }
+    if (location.hash === "#libraryconventions-symbols-naming") {
+        window.location.href = "./library-conventions/symbols/#naming";
+    }
+    if (location.hash === "#libraryconventions-symbols-origin") {
+        window.location.href = "./library-conventions/symbols/#origin";
+    }
+    if (location.hash === "#libraryconventions-symbols-outline") {
+        window.location.href = "./library-conventions/symbols/#outline";
+    }
+    if (location.hash === "#libraryconventions-symbols-pinplacement") {
+        window.location.href = "./library-conventions/symbols/#pin-placement";
+    }
+    if (location.hash === "#libraryconventions-symbols-pinnaming") {
+        window.location.href = "./library-conventions/symbols/#pin-naming";
+    }
+    if (location.hash === "#libraryconventions-symbols-textelements") {
+        window.location.href = "./library-conventions/symbols/#text-elements";
+    }
+    if (location.hash === "#libraryconventions-symbols-grabarea") {
+        window.location.href = "./library-conventions/symbols/#grab-area";
+    }
+    if (location.hash === "#libraryconventions-packages") {
+        window.location.href = "./library-conventions/packages/";
+    }
+    if (location.hash === "#libraryconventions-packages-scope") {
+        window.location.href = "./library-conventions/packages/#scope";
+    }
+    if (location.hash === "#libraryconventions-packages-naming") {
+        window.location.href = "./library-conventions/packages/#naming";
+    }
+    if (location.hash === "#libraryconventions-packages-pads") {
+        window.location.href = "./library-conventions/packages/#pads";
+    }
+    if (location.hash === "#libraryconventions-packages-footprints") {
+        window.location.href = "./library-conventions/packages/#footprints";
+    }
+    if (location.hash === "#libraryconventions-packages-origin") {
+        window.location.href = "./library-conventions/packages/#origin";
+    }
+    if (location.hash === "#libraryconventions-packages-orientation") {
+        window.location.href = "./library-conventions/packages/#orientation";
+    }
+    if (location.hash === "#libraryconventions-packages-placement") {
+        window.location.href = "./library-conventions/packages/#placement-layer";
+    }
+    if (location.hash === "#libraryconventions-packages-documentation") {
+        window.location.href = "./library-conventions/packages/#documentation-layer";
+    }
+    if (location.hash === "#libraryconventions-packages-textelements") {
+        window.location.href = "./library-conventions/packages/#text-elements";
+    }
+    if (location.hash === "#cli") {
+        window.location.href = "./cli/";
+    }
+    if (location.hash === "#cli-installation") {
+        window.location.href = "./cli/installation/";
+    }
+    if (location.hash === "#cli-headless") {
+        window.location.href = "./cli/";
+    }
+    if (location.hash === "#cli-usage") {
+        window.location.href = "./cli/help/";
+    }
+    if (location.hash === "#_command_open_library") {
+        window.location.href = "./cli/open-library/";
+    }
+    if (location.hash === "#_command_open_project") {
+        window.location.href = "./cli/open-project/";
+    }
+</script>
+{{/if}}
