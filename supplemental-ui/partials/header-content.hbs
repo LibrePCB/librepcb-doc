@@ -1,11 +1,262 @@
-<header class="header">
-  <nav class="navbar">
-    <div class="navbar-brand">
-      <div class="navbar-item">
-        <img src="{{{uiRootPath}}}/img/librepcb_monochrome.svg" height="35px" width="35px">
-        <a href="https://librepcb.org">LibrePCB</a>
-        <span class="separator">::</span>
-        <a href="{{{relativize @root.page.componentVersion.url}}}">Documentation</a>
+<header class="bootstrap sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+        aria-label="Navigation bar">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-1" href="{{siteRootPath}}/">
+        <img src="https://librepcb.org/img/librepcb-monochrome.svg" alt=""
+              width="30" height="30"/>
+      </a>
+      <a class="navbar-brand" href="{{siteRootPath}}/">LibrePCB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbar-content"
+              aria-controls="navbar-content" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+          <li class="nav-item">
+            <a class="nav-link"
+
+                href="{{siteRootPath}}/blog/">
+
+              Blog
+            </a>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"
+
+                href="{{siteRootPath}}/features/for-everyone/">
+
+              Features
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-dark">
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/features/for-everyone/">
+                  A Tool For Everyone
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/features/schematic-editor/">
+                  Schematic Editor
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/features/board-editor/">
+                  Board Editor
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/features/fabrication-service/">
+                  Fabrication Service
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/features/library-management/">
+                  Library Management
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/features/library-editor/">
+                  Library Editor
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/features/library-concept/">
+                  Library Concept
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/features/file-format/">
+                  File Format
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/features/cli/">
+                  Command-Line Interface
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active"
+
+                href="{{siteRootPath}}/docs/">
+
+              Documentation
+            </a>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"
+
+                href="{{siteRootPath}}/help/">
+
+              Help
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-dark">
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/help/">
+                  Get Help
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/faq/">
+                  FAQ
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"
+
+                href="{{siteRootPath}}/download/">
+
+              Download
+            </a>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"
+
+                href="{{siteRootPath}}/sponsors/">
+
+              Sponsors
+            </a>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"
+
+                href="{{siteRootPath}}/donate/">
+
+              Donate
+            </a>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"
+
+                href="{{siteRootPath}}/contribute/">
+
+              Contribute
+            </a>
+
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"
+
+                href="{{siteRootPath}}/about/">
+
+              About
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-dark">
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/about/">
+                  About the Project
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/roadmap/">
+                  Roadmap
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/license/">
+                  License
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item"
+                    href="{{siteRootPath}}/contact/">
+                  Contact
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+        </ul>
+        <ul class="navbar-nav mb-2 mb-md-0">
+          <li class="nav-item text-nowrap">
+            <a href="https://fab.librepcb.org" title="LibrePCB Fab"
+                class="nav-link">
+              <i class="fa-solid fa-industry fa-xl d-lg-none me-1"></i>
+              <span class="d-lg-none">LibrePCB</span> Fab
+            </a>
+          </li>
+          <li class="nav-item d-none d-lg-flex py-1">
+            <div class="vr h-100 mx-2 text-white"></div>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/LibrePCB/LibrePCB" title="GitHub"
+                class="nav-link icon icon-github">
+              <i class="fa-brands fa-github fa-xl"></i>
+              <span class="d-lg-none ms-1">GitHub</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.patreon.com/librepcb" title="Patreon"
+                class="nav-link icon icon-patreon">
+              <i class="fa-brands fa-patreon fa-xl"></i>
+              <span class="d-lg-none ms-1">Patreon</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/librepcb" title="Twitter"
+                class="nav-link icon icon-twitter">
+              <i class="fa-brands fa-twitter fa-xl"></i>
+              <span class="d-lg-none ms-1">Twitter</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
