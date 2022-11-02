@@ -679,3 +679,8 @@ body {
         top: var(--min-header-height) !important;
     }
 }
+
+.doc .admonitionblock .icon i::after {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+}
