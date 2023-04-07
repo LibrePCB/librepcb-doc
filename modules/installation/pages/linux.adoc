@@ -102,6 +102,13 @@ https://flathub.org/apps/details/org.librepcb.LibrePCB[FlatHub]. Assuming you
 have followed https://flatpak.org/setup/[FlatPak setup], you can configure
 FlatHub and install LibrePCB as follows:
 
+[IMPORTANT]
+====
+After installing FlatPak, make sure to **reboot the computer** before executing
+the follwing commands! Otherwise LibrePCB might not appear in your application
+launcher.
+====
+
 [source,bash,subs="attributes"]
 ----
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
