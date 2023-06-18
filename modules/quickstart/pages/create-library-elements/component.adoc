@@ -88,7 +88,7 @@ image::component-editor.png[alt="Component editor"]
 ====
 For our simple example this procedure might feel a bit complicated. This
 is due to the broad flexibility of the LibrePCB library approach which
-will safe time in the long term due to high reusability of library elements.
+will save time in the long term due to high reusability of library elements.
 
 The component which we created uses only very basic library features, but
 as soon as you understand the library concept in more detail, you will be
