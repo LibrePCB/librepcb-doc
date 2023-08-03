@@ -91,6 +91,21 @@ sudo snap connect librepcb:removable-media :removable-media
 ----
 ====
 
+[NOTE]
+====
+Some users https://github.com/LibrePCB/LibrePCB/issues/989[reported]
+that LibrePCB crashes when installed as a Snap package. It seems to be a
+problem related to fonts and Snap. If you experience this issue, the
+following workaround might help:
+
+[source,bash]
+----
+sudo rm /var/cache/fontconfig/*
+rm ~/.cache/fontconfig/*
+fc-cache -r
+----
+====
+
 For more information about Snap, check out
 https://snapcraft.io/docs[its documentation].
 
