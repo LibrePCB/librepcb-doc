@@ -17,7 +17,7 @@ In addition, we are officially maintaining the following packages:
 
 For other systems, a LibrePCB package might be provided by a package
 maintainer, either partially related or unrelated to the LibrePCB developers.
-We know from the following packages:
+We are aware of the following packages:
 
 * link:https://aur.archlinux.org/packages/librepcb[Arch Linux AUR Package]
   (builds from source)

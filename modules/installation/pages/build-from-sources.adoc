@@ -4,11 +4,14 @@
 
 == Requirements
 
-To compile LibrePCB, you need to install the following tools first:
+To compile LibrePCB, you need to install the following tools & libraries first:
 
 * pass:[g++] >= 4.8, MinGW >= 4.8, or Clang >= 3.3
   (pass:[C++11] support is required)
 * http://www.qt.io/download-open-source/[Qt] >= 5.5
+* https://www.opencascade.com/[OpenCASCADE] OCCT or OCE (optional)
+* https://en.wikipedia.org/wiki/OpenGL_Utility_Library[OpenGL Utility Library]
+  GLU (optional)
 * http://www.zlib.net/[zlib]
 * https://www.openssl.org/[OpenSSL]
 * https://cmake.org/[CMake] 3.5 or newer

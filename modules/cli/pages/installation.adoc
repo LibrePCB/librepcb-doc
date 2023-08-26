@@ -3,6 +3,8 @@
 :appimage-url: {releases-url}/{appimage-filename}
 :bundle-filename: librepcb-cli-{version}-mac-x86_64.dmg
 :bundle-url: {releases-url}/{bundle-filename}
+:bundle-arm64-filename: librepcb-cli-{version}-mac-arm64.dmg
+:bundle-arm64-url: {releases-url}/{bundle-arm64-filename}
 
 == Binary Releases
 
@@ -24,8 +26,13 @@ chmod +x ./{appimage-filename}
 
 === macOS Bundle
 
-*Download {bundle-url}[{bundle-filename}] and double-click it in Finder.
-Then drag and drop the app onto the "Applications" folder in Finder.*
+Download the portable `*.dmg` file matching your CPU architecture:
+
+* *Intel (x86_64)*: {bundle-url}[{bundle-filename}]
+* *Apple Silicon (arm64)*: {bundle-arm64-url}[{bundle-arm64-filename}]
+
+Double-click the downloaded file in Finder. Then drag and drop the app
+onto the "Applications" folder in Finder.
 
 == Docker Image
 
