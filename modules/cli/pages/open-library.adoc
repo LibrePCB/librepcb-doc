@@ -15,10 +15,16 @@ LibrePCB Command Line Interface
 
 Options:
   -h, --help     Print this message.
-  -v, --version  Displays version information.
-  --verbose      Verbose output.
+  -V, --version  Displays version information.
+  -v, --verbose  Verbose output.
   --all          Perform the selected action(s) on all elements contained in
                  the opened library.
+  --check        Run the library element check, print all non-approved messages
+                 and report failure (exit code = 1) if there are non-approved
+                 messages.
+  --minify-step  Minify the STEP models of all packages. Only works in
+                 conjunction with '--all'. Pass '--save' to write the minified
+                 files to disk.
   --save         Save library (and contained elements if '--all' is given)
                  before closing them (useful to upgrade file format).
   --strict       Fail if the opened files are not strictly canonical, i.e.
@@ -32,19 +38,17 @@ Arguments:
 == Examples
 
 [discrete]
-=== Check and Upgrade File Format of Library Elements
+=== Check Library Elements and Upgrade File Format
 
 This command is useful for Continuous Integration of LibrePCB libraries because
 it reports failure if you check in libraries with invalid or non-canonical
-S-Expression files.
+S-Expression files or STEP models. In addition, the library check is run
+(`--check`) and reports failure if there are any non-approved messages.
 
 .Command
 [source,bash]
 ----
-./librepcb-cli open-library \
-    --all \
-    --strict \
-    MyLibrary.lplib
+./librepcb-cli open-library --all --check --minify-step --strict MyLibrary.lplib
 ----
 
 .Output
