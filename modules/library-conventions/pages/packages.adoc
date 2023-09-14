@@ -241,6 +241,41 @@ image:footprint-documentation-r0603.png[]
 image:footprint-documentation-to220.png[]
 ====
 
+== Package Outlines Layer
+
+Every typical footprint should contain a single polygon on the
+_Top Package Outlines_ layer to specify the outer dimension of the package.
+It is used by the DRC to check the clearance between devices.
+
+General rules:
+
+* *Any leads shall be included*, but pads not.
+* *Line width:* 0.0mm
+
+.Package outlines layer examples (the line in cyan)
+====
+image:footprint-outlines-idc.png[]
+====
+
+== Courtyard Layer
+
+Every typical footprint should contain a single polygon on the
+_Top Courtyard_ layer to specify the area where no other device shall be
+placed. It is used by the DRC to check this requirement. Usually this is
+equal to the <<Package Outlines Layer>>, just with an offset of several 0.1mm.
+
+General rules:
+
+* *Line width:* 0.0mm
+* *Offset to outlines:* According to IPC 7351 if applicable. A typical value
+  for SMT devices is 0.2mm. For THT devices, a larger value (e.g. 0.4mm) is
+  recommended.
+
+.Courtyard layer examples (the line in magenta)
+====
+image:footprint-courtyard-idc.png[]
+====
+
 == Text Elements
 
 Typical footprints should have exactly two text elements: `+{{NAME}}+` and
