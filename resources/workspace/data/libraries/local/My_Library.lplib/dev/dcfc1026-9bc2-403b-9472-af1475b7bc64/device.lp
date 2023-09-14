@@ -15,4 +15,6 @@
  (pad a2fdaef5-a938-4a77-8685-22e1dac466ea (signal cdb4a86e-89b0-4504-a0ba-36986d531ca6))
  (pad be5ab5f7-a1e0-49aa-ad83-1091a0e24f12 (signal 8d110243-3051-421f-8f97-3e36fcff2413))
  (pad c761138f-c4a8-48bf-bd94-c4c5728643c7 (signal 452571fc-e2e3-4c23-8cc4-7e0f87513e57))
+ (part "LMV321LILT" (manufacturer "STMicroelectronics")
+ )
 )

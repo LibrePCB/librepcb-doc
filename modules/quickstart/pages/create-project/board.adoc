@@ -24,10 +24,8 @@ to set its **line width to 0.0mm** since -- in contrast to many other polygons
 -- this polygon does not represent any actual material but only the outer
 dimension of the PCB.
 
-If your PCB needs non-plated cut-outs (e.g. slots, windows, ...), just draw
-these polygons exactly the same way as the outer board outline. These polygons
-are implicitly considered as cut-outs since they are located _within_ the
-outer polygon.
+If your PCB needs non-plated cut-outs (e.g. slots, windows, ...), draw
+these polygons on the _Board Cutouts_ layer with a width of 0.0mm.
 
 [IMPORTANT]
 ====
@@ -40,10 +38,10 @@ the outline from scratch.
 
 [WARNING]
 ====
-All polygons on the _Board Outlines_ layer shall represent the actual board
-outlines (i.e. the edges), **NOT** the paths for the milling cutter! The PCB
-manufacturer will automatically offset the outline polygons to calculate the
-actual paths for the cutter.
+All polygons on the _Board Outlines_  and _Board Cutouts_ layers shall
+represent the actual board outlines (i.e. the edges), **NOT** the paths
+for the milling cutter! The PCB manufacturer will automatically offset
+the outline polygons to calculate the actual paths for the cutter.
 ====
 
 image::board-outlines.png[alt="Draw board outlines"]
@@ -67,15 +65,21 @@ manually.
 *A correct board outline is really crucial to avoid problems during the
 PCB manufacturing process!* Make sure to fulfil these rules:
 
-* There's exactly one polygon to define the outer board outline.
-* Cut-out polygons (if there are any) are located fully inside the outer board
-  outline.
-* There are no tangent or intersecting _Board Outlines_ polygons.
-* Polygon layer is _Board Outlines_ and line width is 0.0mm (the latter is
-  optional, but recommended).
+* There's exactly one polygon on the _Board Outlines_ layer.
+* Cut-out polygons (if there are any) are on the _Board Cutouts_ layer and
+  located fully inside the outer board outline.
+* There are no tangent or intersecting polygons on these two layers.
+* The line width of those polygons is 0.0mm (optional, but recommended).
 * Polygons are closed (start and end coordinates are exactly identical) and
   consisting of a single polygon object (**NOT** multiple joined lines!).
-* There are no other objects on the _Board Outlines_ layer.
+* There are no other objects on these two layers.
+====
+
+[TIP]
+====
+An easy way to check if the board outline is valid is to review the PCB in
+the 3D viewer. For that, open menu:View[Toggle 2D/3D Mode] or press
+kbd:[Ctrl+3].
 ====
 
 == Place Devices
@@ -157,22 +161,13 @@ to create electrical connections), proceed as follows:
 . Specify the electrical net and copper layer in the toolbar.
 . Add vertices with mouse clicks. To fill the whole board, an approximate
   outline is good enough since it will be clipped automatically.
-. Once the planes are added, you need to trigger a rebuild manually with
-  the btn:[Rebuild All Planes] toolbutton (or with kbd:[Ctrl+Shift+R]).
 
 image::board-draw-plane.png[alt="Draw plane"]
 
-After rebuilding the planes, they appear with a filled area. As you can see,
+One the plane area is calculated, it appears with a filled area. As you can see,
 the area is automatically clipped to the board outline:
 
 image::board-plane.png[alt="Filled plane"]
-
-[WARNING]
-====
-Planes are not rebuilt automatically. Whenever you make a change which
-affects the planes (e.g. moving devices, drawing traces, ...) the plane
-areas might be outdated and you need to trigger a rebuild manually.
-====
 
 [IMPORTANT]
 ====
@@ -186,7 +181,7 @@ areas might be outdated and you need to trigger a rebuild manually.
   connected to any copper element are automatically discarded* to avoid
   electrically "floating" copper areas on the board. If you prefer to
   add these copper areas anyway, open btn:[Properties] from the plane
-  context menu (right-click) and check the _Keep Orphans_ option.
+  context menu (right-click) and check the _Keep Islands_ option.
 ====
 
 [TIP]
@@ -200,7 +195,7 @@ To interconnect planes on different copper layers, just place vias with
 the btn:[Add Via] tool within the plane areas. Make sure the vias have
 the same net as the plane. Vias will also prevent plane fragments from
 disappearing if there's no other copper element within the plane and the
-_Keep Orphans_ option is disabled.
+_Keep Islands_ option is disabled.
 
 [#add-holes]
 == Add Non-Plated Holes
@@ -217,7 +212,8 @@ to ensure there are no critical mistakes.
 
 But first you should check or adjust the design rules which are
 used to calculate via/pad restrings and cream/stop mask clearances.
-For that, open menu:Board[Design Rules] or press kbd:[F7]:
+For that, open menu:Board[Board Setup] or press kbd:[F7] and navigate
+to the *Design Rules* tab:
 
 image::board-design-rules.png[alt="Design rules"]
 
@@ -231,29 +227,42 @@ Fortunately, usually the default values are fine. So if you're unsure
 about these values, just keep the defaults.
 ====
 
-Once the design rules are set, open menu:Board[Design Rule Check] or
-press kbd:[F8] to configure the checks and to run the DRC:
+Afterwards, navigate to the next tab called *DRC Settings* and configure
+the settings according the capabilities of your desired PCB manufacturer:
 
-image::board-drc.png[alt="Design rule check"]
+image::board-drc-settings.png[alt="DRC settings"]
 
-[WARNING]
-====
-These settings are not yet stored persistently in your project, therefore
-you have to set them each time again. This will be improved in the next
-major release, LibrePCB 0.2.x.
-====
+If you're unsure, just skip this for now (the default values are usually fine).
 
-If there are any DRC messages, the DRC dock will pop up automatically
-after closing the _Design Rule Check_ dialog. Then just click on a
-message to highlight the issue in the board editor. There are also
-buttons to quickly run the DRC again or open the settings dialog:
+Once all settings are configured, open menu:Board[Design Rule Check] or
+press kbd:[F8] to run the DRC. This can take some time. The DRC dock widget
+should automatically appear to display the result:
 
 image::board-drc-dock.png[alt="DRC dock"]
 
+Then just click on a message to highlight the issue in the board editor.
+Or click on btn:[?] to get some more information about a message. If you're
+sure a message is not relevant, you could approve it with btn:[✔] but
+usually warnings/errors should be fixed instead of approved.
+
 [TIP]
 ====
-Now it would be a good time to also check for ERC issues again to
-be sure all electrical issues are fixed as well.
+There's also a tool named *Quick Check* which runs only the most important
+checks of the DRC. It is intended to be run regularly while working on the
+layout and can be triggered with kbd:[Shift + F8].
 ====
 
-Once you fixed all issues, you're ready to order the PCB!
+== 3D Preview
+
+Once you fixed all ERC issues, it's highly recommended to review the
+PCB in the 3D viewer. If anything with the board outline, the device
+placement or something like that is not correct, chances are high you
+will notice that in the 3D view. Click on menu:View[Toggle 2D/3D Mode] or
+press kbd:[Ctrl+3] to open it (press it two times for fullscreen):
+
+image::board-3d.png[alt="3D viewer"]
+
+Note that not all packages have a 3D model assigned, like the OpAmp in
+our example. But no worries, this does not cause any issues.
+
+If everything looks as expected, you're ready to order the PCB!

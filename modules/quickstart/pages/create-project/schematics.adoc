@@ -28,19 +28,21 @@ the displayed information:
 
 image::schematic-add-device.png[alt="Add device"]
 
-You can choose between adding a *component* or a *device*:
+You can choose between adding a *component* a *device* or a *part*:
 
 * *Component*: Defines the schematic symbol and netlist signals. It's all
   you need in a schematic, but it does not represent a concrete part and
   does not specify the package to be placed on the board.
-* *Device*: Represents a real, orderable part (with
-  MPNfootnote:[Manufacturer part number]). Basically it's the combination
-  of a component and a package with a particular pinout.
+* *Device*: Defines the package to be used in the board. Basically it's the
+  combination of a component and a package with a particular pinout.
+* *Part*: Represents a real, orderable part. In addition to defining the
+  package, it also defines the exact MPNfootnote:[Manufacturer part number]
+  which will appear in the BOMfootnote:[Bill of materials].
 
-To add a part to a board, you need to choose a *device*. However, it's
-your choice whether to select it _now_ or _later_ when starting with the
-board layout. This allows to draw the complete schematics even if various
-packages and devices do not exist yet in your libraries.
+To add something to a board, you need to choose a *device* or a *part*.
+However, it's your choice whether to select it _now_ or _later_ when starting
+with the board layout. This allows to draw the complete schematics even if
+various packages and devices do not exist yet in your libraries.
 
 [TIP]
 ====
@@ -54,7 +56,7 @@ a dedicated toolbar for a quick access to the most commonly used elements.
 
 [NOTE]
 ====
-The _Add Component_ dialog lists all the components and devices available
+The _Add Component_ dialog lists all the components, devices and parts available
 in the libraries you have installed in your workspace. *If you are missing
 something, you either need to
 xref:install-remote-libraries.adoc[install more libraries] or
@@ -127,7 +129,6 @@ Open the ERC dock with menu:View[Go to Dock > Electrical Rule Check (ERC)]:
 
 image::erc-messages.png[alt="ERC messages"]
 
-Note that the _Board Errors_ can be ignored for now since we didn't create
-the board yet. Just fix the _Schematic Errors_, then _Schematic Warnings_.
-Usually the _Circuit Errors_ and _Circuit Warnings_ will then disappear
-automatically.
+Click on btn:[?] to get some more information about a message. If you're
+sure a message is not relevant, you could approve it with btn:[✔] but
+usually warnings/errors should be fixed instead of approved.
