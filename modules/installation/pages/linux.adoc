@@ -70,16 +70,16 @@ For more information about Snap, check out
 https://snapcraft.io/docs[its documentation].
 
 [#flatpak,reftext=Flatpak]
-== FlatPak (multi-arch)
+== Flatpak (multi-arch)
 
-LibrePCB is also available as a https://flatpak.org[FlatPak] package from
-https://flathub.org/apps/details/org.librepcb.LibrePCB[FlatHub]. Assuming you
-have followed https://flatpak.org/setup/[FlatPak setup], you can configure
-FlatHub and install LibrePCB as follows:
+LibrePCB is also available as a https://flatpak.org[Flatpak] package from
+https://flathub.org/apps/details/org.librepcb.LibrePCB[Flathub]. Assuming you
+have followed the https://flatpak.org/setup/[Flatpak setup] steps, you can configure
+Flathub and install LibrePCB as follows:
 
 [IMPORTANT]
 ====
-After installing FlatPak, make sure to **reboot the computer** before executing
+After installing Flatpak itself, make sure to **reboot the computer** before executing
 the follwing commands! Otherwise LibrePCB might not appear in your application
 launcher.
 ====
