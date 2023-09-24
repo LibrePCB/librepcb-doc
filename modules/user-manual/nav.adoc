@@ -1,1 +1,4 @@
 * xref:index.adoc[]
+** xref:layers.adoc[]
+** Project Editor
+*** xref:project-editor/assembly-data.adoc[]

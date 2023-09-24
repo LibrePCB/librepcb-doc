@@ -1,5 +1,13 @@
 = User Manual
 
-*Sorry, the user manual is not available yet :-(*
+This chapter provides detailed documentation about concepts and features
+of LibrePCB. In contrast to the
+xref:quickstart:index.adoc[Quickstart Tutorial], it does not need to be
+read in a particular order -- just read the sections you're interested in
+to learn more about LibrePCB.
 
-Help us creating it https://github.com/LibrePCB/librepcb-doc[on GitHub]!
+[NOTE]
+====
+There are only very few things documented yet.
+Help us extending it https://github.com/LibrePCB/librepcb-doc[on GitHub]!
+====

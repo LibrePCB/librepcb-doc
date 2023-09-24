@@ -1,0 +1,251 @@
+= Layers
+
+Layers are an integral part of every EDA software, thus it's important to
+know what they're intended for and how to use them. Note that all existing
+layers are described here, but the availability of layers within LibrePCB
+depends on the context. For example the layers _Top/Bottom Courtyards_ are
+only available in the package editor, but not in the board editor since
+they make only sense within packages.
+
+== Schematic Layers
+
+Sheet Frames::
+  Intended to be used within symbols to draw schematic sheet frames (graphics
+  and texts).
+  Usually not used directly within schematics, but mainly in symbols.
+  No special treatment by LibrePCB.
+
+Documentation::
+  General purpose layer for graphics and texts, e.g. to add some additional
+  information to a schematic (like a formula, or a dawing of an external
+  device).
+  Not recommended (but possible) to be used within symbols.
+  No special treatment by LibrePCB.
+
+Comments::
+  General purpose layer intended for comment annotations within schematics.
+  Not recommended (but possible) to be used within symbols.
+  No special treatment (yet) by LibrePCB.
++
+Example: Text "Place C1 close to U1" next to the symbols of C1/U1
+
+Guide::
+  General purpose layer for graphics and texts, e.g. to draw boxes around
+  parts of a schematic and give them a title.
+  Not recommended (but possible) to be used within symbols.
+  No special treatment by LibrePCB.
+
+Outlines::
+  Intended to draw outlines/content of symbols (e.g. a rectangle for an IC,
+  or a thick line for a GND symbol).
+  No special treatment by LibrePCB.
++
+Example: xref:library-conventions:symbols.adoc#outline[Symbol Conventions]
+
+Hidden Grab Areas::
+  Used to define custom grab areas of symbols by drawing closed polygons
+  or circles. These areas are not visible in the schematic editor, but
+  the editor allows to grab symbols within these areas.
+  Only available in the symbol editor, not in the schematic editor.
++
+Example: xref:library-conventions:symbols.adoc#grab-area[Symbol Conventions]
+
+Names::
+  Intended for the `+{{NAME}}+` text of symbols.
+  Not used directly within schematics, only in symbols.
+  No special treatment by LibrePCB.
++
+Example: xref:library-conventions:symbols.adoc#text-elements[Symbol Conventions]
+
+Values::
+  Intended for the `+{{VALUE}}+` text of symbols.
+  Not used directly within schematics, only in symbols.
+  No special treatment by LibrePCB.
++
+Example: xref:library-conventions:symbols.adoc#text-elements[Symbol Conventions]
+
+== Board Layers
+
+Sheet Frames::
+  Intended to be used within footprints to draw board sheet frames (graphics
+  and texts).
+  Usually not used directly within boards, but mainly in footprints.
+  Ignored by the Gerber export, but usually contained when printing.
+
+Board Outlines::
+  *Mandatory layer* where a single, closed board outline polygon (or circle)
+  must be drawn. The line represents the board edge after manufacturing.
+  It's highly recommended to set its width to zero since it has no meaning.
+  This layer will be exported to Gerber files and is usually contained when
+  printing the board.
++
+Example:
+xref:quickstart:create-project/board.adoc#draw-outlines[Draw Board Outline]
++
+[NOTE]
+====
+In the board editor layers dock, this layer is named _Outlines_ and is
+coupled with the _Board Cutouts_ layer.
+====
+
+Board Cutouts::
+  Any non-plated board cut-outs (millings) more complex than slotted holes
+  must be drawn on this layer as polygons or circles. The line represents
+  the board edge after manufacturing. It's highly recommended to set its
+  width to zero since it has no meaning.
+  This layer will be exported to Gerber files (into the same file as the
+  _Board Outlines_ layer) and is usually contained when printing the board.
++
+Example:
+xref:quickstart:create-project/board.adoc#draw-outlines[Draw Board Outline]
++
+[NOTE]
+====
+In the board editor layers dock, this layer is named _Outlines_ and is
+coupled with the _Board Outlines_ layer.
+====
+
+Plated Board Cutouts::
++
+[CAUTION]
+====
+Not supported yet (ignored in the Gerber export)!
+====
+
+Measures::
+  General purpose layer for graphics and texts, e.g. to add manual
+  measurements (e.g. the PCB size) to the board.
+  Not recommended (but possible) to be used within footprints.
+  Ignored by the Gerber export, but might be contained when printing.
+
+Alignment::
+  Intended to add alignment helper drawings to footprints, mainly just
+  straight lines with zero width. For example in an edge-mounted device,
+  the exact location of the board edge could be drawn on this layer as a
+  help/reference for the board designer to correctly place the device in
+  relation to the board edge.
+  Ignored by the Gerber export, and usually not contained when printing.
+
+Documentation::
+  General purpose layer for graphics and texts, e.g. to add some additional
+  information or drawings to a board.
+  Not recommended (but possible) to be used within footprints.
+  Ignored by the Gerber export, but might be contained when printing.
+
+Comments::
+  General purpose layer intended for comment annotations within boards.
+  Not recommended (but possible) to be used within footprints.
+  Ignored by the Gerber export, but might be contained when printing.
+
+Guide::
+  General purpose layer for graphics and texts, e.g. to draw boxes around
+  parts of a board and give them a title.
+  Not recommended (but possible) to be used within footprints.
+  Ignored by the Gerber export, but might be contained when printing.
+
+Top/Bottom Names::
+  Intended for the `+{{NAME}}+` text of footprints.
+  Not used directly within boards, only in footprints.
+  Usually printed on silkscreen (by the Gerber export), depending on the
+  board setup configuration.
++
+Example:
+xref:library-conventions:packages.adoc#text-elements[Package Conventions]
+
+Top/Bottom Values::
+  Intended for the `+{{VALUE}}+` text of footprints.
+  Not used directly within boards, only in footprints.
+  Might be printed on silkscreen (by the Gerber export), depending on the
+  board setup configuration.
++
+Example:
+xref:library-conventions:packages.adoc#text-elements[Package Conventions]
+
+Top/Bottom Legend::
+  Intended for any drawings to appear on silkscreen, e.g. device
+  placement/orientation lines, pin-1 dots and custom text.
+  To be used within footprints or directly within boards.
+  Typical line width is 0.2 mm, recommended minimum is 0.1 mm.
+  Usually printed on silkscreen (by the Gerber export), depending on the
+  board setup configuration.
++
+Example:
+xref:library-conventions:packages.adoc#legend-layer[Package Conventions]
+
+Top/Bottom Documentation::
+  Intended for drawings to represent devices in a nice way, including
+  body outlines, leads and polarity/pin-1 markings. Basically as a 2D
+  projection of the 3D model to somehow see the packages in 2D views,
+  for example to export a nice looking assembly plan.
+  Ignored by the Gerber export, but usually contained when printing.
++
+Example:
+xref:library-conventions:packages.adoc#documentation-layer[Package Conventions]
+
+Top/Bottom Package Outlines::
+  Intended for footprints to draw the exact mechanical outlines of the
+  device to be assembled.
+  To be drawn with a zero-width polygon or circle.
+  Used by the DRC to detect and warn about overlapping devices, or devices
+  placed within the courtyard of another device. This DRC check doesn't
+  work if no package outline is drawn.
+
+Top/Bottom Courtyard::
+  Intended for footprints to draw the courtyard (clearance) of the device
+  to be assembled, typically just the package outlines with a small offset
+  (e.g. 0.2 mm).
+  To be drawn with a zero-width polygon or circle.
+  Used by the DRC to detect and warn about devices placed within the
+  courtyard of another device. This DRC check doesn't work if no courtyard
+  is drawn.
+
+Top/Bottom Hidden Grab Areas::
+  Used to define custom grab areas of footprints by drawing closed polygons
+  or circles. These areas are not visible in the board editor, but
+  the editor allows to grab devices within these areas.
+  Only available in the footprint editor, not in the board editor.
+
+Top/Bottom Stop Mask::
+  Used to add solder resist openings, i.e. areas on the PCB where no solder
+  resist shall be applied. So in contrast to most other layers, this layer
+  has inverted polarity. Note that LibrePCB adds content on this layer
+  automatically where necessary (pads, holes etc.), so manual usage of
+  this layer is generally not needed. But it still allows to add custom
+  solder resist openings.
+  Any content on this layer is exported to the corresponding Gerber files.
+
+Top/Bottom Solder Paste::
+  Used to add stencil openings, i.e. areas on the PCB where solder paste is
+  applied for reflow soldering of THT devices. Note that LibrePCB adds
+  content on this layer automatically for SMT pads, so manual usage of
+  this layer is generally not needed. But it still allows to add custom
+  solder paste areas.
+  Any content on this layer is exported to the corresponding Gerber files.
+
+Top/Bottom Finish::
++
+[CAUTION]
+====
+Not supported yet (ignored in the Gerber export)!
+====
+
+Top/Bottom Glue::
++
+[CAUTION]
+====
+Not supported yet (ignored in the Gerber export)!
+====
+
+Top/Inner/Bottom Copper::
+  Should be pretty clear 🙂 Inner layers are numbered from top to bottom,
+  i.e. _Inner Copper 1_ is just below _Top Copper_ and on a 6-layer PCB
+  _Inner Copper 4_ is just above _Bottom Copper_.
+
+== Custom Layers
+
+To allow sharing symbols and footprints between users, it's crucial that
+the purpose of every layer is identical for each user. Therefore LibrePCB
+does not allow to add custom, user-defined layers.
+
+If the built-in layers are not sufficient for you, please
+https://librepcb.org/help/[let us know].

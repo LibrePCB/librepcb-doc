@@ -241,6 +241,41 @@ image:footprint-documentation-r0603.png[]
 image:footprint-documentation-to220.png[]
 ====
 
+== Package Outlines Layer
+
+Every typical footprint should contain a single polygon on the
+_Top Package Outlines_ layer to specify the outer dimension of the package.
+It is used by the DRC to check the clearance between devices.
+
+General rules:
+
+* *Any leads shall be included*, but pads not.
+* *Line width:* 0.0mm
+
+.Package outlines layer examples (the line in cyan)
+====
+image:footprint-outlines-idc.png[]
+====
+
+== Courtyard Layer
+
+Every typical footprint should contain a single polygon on the
+_Top Courtyard_ layer to specify the area where no other device shall be
+placed. It is used by the DRC to check this requirement. Usually this is
+equal to the <<Package Outlines Layer>>, just with an offset of several 0.1mm.
+
+General rules:
+
+* *Line width:* 0.0mm
+* *Offset to outlines:* According to IPC 7351 if applicable. A typical value
+  for SMT devices is 0.2mm. For THT devices, a larger value (e.g. 0.4mm) is
+  recommended.
+
+.Courtyard layer examples (the line in magenta)
+====
+image:footprint-courtyard-idc.png[]
+====
+
 == Text Elements
 
 Typical footprints should have exactly two text elements: `+{{NAME}}+` and
@@ -290,4 +325,33 @@ if they are more suitable.
 ====
 image:footprint-text-anchor-dip8.png[]
 image:footprint-text-anchor-sot23.png[]
+====
+
+== 3D Models
+
+Packages might be populated with 3D models from STEP files. However, there
+are several things to consider carefully.
+
+Some general notes:
+
+* *File size:* Try to keep STEP models as small as possible to avoid
+  unnecessary long download- and loading times. Usually it is fine to
+  keep STEP models rather simple (i.e. not adding too much details).
+* *License:* Keep in mind that all libraries provided by LibrePCB are released
+  under the
+  https://en.wikipedia.org/wiki/Creative_Commons_license[CC0 Public Domain]
+  license. This also applies to STEP models.
+
+[IMPORTANT]
+====
+Almost every STEP model available in the Internet (whether from a manufacturer
+or some other website) are not published under the CC0 license and sometimes
+are also very bloated (way too detailed). Such models must not be contributed
+to our official libraries (we won't accept them). We may change this
+requirement some day, but at the moment this needs to be respected.
+
+In addition, we prefer STEP models to be generated with
+https://cadquery.readthedocs.io/[CadQuery] to allow making modifications
+in future. Contributions of STEP models created in any other way may not
+be accepted.
 ====
