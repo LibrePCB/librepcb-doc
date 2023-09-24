@@ -1,25 +1,37 @@
 = Installation on macOS
-:installer-filename: librepcb-installer-{version}-mac-x86_64.dmg
-:installer-url: {releases-url}/{installer-filename}
 :bundle-filename: librepcb-{version}-mac-x86_64.dmg
 :bundle-url: {releases-url}/{bundle-filename}
+:bundle-arm64-filename: librepcb-{version}-mac-arm64.dmg
+:bundle-arm64-url: {releases-url}/{bundle-arm64-filename}
 
 == Portable Package
 
-The recommended way to install LibrePCB is to download the portable `*.dmg`
-file:
+To install LibrePCB, download the portable `*.dmg` file matching your
+CPU architecture:
 
-*Download {bundle-url}[{bundle-filename}] and double-click it in Finder.
-Then drag and drop the app onto the "Applications" folder in Finder.*
-Afterwards you'll find LibrePCB in the Launchpad.
+* *Intel (x86_64)*: {bundle-url}[{bundle-filename}]
+* *Apple Silicon (arm64)*: {bundle-arm64-url}[{bundle-arm64-filename}]
 
-== Online Installer
+Double-click the downloaded file in Finder. Then drag and drop the LibrePCB
+app onto the "Applications" folder in Finder. Afterwards you'll find
+LibrePCB in the Launchpad.
 
-Alternatively you could install LibrePCB with the online installer. This
-also installs a maintenance tool which allows to update LibrePCB once
-a new release is available.
+[IMPORTANT]
+====
+Unfortunately we're not able (yet) to officially sign the macOS binary.
+Therefore macOS refuses to start LibrePCB by default. As a workaround,
+you need to run it once with menu:Right-click[Open] on the LibrePCB
+application in the Launchpad. If this doesn't work, try it a second time.
 
-Download {installer-url}[{installer-filename}]. Right-click on the downloaded
-file and choose btn:[Open] from the context menu (because the application is
-considered as _unverified_). Then double-click on the contained file to run
-the installer.
+Afterwards you should be able to run LibrePCB normally with a single click.
+====
+
+// Keep this section just for some time to keep the links working and to
+// inform users about the change.
+[#online-installer,reftext=Online Installer]
+== Online Installer (abandoned)
+
+Note that starting with LibrePCB 1.0, we do no longer provide an installer for
+macOS. If you installed a previous LibrePCB release with the installer,
+please uninstall it with the _LibrePCB Maintenance Tool_ and install the
+latest release with the <<portable-package>> instead.

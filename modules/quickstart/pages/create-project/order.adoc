@@ -38,19 +38,39 @@ Instead of using <<librepcb-fab>>, of course you can also generate the
 production data manually and forward these files to any PCB manufacturer
 you like.
 
+Currently there exist multiple ways how to generate production data, but
+it's recommended to use the *Output Jobs* feature for that. Click on
+menu:File[Output Jobs] or press kbd:[F11] to open the corresponding window:
+
+image::output-jobs.png[alt="Output jobs"]
+
+Then for any output you like to generate, click on the btn:[+] button at the
+bottom left. See the following sections for details on the available jobs.
+
+[NOTE]
+====
+Any files generated through output jobs will be written to the path
+`./output/<VERSION>/` within the project directory, where `<VERSION>`
+is the project's version number as defined in the *Project Setup* dialog.
+So make sure the version number is set as desired to avoid overwriting
+e.g. the output files of a previous PCB version.
+====
+
+Once you set up all output jobs, just click on the "Run all jobs" button
+and all files will be written to the output directory. Then click on
+btn:[OK] and save the project to store the output jobs configuration.
+
 === Gerber/Excellon
 
-Open menu:File[Production Data > Generate Fabrication Data] or press
-kbd:[F10]. Then choose the settings of the Gerber/Excellon export.
-Generally you should determine what format your PCB manufacturer accepts.
-Many manufacturers accept Protel-style settings, so if you're unsure,
-click on btn:[Protel naming]:
+For the Gerber/Excellon production data you need to choose the settings of
+the Gerber/Excellon export. There are two different presets built-in, a
+default style and a Protel style. Generally you should determine what format
+your PCB manufacturer accepts. Many manufacturers accept Protel-style
+settings, so if you're unsure, choose *Gerber/Excellon (Protel Style)*.
 
-image::board-fabrication-data.png[alt="Generate fabrication data"]
+image::output-jobs-gerber-excellon.png[alt="Gerber/Excellon output job"]
 
-Press btn:[Generate] and LibrePCB writes the files into the selected
-directory within the project. These files can then be sent to your PCB
-manufacturer for production.
+If required, the settings can now be adjusted manually.
 
 [WARNING]
 ====
@@ -63,33 +83,14 @@ production data.
 
 === Pick&Place Data
 
-If you also need pick&place files for automated assembly, open
-menu:File[Production Data > Generate Pick&Place Files] or press kbd:[F11]:
+If you also need pick&place files for automated assembly, just choose
+*Pick&Place (+*+.csv)* (or alternatively ther Gerber X3 variant):
 
-image::board-pnp.png[alt="Generate pick&place files"]
+image::output-jobs-pnp.png[alt="Pick&place output job"]
 
-== Export BOM
+=== Bill of Materials
 
-To get a list of all parts to purchase, export the bill of materials (BOM)
-from either the schematic editor or board editor with
-menu:File[Production Data > Generate Bill Of Materials] or with kbd:[F9]:
+To get a bill of materials (BOM), add the output job
+*Bill Of Materials (+*+.csv)*:
 
-image::board-bom.png[alt="Generate BOM"]
-
-[IMPORTANT]
-====
-The BOM depends on the board since the concrete devices are specified in
-the board, not in schematics. Therefore, make sure the desired board is
-selected in the dropdown. However, if you start the BOM export in the
-board editor (instead of the schematic editor), the currently opened
-board will be pre-selected automatically.
-====
-
-[NOTE]
-====
-LibrePCB does not yet provide a built-in mechanism to specify manufacturer
-part numbers (MPN). This will be added in a future release. However, you
-can already add arbitrary attributes to each component which can then be
-included in the BOM. Just open btn:[Properties] from the context menu
-of components (right-click) and add a string attribute named `MPN`.
-====
+image::output-jobs-bom.png[alt="BOM output job"]

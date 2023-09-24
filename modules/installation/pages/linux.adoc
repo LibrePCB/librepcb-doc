@@ -1,6 +1,4 @@
 = Installation on Linux
-:installer-filename: librepcb-installer-{version}-linux-x86_64.run
-:installer-url: {releases-url}/{installer-filename}
 :appimage-filename: librepcb-{version}-linux-x86_64.AppImage
 :appimage-url: {releases-url}/{appimage-filename}
 
@@ -14,36 +12,15 @@ If you're unsure, here our recommendations:
 
 * On Ubuntu: <<snap>>
 * On a Raspberry Pi: <<flatpak>>
-* Everywhere else: <<appimage>> (or <<installer>>)
+* Everywhere else: <<appimage>>
 ====
-
-[#installer,reftext=Online Installer]
-== Online Installer (x86_64)
-
-Although an installer is a rather unusual way to install applications on Linux,
-it provides the advantage that `*.lpp` project files can (optionally) be
-registered with the LibrePCB application, so you can open LibrePCB projects
-with a double-click in the file manager.
-
-*Download {installer-url}[{installer-filename}], make it executable and run it:*
-
-[source,bash,subs="attributes"]
-----
-wget "{installer-url}"
-chmod +x ./{installer-filename}
-./{installer-filename}
-----
-
-If you're not familiar with the terminal: Right-click on the downloaded file
-and then check something like _Allow executing file as program_ or
-_Run as executable_. Afterwards double-click the file to run it.
 
 [#appimage,reftext=Portable AppImage]
 == Portable AppImage (x86_64)
 
 The AppImage is a single-file portable package which runs on most Linux
-distributions. It does not install anything on your system and `*.lpp` project
-files will not be registered with the LibrePCB application.
+distributions. It is fully functional without installing anything on your
+system, but it does not provide an update mechanism.
 
 *Download {appimage-url}[{appimage-filename}], make it executable and run it:*
 
@@ -73,23 +50,6 @@ in the terminal:
 ----
 sudo snap install librepcb
 ----
-
-[IMPORTANT]
-====
-By default, Snap applications do not have access to the file system outside
-your home folder. Depending on where you want to store LibrePCB files, you
-might need to grant this permission manually after installing LibrePCB.
-
-Within _Ubuntu Software_, this is as simple as clicking on btn:[Permissions]
-and enabling _Read/write files on removable storage devices_.
-
-From the terminal, run this command:
-
-[source,bash]
-----
-sudo snap connect librepcb:removable-media :removable-media
-----
-====
 
 [NOTE]
 ====
@@ -129,3 +89,13 @@ launcher.
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub org.librepcb.LibrePCB
 ----
+
+// Keep this section just for some time to keep the links working and to
+// inform users about the change.
+[#installer,reftext=Online Installer]
+== Online Installer (abandoned)
+
+Note that starting with LibrePCB 1.0, we do no longer provide an installer for
+Linux. If you installed a previous LibrePCB release with the installer,
+please uninstall it with the _LibrePCB Maintenance Tool_ and install the
+latest release with a different installation method instead.

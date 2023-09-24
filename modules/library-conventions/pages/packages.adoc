@@ -178,9 +178,15 @@ image:footprint-pin1-dip8.png[]
 image:footprint-pin1-sot669.png[]
 ====
 
-== Placement Layer
+== Legend Layer
 
-The _Top Placement_ layer is intended to be printed on silkscreen and thus
+[NOTE]
+====
+In LibrePCB 0.1.x, these layers were called _Top/Bottom Placement_.
+Starting with LibrePCB 1.0, they are now called _Top/Bottom Legend_.
+====
+
+The _Top Legend_ layer is intended to be printed on silkscreen and thus
 should contain information required for assembling the PCB. But don't put too
 many things on that layer as it would waste space on the PCB!
 
@@ -188,21 +194,21 @@ Typically this layer should only contain some lines and dots to indicate where
 and in which orientation the device gets assembled, for example an outline and
 a dot next to pin 1.
 
-*The placement should be drawn according to {ipc7351c-slides-pdf}[IPC-7351C]*.
+*The legend should be drawn according to {ipc7351c-slides-pdf}[IPC-7351C]*.
 The most important rules are the following:
 
 * *It should stay visible after assembling the package* to allow reviewing
   positioning and orientation of assembled devices. In other words, the
-  placement layer should primarily contain drawings _around_ the package's
+  legend layer should primarily contain drawings _around_ the package's
   body, but not _under_ it.
 * *Line width:* 0.2mm typical, 0.1mm minimum
 * *Clearance to copper layers:* Equal or greater than the line width, but at
   least 0.15mm
 
-.Placement layer examples (only placement and copper layers shown)
+.Legend layer examples (only legend and copper layers shown)
 ====
-image:footprint-placement-sot23.png[]
-image:footprint-placement-r0603.png[]
+image:footprint-legend-sot23.png[]
+image:footprint-legend-r0603.png[]
 ====
 
 == Documentation Layer

@@ -1,0 +1,11 @@
+(librepcb_library b0e93d84-7c5f-46c5-9d76-7df5a4bfa7b4
+ (name "My Library")
+ (description "")
+ (keywords "")
+ (author "Ubuntu")
+ (version "0.1")
+ (created 2017-12-14T20:23:12Z)
+ (deprecated false)
+ (url "")
+ (manufacturer "")
+)

@@ -4,7 +4,7 @@ In addition to the (read-only) remote libraries, you should create a personal,
 so-called _local_ library. This is the place where you'll add your own symbols,
 footprints etc. later.
 
-To do so, go to tab _Create local library_ tab, optionally enter some
+To do so, go to the _Create local library_ tab, optionally enter some
 metadata (default values are good enough) and click on btn:[Create Library]:
 
 image::library-manager-create.png[alt="Create Library"]

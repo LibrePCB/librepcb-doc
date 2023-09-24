@@ -1,5 +1,7 @@
 /.cache/
 /build/
+/resources/workspace/data/libraries/remote/
+/resources/workspace/projects/*/output/
 Thumbs.db
 .DS_Store
 *.autosave

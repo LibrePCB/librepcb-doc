@@ -1,1 +1,2 @@
-(librepcb_erc)
+(librepcb_erc
+)

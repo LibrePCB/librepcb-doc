@@ -44,7 +44,7 @@ library elements from remote libraries by specifying a higher version number.
 ====
 If you are familiar with version control systems (e.g. _Git_) and want to use
 them to manage your libraries (instead of the library manager), just clone the
-libraries into the subdirectory `v0.1/libraries/local/` in your workspace.
+libraries into the subdirectory `data/libraries/local/` in your workspace.
 ====
 
 After the selected libraries have been downloaded, they will appear in the

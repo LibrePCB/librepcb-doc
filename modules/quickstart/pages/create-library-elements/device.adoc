@@ -24,7 +24,7 @@ Then click on btn:[Finish].
 Now you have to connect the package pads to component signals according
 to the pinout in the datasheet of {example-part-name}:
 
-image::device-pad-signal-map.png[alt="Device pad-signal-map"]
+image::device-editor.png[alt="Device editor"]
 
 Then *save the device* to finish it and quickly wait until the background
 library scan completes before adding the new device to a project.

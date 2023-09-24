@@ -32,7 +32,7 @@ Default Value::
   capacitor has its capacitance (e.g. _100nF_) set as its value. When
   adding a component to a schematic, its value is initially set to the
   value specified here. The value can also be a placeholder, for example
-  `+{{PARTNUMBER}}+`, `+{{DEVICE}}+` or `+{{CAPACITANCE}}+`. If you are
+  `+{{MPN}}+`, `+{{DEVICE}}+` or `+{{CAPACITANCE}}+`. If you are
   unsure, just leave it empty, the component editor will help you to
   assign a value later.
 

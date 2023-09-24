@@ -3,8 +3,8 @@
 When starting LibrePCB the first time, a wizard asks you to open or create a
 workspace. The workspace is just a directory where settings, libraries and
 (optionally) projects will be stored. Once created, it can be used from all
-supported operating systems (i.e. it is platform independent) and in future
-it will also be usable with different LibrePCB versions.
+supported operating systems (i.e. it is platform independent) and from any
+LibrePCB version.
 
 You can just accept the default workspace location (you could still move it
 to another location afterwards, if desired):

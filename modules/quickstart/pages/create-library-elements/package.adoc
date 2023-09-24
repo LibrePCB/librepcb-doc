@@ -60,7 +60,7 @@ It's recommended to add at least two polygons:
 * One *on the _Top Documentation_ layer* to represent the body outline of
   the package. This layer will appear on assembly drawings, but not on the
   PCB silkscreen.
-* One *on the _Top Placement_ layer* to include a placement help which will
+* One *on the _Top Legend_ layer* to include a placement help which will
   be visible on the PCB silkscreen -- *most notably pad-1 markings*.
 
 To create highly functional, beautiful looking footprints, check out
@@ -83,6 +83,18 @@ a hole.
 
 That's all you need for a simple package! Now *save the package* to ensure
 the background library scan picks up the new package.
+
+== Add 3D Model
+
+If you have a STEP file of the package, you can add it as a 3D model to the
+package. Switch to the 3D mode with menu:View[Toggle 2D/3D Mode] or by
+pressing kbd:[Ctrl+3]. Then click on the btn:[+] button to import the
+STEP file (this may take a while):
+
+image::package-3d-model.png[alt="Add 3D model"]
+
+If required, the position and rotation can be adjusted in the footprint
+variants table.
 
 == Recommendations
 
