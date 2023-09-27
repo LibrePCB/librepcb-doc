@@ -632,20 +632,20 @@
     border-color: var(--bs-dropdown-border-color) !important;
 }
 
-.bootstrap .navbar .icon:hover {
-    color: var(--bs-white);
+.bootstrap .navbar .icon {
+    color: #dfdfdf;
 }
 
-.bootstrap .navbar .icon-github {
-    color: rgb(223, 223, 223);
+.bootstrap .navbar .icon-patreon:hover {
+    color: #ff404c;
 }
 
-.bootstrap .navbar .icon-patreon {
-    color: rgb(255, 66, 77);
+.bootstrap .navbar .icon-twitter:hover {
+    color: #179cf0;
 }
 
-.bootstrap .navbar .icon-twitter {
-    color: rgb(29, 155, 240);
+.bootstrap .navbar .icon-mastodon:hover {
+    color: #6364ff;
 }
 
 /* Antora overrides */
