@@ -25,6 +25,7 @@ We are aware of the following packages:
 * link:https://packages.gentoo.org/packages/sci-electronics/librepcb[Gentoo Package]
 * link:https://formulae.brew.sh/cask/librepcb[Homebrew Cask Package]
 * link:https://repo.openpandora.org/?page=detail&app=librepcb[OpenPandora Package]
+* link:https://voidlinux.org/packages/?arch=x86_64&q=librepcb[Void Linux Package]
 
 [TIP]
 ====
