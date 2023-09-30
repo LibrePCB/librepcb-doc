@@ -8,7 +8,7 @@
   duplicating efforts and conversations.
 - To contact us use one of the following options:
   - [GitHub issues](https://github.com/LibrePCB/librepcb-doc/issues)
-  - [Forum, chat and more](https://librepcb.org/discuss/)
+  - [Forum, chat and more](https://librepcb.org/help/)
 
 
 ## Getting Started

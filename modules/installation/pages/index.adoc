@@ -30,7 +30,7 @@ We are aware of the following packages:
 [TIP]
 ====
 You're a LibrePCB package maintainer?
-link:https://librepcb.org/discuss/[Ask us] to list your package here!
+link:https://librepcb.org/help/[Ask us] to list your package here!
 ====
 
 == Build From Sources

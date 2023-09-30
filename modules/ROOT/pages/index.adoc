@@ -24,4 +24,4 @@ bottom left of the page.
 * xref:development:index.adoc[Development]
 
 Didn't find what you're looking for?
-link:https://librepcb.org/discuss/[Contact us]!
+link:https://librepcb.org/help/[Contact us]!
