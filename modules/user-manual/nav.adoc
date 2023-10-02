@@ -2,3 +2,4 @@
 ** xref:layers.adoc[]
 ** Project Editor
 *** xref:project-editor/assembly-data.adoc[]
+*** xref:project-editor/output-jobs.adoc[]
