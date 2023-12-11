@@ -636,6 +636,10 @@
     color: #dfdfdf;
 }
 
+.navbar .icon-youtube:hover {
+    color: #ff0000;
+}
+
 .bootstrap .navbar .icon-patreon:hover {
     color: #ff404c;
 }
