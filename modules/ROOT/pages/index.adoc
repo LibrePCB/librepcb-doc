@@ -8,6 +8,14 @@ The documentation is still work in progress. Help us writing beautiful
 documentation https://github.com/LibrePCB/librepcb-doc[on GitHub]!
 ====
 
+.Video Tutorials
+[TIP]
+====
+In addition to this documentation in written form, there are also
+https://www.youtube.com/watch?v=DGwnTXhk_IQ&list=PLvQp3VPCKSS4-CLWyFx4CRMbFcnR1kn-S[video tutorials]
+available on our https://www.youtube.com/@LibrePCB[YouTube channel].
+====
+
 .Offline Documentation
 [TIP]
 ====
