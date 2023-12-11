@@ -640,15 +640,15 @@
     color: #ff0000;
 }
 
-.bootstrap .navbar .icon-patreon:hover {
+.navbar .icon-patreon:hover {
     color: #ff404c;
 }
 
-.bootstrap .navbar .icon-twitter:hover {
-    color: #179cf0;
+.navbar .icon-twitter:hover {
+    color: white;
 }
 
-.bootstrap .navbar .icon-mastodon:hover {
+.navbar .icon-mastodon:hover {
     color: #6364ff;
 }
 
