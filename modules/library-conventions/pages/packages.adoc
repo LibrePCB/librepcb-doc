@@ -84,10 +84,20 @@ The following conventions apply to package names:
 
 == Pads
 
-* *Always add all pads of packages*, even those which are not always connected.
-  For example, the package "TO220" has a metal tab, so you should define it as
-  a pad, no matter if it's often not connected (and even not connectable when
-  mounted vertically).
+* *Each lead of the package should be represented by a separate package pad*,
+  even if there are internal connections (e.g. multiple GND leads) or
+  unconnected leads (e.g. the often unused metal tab of a TO220). Exceptions:
+// Note: There's no strong reasoning behind these exceptions. If they
+// turn out to be a problem in practice, they might need to be removed.
+** Multiple mechanical leads which have a package-internal connection (e.g.
+   tabs of the metal housing of an USB connector) should be represented by
+   a single package pad (and all footprint pads connected to it).
+** Leads for pure mechanical purpose without any internal connection at all
+   (e.g. split solder tabs of a plastic connector) shouldn't be added as
+   package pads (the corresponding footprint pads can be left unconnected).
+   If in doubt or if connected to a metal cover of significant size (possibly
+   having a shielding function), treat them like normal, electrically relevant
+   leads.
 * *Use pad names according {ipc7351-pdf}[IPC-7351]* (if applicable). For
   packages which are not covered by IPC-7351:
 ** If the function of a pad is absolutely clear, choose its abbreviated
