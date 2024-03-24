@@ -1,0 +1,207 @@
+= Licenses
+
+When creating a new project, LibrePCB allows to specify a license for it.
+This chapter gives an overview about the available licenses to help
+you deciding which makes most sense for your project.
+
+First of all, choosing a license is not mandatory. Especially if you don't
+intend to make the project public, it's totally fine to skip the license
+selection. However, for projects made public it's highly recommended to
+specify a license to let other people know what they are allowed or not
+allowed to do with your project. Theoretically you could write your own
+license text, but it's recommended to choose one of the already existing,
+well-known licenses.
+
+[IMPORTANT]
+====
+**Please always read the full, original license text instead of relying on the
+information on this page.** First, this page presents licenses in a very
+simplified form without all their details. Second, this documentation is not
+approved by a lawyer so it may not be correct. We're not responsible for any
+implications caused by incomplete or wrong information on this page.
+====
+
+== Available Licenses
+
+The following licenses are provided by LibrePCB (depending on the installed
+version):
+
+[%autowidth,cols=",,,"]
+|===
+| License | Permissions | Conditions | Limitations
+
+| https://creativecommons.org/publicdomain/zero/1.0/[CC0-1.0]
+|
+✅ Distribution +
+✅ Modification +
+✅ Commercial use +
+|
+|
+❌ No liability +
+❌ No warranty +
+
+| https://creativecommons.org/licenses/by/4.0/[CC-BY-4.0]
+|
+✅ Distribution +
+✅ Modification +
+✅ Commercial use +
+|
+⚠ <<license-attribution>> +
+|
+❌ No liability +
+❌ No warranty +
+
+| https://creativecommons.org/licenses/by-sa/4.0/[CC-BY-SA-4.0]
+|
+✅ Distribution +
+✅ Modification +
+✅ Commercial use +
+|
+⚠ <<license-attribution>> +
+⚠ <<license-sharealike>> +
+|
+❌ No liability +
+❌ No warranty +
+
+| https://creativecommons.org/licenses/by-nc/4.0/[CC-BY-NC-4.0]
+|
+✅ Distribution +
+✅ Modification +
+|
+⚠ <<license-attribution>> +
+|
+❌ No liability +
+❌ No warranty +
+❌ Non-commercial only +
+
+| https://creativecommons.org/licenses/by-nc-sa/4.0/[CC-BY-NC-SA-4.0]
+|
+✅ Distribution +
+✅ Modification +
+|
+⚠ <<license-attribution>> +
+⚠ <<license-sharealike>> +
+|
+❌ No liability +
+❌ No warranty +
+❌ Non-commercial only +
+
+| https://creativecommons.org/licenses/by-nc-nd/4.0/[CC-BY-NC-ND-4.0]
+|
+✅ Distribution +
+✅ Modification +
+|
+⚠ <<license-attribution>> +
+|
+❌ No liability +
+❌ No warranty +
+❌ No derivatives +
+❌ Non-commercial only +
+
+| https://creativecommons.org/licenses/by-nd/4.0/[CC-BY-ND-4.0]
+|
+✅ Distribution +
+✅ Modification +
+✅ Commercial use +
+|
+⚠ <<license-attribution>> +
+|
+❌ No liability +
+❌ No warranty +
+❌ No derivatives +
+
+| https://tapr.org/the-tapr-open-hardware-license/[TAPR-OHL-1.0]
+|
+✅ Distribution +
+✅ Modification +
+✅ Commercial use +
+|
+⚠ <<license-sharealike>> +
+⚠ Document modifications +
+⚠ Notify upstream developers +
+|
+❌ No liability +
+❌ No warranty +
+
+| https://ohwr.org/cern_ohl_p_v2.pdf[CERN-OHL-P-2.0]
+(https://ohwr.org/project/cernohl/wikis/faq[FAQ])
+3+^| _TBD_
+
+| https://ohwr.org/cern_ohl_w_v2.pdf[CERN-OHL-W-2.0]
+(https://ohwr.org/project/cernohl/wikis/faq[FAQ])
+3+^| _TBD_
+
+| https://ohwr.org/cern_ohl_s_v2.pdf[CERN-OHL-S-2.0]
+(https://ohwr.org/project/cernohl/wikis/faq[FAQ])
+3+^| _TBD_
+|===
+
+[[license-attribution]]Requires Attribution::
+  You must give appropriate credit, provide a link to the license,
+  and indicate if changes were made.
+[[license-sharealike]]Share-Alike::
+  If you remix, transform, or build upon the material, you must distribute
+  your contributions under the same license as the original.
+
+
+== Other Licenses
+
+If you like to use a license not available in LibrePCB, or if you're not sure
+yet and want to decide later, just skip the license selection when creating
+the project. Then add it manually afterwards as follows:
+
+1. Close the project in LibrePCB.
+2. In the root directory of the project, add a file named `LICENSE.txt`
+   containing the license terms.
+3. Open `README.md` in a text editor and replace this line: +
++
+[source,markdown]
+----
+No license set.
+----
++
+by this one:
++
+[source,markdown]
+----
+See [LICENSE.txt](LICENSE.txt).
+----
+
+Or if you want to switch to a different license after you created a new
+project, just replace the file `LICENSE.txt` manually. LibrePCB itself does
+not provide a tool to change the license of an existing project.
+
+== Additional Actions
+
+Note that some licenses may require to perform additional actions to correctly
+apply those licenses to a project. This applies mainly to the OHL licenses,
+but to be sure please check the license texts.
+
+[NOTE]
+====
+Please help us documenting the additional actions
+https://github.com/LibrePCB/librepcb-doc[on GitHub]!
+====
+
+== Recommendation
+
+Of course choosing a license is a personal decision and any recommendation
+from our side will be subjective. But generally, if you simply don't care
+what people will do with your project, or you want to give them maximum
+freedom (without any liability or warranty from your side), we think
+**CC0-1.0** is a great choice. Or if you want to be more strict and don't
+want your project to be used for closed-source products, **CERN-OHL-S-2.0**
+should be reasonable.
+
+== License of Libraries
+
+Not only projects, but also libraries can be released under a certain
+license. However, we think public libraries should be released exclusively
+under the **CC0-1.0** license. Any other license would make it too
+complicated for other people to create projects using these libraries,
+fulfilling all license terms of any used library.
+
+Thus when creating a new library, CC0-1.0 is the only available option and
+all official libraries are published under this license so you can do with
+these libraries whatever you want, whether for commercial or non-commercial
+use.
