@@ -30,7 +30,8 @@ version):
 |===
 | License | Permissions | Conditions | Limitations
 
-| https://creativecommons.org/publicdomain/zero/1.0/[CC0-1.0]
+| *https://creativecommons.org/publicdomain/zero/1.0/[CC0-1.0]* +
+https://choosealicense.com/licenses/cc0-1.0/[Summary]
 |
 ✅ Distribution +
 ✅ Modification +
@@ -40,7 +41,8 @@ version):
 ❌ No liability +
 ❌ No warranty +
 
-| https://creativecommons.org/licenses/by/4.0/[CC-BY-4.0]
+| *https://creativecommons.org/licenses/by/4.0/[CC-BY-4.0]* +
+https://choosealicense.com/licenses/cc-by-4.0/[Summary]
 |
 ✅ Distribution +
 ✅ Modification +
@@ -51,7 +53,8 @@ version):
 ❌ No liability +
 ❌ No warranty +
 
-| https://creativecommons.org/licenses/by-sa/4.0/[CC-BY-SA-4.0]
+| *https://creativecommons.org/licenses/by-sa/4.0/[CC-BY-SA-4.0]* +
+https://choosealicense.com/licenses/cc-by-sa-4.0/[Summary]
 |
 ✅ Distribution +
 ✅ Modification +
@@ -63,7 +66,7 @@ version):
 ❌ No liability +
 ❌ No warranty +
 
-| https://creativecommons.org/licenses/by-nc/4.0/[CC-BY-NC-4.0]
+| *https://creativecommons.org/licenses/by-nc/4.0/[CC-BY-NC-4.0]*
 |
 ✅ Distribution +
 ✅ Modification +
@@ -74,7 +77,7 @@ version):
 ❌ No warranty +
 ❌ Non-commercial only +
 
-| https://creativecommons.org/licenses/by-nc-sa/4.0/[CC-BY-NC-SA-4.0]
+| *https://creativecommons.org/licenses/by-nc-sa/4.0/[CC-BY-NC-SA-4.0]*
 |
 ✅ Distribution +
 ✅ Modification +
@@ -86,7 +89,7 @@ version):
 ❌ No warranty +
 ❌ Non-commercial only +
 
-| https://creativecommons.org/licenses/by-nc-nd/4.0/[CC-BY-NC-ND-4.0]
+| *https://creativecommons.org/licenses/by-nc-nd/4.0/[CC-BY-NC-ND-4.0]*
 |
 ✅ Distribution +
 ✅ Modification +
@@ -98,7 +101,7 @@ version):
 ❌ No derivatives +
 ❌ Non-commercial only +
 
-| https://creativecommons.org/licenses/by-nd/4.0/[CC-BY-ND-4.0]
+| *https://creativecommons.org/licenses/by-nd/4.0/[CC-BY-ND-4.0]*
 |
 ✅ Distribution +
 ✅ Modification +
@@ -110,30 +113,64 @@ version):
 ❌ No warranty +
 ❌ No derivatives +
 
-| https://tapr.org/the-tapr-open-hardware-license/[TAPR-OHL-1.0]
+| *https://tapr.org/the-tapr-open-hardware-license/[TAPR-OHL-1.0]*
 |
 ✅ Distribution +
 ✅ Modification +
 ✅ Commercial use +
 |
 ⚠ <<license-sharealike>> +
-⚠ Document modifications +
+⚠ <<license-documentmodifications>> +
 ⚠ Notify upstream developers +
 |
 ❌ No liability +
 ❌ No warranty +
 
-| https://ohwr.org/cern_ohl_p_v2.pdf[CERN-OHL-P-2.0]
-(https://ohwr.org/project/cernohl/wikis/faq[FAQ])
-3+^| _TBD_
+| *https://ohwr.org/cern_ohl_p_v2.pdf[CERN-OHL-P-2.0]* +
+https://choosealicense.com/licenses/cern-ohl-p-2.0/[Summary] +
+https://ohwr.org/project/cernohl/wikis/faq[FAQ]
+|
+✅ Distribution +
+✅ Modification +
+✅ Commercial use +
+|
+⚠ <<license-documentmodifications>> +
+⚠ License and copyright notice +
+|
+❌ No liability +
+❌ No warranty +
 
-| https://ohwr.org/cern_ohl_w_v2.pdf[CERN-OHL-W-2.0]
-(https://ohwr.org/project/cernohl/wikis/faq[FAQ])
-3+^| _TBD_
+| *https://ohwr.org/cern_ohl_w_v2.pdf[CERN-OHL-W-2.0]* +
+https://choosealicense.com/licenses/cern-ohl-w-2.0/[Summary] +
+https://ohwr.org/project/cernohl/wikis/faq[FAQ]
+|
+✅ Distribution +
+✅ Modification +
+✅ Commercial use +
+|
+⚠ <<license-sharealike>> (relaxed) +
+⚠ <<license-documentmodifications>> +
+⚠ License and copyright notice +
+⚠ Disclose source +
+|
+❌ No liability +
+❌ No warranty +
 
-| https://ohwr.org/cern_ohl_s_v2.pdf[CERN-OHL-S-2.0]
-(https://ohwr.org/project/cernohl/wikis/faq[FAQ])
-3+^| _TBD_
+| *https://ohwr.org/cern_ohl_s_v2.pdf[CERN-OHL-S-2.0]* +
+https://choosealicense.com/licenses/cern-ohl-s-2.0/[Summary] +
+https://ohwr.org/project/cernohl/wikis/faq[FAQ]
+|
+✅ Distribution +
+✅ Modification +
+✅ Commercial use +
+|
+⚠ <<license-sharealike>> (strong) +
+⚠ <<license-documentmodifications>> +
+⚠ License and copyright notice +
+⚠ Disclose source +
+|
+❌ No liability +
+❌ No warranty +
 |===
 
 [[license-attribution]]Requires Attribution::
@@ -142,6 +179,8 @@ version):
 [[license-sharealike]]Share-Alike::
   If you remix, transform, or build upon the material, you must distribute
   your contributions under the same license as the original.
+[[license-documentmodifications]]Document Modifications::
+  Changes made to the licensed material must be documented.
 
 
 == Other Licenses
@@ -189,9 +228,10 @@ Of course choosing a license is a personal decision and any recommendation
 from our side will be subjective. But generally, if you simply don't care
 what people will do with your project, or you want to give them maximum
 freedom (without any liability or warranty from your side), we think
-**CC0-1.0** is a great choice. Or if you want to be more strict and don't
+**CC0-1.0** is a great choice as this will allow _everyone_ to use your
+project for _any_ purpose. If you want to be quite restrictive and don't
 want your project to be used for closed-source products, **CERN-OHL-S-2.0**
-should be reasonable.
+shouldn't be a bad choice.
 
 == License of Libraries
 
