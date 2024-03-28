@@ -48,7 +48,8 @@ https://choosealicense.com/licenses/cc-by-4.0/[Summary]
 ✅ Modification +
 ✅ Commercial use +
 |
-⚠ <<license-attribution>> +
+⚠ <<license-notice>> +
+⚠ <<license-statechanges>> +
 |
 ❌ No liability +
 ❌ No warranty +
@@ -60,8 +61,9 @@ https://choosealicense.com/licenses/cc-by-sa-4.0/[Summary]
 ✅ Modification +
 ✅ Commercial use +
 |
-⚠ <<license-attribution>> +
-⚠ <<license-sharealike>> +
+⚠ <<license-notice>> +
+⚠ <<license-statechanges>> +
+⚠ <<license-samelicense>> +
 |
 ❌ No liability +
 ❌ No warranty +
@@ -71,7 +73,8 @@ https://choosealicense.com/licenses/cc-by-sa-4.0/[Summary]
 ✅ Distribution +
 ✅ Modification +
 |
-⚠ <<license-attribution>> +
+⚠ <<license-notice>> +
+⚠ <<license-statechanges>> +
 |
 ❌ No liability +
 ❌ No warranty +
@@ -82,8 +85,9 @@ https://choosealicense.com/licenses/cc-by-sa-4.0/[Summary]
 ✅ Distribution +
 ✅ Modification +
 |
-⚠ <<license-attribution>> +
-⚠ <<license-sharealike>> +
+⚠ <<license-notice>> +
+⚠ <<license-statechanges>> +
+⚠ <<license-samelicense>> +
 |
 ❌ No liability +
 ❌ No warranty +
@@ -94,7 +98,8 @@ https://choosealicense.com/licenses/cc-by-sa-4.0/[Summary]
 ✅ Distribution +
 ✅ Modification +
 |
-⚠ <<license-attribution>> +
+⚠ <<license-notice>> +
+⚠ <<license-statechanges>> +
 |
 ❌ No liability +
 ❌ No warranty +
@@ -107,7 +112,8 @@ https://choosealicense.com/licenses/cc-by-sa-4.0/[Summary]
 ✅ Modification +
 ✅ Commercial use +
 |
-⚠ <<license-attribution>> +
+⚠ <<license-notice>> +
+⚠ <<license-statechanges>> +
 |
 ❌ No liability +
 ❌ No warranty +
@@ -119,8 +125,9 @@ https://choosealicense.com/licenses/cc-by-sa-4.0/[Summary]
 ✅ Modification +
 ✅ Commercial use +
 |
-⚠ <<license-sharealike>> +
-⚠ <<license-documentmodifications>> +
+⚠ <<license-notice>> +
+⚠ <<license-statechanges>> +
+⚠ <<license-samelicense>> +
 ⚠ Notify upstream developers +
 |
 ❌ No liability +
@@ -134,8 +141,8 @@ https://ohwr.org/project/cernohl/wikis/faq[FAQ]
 ✅ Modification +
 ✅ Commercial use +
 |
-⚠ <<license-documentmodifications>> +
-⚠ License and copyright notice +
+⚠ <<license-notice>> +
+⚠ <<license-statechanges>> +
 |
 ❌ No liability +
 ❌ No warranty +
@@ -148,9 +155,9 @@ https://ohwr.org/project/cernohl/wikis/faq[FAQ]
 ✅ Modification +
 ✅ Commercial use +
 |
-⚠ <<license-sharealike>> (relaxed) +
-⚠ <<license-documentmodifications>> +
-⚠ License and copyright notice +
+⚠ <<license-notice>> +
+⚠ <<license-statechanges>> +
+⚠ <<license-samelicense>> (relaxed) +
 ⚠ Disclose source +
 |
 ❌ No liability +
@@ -164,24 +171,23 @@ https://ohwr.org/project/cernohl/wikis/faq[FAQ]
 ✅ Modification +
 ✅ Commercial use +
 |
-⚠ <<license-sharealike>> (strong) +
-⚠ <<license-documentmodifications>> +
-⚠ License and copyright notice +
+⚠ <<license-notice>> +
+⚠ <<license-statechanges>> +
+⚠ <<license-samelicense>> (strong) +
 ⚠ Disclose source +
 |
 ❌ No liability +
 ❌ No warranty +
 |===
 
-[[license-attribution]]Requires Attribution::
-  You must give appropriate credit, provide a link to the license,
-  and indicate if changes were made.
-[[license-sharealike]]Share-Alike::
+[[license-notice]]License and Copyright Notice::
+  A copy of the license and copyright notice must be included with the
+  licensed material.
+[[license-statechanges]]State Changes::
+  Modifications made to the licensed material must be documented.
+[[license-samelicense]]Same License::
   If you remix, transform, or build upon the material, you must distribute
   your contributions under the same license as the original.
-[[license-documentmodifications]]Document Modifications::
-  Changes made to the licensed material must be documented.
-
 
 == Other Licenses
 
