@@ -30,7 +30,8 @@ version):
 |===
 | License | Permissions | Conditions | Limitations
 
-| *https://creativecommons.org/publicdomain/zero/1.0/[CC0-1.0]* +
+|{set:cellbgcolor:#00FF0020}
+*https://creativecommons.org/publicdomain/zero/1.0/[CC0-1.0]* +
 https://choosealicense.com/licenses/cc0-1.0/[Summary]
 |
 ✅ Distribution +
@@ -41,7 +42,8 @@ https://choosealicense.com/licenses/cc0-1.0/[Summary]
 ❌ No liability +
 ❌ No warranty +
 
-| *https://creativecommons.org/licenses/by/4.0/[CC-BY-4.0]* +
+|{set:cellbgcolor:-}
+*https://creativecommons.org/licenses/by/4.0/[CC-BY-4.0]* +
 https://choosealicense.com/licenses/cc-by-4.0/[Summary]
 |
 ✅ Distribution +
@@ -96,7 +98,7 @@ https://choosealicense.com/licenses/cc-by-sa-4.0/[Summary]
 | *https://creativecommons.org/licenses/by-nc-nd/4.0/[CC-BY-NC-ND-4.0]*
 |
 ✅ Distribution +
-✅ Modification +
+✅ (Modification) +
 |
 ⚠ <<license-notice>> +
 ⚠ <<license-statechanges>> +
@@ -109,7 +111,7 @@ https://choosealicense.com/licenses/cc-by-sa-4.0/[Summary]
 | *https://creativecommons.org/licenses/by-nd/4.0/[CC-BY-ND-4.0]*
 |
 ✅ Distribution +
-✅ Modification +
+✅ (Modification) +
 ✅ Commercial use +
 |
 ⚠ <<license-notice>> +
