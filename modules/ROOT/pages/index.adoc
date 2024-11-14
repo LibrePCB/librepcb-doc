@@ -29,6 +29,7 @@ bottom left of the page.
 * xref:user-manual:index.adoc[User Manual]
 * xref:cli:index.adoc[CLI Reference]
 * xref:library-conventions:index.adoc[Library Conventions]
+* xref:troubleshooting:index.adoc[Troubleshooting]
 * xref:development:index.adoc[Development]
 
 Didn't find what you're looking for?

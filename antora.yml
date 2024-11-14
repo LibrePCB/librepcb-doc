@@ -15,4 +15,5 @@ nav:
   - modules/user-manual/nav.adoc
   - modules/cli/nav.adoc
   - modules/library-conventions/nav.adoc
+  - modules/troubleshooting/nav.adoc
   - modules/development/nav.adoc

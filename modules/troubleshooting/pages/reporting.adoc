@@ -1,0 +1,43 @@
+= Reporting Problems
+
+If you like to report a problem or you want to ask for help, choose one of
+the ways listed https://librepcb.org/help/[here].
+
+Generally the discussion forum is always a good place to ask. A GitHub issue
+is preferred for bug reports, but only if it's clearly a bug -- otherwise
+ask in the forum first.
+
+[IMPORTANT]
+====
+For any problem report, please include as much details as possible! Many
+problems are platform-specific, deployment-specific, usecase-specific etc.
+and we're all not clairvoyants so please let us know these details.
+
+System Information::
+  If you are able to run LibrePCB, open the _About LibrePCB_ dialog and **copy
+  the whole text** from the _Details_ tab into your report. This is very
+  important information.
++
+If you are not able to run LibrePCB, please let us know the following
+information:
++
+* Operating system & version
+* CPU Architecture (x86, x86_64, ARM, Apple Silicon, ...)
+* LibrePCB version (MAJOR.MINOR.PATCH)
+* On Linux: X11 or Wayland?
+
+Installation Method::
+  How did you install LibrePCB? Installer, Portable, Snap, Self-built, ...?
+
+Steps to Reproduce::
+  What did you do before the problem occurred? Describe **exactly**,
+  step-by-step, what you did before the problem occurred.
+
+Problem Description::
+  Describe **exactly** what happened. Which error messages occurred? How did
+  LibrePCB behave?
+
+Logging Messages::
+  For technical problems, it can be helpful to also include all
+  xref:logging.adoc[logging messages].
+====

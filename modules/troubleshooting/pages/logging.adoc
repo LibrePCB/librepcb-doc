@@ -1,0 +1,64 @@
+= Logging Output
+
+For various kinds of problems, it helps to see what LibrePCB internally does
+and what low-level errors occurred but aren't displayed (in every detail)
+in the graphical user interface.
+
+Those messages are always written to `stderr` -- To see them, just run LibrePCB
+from a terminal. Note that on Windows you have to redirect `stderr` to a file
+and open the file in Notepad afterwards.
+
+.Windows cmd.exe (PowerShell doesn't work!)
+
+[source,bash]
+----
+"C:\Program Files\LibrePCB\bin\librepcb.exe" > log.txt 2>&1
+----
+
+After closing LibrePCB, open `C:\Users\%USERNAME%\log.txt` in Notepad.
+
+.MacOS Terminal
+
+[source,bash]
+----
+/Applications/LibrePCB.app/Contents/MacOS/librepcb
+----
+
+.Linux/UNIX Shell
+
+[source,bash]
+----
+/path/to/librepcb
+----
+
+Currently this is the only way to get logging messages. Logging to a file
+is not implemented yet, and the verbosity cannot be configured.
+
+.Example Output
+[source,bash]
+----
+./librepcb-1.1.0-linux-x86_64-qt6.AppImage
+[  INFO   ] LibrePCB 1.1.0 (18a3d4589)
+[  INFO   ] Qt version: 6.6.2 (compiled against 6.6.2)
+[  INFO   ] Resources directory: "/tmp/.mount_librepHOglKc/opt/share/librepcb"
+[  INFO   ] Application settings: "/home/user/.config/LibrePCB/LibrePCB.ini"
+[  INFO   ] Cache directory: "/home/user/.cache/LibrePCB/LibrePCB"
+[DEBUG-MSG] Network access manager thread started.
+[DEBUG-MSG] Recently used workspace: "/home/user/LibrePCB-Workspace"
+[DEBUG-MSG] Detected light theme based on window background color #efefef.
+[DEBUG-MSG] Open workspace data directory "/home/user/LibrePCB-Workspace/data"...
+[DEBUG-MSG] Load workspace settings...
+[DEBUG-MSG] Successfully loaded workspace settings.
+[DEBUG-MSG] Load workspace library database...
+[DEBUG-MSG] Successfully loaded workspace library database.
+[DEBUG-MSG] Successfully opened workspace.
+[DEBUG-MSG] Workspace library scanner thread started.
+[  INFO   ] Loaded parts information cache from "/home/user/.cache/LibrePCB/LibrePCB/parts.lp".
+[DEBUG-MSG] Cleaned outdated live information about 0 parts.
+[DEBUG-MSG] Start workspace library scan in worker thread...
+[DEBUG-MSG] Workspace libraries indexed: 47 libraries in 25 ms.
+[DEBUG-MSG] Workspace library scan succeeded: 5515 elements in 12876 ms.
+[DEBUG-MSG] Network access manager thread stopped.
+[DEBUG-MSG] Workspace library scanner thread stopped.
+[DEBUG-MSG] Exit application with code 0.
+----

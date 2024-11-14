@@ -1,0 +1,49 @@
+= Troubleshooting
+
+In case you encounter any problems with LibrePCB, this chapter gives you some
+tips to get them solved or to get help from the community.
+
+== Workspace Sync (Dropbox, Cloud, Git, ...)
+
+If you sync your LibrePCB workspace with a cloud or similar, it's important to
+follow some rules to avoid problems:
+
+* Exclude all files with pattern `cache_*` from the synchronization. These
+  files are stored in the workspace subdirectory `data/libraries/`. If
+  LibrePCB does not work correctly and you had these files synced, delete
+  those files manually (while LibrePCB is closed) and try again. These files
+  are automatically recreated after deletion.
+* Consider excluding files named `.lock` from the synchronization too if you
+  experience problems with file locks. However, never open a project or
+  library at the same time from multiple computers!
+* Hidden files ("dotfiles") must be synchronized. If hidden files are
+  ignored by the sync, LibrePCB will not work correctly.
+
+Note that even when following these rules, it's still not guaranteed that
+everything works correctly. Especially with clouds the problem is that they
+are not operating "atomically", which can cause very serious troubles.
+Therefore we do not recommend to store any LibrePCB files in a cloud.
+
+Working with a version control system like Git however is fine, since it works
+atomically and even allows to roll back a change in the very unlikely case
+something is messed up. We just recommend to use version control per-project
+and per-library, not for the whole workspace.
+
+== Wayland
+
+There are some known issues when using LibrePCB natively on Wayland. If you
+experience any problems, please try XWayland or X11 (both should work fine).
+
+== Slow/Laggy UI
+
+On some systems, especially with large projects, the UI could get a bit
+laggy. We are aware of this and try to improve it. In the mean time, try the
+following things:
+
+* Reduce grid density or disable grid completely
+* Avoid huge schematics -- split them into multiple sheets (e.g. DIN A4 format)
+* In the schematic editor, hide pin numbers (toggle menu:View[Show Pin Numbers])
+* In the board editor, reduce the number of visible layers
+* Enable or disable OpenGL in workspace settings (test both modes)
+* If using a high-resolution display, try to reduce resolution
+* On a laptop, plug in the charger :-)
