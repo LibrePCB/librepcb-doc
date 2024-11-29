@@ -1,27 +1,43 @@
 = Installation on Windows
-:installer-filename: librepcb-installer-{version}-windows-x86.exe
+:installer-filename: librepcb-installer-{version}-windows-x86_64.exe
 :installer-url: {releases-url}/{installer-filename}
-:zip-filename: librepcb-{version}-windows-x86.zip
+:zip-filename: librepcb-{version}-windows-x86_64.zip
 :zip-url: {releases-url}/{zip-filename}
 
-== Online Installer
+== Installer
 
-The recommended way to install LibrePCB is to use the online installer.
-It provides the following features:
-
-- Installs a maintenance tool to easily download and install updates.
-- Creates start menu entries for LibrePCB and the maintenance tool.
-- Optionally registers `*.lpp` files, so LibrePCB projects can be opened
-  with a double-click in the file manager.
+The recommended way to install LibrePCB is to use the installer.
 
 *Just download and run {installer-url}[{installer-filename}].*
 Afterwards you'll find LibrePCB in your start menu.
 
+[IMPORTANT]
+====
+Unfortunately we're not able yet to sign our Windows installer (it's quite
+expensive to do it). Therefore Windows might warn that the publisher of the
+installer is unknown. This is normal for binaries without paying for a
+signature, therefore just click on btn:[More info] and then btn:[Run anyway]
+to skip the warning.
+====
+
+[NOTE]
+====
+For automated (unattended) installation, please check out the command-line
+parameters of the Inno Setup framework
+https://jrsoftware.org/ishelp/index.php?topic=setupcmdline[here]
+(https://jrsoftware.org/ishelp/index.php?topic=uninstcmdline[uninstall]):
+
+[source,bash,subs="attributes"]
+----
+{installer-filename} /VERYSILENT /SUPPRESSMSGBOXES
+----
+====
+
 == Portable Package
 
 Alternatively you could run LibrePCB without installing it. But then you don't
-get an update mechanism, no start menu entries are created, and `*.lpp` files
-will not be registered.
+get start menu entries and LibrePCB file extensions won't be registered so
+you can't open LibrePCB projects with a double-click in the file manager.
 
 Download and extract {zip-url}[{zip-filename}], then run the contained file
 `bin\librepcb.exe`.
