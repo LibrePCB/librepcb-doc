@@ -1,38 +1,33 @@
 = Installation
-:appimage-filename: librepcb-cli-{version}-linux-x86_64.AppImage
+:appimage-filename: librepcb-{version}-linux-x86_64.AppImage
 :appimage-url: {releases-url}/{appimage-filename}
-:bundle-filename: librepcb-cli-{version}-mac-x86_64.dmg
-:bundle-url: {releases-url}/{bundle-filename}
-:bundle-arm64-filename: librepcb-cli-{version}-mac-arm64.dmg
-:bundle-arm64-url: {releases-url}/{bundle-arm64-filename}
 
 == Binary Releases
 
 Our official LibrePCB xref:installation:index.adoc[binary releases] contain
 the `librepcb-cli` executable next to the GUI application, so usually no
-separate installation is needed. But there are two exceptions: The AppImage
-and the macOS bundle.
+separate installation is needed.
 
-=== Linux AppImage
+MacOS::
+  You need to invoke the CLI with the full path to the binary:
++
+[source,bash]
+----
+/Applications/LibrePCB.app/Contents/MacOS/librepcb-cli --help
+----
 
-*Download {appimage-url}[{appimage-filename}], make it executable and run it:*
-
+Linux AppImage::
+  The LibrePCB AppImage also contains the CLI, but since it's a single binary
+  you can't run `librepcb-cli` explicitly. Instead, you have to rename the
+  AppImage to `librepcb-cli` to make it acting as the CLI (or create a symlink):
++
 [source,bash,subs="attributes"]
 ----
 wget "{appimage-url}"
 chmod +x ./{appimage-filename}
-./{appimage-filename}
+mv ./{appimage-filename} ./librepcb-cli
+./librepcb-cli --help
 ----
-
-=== macOS Bundle
-
-Download the portable `*.dmg` file matching your CPU architecture:
-
-* *Intel (x86_64)*: {bundle-url}[{bundle-filename}]
-* *Apple Silicon (arm64)*: {bundle-arm64-url}[{bundle-arm64-filename}]
-
-Double-click the downloaded file in Finder. Then drag and drop the app
-onto the "Applications" folder in Finder.
 
 == Docker Image
 

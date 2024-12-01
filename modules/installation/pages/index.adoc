@@ -19,13 +19,22 @@ For other systems, a LibrePCB package might be provided by a package
 maintainer, either partially related or unrelated to the LibrePCB developers.
 We are aware of the following packages:
 
+* link:https://community.chocolatey.org/packages/librepcb[Chocolatey Package]
+  (Windows)
+* link:https://formulae.brew.sh/cask/librepcb[Homebrew Cask Package]
+  (MacOS)
 * link:https://aur.archlinux.org/packages/librepcb[Arch Linux AUR Package]
   (builds from source)
 * link:https://search.nixos.org/packages?channel=unstable&show=librepcb&from=0&size=50&type=packages&query=librepcb[NixOS Package]
 * link:https://packages.gentoo.org/packages/sci-electronics/librepcb[Gentoo Package]
-* link:https://formulae.brew.sh/cask/librepcb[Homebrew Cask Package]
 * link:https://repo.openpandora.org/?page=detail&app=librepcb[OpenPandora Package]
 * link:https://voidlinux.org/packages/?arch=x86_64&q=librepcb[Void Linux Package]
+
+[WARNING]
+====
+As these packages are not under our control, we cannot guarantee their
+genuineness and correctness.
+====
 
 [TIP]
 ====
