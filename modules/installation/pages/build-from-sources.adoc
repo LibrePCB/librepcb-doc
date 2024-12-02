@@ -6,15 +6,24 @@
 
 To compile LibrePCB, you need to install the following tools & libraries first:
 
-* pass:[g++] >= 4.8, MinGW >= 4.8, or Clang >= 3.3
-  (pass:[C++11] support is required)
-* http://www.qt.io/download-open-source/[Qt] >= 5.5
-* https://www.opencascade.com/[OpenCASCADE] OCCT or OCE (optional)
+* pass:[g++], MinGW or Clang (any version with pass:[C++17] support should work)
+* http://www.qt.io/download-open-source/[Qt] >= 6.2 (make sure the
+  https://doc.qt.io/qt-6/qtimageformats-index.html[imageformats] plugin
+  is installed too as it will be needed at runtime)
+* https://www.opencascade.com/[OpenCASCADE] OCCT or OCE (optional, OCCT
+  highly preferred)
 * https://en.wikipedia.org/wiki/OpenGL_Utility_Library[OpenGL Utility Library]
   GLU (optional)
 * http://www.zlib.net/[zlib]
 * https://www.openssl.org/[OpenSSL]
-* https://cmake.org/[CMake] 3.5 or newer
+* https://cmake.org/[CMake] 3.16 or newer
+
+[IMPORTANT]
+====
+Actually LibrePCB 1.2.0 still compiles with Qt5, but unfortunately contains a
+serious bug at runtime. Therefore you really need to use Qt6 where the bug
+doesn't exist. We'll drop support for Qt5 soon anyway.
+====
 
 == Get the Sources
 
