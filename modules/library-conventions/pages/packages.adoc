@@ -1,6 +1,7 @@
 = Package Conventions
 :ipc7351-pdf: https://web.archive.org/web/20190824094512/http://pcbget.ru/Files/Standarts/IPC_7351.pdf
 :ipc7351c-slides-pdf: https://web.archive.org/web/20190712122301/http://www.ocipcdc.org/archive/What_is_New_in_IPC-7351C_03_11_2015.pdf
+:library-expert-naming-convention-pdf: https://www.cskl.de/fileadmin/csk/dokumente/produkte/pcbl/ipc_standard_pcb_library_expert_Land_Pattern_Naming_Convention.pdf
 
 [NOTE]
 ====
@@ -78,7 +79,10 @@ The following conventions apply to package names:
   which is "2012" in metric), it's recommended to write the well known name in
   parentheses. For example, a chip resistor could be named "RESC2012X70 (0805)".
 * The name of manufacturer-specific packages should start with the manufacturers
-  name (e.g. "Molex 53261-06"). _Note: Libraries do not act as namespaces for
+  name in capital letters, followed by an underscore (e.g. "MOLEX_53261-06").
+  The {library-expert-naming-convention-pdf}[Library Expert naming conventions]
+  contain concrete recommendations for many manufacturers, please follow them.
+  _Note: Libraries do not act as namespaces for
   package names, so you should start the package name with the manufacturers
   name even if the package is located in a manufacturer-specific library._
 
