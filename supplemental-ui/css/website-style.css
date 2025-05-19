@@ -636,19 +636,19 @@
     color: #dfdfdf;
 }
 
-.navbar .icon-youtube:hover {
+.bootstrap .navbar .icon:hover {
+    color: #ffffff;
+}
+
+.bootstrap .navbar .icon-youtube:hover {
     color: #ff0000;
 }
 
-.navbar .icon-patreon:hover {
+.bootstrap .navbar .icon-patreon:hover {
     color: #ff404c;
 }
 
-.navbar .icon-twitter:hover {
-    color: white;
-}
-
-.navbar .icon-mastodon:hover {
+.bootstrap .navbar .icon-mastodon:hover {
     color: #6364ff;
 }
 
