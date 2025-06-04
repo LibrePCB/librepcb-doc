@@ -3,3 +3,4 @@
 ** xref:help.adoc[]
 ** xref:open-library.adoc[]
 ** xref:open-project.adoc[]
+** xref:open-step.adoc[]
