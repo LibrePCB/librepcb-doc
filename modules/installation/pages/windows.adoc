@@ -11,15 +11,6 @@ The recommended way to install LibrePCB is to use the installer.
 *Just download and run {installer-url}[{installer-filename}].*
 Afterwards you'll find LibrePCB in your start menu.
 
-[IMPORTANT]
-====
-Unfortunately we're not able yet to sign our Windows installer (it's quite
-expensive to do it). Therefore Windows might warn that the publisher of the
-installer is unknown. This is normal for binaries without paying for a
-signature, therefore just click on btn:[More info] and then btn:[Run anyway]
-to skip the warning.
-====
-
 [NOTE]
 ====
 For automated (unattended) installation, please check out the command-line
