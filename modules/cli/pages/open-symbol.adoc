@@ -1,0 +1,30 @@
+= Command "open-symbol"
+
+This command opens a LibrePCB symbol and lets you execute some tasks with it.
+
+.Command
+[source,bash]
+----
+./librepcb-cli open-symbol --help
+----
+
+.Output
+----
+Usage: ./librepcb-cli [options] open-symbol [command_options] symbol
+LibrePCB Command Line Interface
+
+Options:
+  -h, --help       Print this message.
+  -V, --version    Displays version information.
+  -v, --verbose    Verbose output.
+  --check          Run the symbol check, print all non-approved messages and
+                   report failure (exit code = 1) if there are non-approved
+                   messages.
+  --export <file>  Export the symbol to a graphical file. Supported file
+                   extensions: pdf, svg, bmp, cur, icns, ico, jfif, jpeg, jpg,
+                   pbm, pgm, png, ppm, tif, tiff, wbmp, webp, xbm, xpm
+
+Arguments:
+  open-symbol      Open a symbol to execute symbol-related tasks.
+  symbol           Path to symbol directory (containing *.lp).
+----
