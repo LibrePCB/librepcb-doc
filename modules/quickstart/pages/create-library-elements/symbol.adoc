@@ -1,10 +1,10 @@
 = Symbol
 
-Now we need to create a symbol for the OpAmp. Open
-menu:New Library Element[Symbol], choose a name and the component
-category we just created and click btn:[Finish]:
+Now we need to create a symbol for the OpAmp. Click on btn:[New Symbol] in the
+library editor, choose a name and the component category we just created and
+click btn:[Next]:
 
-image::create-symbol.png[alt="Create symbol"]
+image::create-symbol.png[alt="Create Symbol"]
 
 == Draw Polygons
 
@@ -18,6 +18,9 @@ Now let's draw the graphical objects of the symbol:
 . Draw the polygon with the cursor.
 
 image::symbol-draw-polygon.png[alt="Draw polygon"]
+
+_Note that to get a bigger working area, we collapsed the side panel by
+clicking on the currently active panel button in the sidebar._
 
 == Add Texts
 

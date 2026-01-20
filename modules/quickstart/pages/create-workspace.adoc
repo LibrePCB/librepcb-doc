@@ -9,23 +9,23 @@ LibrePCB version.
 You can just accept the default workspace location (you could still move it
 to another location afterwards, if desired):
 
-image::workspace-wizard-path.png[alt="Choose workspace"]
+image::workspace-wizard-path.png[alt="Choose Workspace"]
 
 If the selected path does not contain a workspace yet, clicking on btn:[Next]
 will show a page to choose the most important settings:
 
-image::workspace-wizard-settings.png[alt="Workspace settings"]
+image::workspace-wizard-settings.png[alt="Workspace Settings"]
 
 It is recommended to select at least your *preferred norm* and *length unit*
 since these usually depend on where you're living.
 
 [NOTE]
 ====
-You can change these settings at any time later in the control panel under
-menu:Extras[Workspace Settings].
+You can change these settings at any time later in the main window under
+menu:File[Workspace Settings].
 ====
 
-After clicking btn:[Finish], the control panel shows up and you're ready to
+After clicking btn:[Finish], the main window shows up and you're ready to
 start using LibrePCB!
 
-image::control-panel-empty.png[alt="Control panel"]
+image::main-window-empty.png[alt="Main Window"]

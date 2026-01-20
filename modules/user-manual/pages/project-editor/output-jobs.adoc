@@ -6,7 +6,7 @@ documentation purposes. LibrePCB provides a unified interface to generate
 any kind of production data for a project. It is called _Output Jobs_.
 
 From either the schematic- or board editor, open the _Output Jobs_ dialog
-with the menu item menu:File[Output Jobs...] or by pressing kbd:[F11]:
+with the menu item menu:Project[Output Jobs...] or by pressing kbd:[F11]:
 
 image::quickstart:output-jobs.png[alt="Output jobs"]
 

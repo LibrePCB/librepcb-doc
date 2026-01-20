@@ -4,24 +4,25 @@ Before you can start creating new projects, you need to add some libraries
 to your workspace. Libraries contain various kinds of elements which can be
 added to schematics and boards (e.g. symbols, footprints and devices).
 
-Click on btn:[Library Manager] in the control panel:
+Click on btn:[Libraries] in the side bar:
 
-image::control-panel-library-manager.png[alt="Library manager button"]
+image::main-window-libraries.png[alt="Libraries Button"]
 
-The library manager immediately fetches the list of available libraries from
+LibrePCB then immediately fetches the list of available libraries from
 the Internet. Most of these libraries are hosted at
 https://github.com/LibrePCB-Libraries.
 
-The most important library is _LibrePCB Base_ because it contains commonly
-used library elements like resistors or diodes. It is highly recommended to
-install at least this library. However, you can even simply install all the
-available libraries at once:
+Then you can select the libraries you like to install. The most important
+library is _LibrePCB Base_ because it contains commonly used library elements
+like resistors or diodes. It is highly recommended to install at least this
+library. However, you can even simply install all the available libraries at
+once by clicking on btn:[Toggle All]:
 
-image::library-manager-download.png[alt="Download Libraries"]
+image::libraries-install.png[alt="Install Libraries"]
 
-Later you can keep the installed libraries up to date exactly the same way.
-Just open the library manager from time to time to see which libraries can
-be updated to a new version.
+Later you can keep the installed libraries up to date the same way -- once
+you open the libraries panel, all outdated libraries will automatically be
+marked for update and you only need to click on the btn:[Apply] button.
 
 [NOTE]
 ====
@@ -47,13 +48,13 @@ them to manage your libraries (instead of the library manager), just clone the
 libraries into the subdirectory `data/libraries/local/` in your workspace.
 ====
 
-After the selected libraries have been downloaded, they will appear in the
-list of installed libraries on the left side of the library manager:
+After the selected libraries have been installed, they will have a green check
+mark to indicate that they are up to date:
 
-image::library-manager-installed.png[alt="Installed Libraries"]
+image::libraries-installed.png[alt="Installed Libraries"]
 
 Note that after the libraries were installed, it takes a moment to create an
 index of all the contained elements. This process automatically runs in
 background and is indicated with a progress bar at the bottom right of all
-main windows. The installed libraries are ready to use once the progress bar
+main window. The installed libraries are ready to use once the progress bar
 disappears.

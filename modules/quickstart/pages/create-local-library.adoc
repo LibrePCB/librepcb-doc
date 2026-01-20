@@ -4,21 +4,31 @@ In addition to the (read-only) remote libraries, you should create a personal,
 so-called _local_ library. This is the place where you'll add your own symbols,
 footprints etc. later.
 
-To do so, go to the _Create local library_ tab, optionally enter some
-metadata (default values are good enough) and click on btn:[Create Library]:
+To do so, click on the to the btn:[Create a New Library] button, optionally
+enter some metadata (default values are usually good enough) and click on
+btn:[Create Library]:
 
-image::library-manager-create.png[alt="Create Library"]
+image::libraries-create.png[alt="Create Library"]
 
-If you're curious how the library looks like, select your library on the left
-and then click on btn:[Open Library Editor] (or just double-click on your
-library):
+Afterwards you could enter more metadata of the library, but that's usually
+not required so you can just click on btn:[Next]:
 
-image::library-manager-open-editor.png[alt="Open Library Editor"]
 
-You'll see an empty library editor since the library doesn't contain any
-elements yet.
+image::libraries-create-metadata.png[alt="Library Metadata"]
 
-*Your workspace setup is now complete and ready to start creating your
-first PCB project!* You can close both the library editor and the library
-manager for now. We'll come back to the library editor later when we need to
+If you switched from KiCad or Eagle to LibrePCB, you could import your
+existing libraries now. However, this can also be done at any time later,
+so you can just choose btn:[Finish] for now:
+
+image::libraries-create-import.png[alt="Library Import"]
+
+That's it, your library is now created and is ready to get some library elements
+added to it, as explained in a later chapter. At the moment you will just see
+an empty library. At the moment we don't need the library editor, anymore, so
+you can close it with the btn:[X] button in the _Open Documents_ panel:
+
+image::libraries-create-empty.png[alt="Empty New Library"]
+
+*Your workspace setup is now complete and ready to start creating your first
+PCB project!* We'll come back to the library editor later when we need to
 xref:create-library-elements/index.adoc[create our own library elements].

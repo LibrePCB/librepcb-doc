@@ -106,11 +106,12 @@ coupled with the _Board Outlines_ layer.
 ====
 
 Plated Board Cutouts::
-+
-[CAUTION]
-====
-Not supported yet (ignored in the Gerber export)!
-====
+  Any plated board cut-outs (millings) more complex than slotted pads
+  must be drawn on this layer as polygons or circles. The line represents
+  the board edge after manufacturing. It's highly recommended to set its
+  width to zero since it has no meaning.
+  This layer will be exported to Gerber files (into the same file as the
+  _Board Outlines_ layer) and is usually contained when printing the board.
 
 Measures::
   General purpose layer for graphics and texts, e.g. to add manual
@@ -230,11 +231,10 @@ Not supported yet (ignored in the Gerber export)!
 ====
 
 Top/Bottom Glue::
-+
-[CAUTION]
-====
-Not supported yet (ignored in the Gerber export)!
-====
+  Used to draw areas as polygons or circles where glue should be applied on
+  the board to hold components during overhead soldering. This requires to
+  add a dedicated output job for exporting, i.e. by default the glue mask
+  is not exported. But in almost every case, glue masks are not needed anyway.
 
 Top/Inner/Bottom Copper::
   Should be pretty clear 🙂 Inner layers are numbered from top to bottom,

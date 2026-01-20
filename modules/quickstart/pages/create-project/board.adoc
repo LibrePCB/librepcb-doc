@@ -1,20 +1,30 @@
 = Create Board
 
 Once the schematic is (more or less) complete, you can start designing the
-PCB in the board editor. If the board editor window is not opened already,
-click on the btn:[Board Editor] toolbutton to open it.
+PCB in the board editor. For this, open the board in the _Open Documents_
+panel and set up some initial settings as described below:
+
+image::board-init.png[alt="Initialize Board"]
+
+== Setup Design Rules
+
+Different PCB manufacturers have different capabilities about what structures
+they are able to produce (e.g. minimum copper trace width). LibrePCB can
+verify if your board conforms to the manufacturers capabilities, but for this
+you need to set up the so-called _Design Rules_. If you intend to order your
+PCB at https://librepcb.org/features/fabrication-service/[LibrePCB Fab],
+you can choose the corresponding rules (see screenshot above). If you
+are unsure, just go with the default rules.
 
 == Set Grid Properties
 
 All board editor tools (e.g. the _Draw Trace_ tool) work on a particular
 grid interval, i.e. the cursor snaps on a multiple of that value. The
-value might depend on the task you're working on so probably you'll need
+value might depend on the task you're working on, so probably you'll need
 to change it several times while working on the board.
 
-You can change it at any time with the btn:[Grid Properties] toolbutton
-(or with kbd:[F4]):
-
-image::board-grid-properties.png[alt="Grid properties"]
+You can change it at any time in the status bar, see screenshot above
+(press kbd:[F4] to edit, or hover with the mouse and scroll up/down).
 
 == Draw Outlines
 
@@ -44,7 +54,7 @@ for the milling cutter! The PCB manufacturer will automatically offset
 the outline polygons to calculate the actual paths for the cutter.
 ====
 
-image::board-outlines.png[alt="Draw board outlines"]
+image::board-outlines.png[alt="Draw Board Outlines"]
 
 [NOTE]
 ====
@@ -87,14 +97,15 @@ kbd:[Ctrl+3].
 For every component in the schematic, you need to place a device
 in the board (except schematic-only components, like the schematic frame).
 
-. Open the _Place Devices_ dock (menu:View[Go to Dock > Place Devices]).
+. Open the _Place Devices_ panel in the sidebar (kbd:[Ctrl + Alt + P]).
 . Select a component to place.
 . Select the desired device for that component (not needed if the device
   is already specified in the schematics).
 . Choose the exact footprint to place, if there are multiple. Most packages
   have only one footprint -- if not, the default footprint is pre-selected.
-. Click btn:[Add] and place the device with the cursor on the board. Press
-  kbd:[R] to rotate or kbd:[F] to flip to the other board side while moving.
+. Click btn:[Place Selected Device] and place the device with the cursor on
+  the board. Press kbd:[R] to rotate or kbd:[F] to flip to the other board
+  side while moving.
 
 image::board-add-device.png[alt="Add device to board"]
 
@@ -103,7 +114,7 @@ Repeat these steps until there are no more unplaced components.
 [TIP]
 ====
 If you want to use the same device and footprint for all instances of
-a particular component, use the btn:[Add Similar] button to add all
+a particular component, use the btn:[Place Similar] button to add all
 at once.
 ====
 
@@ -120,7 +131,7 @@ By the way, it's even possible to replace devices after adding them to
 the board. For example you can replace a 0603 resistor by a 0805 resistor
 using the btn:[Change Device] context menu item (right-click):
 
-image::board-change-device.png[alt="Change device"]
+image::board-change-device.png[alt="Change Device"]
 
 Exactly the same way you can switch to a different footprint, just use
 the btn:[Change Footprint] context menu item instead.
@@ -131,7 +142,11 @@ As soon as you add devices to the board, airwires will appear to show
 the missing traces. Start the btn:[Draw Trace] tool and specify the
 trace settings in the toolbar. Then click on a pad to start a new trace:
 
-image::board-draw-trace.png[alt="Draw trace"]
+image::board-draw-trace.png[alt="Draw Trace"]
+
+In the _Layers_ panel (in the left sidebar) you may show or hide individual
+layers to keep the working area clear of irrelevant objects during trace
+drawing.
 
 [NOTE]
 ====
@@ -158,16 +173,16 @@ If you need planes (also known as _copper pours_, i.e. filled copper areas
 to create electrical connections), proceed as follows:
 
 . Start the btn:[Draw Plane] tool.
-. Specify the electrical net and copper layer in the toolbar.
+. Specify the copper layer and the electrical net in the toolbar.
 . Add vertices with mouse clicks. To fill the whole board, an approximate
   outline is good enough since it will be clipped automatically.
 
-image::board-draw-plane.png[alt="Draw plane"]
+image::board-draw-plane.png[alt="Draw Plane"]
 
 One the plane area is calculated, it appears with a filled area. As you can see,
 the area is automatically clipped to the board outline:
 
-image::board-plane.png[alt="Filled plane"]
+image::board-plane.png[alt="Filled Plane"]
 
 [IMPORTANT]
 ====
@@ -208,48 +223,47 @@ if needed (e.g. if not located on the grid interval).
 == Design Rule Check
 
 Once your design is complete, you should run the design rule check (DRC)
-to ensure there are no critical mistakes.
+to ensure there are no critical mistakes. The check will report missing
+connections, short circuits and many more possible issues.
 
-But first you should check or adjust the design rules which are
-used to calculate via/pad restrings and cream/stop mask clearances.
-For that, open menu:Board[Board Setup] or press kbd:[F7] and navigate
-to the *Design Rules* tab:
+But first you should review/adjust the board setup parameters, including
+the design rules and DRC settings. The design rules (second tab) are
+used to calculate for example the via/pad restrings and cream/stop mask
+clearances, while the DRC settings (third tab) are used only for the
+verification of the design. This sounds a bit complicated, but no worries,
+it's often not really important so you can just keep all the default values
+if you are unsure (you might have initialized some settings anyway already
+by choosing a PCB manufacturer earlier).
 
-image::board-design-rules.png[alt="Design rules"]
+The board setup is available from the _Open Documents_ panel (or with kbd:[F7]):
+
+image::board-setup-dialog.png[alt="Board Setup Dialog"]
 
 [NOTE]
 ====
-Actually it's better to set the design rules _before_ drawing traces and
+Actually it's better to set all these settings _before_ drawing traces and
 adding planes since they affect the clearances. It is only moved to the
 end of the boards tutorial to keep the focus on the design workflow.
-
-Fortunately, usually the default values are fine. So if you're unsure
-about these values, just keep the defaults.
+Fortunately, usually the default values are fine, so it's not critical
+to derive from the standard workflow for your first PCB design.
 ====
 
-Afterwards, navigate to the next tab called *DRC Settings* and configure
-the settings according the capabilities of your desired PCB manufacturer:
+Once all settings are configured, trigger menu:Project[Run Design Rule Check]
+or press kbd:[F8] to run the DRC. This can take some time. The DRC panel should
+automatically appear to display the result:
 
-image::board-drc-settings.png[alt="DRC settings"]
-
-If you're unsure, just skip this for now (the default values are usually fine).
-
-Once all settings are configured, open menu:Board[Design Rule Check] or
-press kbd:[F8] to run the DRC. This can take some time. The DRC dock widget
-should automatically appear to display the result:
-
-image::board-drc-dock.png[alt="DRC dock"]
+image::board-drc.png[alt="DRC Panel"]
 
 Then just click on a message to highlight the issue in the board editor.
-Or click on btn:[?] to get some more information about a message. If you're
-sure a message is not relevant, you could approve it with btn:[✔] but
-usually warnings/errors should be fixed instead of approved.
+If you're sure a message is not relevant, you could approve it with the eye
+symbol but usually warnings/errors should be fixed instead of approved.
 
 [TIP]
 ====
 There's also a tool named *Quick Check* which runs only the most important
-checks of the DRC. It is intended to be run regularly while working on the
-layout and can be triggered with kbd:[Shift + F8].
+checks of the DRC and is therefore much faster. It is intended to be run
+regularly while working on the layout and can be triggered with
+kbd:[Shift + F8].
 ====
 
 == 3D Preview
@@ -257,8 +271,8 @@ layout and can be triggered with kbd:[Shift + F8].
 Once you fixed all ERC issues, it's highly recommended to review the
 PCB in the 3D viewer. If anything with the board outline, the device
 placement or something like that is not correct, chances are high you
-will notice that in the 3D view. Click on menu:View[Toggle 2D/3D Mode] or
-press kbd:[Ctrl+3] to open it (press it two times for fullscreen):
+will notice that in the 3D view. Click on the board's btn:[3D] button or
+press kbd:[Ctrl+3] to open it:
 
 image::board-3d.png[alt="3D viewer"]
 

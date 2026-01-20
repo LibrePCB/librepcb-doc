@@ -1,16 +1,18 @@
 = Package
 
 Then you need to create the package for the {example-part-name}, which is
-called _SOT23-5_. As usual, open menu:New Library Element[Package] and
-specify the name and category:
+called _SOT23-5_. As usual, click btn:[New Package] and specify the name
+and category of the new package. In addition, it's recommended to also
+specify the assembly type, i.e. whether this is a through-hole (THT) or
+surface-mount (SMT) device:
 
-image::create-package-metadata.png[alt="Create package"]
+image::create-package-metadata.png[alt="Create Package"]
 
 == Add Pads
 
 Now you need to specify all pads of the package. The _SOT23-5_ has 5
 pads named from _1_ to _5_, so you can just enter the term _1..5_ and
-click on the btn:[+] button:
+click on the btn:[+] button (or press kbd:[Return]):
 
 image::create-package-pads.png[alt="Add package pads"]
 
@@ -31,13 +33,15 @@ few ;-)
 After clicking on btn:[Finish], you can draw the footprint. It's recommended
 to start with placing the pads:
 
-. Set a reasonable grid interval with the btn:[Grid Properties] toolbutton.
+. Set a reasonable grid interval in the status bar, if desired. You can either
+  press kbd:[F4] and type in the new interval, or hover with the mouse on the
+  number and scroll up or down to change the value.
 . Start either the btn:[Add THT Pad] or btn:[Add SMT Pad] tool.
 . Choose the package pad to place and specify its properties, most notably
   the shape and size.
 . Place the pad with a click. Press kbd:[R] to rotate it while moving.
 
-image::package-place-pad.png[alt="Place pad"]
+image::package-place-pad.png[alt="Place Pad"]
 
 [NOTE]
 ====
@@ -51,7 +55,7 @@ the pad's context menu (right-click) afterwards to enter exact values.
 Then add graphical object just
 xref:create-library-elements/symbol.adoc#draw-polygons[as done in the symbol editor]:
 
-image::package-draw-polygon.png[alt="Draw polygon"]
+image::package-draw-polygon.png[alt="Draw Polygon"]
 
 [NOTE]
 ====
@@ -87,14 +91,13 @@ the background library scan picks up the new package.
 == Add 3D Model
 
 If you have a STEP file of the package, you can add it as a 3D model to the
-package. Switch to the 3D mode with menu:View[Toggle 2D/3D Mode] or by
-pressing kbd:[Ctrl+3]. Then click on the btn:[+] button to import the
-STEP file (this may take a while):
+package. Switch to the tab btn:[3D Models] (kbd:[Ctrl+3]) and click on the
+btn:[+] button to import the STEP file (this may take a while):
 
 image::package-3d-model.png[alt="Add 3D model"]
 
-If required, the position and rotation can be adjusted in the footprint
-variants table.
+If required, the position and rotation can be adjusted at the bottom right
+(note that kbd:[Return] needs to be pressed to accept new values).
 
 == Recommendations
 

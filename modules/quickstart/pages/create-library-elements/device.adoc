@@ -5,33 +5,62 @@ the component _Single OpAmp_ with the package _SOT23-5_. This is actually
 the only library element which is specifically for {example-part-name} --
 all previously created elements are generic and reusable for other OpAmps!
 
-Again, open menu:New Library Element[Device] and specify the name and
-category for the new device:
+Again, click btn:[New Device] in the library editor. Then you first have
+to choose the package and the component of the device to create:
 
-image::create-device.png[alt="Create device"]
+image::create-device-choose.png[alt="Choose Package and Component"]
 
-== Choose Component & Package
+Choose the package and the component we just created in the previous steps.
+The result should look like this:
 
-After clicking btn:[Next], you need to choose the component and package
-we created for this device:
+image::create-device-chosen.png[alt="Review Package and Component"]
 
-image::create-device-properties.png[alt="Device properties"]
+== Specify Metadata
 
-Then click on btn:[Finish].
+After clicking btn:[Next], specify the name of the new device. The category
+is now already taken from the component, so usually this is fine. If you
+have an URL to the datasheet, you may enter it also (optional):
 
-== Connect Pads To Signals
+image::create-device-metadata.png[alt="Device Metadata"]
 
-Now you have to connect the package pads to component signals according
-to the pinout in the datasheet of {example-part-name}:
+Then click on btn:[Next].
 
-image::device-editor.png[alt="Device editor"]
+== Define Pinout
 
-Then *save the device* to finish it and quickly wait until the background
-library scan completes before adding the new device to a project.
+Now you need to define the pinout, i.e. the connection between the package
+pads and the component signals. This needs to be don according to the pinout
+in the datasheet of {example-part-name}. There are various ways of defining
+the pinout, for example you can just use the dropdowns:
+
+image::create-device-pinout-empty.png[alt="Empty Device Pinout"]
+
+LibrePCB may also provide the options to define the pinout either
+automatically or interactively (which is very handy!). Once you have done
+that, the pinout should look like in the datasheet:
+
+image::create-device-pinout-review.png[alt="Review Device Pinout"]
+
+It's very important that the pinout is correct. When you are sure, click
+btn:[Next].
+
+== Add Parts
+
+In the last step, you can add the exact part numbers (MPNs) as listed on
+distributors. This step is optional, but it helps to get accurate bill of
+materials (BOMs) out of projects so it improves the ordering workflow.
+To add so, add as many part numbers which are valid for this specific device
+(often only one, but can be multiple) and also specify their manufacturer name:
+
+image::create-device-parts.png[alt="Add Parts"]
+
+Then click btn:[Finish] and *save the device*. You can now review the
+created device and make any adjustments if needed:
+
+image::create-device-review.png[alt="Review Device"]
 
 And that's it! The {example-part-name} is now ready to be added to
-schematics and boards. And because the categories, symbol, component
-and package are very generic, you created not only one single device,
-but the basement for many more devices in the future! For any additional
-single-channel OpAmp (with an already available package), you need to
-create only a device which is now a matter of a minute.
+schematics and boards (after the library rescan has completed). And because
+the categories, symbol, component and package are very generic, you created
+not only one single device, but the basement for many more devices in the
+future! For any additional single-channel OpAmp (with an already available
+package), you need to create only a device which is now a matter of a minute.
