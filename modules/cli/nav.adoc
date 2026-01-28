@@ -2,5 +2,7 @@
 ** xref:installation.adoc[]
 ** xref:help.adoc[]
 ** xref:open-library.adoc[]
+** xref:open-symbol.adoc[]
+** xref:open-package.adoc[]
 ** xref:open-project.adoc[]
 ** xref:open-step.adoc[]

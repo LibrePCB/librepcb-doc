@@ -1,0 +1,31 @@
+= Command "open-package"
+
+This command opens a LibrePCB package and lets you execute some tasks with it.
+
+.Command
+[source,bash]
+----
+./librepcb-cli open-package --help
+----
+
+.Output
+----
+Usage: ./librepcb-cli [options] open-package [command_options] package
+LibrePCB Command Line Interface
+
+Options:
+  -h, --help       Print this message.
+  -V, --version    Displays version information.
+  -v, --verbose    Verbose output.
+  --check          Run the package check, print all non-approved messages and
+                   report failure (exit code = 1) if there are non-approved
+                   messages.
+  --export <file>  Export the contained footprint(s) to a graphical file.
+                   Supported file extensions: pdf, svg, bmp, cur, icns, ico,
+                   jfif, jpeg, jpg, pbm, pgm, png, ppm, tif, tiff, wbmp, webp,
+                   xbm, xpm
+
+Arguments:
+  open-package     Open a package to execute package-related tasks.
+  package          Path to package directory (containing *.lp).
+----

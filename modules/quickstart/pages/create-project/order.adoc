@@ -14,8 +14,7 @@ Just skip this section and go to <<generate-production-data>>.
 
 == LibrePCB Fab
 
-To start the order process, click the btn:[Order PCB] toolbutton in either
-the schematic- or board editor:
+To start the order process, switch to the _Order PCB_ panel (kbd:[F12]):
 
 image::board-order.png[alt="Order PCB"]
 
@@ -26,7 +25,7 @@ where you can review and continue the order.
 [TIP]
 ====
 Alternatively you could also export your LibrePCB project as a `*.lppz`
-archive (menu:File[Export > Export *.lppz Archive]) and then upload
+archive (menu:Project[Export *.lppz Archive]) and then upload
 this file with the web browser on https://fab.librepcb.org. This
 procedure might be useful if for some reason the direct upload is not
 desired or doesn't work (e.g. due to a corporate firewall).
@@ -36,13 +35,13 @@ desired or doesn't work (e.g. due to a corporate firewall).
 
 Instead of using <<librepcb-fab>>, of course you can also generate the
 production data manually and forward these files to any PCB manufacturer
-you like.
+you like. For this, open the *Output Jobs* dialog from the sidebar (kbd:[F11]):
 
-Currently there exist multiple ways how to generate production data, but
-it's recommended to use the *Output Jobs* feature for that. Click on
-menu:File[Output Jobs] or press kbd:[F11] to open the corresponding window:
+image::output-jobs-button.png[alt="Output Jobs Button"]
 
-image::output-jobs.png[alt="Output jobs"]
+This opens all output jobs of the project in a new window:
+
+image::output-jobs.png[alt="Output Jobs"]
 
 Then for any output you like to generate, click on the btn:[+] button at the
 bottom left. See the following sections for details on the available jobs.
@@ -75,10 +74,9 @@ If required, the settings can now be adjusted manually.
 [WARNING]
 ====
 It's highly recommended to cross-check the generated files with third-party
-tools like http://gerbv.geda-project.org[gerbv] or
-https://gerber.ucamco.com/[the reference Gerber viewer]. LibrePCB
-developers are not responsible for any implications caused by wrong
-production data.
+tools like https://gerber.ucamco.com/[the reference Gerber viewer] (preferred)
+or http://gerbv.geda-project.org[gerbv]. LibrePCB developers are not
+responsible for any implications caused by wrong production data.
 ====
 
 === Pick&Place Data
@@ -91,6 +89,7 @@ image::output-jobs-pnp.png[alt="Pick&place output job"]
 === Bill of Materials
 
 To get a bill of materials (BOM), add the output job
-*Bill Of Materials (+*+.csv)*:
+*Bill Of Materials (+*+.csv)*, and/or the interactive HTML BOM if you plan
+to assembly your board by hand:
 
 image::output-jobs-bom.png[alt="BOM output job"]

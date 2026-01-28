@@ -1,10 +1,9 @@
 = Component Category
 
 First you should create a component category for the {example-part-name}
-(if it doesn't exist already). Open
-menu:New Library Element[Component Category], choose a suitable (generic!)
-name and select a parent category. *You may first need to create the
-required parent categories.*
+(if it doesn't exist already). Click on btn:[New Component Category] in the
+library editor, choose a suitable (generic!) name and select a parent category.
+*You may first need to create the required parent categories.*
 
 [NOTE]
 ====
@@ -29,11 +28,14 @@ don't use a nesting level higher than 3 levels (usually 2 levels are
 enough).
 ====
 
-image::create-component-category.png[alt="Create component category"]
+image::create-component-category.png[alt="Create Component Category"]
 
-After clicking on btn:[Finish], your first component category is already
+After clicking on btn:[Save], your first component category is already
 complete! It may just take a moment for the background library scan until
-the new component category appears in the category trees.
+the new component category appears in the category trees. Then you will see
+the new category in your library:
+
+image::create-component-category-finished.png[alt="The New Component Category"]
 
 .Component categories available in the _LibrePCB Base_ library
 [%collapsible]

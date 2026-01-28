@@ -11,9 +11,9 @@ properties for its category:
 * *Name*: _Small-Outline Transistor (SOT)_
 * *Parent*: _Transistor_ (let's assume this category exists already)
 
-image::create-package-category.png[alt="Create package category"]
+image::create-package-category.png[alt="Create Package Category"]
 
-With a click on btn:[Finish] the package category is complete and
+With a click on btn:[Save] the package category is complete and
 after a moment the new category is ready to use.
 
 .Package categories available in the _LibrePCB Base_ library

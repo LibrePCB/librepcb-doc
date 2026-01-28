@@ -2,15 +2,16 @@
 
 Sooner or later you'll need to create your own library elements in your
 local library you have created xref:create-local-library.adoc[previously].
-Open that library in the library manager:
+Open that library now in the libraries panel:
 
-image::library-manager-open-editor.png[alt="Open library editor"]
+image::libraries-open.png[alt="Open Library Editor"]
 
-The btn:[New Library Element] toolbutton (or kbd:[Ctrl+N]) in the
-library editor is the entry point for every new library element. There
-you can choose what kind of library element you want to create:
+In the library editor, there are six buttons to create the six different kinds
+of library elements which LibrePCB is based on (no worries, important are only
+four of them). So every new library element you will create during this
+tutorial, starts with one of those buttons:
 
-image::library-editor-new-element.png[alt="New library element"]
+image::library-editor-new-element.png[alt="New Library Element"]
 
 == Concept Overview
 
