@@ -1,0 +1,83 @@
+= Common Conventions
+
+[NOTE]
+====
+These guidelines are not yet complete. Help us create sensible conventions
+https://github.com/LibrePCB/librepcb-doc/issues?q=is%3Aissue+label%3A%22Conventions%3A+Symbols%22[on GitHub]!
+====
+
+The conventions described on this page apply to all kinds of library elements
+(symbols, packages, categories, ...) unless explicitly specified differently
+in the conventions of the corresponding library element type.
+
+== Name
+
+Generally, the capitalization of library element names should be
+https://en.wikipedia.org/wiki/Title_case[Title Case]. If this is not suitable
+in certain cases (e.g. _Schottky Diodes Dual in Series_), the
+corresponding warning from the library check can be approved.
+
+Special Rules:
+
+* *Component categories:* Shall be in *plural form*, not singular (e.g.
+  _Diodes_, not _Diode_).
+* *Package categories:* Shall be in *singular form*, not plural (e.g.
+  _Chip Resistor_, not _Chip Resistors_).
+* *Packages:* Follow IPC-7351 conventions (see details in
+  xref:library-conventions:packages.adoc#naming[Package Naming]).
+
+== Description
+
+If the description of a library element is very obvious from its name (e.g.
+a symbol named _Diode_), the description should be kept empty. If a description
+is needed, its first line (if multiple) should be a short, expressive summary
+about the library element (e.g. _General-purpose 1A/400V rectifier diode in
+DO-41 package_). Any sentence or summary shall end with a period.
+
+== Keywords
+
+* Keywords are *all lowercase, comma-separated, without spaces after the comma*.
+  Example: _"soic8,schmitt trigger,inverted"_
+* Do not add keywords which are already contained in the library elements
+  name. For example a symbol called _Schmitt Trigger_ shall not have the
+  keyword _"schmitt trigger"_.
+* To decide about keywords, just ask yourself which terms a user might type
+  to find that library element, and are not already contained in its name.
+
+== Author
+
+Every library element should have an author. It is allowed to use nicknames
+instead of real names (ideally, it should correspond to your GitHub username
+then).
+
+When making significant changes to an existing library element created by
+someone else, it is allowed/recommended to add your name to the author field
+too, separated by a comma and a space. Example: _"Author 1, Author 2"_
+
+== Version
+
+* New elements should have the version number 0.1.
+* Every change to a library element shall increase its version number.
+** Metadata-only changes (i.e. information in the _Metadata_ tab/panel): +
+   Bump the third digit (e.g. 0.1 -> 0.1.1, or 1.1 -> 1.1.1).
+** Functional changes (graphics, pin names, MPNs, ...): +
+   Bump the second digit (e.g. 0.1 -> 0.2, or 1.1 -> 1.2)
+** Huge refactorings / complete rewrites (but still no breaking changes): +
+   Bump the first digit (e.g. 0.1 -> 1.0, or 1.2 -> 2.0). This is almost
+   never done.
+
+[IMPORTANT]
+====
+Breaking changes on existing library elements are never allowed! Whenever
+the library editor shows a warning about breaking changes, create a new
+library element instead of breaking an existing one. If the existing element
+shall not be used anymore then, mark it as deprecated.
+====
+
+[NOTE]
+====
+Only bump the version number of library elements you have modified. The
+version number of the library which contains that element shall not be
+bumped, unless you made changes to the library itself. Generally, only
+library maintainers bump the verison number of libraries.
+====
