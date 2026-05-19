@@ -35,6 +35,15 @@ If you're not familiar with the terminal: Right-click on the downloaded file
 and then check something like _Allow executing file as program_ or
 _Run as executable_. Afterwards double-click the file to run it.
 
+[NOTE]
+====
+If LibrePCB silently doesn't start, run the AppImage from a terminal to see any
+error messages. It is possible that you need to install some system libraries.
+
+Especially from Ubuntu 26.04 onwards, it seems that OpenGL needs to be installed
+in order to get LibrePCB functional: `sudo apt install libglu1-mesa`
+====
+
 [#snap,reftext=Snap Package]
 == Snap Package (multi-arch)
 

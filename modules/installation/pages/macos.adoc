@@ -16,22 +16,10 @@ Double-click the downloaded file in Finder. Then drag and drop the LibrePCB
 app onto the "Applications" folder in Finder. Afterwards you'll find
 LibrePCB in the Launchpad.
 
-[IMPORTANT]
+[NOTE]
 ====
-Unfortunately we're not able (yet) to officially sign the macOS binary.
-Therefore macOS refuses to start LibrePCB by default. As a workaround,
-you need to run it once with menu:Right-click[Open] on the LibrePCB
-application in the Launchpad. If this doesn't work, try it a second time.
-
-Afterwards you should be able to run LibrePCB normally with a single click.
+Starting from LibrePCB 2.x, our official releases are signed by
+*Scheibling Consulting AB* as you may see when running LibrePCB the first time.
+This code signing service is thankfully sponsored by
+https://ossign.org/[OSSign].
 ====
-
-// Keep this section just for some time to keep the links working and to
-// inform users about the change.
-[#online-installer,reftext=Online Installer]
-== Online Installer (abandoned)
-
-Note that starting with LibrePCB 1.0, we do no longer provide an installer for
-macOS. If you installed a previous LibrePCB release with the installer,
-please uninstall it with the _LibrePCB Maintenance Tool_ and install the
-latest release with the <<portable-package>> instead.

@@ -13,6 +13,14 @@ Afterwards you'll find LibrePCB in your start menu.
 
 [NOTE]
 ====
+Starting from LibrePCB 2.0, our official releases are signed by
+*Scheibling Consulting AB* as you may see when running LibrePCB the first time.
+This code signing service is thankfully sponsored by
+https://ossign.org/[OSSign].
+====
+
+[TIP]
+====
 For automated (unattended) installation, please check out the command-line
 parameters of the Inno Setup framework
 https://jrsoftware.org/ishelp/index.php?topic=setupcmdline[here]
