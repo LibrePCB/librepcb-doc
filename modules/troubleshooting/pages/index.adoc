@@ -3,6 +3,39 @@
 In case you encounter any problems with LibrePCB, this chapter gives you some
 tips to get them solved or to get help from the community.
 
+[#there-is-no-element-of-type]
+== Error: There is no element of type 'X' with the UUID 'Y'
+
+Whenever an error message pops up with a message like
+_There is no element of type 'X' with the UUID 'Y'_ or something like
+_Element with UUID 'X' not found_, it is very very very likely that you made
+some xref:user-manual:references.adoc#breaking-changes[breaking change] in a library
+element. Those errors then occur either in the component- or device editor,
+or after updating the project library with the _Project Library Updater_.
+
+Since these are complex issues, the correct solution depends on a case-by-case
+basis. All we can give here are some general recommendations:
+
+. Read xref:user-manual:references.adoc[] until you understand it.
+. From now on, follow the
+  xref:user-manual:references.adoc#recommendations[recommendations]
+  on that page to avoid running into this problem again in future.
+. If you have any idea in _which_ of the library elements you (recently) made
+  breaking changes, delete them completely. It may hurt, but it's often the
+  only way out of the mess. You may want to back up the library elements before
+  deletion -- use the menu:Device[Show in File Manager] menu item to locate the
+  directory to back up.
+. If the project library update still fails after deleting the suspicious
+  library elements, you may need to remove the suspicious elements also from
+  the schematics & boards, and then re-add them the normal way with the
+  _Add Component_ dialog.
+. In important/urgent cases, you may ask LibrePCB developers for help. However,
+  we kindly ask for a donation as a compensation for our invested time.
+
+== Project Library Update Fails
+
+See <<there-is-no-element-of-type>>.
+
 == Workspace Sync (Dropbox, Cloud, Git, ...)
 
 If you sync your LibrePCB workspace with a cloud or similar, it's important to
