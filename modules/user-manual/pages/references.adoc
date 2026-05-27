@@ -257,14 +257,24 @@ about if you are really sure to make breaking changes to it.**
 Here are some simple recommendations which help to avoid running into troubles
 due to broken references:
 
+* **Fully finish library elements before starting to use them (_right first
+  time_)!** Do not just create a quick&dirty package & corresponding device,
+  add them to a project, and then iterate those library elements many times
+  to get them finished & right. It is no problem to correct smaller things
+  later (silkscreen drawings, pad sizes, MPNs, datasheet URLs etc.), but **the
+  fundamental things (number of pads, package & component of a device, pinout
+  etc.) need to be done right from the beginning on.** You can save yourself
+  a lot of headaches (and time) if you seriously finish library elements
+  **one after the other** instead of just hacking around with trial & error.
+  LibrePCB is not the tool to hack around.
+* When the "breaking changes"-banner shows up in the library editor, **do not
+  click on menu:Unlock[] unless you are 100% sure that the library element
+  has not been used by another library element or a project yet.** If you
+  are not 100% sure about this, use the menu:Duplicate[] operation.
+* When creating new library elements by copying an existing library element,
+  **use the _duplicate_ operation, not the _copy_ operation**. Generally,
+  the _copy_ operation is almost never what you are looking for.
 * **Never copy/move/modify files on the file system directly.** Always perform
   operations in LibrePCB, as LibrePCB will take care of UUID handling then.
   As soon as you edit files on the file system directly, there is no safety
   net anymore and you can run easily into a hell of a mess.
-* When creating new library elements by copying an existing library element,
-  **use the _duplicate_ operation, not the _copy_ operation**. Generally,
-  the _copy_ operation is almost never what you are looking for.
-* When the "breaking changes"-banner shows up in the library editor, **do not
-  click on menu:Unlock[] unless you are 100% sure that the library element
-  has not been used by another library element or a project yet.** If you
-  are not 100% sure about this, use the _Duplicate_ operation.
