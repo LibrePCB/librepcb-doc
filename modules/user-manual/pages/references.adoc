@@ -252,6 +252,24 @@ therefore the higher the risk of troubles.
 about if you are really sure to make breaking changes to it.**
 ====
 
+[IMPORTANT]
+====
+Please note that there is also a case where the "breaking changes"-banner
+doesn't show up, even if you made a breaking change: When you create a new
+library element, the banner will be suppressed as long as the tab of the
+new element stays open. This is the case because for new library elements it
+is normal that you make breaking changes all the time (e.g. every single pin
+you add to a new symbol is a breaking change).
+
+To not annoy you with the banner during the normal workflow of creating a new
+library element, it will be suppressed. However, this can lead to a dangerous
+situation: Imagine you create a new library element, save it but keep
+the tab open, then use it in other library elements or projects, and then
+make further (possibly breaking) changes in the still opened tab of the
+new library element. In this case, you may have just created a hell of a mess
+but LibrePCB didn't warn about it.
+====
+
 == Recommendations
 
 Here are some simple recommendations which help to avoid running into troubles
@@ -267,6 +285,11 @@ due to broken references:
   a lot of headaches (and time) if you seriously finish library elements
   **one after the other** instead of just hacking around with trial & error.
   LibrePCB is not the tool to hack around.
+* After you created a new library element, **close the editor tab before using
+  the new library element anywhere else.** This will enable the detection of
+  breaking changes for the new library element -- without closing the tab,
+  the "breaking changes"-banner will be suppressed, and you won't notice when
+  you are about to create troubles.
 * When the "breaking changes"-banner shows up in the library editor, **do not
   click on menu:Unlock[] unless you are 100% sure that the library element
   has not been used by another library element or a project yet.** If you
