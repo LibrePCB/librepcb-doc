@@ -23,7 +23,8 @@ Special Rules:
   _Diodes_, not _Diode_).
 * *Package categories:* Shall be in *singular form*, not plural (e.g.
   _Chip Resistor_, not _Chip Resistors_).
-* *Packages:* Follow IPC-7351 conventions (see details in
+* *Packages:* Follow
+  https://www.pcblibraries.com/downloads/Footprint%20Expert%20Guideline.pdf[Footprint Expert Guidelines] (see details in
   xref:library-conventions:packages.adoc#naming[Package Naming]).
 
 == Description
