@@ -1,0 +1,49 @@
+= Import KiCad Libraries
+
+LibrePCB supports importing symbols, footprints, and 3D models from KiCad
+libraries. Since KiCad splits those element types into separate libraries,
+you need to prepare a single directory where all the relevant files are
+contained.
+
+.Example Directory Structure
+----
+my-kicad-library
+├── NE555.kicad_sym
+├── footprints.pretty
+│   └── SOIC127P600X175-8N.kicad_mod
+└── models.3dshapes
+    └── SOIC127P600X175-8N.step
+----
+
+_You may add as many library files as you like to this directory. Also it is
+allowed to add at most one additional nesting level of those files/folders._
+
+Once you have that directory prepared, make sure you have
+xref:quickstart:create-local-library.adoc[created a LibrePCB library] where
+you want to import those elements into.  Note that the scope of a KiCad
+library is not related to the scope of a LibrePCB library -- you can import
+several KiCad libraries into a single LibrePCB library (recommended approach),
+or you can split a single KiCad library into multiple LibrePCB libraries
+(unusual, but possible).
+
+[TIP]
+====
+For a clean structure, is recommended to create a separate library for
+imported elements, e.g. called _KiCad Import_. This will help you later to
+easily distinguish between native LibrePCB elements and imported elements
+(which may still need review/rework).
+====
+
+Open that target library in the LibrePCB library editor, click
+menu:Library[Import KiCad Library...] and follow the import wizard.
+
+[IMPORTANT]
+====
+In contrast to the xref:import-libraries/eagle.adoc[EAGLE Library Import],
+the imported KiCad elements will keep a reference to the KiCad library they
+were imported from (by name, not by file path). This allows LibrePCB to detect
+and skip already imported elements, avoiding duplicate imports. So it is
+possible to import only a few elements of a large KiCad library, and import
+more elements of the same library at a later time (i.e. import step-by-step
+on demand).
+====
