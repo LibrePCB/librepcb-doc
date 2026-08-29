@@ -5,3 +5,6 @@
 ** Project Editor
 *** xref:project-editor/assembly-data.adoc[]
 *** xref:project-editor/output-jobs.adoc[]
+** Import Libraries
+*** xref:import-libraries/eagle.adoc[From EAGLE (*.lbr)]
+*** xref:import-libraries/kicad.adoc[From KiCad]

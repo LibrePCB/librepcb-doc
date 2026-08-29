@@ -1,0 +1,30 @@
+= Import EAGLE Libraries
+
+This documentation does not exist yet. However, AISLER has written a detailed
+step-by-step tutorial for importing EAGLE libraries into LibrePCB. Please
+check this out:
+
+*➡️ https://community.aisler.net/t/librepcb/94/2#p-8860-part-2-importing-an-eagle-library-2[AISLER Community: LibrePCB -- Importing an EAGLE Library]*
+
+{nbsp}
+
+[IMPORTANT]
+====
+*It is highly recommended to import _all_ elements contained in a EAGLE library
+at once (i.e. check _all_ checkboxes)!* The importer currently does not detect
+& skip already imported elements, so when you import (parts of) the same
+library again, you will end up with duplicates. To avoid this mess, just
+import each library only once, but with all of their elements, and then
+simply ignore the elements you actually don't need.
+
+Note that the xref:import-libraries/kicad.adoc[KiCad Library Import] does
+not have this limitation.
+====
+
+[NOTE]
+====
+*Only `pass:[*.lbr]` files from EAGLE v6 or later are supported.* To import
+libraries from EAGLE v5 or older, open those libraries first in EAGLE v6 or
+later and save them to disk again. This will migrate the `pass:[*.lbr]` files
+from a binary file format (unsupported by LibrePCB) to an XML file (supported).
+====
